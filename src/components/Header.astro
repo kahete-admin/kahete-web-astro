@@ -3,20 +3,19 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 <header>
-    <nav class="bg-slate-950px-4 lg:px-6 py-2.5 dark:bg-slate-950">
-        <div class="flex flex-wrap justify-between items-stretch mx-auto max-w-screen-xl">
-            <a class="flex items-center">
-                <img src="../Logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
-                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Kahete</span>
+    <nav class="bg-neutral-1000 border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-neutral-1000">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+            <a href="" class="flex items-center">
+                <img src="../logo_complete.svg"  class="mr-3 h-6 sm:h-9" alt="Kahete Logo" />
             </a>
-            <div class="flex items-center">
-                <a href="#" class="text-white ">Get started</a>
+            <div class="flex items-center lg:order-2">
+                <a href="#" class="text-black bg-accent hover:bg-neutral-700 hover:text-white active:text-white focus:text-white   focus:bg-neutral-800 font-medium rounded-full text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2">Get started</a>
             </div>
         </div>
     </nav>
 </header>
 <style>
-	.social-links,
+    	.social-links,
 	.social-links a {
 		/* display: flex; */
 	}
