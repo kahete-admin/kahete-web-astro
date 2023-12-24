@@ -1,8 +1,8 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import SocialMediaItem from "../components/SocialMediaItem.astro";
+import HeaderProfiles from "../components/HeaderProfiles.astro";
 
 const { username, title, about } = Astro.props;
 ---
@@ -13,18 +13,18 @@ const { username, title, about } = Astro.props;
     <BaseHead title={username} description={about} />
   </head>
   <body>
-    <Header />
+    <HeaderProfiles />
     <section class="bg-neutral-900 text-white">
-      <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+      <div class="py-8 px-2 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div class="mx-auto max-w-screen-sm text-center">
           <div class="flex justify-center items-center">
             <img
-              class="rounded-full w-48 h-48"
+              class="rounded-full w-52 h-52 lg:mb-12 mb-4" 
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
               alt="{title}"
             />
           </div>
-          <div class="p-5 lg:text-left">
+          <div class="p-5">
             <h3 class="text-xl font-bold tracking-tight text-gray-900">
               <a href="#">{username}</a>
             </h3>
@@ -34,6 +34,8 @@ const { username, title, about } = Astro.props;
             </p>
 			<!-- SOCIALMEDIA -->
 			<div>
+				<SocialMediaItem />
+				<SocialMediaItem />
 				<SocialMediaItem />
 			</div>
 			<!-- /SOCIALMEDIA -->
