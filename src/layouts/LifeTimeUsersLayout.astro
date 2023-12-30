@@ -2,7 +2,8 @@
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import SocialMediaItem from "../components/SocialMediaItem.astro";
-import HeaderProfiles from "../components/HeaderProfiles.astro";
+import NavBarProfile from "../components/NavBarProfile.astro";
+import ContactButton from "../components/ContactButton.astro";
 
 const { username, title, about } = Astro.props;
 ---
@@ -13,13 +14,13 @@ const { username, title, about } = Astro.props;
     <BaseHead title={username} description={about} />
   </head>
   <body>
-    <HeaderProfiles />
-    <section class="bg-neutral-900 text-white">
+    <NavBarProfile />
+    <section class="bg-background text-white">
       <div class="py-8 px-2 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div class="mx-auto max-w-screen-sm text-center">
           <div class="flex justify-center items-center">
             <img
-              class="rounded-full w-52 h-52 lg:mb-12 mb-4" 
+              class="rounded-full w-52 h-52 lg:mb-12 mb-4"
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
               alt="{title}"
             />
@@ -29,23 +30,30 @@ const { username, title, about } = Astro.props;
               <a href="#">{username}</a>
             </h3>
             <span>{title}</span>
-            <p class="mt-3 mb-4 text-justify">
-              {about}
-            </p>
-			<!-- SOCIALMEDIA -->
-			<div>
-				<SocialMediaItem />
-				<SocialMediaItem />
-				<SocialMediaItem />
-			</div>
-			<!-- /SOCIALMEDIA -->
+           
+            <div>
+              <p class="mt-3 mb-4 text-justify">
+                {about}
+              </p>
+              <div class="flex gap-3">
+                <ContactButton buttonType="Phone" />
+                <ContactButton buttonType="Email" />
+                <ContactButton buttonType="WhatsApp" />
+              </div>
+            </div>
+            <!-- SOCIALMEDIA -->
+            <div>
+              <SocialMediaItem />
+              <SocialMediaItem />
+              <SocialMediaItem />
+            </div>
+            <!-- /SOCIALMEDIA -->
           </div>
         </div>
       </div>
       <Footer />
     </section>
-  </body>
-  <!-- <style>
+  </body><!-- <style>
     * {
       border: 1px solid red;
     }

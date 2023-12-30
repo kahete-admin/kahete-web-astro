@@ -1,0 +1,39 @@
+---
+import call from "../../public/svg/call.svg";
+import mail from "../../public/svg/mail.svg";
+import whatsapp from "../../public/svg/whatsapp.svg";
+
+interface Props {
+  buttonType: "WhatsApp" | "Phone" | "Email";
+}
+const { buttonType } = Astro.props;
+let svgUrl: string = "";
+
+switch (buttonType) {
+  case "WhatsApp":
+    svgUrl = whatsapp.src;
+    break;
+  case "Email":
+    svgUrl = mail.src;
+
+    break;
+  case "Phone":
+    svgUrl = call.src;
+    break;
+  default:
+    break;
+}
+---
+
+<button
+  class="bg-main-buttons rounded-2xl text-white cursor-pointer hover:bg-neutral-700 mb-4 w-full py-1"
+>
+  <div class="items-center justify-center">
+    <img
+      src={svgUrl}
+      alt="image description"
+      class="h-8 justify-center w-full pt-2"
+    />
+    <span class="text-sm capitalize">{buttonType}</span>
+  </div>
+</button>

@@ -9,6 +9,8 @@ export default {
 			'white': '#ffffff',
 			'black':'#000000',
 			'accent':'#65CED8',
+			'background':'#14191C',
+			'main-buttons':'#21333B',
 			'neutral':{
 				0: '#FFFFFF',
 				100: '#F8F9FC',
