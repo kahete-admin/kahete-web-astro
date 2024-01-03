@@ -12,6 +12,18 @@ const { username, title, about } = Astro.props;
 <html lang="en">
   <head>
     <BaseHead title={username} description={about} />
+    <style>
+      .hideContent {
+        overflow: hidden;
+        line-height: 1em;
+        height: 3em;
+      }
+
+      .showContent {
+        line-height: 1em;
+        height: auto;
+      }
+    </style>
   </head>
   <body>
     <NavBarProfile />
@@ -32,9 +44,14 @@ const { username, title, about } = Astro.props;
             <span>{title}</span>
 
             <div>
-              <p class="mt-3 mb-4 text-justify">
-                {about}
-              </p>
+              <div class="content hideContent mt-3 mb-2">
+                <p class="text-justify">
+                  {about}
+                </p>
+              </div>
+              <div class="show-more mb-4">
+                <a id="show-text" href="#">Show more</a>
+              </div>
               <div class="flex gap-3">
                 <ContactButton buttonType="Phone" phone="+50377420064" />
                 <ContactButton buttonType="Email" email="email@email.com" />
@@ -53,9 +70,22 @@ const { username, title, about } = Astro.props;
       </div>
       <Footer />
     </section>
-  </body><!-- <style>
-    * {
-      border: 1px solid red;
-    }
-  </style> -->
+    <script>
+      const button = document.querySelector("div.show-more");
+      const content = document.querySelector("div.content");
+      let text = document.getElementById("show-text");
+
+      button?.addEventListener("click", () => {
+        if (text?.textContent?.toUpperCase() === "SHOW MORE") {
+          text.innerHTML = "Show less";
+          content?.classList.remove("hideContent");
+          content?.classList.add("showContent");
+        } else {
+          text!.innerHTML = "Show more";
+          content?.classList.remove("showContent");
+          content?.classList.add("hideContent");
+        }
+      });
+    </script>
+  </body>
 </html>
