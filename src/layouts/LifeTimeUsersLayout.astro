@@ -40,7 +40,7 @@ const { username, title, about } = Astro.props;
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
             />
           </div>
-          <div class="text-center pb-2 text-xl">
+          <div class="text-center pb-2 text-base">
             <h6 class="font-semibold text-white">
               {username}
             </h6>
@@ -48,11 +48,11 @@ const { username, title, about } = Astro.props;
           </div>
 
           <div>
-            <div class="content hideContent mt-3 text-justify text-about text-base">
+            <div class="content hideContent mt-3 text-start text-about text-sm">
               {about}
             </div>
             <div class="show-more mt-2 text-left pb-4">
-              <button type="submit" id="show-text" class="text-accent"
+              <button type="submit" id="show-text" class="text-accent text-sm font-semibold"
                 >Show more</button
               >
             </div>
