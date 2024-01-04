@@ -33,9 +33,8 @@ const { username, title, about } = Astro.props;
         <div class="mx-auto max-w-screen-sm text-center">
           <div class="flex justify-center items-center pt-4">
             <img
-              class="w-52 h-52 lg:mb-6 mb-4"
+              class="w-52 h-52 lg:mb-6 mb-4 custom-image-border"
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
-              style="border-radius: 70px;"
             />
           </div>
           <div class="text-center pb-2">
@@ -71,6 +70,11 @@ const { username, title, about } = Astro.props;
       </div>
       <Footer />
     </section>
+    <style>
+      .custom-image-border{
+        border-radius: 70px;
+      }
+    </style>
     <script>
       const button = document.querySelector("div.show-more");
       const content = document.querySelector("div.content");
