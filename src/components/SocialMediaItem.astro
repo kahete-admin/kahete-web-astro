@@ -4,7 +4,7 @@ const { url } = Astro.props;
 
 <a href={url}>
   <div
-    class="flex space-x-3 justify-between border-2 border-neutral-100 rounded-lg text-white p-3 cursor-pointer hover:bg-neutral-700 mb-4"
+    class="flex space-x-3 justify-between py-4 rounded-lg text-white p-3 cursor-pointer hover:bg-neutral-700 mb-4 item-border"
   >
     <div class="flex">
       <div>
@@ -54,7 +54,9 @@ const { url } = Astro.props;
   </div>
 </a>
 <style>
-  * {
-    /* border: 1px solid red; */
+  .item-border {
+    border-width: 1.3px;
+    border-radius: 15px;
+    border-color: #939393;
   }
 </style>
