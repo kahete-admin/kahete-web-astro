@@ -23,48 +23,49 @@ const { username, title, about } = Astro.props;
       }
       .showContent {
         line-height: 1.3em;
-        /* height: auto; */
       }
     </style>
   </head>
   <body>
     <NavBarProfile />
     <section class="bg-background text-white">
-      <div class="py-8 px-2 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+      <div class="py-2 px-2 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div class="mx-auto max-w-screen-sm text-center">
           <div class="flex justify-center items-center">
             <img
-              class="rounded-full w-52 h-52 lg:mb-12 mb-4"
+              class="rounded-3xl w-52 h-52 lg:mb-6 mb-4"
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
             />
           </div>
-          <div class="p-5">
-            <h3 class="text-xl font-bold tracking-tight text-white">
+          <div class="text-center">
+            <h4 class="font-semibold text-white">
               {username}
-            </h3>
-            <span>{title}</span>
-
-            <div>
-              <div class="content hideContent mt-3 text-justify">
-                {about}
-              </div>
-              <div class="show-more my-2 text-left">
-                <button type="submit" id="show-text" class="text-accent">Show more</button>
-              </div>
-              <div class="flex gap-3">
-                <ContactButton buttonType="Phone" phone="+50377420064" />
-                <ContactButton buttonType="Email" email="email@email.com" />
-                <ContactButton buttonType="WhatsApp" phone="+50377420064" />
-              </div>
-            </div>
-            <!-- SOCIALMEDIA -->
-            <div>
-              <SocialMediaItem url="https://www.facebook.com" />
-              <SocialMediaItem />
-              <SocialMediaItem />
-            </div>
-            <!-- /SOCIALMEDIA -->
+            </h4>
+            <h6 class="text-white">{title}</h6>
           </div>
+
+          <div>
+            <div class="content hideContent mt-3 text-justify text-about">
+              {about}
+            </div>
+            <div class="show-more my-2 text-left">
+              <button type="submit" id="show-text" class="text-accent"
+                >Show more</button
+              >
+            </div>
+            <div class="flex gap-3">
+              <ContactButton buttonType="Phone" phone="+50377420064" />
+              <ContactButton buttonType="Email" email="email@email.com" />
+              <ContactButton buttonType="WhatsApp" phone="+50377420064" />
+            </div>
+          </div>
+          <!-- SOCIALMEDIA -->
+          <div>
+            <SocialMediaItem url="https://www.facebook.com" />
+            <SocialMediaItem />
+            <SocialMediaItem />
+          </div>
+          <!-- /SOCIALMEDIA -->
         </div>
       </div>
       <Footer />
