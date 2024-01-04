@@ -34,15 +34,15 @@ switch (buttonType) {
 ---
 
 <button
-  class="bg-main-buttons rounded-2xl text-white cursor-pointer hover:bg-neutral-700 mb-4 w-full py-1"
+  class="bg-main-buttons rounded-2xl text-white cursor-pointer hover:bg-neutral-700 w-full py-2 mb-3"
   onclick={url}
 >
   <div class="items-center justify-center">
     <img
       src={svgUrl}
       alt="image description"
-      class="h-8 justify-center w-full pt-2"
+      class="h-6 justify-center w-full"
     />
-    <span class="text-xs capitalize">{buttonType}</span>
+    <div class="text-xs capitalize pt-1">{buttonType}</div>
   </div>
 </button>
