@@ -34,21 +34,21 @@ const { username, title, about } = Astro.props;
     <section class="bg-background text-white">
       <div class="py-2 px-6 mx-auto max-w-screen-xl sm:py-8 lg:px-6">
         <div class="mx-auto max-w-screen-sm text-center">
-          <div class="flex justify-center items-center pt-4 lg:mb-6 mb-6 ">
+          <div class="flex justify-center items-center pt-4 lg:mb-6 mb-6">
             <img
               class="w-52 h-52 custom-image-border"
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
             />
           </div>
-          <div class="text-center pb-2">
+          <div class="text-center pb-2 text-xl">
             <h6 class="font-semibold text-white">
               {username}
             </h6>
-            <h6 class="text-white">{title}</h6>
+            <h6 class="text-white font-normal">{title}</h6>
           </div>
 
           <div>
-            <div class="content hideContent mt-3 text-justify text-about">
+            <div class="content hideContent mt-3 text-justify text-about text-base">
               {about}
             </div>
             <div class="show-more mt-2 text-left pb-4">
