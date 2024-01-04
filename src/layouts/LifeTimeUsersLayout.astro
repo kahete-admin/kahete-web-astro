@@ -15,7 +15,7 @@ const { username, title, about } = Astro.props;
     <style>
       .hideContent {
         line-height: 1.3em;
-        /* width: 100%; */
+        width: 98%;
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 2;
@@ -24,16 +24,19 @@ const { username, title, about } = Astro.props;
       .showContent {
         line-height: 1.3em;
       }
+      .custom-image-border {
+        border-radius: 70px;
+      }
     </style>
   </head>
   <body>
     <NavBarProfile />
     <section class="bg-background text-white">
-      <div class="py-2 px-10 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+      <div class="py-2 px-10 mx-auto max-w-screen-xl sm:py-8 lg:px-6">
         <div class="mx-auto max-w-screen-sm text-center">
-          <div class="flex justify-center items-center pt-4">
+          <div class="flex justify-center items-center pt-4 lg:mb-6 mb-6 ">
             <img
-              class="w-52 h-52 lg:mb-6 mb-4 custom-image-border"
+              class="w-52 h-52 custom-image-border"
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
             />
           </div>
@@ -48,7 +51,7 @@ const { username, title, about } = Astro.props;
             <div class="content hideContent mt-3 text-justify text-about">
               {about}
             </div>
-            <div class="show-more mt-2 text-left pb-6">
+            <div class="show-more mt-2 text-left pb-4">
               <button type="submit" id="show-text" class="text-accent"
                 >Show more</button
               >
@@ -70,11 +73,6 @@ const { username, title, about } = Astro.props;
       </div>
       <Footer />
     </section>
-    <style>
-      .custom-image-border{
-        border-radius: 70px;
-      }
-    </style>
     <script>
       const button = document.querySelector("div.show-more");
       const content = document.querySelector("div.content");
