@@ -1,5 +1,8 @@
 ---
 import download from "../../public/svg/download.svg";
+import { Image } from "astro:assets";
+// const kaheteLogo = "../";
+import logo from "../../public/logo.svg";
 ---
 
 <header>
@@ -10,19 +13,26 @@ import download from "../../public/svg/download.svg";
       class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
     >
       <a href="/" class="flex items-center">
-        <img
-          src="../kahete_icon_logo.svg"
-          class="h-10 lg:h-9"
+        <Image
+          height={40}
+          width={40}
+          src={logo}
           alt="Kahete Logo"
+          format={"avif"}
+          quality={"mid"}
         />
       </a>
       <div
         class="inline-flex items-center justify-center rounded-full bg-white hover:bg-neutral-700 hover:text-white active:text-white focus:text-white focus:bg-neutral-800 py-2 px-4 cursor-pointer"
       >
-        <img
-          src={download.src}
-          alt="image description"
-          class="h-6 justify-start pr-2"
+        <Image
+          height={30}
+          width={30}
+          src={download}
+          alt="Download contact"
+          format={"avif"}
+          quality={"mid"}
+          class="justify-start pr-2"
         />
         <span class="text-black font-semibold text-sm pr-2">Save contact</span>
       </div>

@@ -4,7 +4,9 @@ import Footer from "../components/Footer.astro";
 import SocialMediaItem from "../components/SocialMediaItem.astro";
 import NavBarProfile from "../components/NavBarProfile.astro";
 import ContactButton from "../components/ContactButton.astro";
-
+import { Image } from "astro:assets";
+const headerImage =
+  "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png";
 const { username, title, about } = Astro.props;
 ---
 
@@ -35,9 +37,14 @@ const { username, title, about } = Astro.props;
       <div class="py-2 px-6 mx-auto max-w-screen-xl sm:py-8 lg:px-6">
         <div class="mx-auto max-w-screen-sm text-center">
           <div class="flex justify-center items-center pt-4 lg:mb-6 mb-6">
-            <img
-              class="w-52 h-52 custom-image-border"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+            <Image
+              format={"avif"}
+              alt="header-picture"
+              class="custom-image-border"
+              src={headerImage}
+              quality={"mid"}
+              height={200}
+              width={200}
             />
           </div>
           <div class="text-center pb-2 text-base">
@@ -52,8 +59,10 @@ const { username, title, about } = Astro.props;
               {about}
             </div>
             <div class="show-more mt-2 text-left pb-4">
-              <button type="submit" id="show-text" class="text-accent text-sm font-semibold"
-                >Show more</button
+              <button
+                type="submit"
+                id="show-text"
+                class="text-accent text-sm font-semibold">Show more</button
               >
             </div>
             <div class="flex gap-3">
