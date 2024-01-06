@@ -1,7 +1,6 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
-import SocialMediaItem from "../components/SocialMediaItem.astro";
 import NavBarProfile from "../components/NavBarProfile.astro";
 import ContactButton from "../components/ContactButton.astro";
 import { Image } from "astro:assets";
@@ -73,9 +72,7 @@ const { username, title, about } = Astro.props;
           </div>
           <!-- SOCIALMEDIA -->
           <div>
-            <SocialMediaItem url="https://www.facebook.com" />
-            <SocialMediaItem />
-            <SocialMediaItem />
+            <slot />
           </div>
           <!-- /SOCIALMEDIA -->
         </div>

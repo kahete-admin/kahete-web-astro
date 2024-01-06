@@ -1,5 +1,105 @@
 ---
-const { url } = Astro.props;
+import { Image } from "astro:assets";
+import arrow_outward from "../../public/svg/arrow_outward.svg";
+import Youtube from "../../public/social_media_logos/youtube.svg";
+import Facebook from "../../public/social_media_logos/facebook.svg";
+import LinkedIn from "../../public/social_media_logos/linkedin.svg";
+import Dribble from "../../public/social_media_logos/dribble.svg";
+import Behance from "../../public/social_media_logos/behance.svg";
+import Instagram from "../../public/social_media_logos/instagram.svg";
+import Snapchat from "../../public/social_media_logos/snapchat.svg";
+import Github from "../../public/social_media_logos/github.svg";
+import XUrl from "../../public/social_media_logos/x.svg";
+import Spotify from "../../public/social_media_logos/spotify.svg";
+import Binance from "../../public/social_media_logos/binance.svg";
+import FBmessenger from "../../public/social_media_logos/fb-messenger.svg";
+import Twitch from "../../public/social_media_logos/twitch.svg";
+import Soundcloud from "../../public/social_media_logos/soundcloud.svg";
+import Slack from "../../public/social_media_logos/slack.svg";
+import Tinder from "../../public/social_media_logos/tinder.svg";
+import Airbnb from "../../public/social_media_logos/airbnb.svg";
+interface Props {
+  url: string;
+  socialMediaType:
+    | "Facebook"
+    | "Instagram"
+    | "Website"
+    | "Telegram"
+    | "Dribble"
+    | "Github"
+    | "Bēhance"
+    | "Youtube"
+    | "Discord"
+    | "Twitch"
+    | "Spotify"
+    | "LinkedIn"
+    | "Binance"
+    | "Snapchat"
+    | "Facebook Messenger"
+    | "Slack"
+    | "Tinder"
+    | "Soundcloud"
+    | "Airbnb"
+    | "X";
+}
+const { url, socialMediaType } = Astro.props;
+let IconUrl: ImageMetadata;
+switch (socialMediaType) {
+  case "Youtube":
+    IconUrl = Youtube;
+    break;
+  case "Facebook":
+    IconUrl = Facebook;
+    break;
+  case "Github":
+    IconUrl = Github;
+    break;
+  case "Bēhance":
+    IconUrl = Behance;
+    break;
+  case "Instagram":
+    IconUrl = Instagram;
+    break;
+  case "Snapchat":
+    IconUrl = Snapchat;
+    break;
+  case "LinkedIn":
+    IconUrl = LinkedIn;
+    break;
+  case "X":
+    IconUrl = XUrl;
+    break;
+  case "Dribble":
+    IconUrl = Dribble;
+    break;
+  case "Spotify":
+    IconUrl = Spotify;
+    break;
+  case "Facebook Messenger":
+    IconUrl = FBmessenger;
+    break;
+  case "Binance":
+    IconUrl = Binance;
+    break;
+  case "Twitch":
+    IconUrl = Twitch;
+    break;
+  case "Soundcloud":
+    IconUrl = Soundcloud;
+    break;
+  case "Tinder":
+    IconUrl = Tinder;
+    break;
+  case "Slack":
+    IconUrl = Slack;
+    break;
+  case "Airbnb":
+    IconUrl = Airbnb;
+    break;
+
+  default:
+    break;
+}
 ---
 
 <a href={url}>
@@ -7,42 +107,24 @@ const { url } = Astro.props;
     class="flex justify-between items-center rounded-lg text-white cursor-pointer mb-4 item-border p-4"
   >
     <div class="flex items-center gap-3">
-      <svg
-        class="w-6 h-6"
-        fill="currentColor"
-        viewBox="0 0 24 24"
-        aria-hidden="true"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-          clip-rule="evenodd"></path></svg
-      >
-      <div class="text-base text-start items-center">Facebook</div>
+      <Image
+        format={"avif"}
+        alt="arrow_outward"
+        src={IconUrl!}
+        quality={"high"}
+        height={24}
+        width={24}
+      />
+      <div class="text-base text-start items-center">{socialMediaType}</div>
     </div>
-    <svg
-      class="w-6 h-6"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <mask
-        id="mask0_1_113"
-        style="mask-type:alpha"
-        maskUnits="userSpaceOnUse"
-        x="0"
-        y="0"
-        width="24"
-        height="24"
-      >
-        <rect width="24" height="24" fill="#D9D9D9"></rect>
-      </mask>
-      <g mask="url(#mask0_1_113)">
-        <path
-          d="M16 8.4L7.09999 17.3C6.91665 17.4833 6.68332 17.575 6.39999 17.575C6.11665 17.575 5.88332 17.4833 5.69999 17.3C5.51665 17.1167 5.42499 16.8833 5.42499 16.6C5.42499 16.3167 5.51665 16.0833 5.69999 15.9L14.6 7H6.99999C6.71665 7 6.47915 6.90417 6.28749 6.7125C6.09582 6.52083 5.99999 6.28333 5.99999 6C5.99999 5.71667 6.09582 5.47917 6.28749 5.2875C6.47915 5.09583 6.71665 5 6.99999 5H17C17.2833 5 17.5208 5.09583 17.7125 5.2875C17.9042 5.47917 18 5.71667 18 6V16C18 16.2833 17.9042 16.5208 17.7125 16.7125C17.5208 16.9042 17.2833 17 17 17C16.7167 17 16.4792 16.9042 16.2875 16.7125C16.0958 16.5208 16 16.2833 16 16V8.4Z"
-          fill="white"></path>
-      </g>
-    </svg>
+    <Image
+      format={"arrow_outward"}
+      alt="header-picture"
+      src={arrow_outward}
+      quality={"mid"}
+      height={24}
+      width={24}
+    />
   </div>
 </a>
 <style>
