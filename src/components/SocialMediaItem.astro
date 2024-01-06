@@ -18,6 +18,7 @@ import Soundcloud from "../../public/social_media_logos/soundcloud.svg";
 import Slack from "../../public/social_media_logos/slack.svg";
 import Tinder from "../../public/social_media_logos/tinder.svg";
 import Airbnb from "../../public/social_media_logos/airbnb.svg";
+import TikTok from "../../public/social_media_logos/tiktok.svg";
 interface Props {
   url: string;
   socialMediaType:
@@ -40,6 +41,7 @@ interface Props {
     | "Tinder"
     | "Soundcloud"
     | "Airbnb"
+    | "Tik Tok"
     | "X";
 }
 const { url, socialMediaType } = Astro.props;
@@ -95,6 +97,9 @@ switch (socialMediaType) {
     break;
   case "Airbnb":
     IconUrl = Airbnb;
+    break;
+  case "Tik Tok":
+    IconUrl = TikTok;
     break;
 
   default:
