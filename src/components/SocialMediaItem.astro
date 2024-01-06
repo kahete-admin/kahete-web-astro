@@ -12,13 +12,14 @@ import Github from "../../public/social_media_logos/github.svg";
 import XUrl from "../../public/social_media_logos/x.svg";
 import Spotify from "../../public/social_media_logos/spotify.svg";
 import Binance from "../../public/social_media_logos/binance.svg";
-import FBmessenger from "../../public/social_media_logos/fb-messenger.svg";
+import FBmessenger from "../../public/social_media_logos/messenger.svg";
 import Twitch from "../../public/social_media_logos/twitch.svg";
 import Soundcloud from "../../public/social_media_logos/soundcloud.svg";
 import Slack from "../../public/social_media_logos/slack.svg";
 import Tinder from "../../public/social_media_logos/tinder.svg";
 import Airbnb from "../../public/social_media_logos/airbnb.svg";
 import TikTok from "../../public/social_media_logos/tiktok.svg";
+import Telegram from "../../public/social_media_logos/telegram.svg";
 interface Props {
   url: string;
   socialMediaType:
@@ -42,8 +43,9 @@ interface Props {
     | "Soundcloud"
     | "Airbnb"
     | "Tik Tok"
+    | "Telegram"
     | "X";
-}
+  }
 const { url, socialMediaType } = Astro.props;
 let IconUrl: ImageMetadata;
 switch (socialMediaType) {
@@ -100,6 +102,9 @@ switch (socialMediaType) {
     break;
   case "Tik Tok":
     IconUrl = TikTok;
+    break;
+  case "Telegram":
+    IconUrl = Telegram;
     break;
 
   default:
