@@ -4,9 +4,8 @@ import Footer from "../components/Footer.astro";
 import NavBarProfile from "../components/NavBarProfile.astro";
 import ContactButton from "../components/ContactButton.astro";
 import { Image } from "astro:assets";
-const headerImage =
-  "https://kahete.com/wp-content/uploads/2023/09/anabella-gardner-profile-picture.jpg";
-const { username, title, about } = Astro.props;
+import blogPlaceholder from "../../public/blog-placeholder-1.jpg"
+const { username, title, about, profile_picture, phone_number,email } = Astro.props;
 ---
 
 <!doctype html>
@@ -38,9 +37,9 @@ const { username, title, about } = Astro.props;
           <div class="flex justify-center items-center pt-4 lg:mb-6 mb-6">
             <Image
               format={"avif"}
-              alt="header-picture"
+              alt={username}
               class="custom-image-border"
-              src={headerImage}
+              src={profile_picture ? profile_picture : blogPlaceholder}
               quality={"mid"}
               height={200}
               width={200}
@@ -65,9 +64,9 @@ const { username, title, about } = Astro.props;
               >
             </div>
             <div class="flex gap-3">
-              <ContactButton buttonType="Phone" phone="+50377420064" />
-              <ContactButton buttonType="Email" email="email@email.com" />
-              <ContactButton buttonType="WhatsApp" phone="+50377420064" />
+              <ContactButton buttonType="Phone" phone={phone_number}/>
+              <ContactButton buttonType="Email" email={email}/>
+              <ContactButton buttonType="WhatsApp" phone={phone_number}/>
             </div>
           </div>
           <!-- SOCIALMEDIA -->

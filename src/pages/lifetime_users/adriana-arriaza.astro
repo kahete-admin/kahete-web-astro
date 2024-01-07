@@ -1,0 +1,25 @@
+---
+import SocialMediaItem from "../../components/SocialMediaItem.astro";
+import BasicProfile from "../../layouts/BasicProfile.astro";
+import incomingData from "../../data/adriana-arriaza.json";
+---
+
+<BasicProfile
+  username={incomingData.username}
+  title={incomingData.title}
+  about={incomingData.about}
+  profile_picture={incomingData.profile_picture}
+>
+  {
+    incomingData.social_links.map(
+      (socialMedia: { social_media: any; url: string }) => {
+        return (
+          <SocialMediaItem
+            socialMediaType={socialMedia.social_media}
+            url={socialMedia.url}
+          />
+        );
+      }
+    )
+  }
+</BasicProfile>
