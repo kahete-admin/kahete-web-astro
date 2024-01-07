@@ -1,32 +1,33 @@
 ---
-import call from "../../public/svg/call.svg";
-import mail from "../../public/svg/mail.svg";
-import whatsapp from "../../public/svg/whatsapp.svg";
+import Call from "../../public/svg/call.svg";
+import Mail from "../../public/svg/mail.svg";
+import Whatsapp from "../../public/svg/whatsapp.svg";
 
 interface Props {
   buttonType: "WhatsApp" | "Phone" | "Email";
   email?: string;
   phone?: string;
+  whatsapp?:string;
 }
 
-const { buttonType, email, phone } = Astro.props;
+const { buttonType, email, phone,whatsapp } = Astro.props;
 let svgUrl: string = "";
 let url: string = "";
 
 switch (buttonType) {
   case "WhatsApp":
-    svgUrl = whatsapp.src;
-    url = `location.href='https://wa.me/${phone ?? ""}'`;
+    svgUrl = Whatsapp.src;
+    url = `location.href='https://wa.me/${whatsapp ?? ""}'`;
 
     break;
   case "Email":
     url = `location.href='mailto:${email ?? ""}'`;
-    svgUrl = mail.src;
+    svgUrl = Mail.src;
 
     break;
   case "Phone":
-    svgUrl = call.src;
-    url = `location.href='tel:${phone ?? ""}'`;
+    svgUrl = Call.src;
+    url = `location.href='tel:${whatsapp ?? ""}'`;
     break;
   default:
     break;

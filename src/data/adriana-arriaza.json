@@ -3,11 +3,11 @@
   "title": "Corredor de Seguros",
   "about": "Soy asesora independiente de seguros, autorizada por la SSF, que trabaja con las mejores Aseguradoras de mercado, ofreciendo un servicio personalizado mediante un análisis de riesgos para buscar la mejor opción de cobertura que se adapte a las necesidades de mis clientes.",
   "profile_picture": "https://kahete.com/wp-content/uploads/2023/03/500x500-39.jpg",
-  "phone_number": "+1 (503) 7857 8020",
+  "phone_number": "+(503) 7857-8020",
   "email":"adrianaseguros9@gmail.com",
+  "whatsapp": "50378578020",
   "social_links":[
-    {"social_media": "X","url":"www.x.com"},
-    {"social_media": "Youtube","url":"www.x.com"},
-    {"social_media": "Facebook","url":"www.x.com"}
+    {"social_media": "LinkedIn","url":"https://www.linkedin.com/in/nicole-arriaza-ortiz-a42769192/"},
+    {"social_media": "Instagram","url":"https://www.instagram.com/adriseguros9/?igshid=YmMyMTA2M2Y%3D"}
   ]
 }
