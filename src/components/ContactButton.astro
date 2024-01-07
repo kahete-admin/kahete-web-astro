@@ -13,7 +13,7 @@ interface Props {
 const { buttonType, email, phone,whatsapp } = Astro.props;
 let svgUrl: string = "";
 let url: string = "";
-console.log("WA", whatsapp!)
+
 switch (buttonType) {
   case "WhatsApp":
     svgUrl = Whatsapp.src;
