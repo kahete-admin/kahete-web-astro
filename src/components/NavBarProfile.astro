@@ -84,6 +84,42 @@ const contactInformation = {
     window.URL.revokeObjectURL(url);
     document.body.removeChild(a);
   }
+
+  function createVCFWithPicture(contactInfo) {
+    const vcfContent = `
+BEGIN:VCARD
+VERSION:3.0
+FN:${contactInfo.fullName}
+ORG:${contactInfo.organization}
+TEL:${contactInfo.phone}
+EMAIL:${contactInfo.email}
+PHOTO;TYPE=JPEG:${contactInfo.photoBase64}
+END:VCARD
+`;
+
+    const blob = new Blob([vcfContent], { type: "text/vcard;charset=utf-8" });
+    const url = window.URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.style.display = "none";
+    a.href = url;
+    a.download = `${username}.vcf`;
+
+    document.body.appendChild(a);
+
+    // Triggering click event to download
+    if (document.createEvent) {
+      const event = document.createEvent("MouseEvents");
+      event.initEvent("click", true, false);
+      a.dispatchEvent(event);
+    } else {
+      a.click();
+    }
+
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+  }
+
   const vcfButton = document.getElementById("createVCFCardButton");
-  vcfButton?.addEventListener("click", () => createVCF(contactInformation));
+  vcfButton?.addEventListener("click", () => createVCFWithPicture(contactInformation));
 </script>
