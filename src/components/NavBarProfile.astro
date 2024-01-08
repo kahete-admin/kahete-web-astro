@@ -76,7 +76,7 @@ const contactInformation = {
     const a = document.createElement("a");
     a.style.display = "none";
     a.href = url;
-    a.download = `${contactInfo.username}.vcf`;
+    a.download = "contact.vcf";
 
     document.body.appendChild(a);
     a.click();
