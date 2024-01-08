@@ -89,11 +89,11 @@ const contactInformation = {
     const vcfContent = `
 BEGIN:VCARD
 VERSION:3.0
-FN:${contactInfo.fullName}
-ORG:${contactInfo.organization}
-TEL:${contactInfo.phone}
+FN:${contactInfo.username}
+TITLE:${contactInfo.title}
+TEL:${contactInfo.phone_number}
 EMAIL:${contactInfo.email}
-PHOTO;TYPE=JPEG:${contactInfo.photoBase64}
+PHOTO;TYPE=JPEG:${contactInfo.profile_picture}
 END:VCARD
 `;
 
@@ -103,7 +103,7 @@ END:VCARD
     const a = document.createElement("a");
     a.style.display = "none";
     a.href = url;
-    a.download = `${username}.vcf`;
+    a.download = `${contactInfo.username}.vcf`;
 
     document.body.appendChild(a);
 
