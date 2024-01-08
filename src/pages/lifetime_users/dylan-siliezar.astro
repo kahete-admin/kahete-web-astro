@@ -2,7 +2,6 @@
 import SocialMediaItem from "../../components/SocialMediaItem.astro";
 import BasicProfile from "../../layouts/BasicProfile.astro";
 import incomingData from "../../data/dylan-siliezar.json";
-import VCard from "vcard-creator";
 ---
 
 <BasicProfile
@@ -14,7 +13,6 @@ import VCard from "vcard-creator";
   email={incomingData.email}
   whatsapp={incomingData.whatsapp}
 >
-  <button (click)="createVCF(contactInformation)">sdasd</button>
   {
     incomingData.social_links.map(
       (socialMedia: { social_media: any; url: string }) => {
@@ -28,51 +26,3 @@ import VCard from "vcard-creator";
     )
   }
 </BasicProfile>
-
-<script>interface ContactInfo {
-  fullName: string;
-  organization: string;
-  phone: string;
-  email: string;
-  photoURL: string; // URL to the photo
-}
-
-function createVCF(contactInfo: ContactInfo): void {
-  const vcfContent: string = `
-BEGIN:VCARD
-VERSION:3.0
-FN:${contactInfo.fullName}
-ORG:${contactInfo.organization}
-TEL:${contactInfo.phone}
-EMAIL:${contactInfo.email}
-PHOTO;VALUE=URL:${contactInfo.photoURL}
-END:VCARD
-`;
-
-  const blob: Blob = new Blob([vcfContent], { type: 'text/vcard' });
-  const url: string = window.URL.createObjectURL(blob);
-
-  const a: HTMLAnchorElement = document.createElement('a');
-  a.style.display = 'none';
-  a.href = url;
-  a.download = 'contact.vcf';
-
-  document.body.appendChild(a);
-  a.click();
-
-  window.URL.revokeObjectURL(url);
-  document.body.removeChild(a);
-}
-
-// Example usage:
-const contactInformation: ContactInfo = {
-  fullName: 'John Doe',
-  organization: 'ABC Company',
-  phone: '+1234567890',
-  email: 'john.doe@example.com',
-  photoURL: 'https://example.com/john-doe-photo.jpg', // Replace with the actual URL of the photo
-};
-
-createVCF(contactInformation);
-
-</script>

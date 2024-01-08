@@ -2,6 +2,22 @@
 import download from "../../public/svg/download.svg";
 import logo from "../../public/svg/logo.svg";
 import { Image } from "astro:assets";
+interface Props {
+  username: string;
+  title: string;
+  phone_number: string;
+  email: string;
+  profile_picture: string; // URL to the photo
+}
+
+const { username, title, profile_picture, phone_number, email } = Astro.props;
+const contactInformation = {
+  username: username,
+  title: title,
+  phone_number: phone_number,
+  email: email,
+  profile_picture: profile_picture,
+};
 ---
 
 <header>
@@ -21,8 +37,10 @@ import { Image } from "astro:assets";
           quality={"mid"}
         />
       </a>
-      <div
-        class="inline-flex items-center justify-center rounded-full bg-white hover:bg-neutral-700 hover:text-white active:text-white focus:text-white focus:bg-neutral-800 py-2 px-4 cursor-pointer"
+      <button
+        id="createVCFCardButton"
+        type="submit"
+        class="inline-flex items-center justify-center rounded-full bg-white py-2 px-4 cursor-pointer"
       >
         <Image
           height={30}
@@ -34,7 +52,38 @@ import { Image } from "astro:assets";
           class="justify-start pr-2"
         />
         <span class="text-black font-semibold text-sm pr-2">Save contact</span>
-      </div>
+      </button>
     </div>
   </nav>
 </header>
+
+<script define:vars={{ contactInformation }}>
+  function createVCF(contactInfo) {
+    const vcfContent = `
+  BEGIN:VCARD
+  VERSION:3.0
+  FN:${contactInfo.username}
+  TITLE:${contactInfo.title}
+  TEL:${contactInfo.phone_number}
+  EMAIL:${contactInfo.email}
+  PHOTO;VALUE=URL:${contactInfo.profile_picture}
+  END:VCARD
+  `;
+
+    const blob = new Blob([vcfContent], { type: "text/vcard" });
+    const url = window.URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.style.display = "none";
+    a.href = url;
+    a.download = `${contactInfo.username}.vcf`;
+
+    document.body.appendChild(a);
+    a.click();
+
+    window.URL.revokeObjectURL(url);
+    document.body.removeChild(a);
+  }
+  const vcfButton = document.getElementById("createVCFCardButton");
+  vcfButton?.addEventListener("click", () => createVCF(contactInformation));
+</script>

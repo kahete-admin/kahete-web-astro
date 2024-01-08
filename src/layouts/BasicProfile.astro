@@ -4,8 +4,16 @@ import Footer from "../components/Footer.astro";
 import NavBarProfile from "../components/NavBarProfile.astro";
 import ContactButton from "../components/ContactButton.astro";
 import { Image } from "astro:assets";
-import blogPlaceholder from "../../public/blog-placeholder-1.jpg"
-const { username, title, about, profile_picture, phone_number,email, whatsapp } = Astro.props;
+import blogPlaceholder from "../../public/blog-placeholder-1.jpg";
+const {
+  username,
+  title,
+  about,
+  profile_picture,
+  phone_number,
+  email,
+  whatsapp,
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -30,7 +38,13 @@ const { username, title, about, profile_picture, phone_number,email, whatsapp } 
     </style>
   </head>
   <body>
-    <NavBarProfile />
+    <NavBarProfile
+      username={username}
+      title={title}
+      profile_picture={profile_picture}
+      phone_number={phone_number}
+      email={email}
+    />
     <section class="bg-background text-white">
       <div class="py-2 px-6 mx-auto max-w-screen-xl sm:py-8 lg:px-6">
         <div class="mx-auto max-w-screen-sm text-center">
@@ -64,9 +78,13 @@ const { username, title, about, profile_picture, phone_number,email, whatsapp } 
               >
             </div>
             <div class="flex gap-3">
-              <ContactButton buttonType="Phone" phone={phone_number} whatsapp={whatsapp}/>
-              <ContactButton buttonType="Email" email={email}/>
-              <ContactButton buttonType="WhatsApp" whatsapp={whatsapp}/>
+              <ContactButton
+                buttonType="Phone"
+                phone={phone_number}
+                whatsapp={whatsapp}
+              />
+              <ContactButton buttonType="Email" email={email} />
+              <ContactButton buttonType="WhatsApp" whatsapp={whatsapp} />
             </div>
           </div>
           <!-- SOCIALMEDIA -->
