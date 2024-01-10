@@ -58,44 +58,17 @@ const contactInformation = {
 </header>
 
 <script define:vars={{ contactInformation }}>
-  function createVCF(contactInfo) {
-    const vcfContent = `
-  BEGIN:VCARD
-  VERSION:3.0
-  FN:${contactInfo.username}
-  TITLE:${contactInfo.title}
-  TEL:${contactInfo.phone_number}
-  EMAIL:${contactInfo.email}
-  PHOTO;VALUE=URL:${contactInfo.profile_picture}
-  END:VCARD
-  `;
-
-    const blob = new Blob([vcfContent], { type: "text/vcard" });
-    const url = window.URL.createObjectURL(blob);
-
-    const a = document.createElement("a");
-    a.style.display = "none";
-    a.href = url;
-    a.download = "contact.vcf";
-
-    document.body.appendChild(a);
-    a.click();
-
-    window.URL.revokeObjectURL(url);
-    document.body.removeChild(a);
-  }
-
   function createVCFWithPicture(contactInfo) {
     const vcfContent = `
-BEGIN:VCARD
-VERSION:3.0
-FN:${contactInfo.username}
-TITLE:${contactInfo.title}
-TEL:${contactInfo.phone_number}
-EMAIL:${contactInfo.email}
-PHOTO;TYPE=JPEG:${contactInfo.profile_picture}
-END:VCARD
-`;
+    BEGIN:VCARD
+    VERSION:3.0
+    FN:${contactInfo.username}
+    TITLE:${contactInfo.title}
+    TEL:${contactInfo.phone_number}
+    EMAIL:${contactInfo.email}
+    PHOTO;VALUE=URL:${contactInfo.profile_picture}
+    END:VCARD
+    `;
 
     const blob = new Blob([vcfContent], { type: "text/vcard;charset=utf-8" });
     const url = window.URL.createObjectURL(blob);
@@ -121,5 +94,7 @@ END:VCARD
   }
 
   const vcfButton = document.getElementById("createVCFCardButton");
-  vcfButton?.addEventListener("click", () => createVCFWithPicture(contactInformation));
+  vcfButton?.addEventListener("click", () =>
+    createVCFWithPicture(contactInformation)
+  );
 </script>
