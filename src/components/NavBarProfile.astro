@@ -87,15 +87,15 @@ const contactInformation = {
 
   function createVCFWithPicture(contactInfo) {
     const vcfContent = `
-    BEGIN:VCARD
-    VERSION:3.0
-    FN:${contactInfo.username}
-    TITLE:${contactInfo.title}
-    TEL:${contactInfo.phone_number}
-    EMAIL:${contactInfo.email}
-    END:VCARD
-    `;
-
+BEGIN:VCARD
+VERSION:3.0
+FN:${contactInfo.username}
+TITLE:${contactInfo.title}
+TEL:${contactInfo.phone_number}
+EMAIL:${contactInfo.email}
+PHOTO;VALUE=URL:${contactInfo.profile_picture}
+END:VCARD
+`;
 
     const blob = new Blob([vcfContent], { type: "text/vcard" });
     const url = window.URL.createObjectURL(blob);
