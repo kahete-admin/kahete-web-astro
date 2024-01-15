@@ -81,27 +81,24 @@ const contactInformation = {
   var imageUrl = contactInformation.profile_picture;
   var base64ProfileImage;
 
-  console.log(
-    "DATA",
+  function createVCFWithPicture(contactInfo) {
     convertImageToBase64(imageUrl, function (base64) {
       //  console.log('BASE 64', base64);
       // console.log("BASE 64", base64.replace("data:image/png;base64,", ""));
       base64ProfileImage = base64.replace("data:image/png;base64,", "");
       console.log("BASE 64", base64ProfileImage);
-    })
-  );
+    });
 
-  function createVCFWithPicture(contactInfo) {
     const vcfContent = `
-BEGIN:VCARD
-VERSION:3.0
-FN;CHARSET=UTF-8:${contactInfo.username}
-TITLE;CHARSET=UTF-8:${contactInfo.title}
-TEL:${contactInfo.phone_number}
-EMAIL:${contactInfo.email}
-PHOTO;ENCODING=b;TYPE=JPEG:${base64ProfileImage}
-END:VCARD
-`;
+      BEGIN:VCARD
+      VERSION:3.0
+      FN;CHARSET=UTF-8:${contactInfo.username}
+      TITLE;CHARSET=UTF-8:${contactInfo.title}
+      TEL:${contactInfo.phone_number}
+      EMAIL:${contactInfo.email}
+      PHOTO;ENCODING=b;TYPE=PNG:${base64ProfileImage}
+      END:VCARD
+      `;
 
     const blob = new Blob([vcfContent], { type: "text/vcard" });
     const url = window.URL.createObjectURL(blob);
