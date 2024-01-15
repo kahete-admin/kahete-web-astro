@@ -89,10 +89,10 @@ const contactInformation = {
     const vcfContent = `
     BEGIN:VCARD
     VERSION:3.0
-    FN;CHARSET=UTF-8:${contactInfo.username}
-    TITLE;CHARSET=UTF-8:${contactInfo.title}
+    FN:${contactInfo.username}
+    TITLE:${contactInfo.title}
     TEL:${contactInfo.phone_number}
-    EMAIL;CHARSET=UTF-8:${contactInfo.email}
+    EMAIL:${contactInfo.email}
     END:VCARD
     `;
 
