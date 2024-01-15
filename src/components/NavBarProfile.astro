@@ -86,16 +86,16 @@ const contactInformation = {
   }
 
   function createVCFWithPicture(contactInfo) {
-      const vcfContent = `
-      BEGIN:VCARD
-      VERSION:3.0
-      FN;CHARSET=UTF-8:${contactInfo.username}
-      TITLE;CHARSET=UTF-8::${contactInfo.title}
-      TEL:${contactInfo.phone_number}
-      EMAIL;CHARSET=UTF-8;type=HOME,INTERNET::${contactInfo.email}
-      PHOTO;ENCODING=BASE64;TYPE=JPEG;VALUE=URL:${contactInfo.profile_picture}
-      END:VCARD
-      `;
+    const vcfContent = `
+    BEGIN:VCARD
+    VERSION:3.0
+    FN;CHARSET=UTF-8:${contactInfo.username}
+    TITLE;CHARSET=UTF-8::${contactInfo.title}
+    TEL:${contactInfo.phone_number}
+    EMAIL;CHARSET=UTF-8;type=HOME,INTERNET::${contactInfo.email}
+    PHOTO;VALUE=URL:${contactInfo.profile_picture}
+    END:VCARD
+    `;
 
     const blob = new Blob([vcfContent], { type: "text/vcard" });
     const url = window.URL.createObjectURL(blob);
