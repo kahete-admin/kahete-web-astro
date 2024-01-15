@@ -92,9 +92,10 @@ const contactInformation = {
     FN;CHARSET=UTF-8:${contactInfo.username}
     TITLE;CHARSET=UTF-8:${contactInfo.title}
     TEL:${contactInfo.phone_number}
-    EMAIL;${contactInfo.email}
+    EMAIL;CHARSET=UTF-8:${contactInfo.email}
     END:VCARD
     `;
+
 
     const blob = new Blob([vcfContent], { type: "text/vcard" });
     const url = window.URL.createObjectURL(blob);
