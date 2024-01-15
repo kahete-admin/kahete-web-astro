@@ -34,7 +34,9 @@ const contactInformation = {
           src={logo}
           alt="Kahete Logo"
           format={"avif"}
+          class="profileImage"
           quality={"mid"}
+          crossorigin="anonymous"
         />
       </a>
       <button
@@ -58,19 +60,26 @@ const contactInformation = {
 </header>
 
 <script define:vars={{ contactInformation }}>
-  const imageUrlToBase64 = async (url) => {
-    const data = await fetch(url);
-    const blob = await data.blob();
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.readAsDataURL(blob);
-      reader.onloadend = () => {
-        const base64data = reader.result;
-        resolve(base64data);
-      };
-      reader.onerror = reject;
-    });
-  };
+  function convertImageToBase64(url, callback) {
+    var img = new Image();
+    img.crossOrigin = "Anonymous";
+
+    img.onload = function () {
+      var canvas = document.createElement("canvas");
+      canvas.width = img.width;
+      canvas.height = img.height;
+
+      var ctx = canvas.getContext("2d");
+      ctx.drawImage(img, 0, 0);
+
+      var dataURL = canvas.toDataURL("image/png");
+      callback(dataURL);
+    };
+
+    img.src = url;
+  }
+
+  // WDASDa
   function createVCFWithPicture(contactInfo) {
     const vcfContent = `
 BEGIN:VCARD
@@ -79,7 +88,9 @@ FN;CHARSET=UTF-8:${contactInfo.username}
 TITLE;CHARSET=UTF-8:${contactInfo.title}
 TEL:${contactInfo.phone_number}
 EMAIL:${contactInfo.email}
-PHOTO;JPEG:${contactInfo.profile_picture}
+PHOTO;ENCODING=b;TYPE=JPEG:${imageUrlToBase64(
+      contactInformation.profile_picture
+    )}
 END:VCARD
 `;
 
@@ -105,10 +116,14 @@ END:VCARD
     document.body.removeChild(a);
     window.URL.revokeObjectURL(url);
   }
+  var imageUrl = contactInformation.profile_picture;
 
   const vcfButton = document.getElementById("createVCFCardButton");
   vcfButton?.addEventListener("click", () => {
     // createVCFWithPicture(contactInformation);
-    imageUrlToBase64(contactInformation.profile_picture);
+    convertImageToBase64(imageUrl, function (base64) {
+      console.log("Base64 representation:", base64);
+      // You can use the base64 data as needed (e.g., send it to the server, display it in an image tag, etc.)
+    });
   });
 </script>
