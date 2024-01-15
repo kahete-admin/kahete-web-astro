@@ -83,10 +83,7 @@ const contactInformation = {
 
   function createVCFWithPicture(contactInfo) {
     convertImageToBase64(imageUrl, function (base64) {
-      //  console.log('BASE 64', base64);
-      // console.log("BASE 64", base64.replace("data:image/png;base64,", ""));
       base64ProfileImage = base64.replace("data:image/png;base64,", "");
-      console.log("BASE 64", base64ProfileImage);
     });
 
     const vcfContent = `
@@ -96,7 +93,7 @@ const contactInformation = {
       TITLE;CHARSET=UTF-8:${contactInfo.title}
       TEL:${contactInfo.phone_number}
       EMAIL:${contactInfo.email}
-      PHOTO;ENCODING=b;TYPE=PNG:${base64ProfileImage}
+      PHOTO;ENCODING=b;TYPE=PNG:/${base64ProfileImage}
       END:VCARD
       `;
 
