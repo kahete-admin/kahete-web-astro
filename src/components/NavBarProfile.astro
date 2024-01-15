@@ -34,9 +34,7 @@ const contactInformation = {
           src={logo}
           alt="Kahete Logo"
           format={"avif"}
-          class="profileImage"
           quality={"mid"}
-          crossorigin="anonymous"
         />
       </a>
       <button
@@ -60,44 +58,17 @@ const contactInformation = {
 </header>
 
 <script define:vars={{ contactInformation }}>
-  function convertImageToBase64(url, callback) {
-    var img = new Image();
-    img.crossOrigin = "Anonymous";
-
-    img.onload = function () {
-      var canvas = document.createElement("canvas");
-      canvas.width = img.width;
-      canvas.height = img.height;
-
-      var ctx = canvas.getContext("2d");
-      ctx.drawImage(img, 0, 0);
-
-      var dataURL = canvas.toDataURL("image/png");
-      callback(dataURL);
-    };
-
-    img.src = url;
-  }
-  var imageUrl = contactInformation.profile_picture;
-  var base64ProfileImage;
-
-  convertImageToBase64(imageUrl, function (base64) {
-    //  console.log('BASE 64', base64);
-    // console.log("BASE 64", base64.replace("data:image/png;base64,", ""));
-    base64ProfileImage = base64.replace("data:image/png;base64,", "");
-    console.log("BASE 64", base64ProfileImage);
-  });
-
   function createVCFWithPicture(contactInfo) {
-      const vcfContent = `
-      BEGIN:VCARD
-      VERSION:3.0
-      FN;CHARSET=UTF-8:${contactInfo.username}
-      TITLE;CHARSET=UTF-8:${contactInfo.title}
-      TEL:${contactInfo.phone_number}
-      EMAIL:${contactInfo.email}
-      END:VCARD
-      `;
+    const vcfContent = `
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:${contactInfo.username}
+TITLE;CHARSET=UTF-8:${contactInfo.title}
+TEL:${contactInfo.phone_number}
+EMAIL:${contactInfo.email}
+PHOTO;JPEG:${contactInfo.profile_picture}
+END:VCARD
+`;
 
     const blob = new Blob([vcfContent], { type: "text/vcard" });
     const url = window.URL.createObjectURL(blob);
