@@ -78,6 +78,12 @@ const contactInformation = {
 
     img.src = url;
   }
+  var imageUrl = contactInformation.profile_picture;
+  var base64ProfileImage;
+  convertImageToBase64(imageUrl, function (base64) {
+    base64ProfileImage = base64;
+    // You can use the base64 data as needed (e.g., send it to the server, display it in an image tag, etc.)
+  });
 
   // WDASDa
   function createVCFWithPicture(contactInfo) {
@@ -88,9 +94,7 @@ FN;CHARSET=UTF-8:${contactInfo.username}
 TITLE;CHARSET=UTF-8:${contactInfo.title}
 TEL:${contactInfo.phone_number}
 EMAIL:${contactInfo.email}
-PHOTO;ENCODING=b;TYPE=JPEG:${imageUrlToBase64(
-      contactInformation.profile_picture
-    )}
+PHOTO;ENCODING=b;TYPE=JPEG:${base64ProfileImage}
 END:VCARD
 `;
 
@@ -116,14 +120,9 @@ END:VCARD
     document.body.removeChild(a);
     window.URL.revokeObjectURL(url);
   }
-  var imageUrl = contactInformation.profile_picture;
 
   const vcfButton = document.getElementById("createVCFCardButton");
-  vcfButton?.addEventListener("click", () => {
-    // createVCFWithPicture(contactInformation);
-    convertImageToBase64(imageUrl, function (base64) {
-      console.log("Base64 representation:", base64);
-      // You can use the base64 data as needed (e.g., send it to the server, display it in an image tag, etc.)
-    });
-  });
+  vcfButton?.addEventListener("click", () =>
+    createVCFWithPicture(contactInformation)
+  );
 </script>
