@@ -125,7 +125,8 @@ END:VCARD
   const vcfButton = document.getElementById("createVCFCardButton");
   vcfButton?.addEventListener("click", () =>
   console.log('DATA', convertImageToBase64(imageUrl, function (base64) {
-   console.log('BASE 64', base64);
+  //  console.log('BASE 64', base64);
+   console.log('BASE 64', base64.replace("data:image/png;base64,", ""));
   }))
     // createVCFWithPicture(contactInformation)
   );
