@@ -80,11 +80,11 @@ const contactInformation = {
   }
   var imageUrl = contactInformation.profile_picture;
   var base64ProfileImage;
-  convertImageToBase64(imageUrl, function (base64) {
+
+console.log('DATA', convertImageToBase64(imageUrl, function (base64) {
     base64ProfileImage = base64;
     // You can use the base64 data as needed (e.g., send it to the server, display it in an image tag, etc.)
-  });
-console.log(base64ProfileImage);
+  }));
 
 
   function createVCFWithPicture(contactInfo) {
@@ -124,6 +124,10 @@ END:VCARD
 
   const vcfButton = document.getElementById("createVCFCardButton");
   vcfButton?.addEventListener("click", () =>
-    createVCFWithPicture(contactInformation)
+  console.log('DATA', convertImageToBase64(imageUrl, function (base64) {
+    base64ProfileImage = base64;
+    // You can use the base64 data as needed (e.g., send it to the server, display it in an image tag, etc.)
+  }));
+    // createVCFWithPicture(contactInformation)
   );
 </script>
