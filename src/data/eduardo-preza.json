@@ -1,0 +1,12 @@
+{
+  "username": "Eduardo Preza",
+  "title": "Gerente general​",
+  "about": "Somos Consultores de Auditoría Fiscal y Financiera,  estamos comprometidos con los valores éticos que garantizan la satisfacción de las necesidades de nuestros clientes y nos permita cumplir los objetivos de la firma.",
+  "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705550818/kahete/eduardo-preza_h2unyg.jpg",
+  "phone_number": "+(503) 7630 0841",
+  "email":"kya.preza@gmail.com",
+  "whatsapp": "50376300841",
+  "social_links":[
+    {"social_media": "Mail","optionalName":"preza_eduardo@yahoo.es","url":"mailto:preza_eduardo@yahoo.es"}
+  ]
+}

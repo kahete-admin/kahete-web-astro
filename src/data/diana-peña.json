@@ -7,6 +7,8 @@
   "email":"dpena@mapfre.com.sv",
   "whatsapp": "50378375820",
   "social_links":[
+    {"social_media": "Phone","optionalName":"Telefono Oficina*","url":"tel:50322757544"},
+    {"social_media": "Phone","optionalName":"Agencia*","url":"tel:50322757543"},
     {"social_media": "Other","optionalName":"MAPFRE","url":"https://www.mapfre.com.sv/"}
   ]
 }
