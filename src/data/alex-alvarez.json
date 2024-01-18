@@ -1,0 +1,13 @@
+{
+  "username": "Alex Álvarez",
+  "title": "Agente Inmobiliario \nAlexpress Realtor",
+  "about": "En Alexpress somos tú mejor opción en Bienes Raíces. Nosotros te ayudamos a comprar, vender o alquilar de forma express! \nCONTACTANOS SERÁ UN GUSTO ATENDERTE.",
+  "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705545109/kahete/alex-alvarez_eoqkv0.jpg",
+  "phone_number": "+(503) 7970 2382",
+  "email":"alexpress.realtor@gmail.com",
+  "whatsapp": "50378578020",
+  "social_links":[
+    {"social_media": "LinkedIn","url":"https://www.linkedin.com/in/nicole-arriaza-ortiz-a42769192/"},
+    {"social_media": "Other","optionalName":"alexpressr","url":"https://sites.google.com/view/alexpressr"}
+  ]
+}
