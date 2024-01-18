@@ -1,16 +1,16 @@
 ---
-import Call from "../../public/svg/call.svg";
-import Mail from "../../public/svg/mail.svg";
-import Whatsapp from "../../public/svg/whatsapp.svg";
+import Call from "@public/svg/call.svg";
+import Mail from "@public/svg/mail.svg";
+import Whatsapp from "@public/svg/whatsapp.svg";
 
 interface Props {
   buttonType: "WhatsApp" | "Phone" | "Email";
   email?: string;
   phone?: string;
-  whatsapp?:string;
+  whatsapp?: string;
 }
 
-const { buttonType, email, phone,whatsapp } = Astro.props;
+const { buttonType, email, phone, whatsapp } = Astro.props;
 let svgUrl: string = "";
 let url: string = "";
 
