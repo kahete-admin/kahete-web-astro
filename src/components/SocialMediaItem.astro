@@ -20,8 +20,10 @@ import Tinder from "../../public/social_media_logos/tinder.svg";
 import Airbnb from "../../public/social_media_logos/airbnb.svg";
 import TikTok from "../../public/social_media_logos/tiktok.svg";
 import Telegram from "../../public/social_media_logos/telegram.svg";
+import Other from "../../public/social_media_logos/website-click.svg";
 interface Props {
   url: string;
+  optionalName?: string;
   socialMediaType:
     | "Facebook"
     | "Instagram"
@@ -44,9 +46,10 @@ interface Props {
     | "Airbnb"
     | "Tik Tok"
     | "Telegram"
+    | "Other"
     | "X";
-  }
-const { url, socialMediaType } = Astro.props;
+}
+const { url, socialMediaType, optionalName } = Astro.props;
 let IconUrl: ImageMetadata;
 switch (socialMediaType) {
   case "Youtube":
@@ -106,6 +109,9 @@ switch (socialMediaType) {
   case "Telegram":
     IconUrl = Telegram;
     break;
+  case "Other":
+    IconUrl = Other;
+    break;
 
   default:
     break;
@@ -125,7 +131,9 @@ switch (socialMediaType) {
         height={24}
         width={24}
       />
-      <div class="text-base text-start items-center">{socialMediaType}</div>
+      <div class="text-base text-start items-center">
+        {optionalName ? optionalName : socialMediaType}
+      </div>
     </div>
     <Image
       format={"arrow_outward"}
