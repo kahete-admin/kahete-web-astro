@@ -20,6 +20,7 @@ import Tinder from "@public/social_media_logos/tinder.svg";
 import Airbnb from "@public/social_media_logos/airbnb.svg";
 import TikTok from "@public/social_media_logos/tiktok.svg";
 import Telegram from "@public/social_media_logos/telegram.svg";
+import GoogleMaps from "@public/social_media_logos/google-maps.svg";
 import Other from "@public/social_media_logos/website-click.svg";
 interface Props {
   url: string;
@@ -46,6 +47,8 @@ interface Props {
     | "Airbnb"
     | "Tik Tok"
     | "Telegram"
+    | "GoogleMaps"
+    | "Waze"
     | "Other"
     | "X";
 }
@@ -108,6 +111,9 @@ switch (socialMediaType) {
     break;
   case "Telegram":
     IconUrl = Telegram;
+    break;
+  case "GoogleMaps":
+    IconUrl = GoogleMaps;
     break;
   case "Other":
     IconUrl = Other;
