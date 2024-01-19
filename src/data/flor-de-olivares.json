@@ -1,0 +1,15 @@
+{
+  "username": "Flor de Olivares",
+  "title": "Gerente General",
+  "about": "En Pan Trillizos, queremos ser conocidos por nuestros productos de calidad y sabor excepcional, a través de nuestra pasión por los altos estándares, brindando un buen servicio a nuestros clientes.",
+  "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705672251/flor-de-olivares_cwh9nh.webp",
+  "phone_number": "+(503) 6200 4081",
+  "email":"flortorresv2706@gmail.com",
+  "whatsapp": "50362004081",
+  "social_links":[
+    {"social_media": "Facebook","url":"https://www.facebook.com/pantrillizos"},
+    {"social_media": "Facebook","optionalName":"Alquiler de vehiculos","url":"https://www.facebook.com/profile.php?id=100085359036248&eav=AfZelics0M6OnTIdwyWeXs6MgREI3f5HTvnnU_pF2nl0gQEflsSVUkDUZswXcg4FPQ0&paipv=0"},
+    {"social_media": "Instagram","url":"https://www.instagram.com/pantrillizos_sv/"},
+    {"social_media": "Other","optionalName":"Pan trillizos","url":"https://www.pantrillizos.com/"}
+  ]
+}
