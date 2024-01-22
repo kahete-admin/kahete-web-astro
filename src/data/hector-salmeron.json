@@ -1,0 +1,16 @@
+{
+  "username": "Héctor Salmerón",
+  "title": "Asesor Comercial Retail",
+  "about": "Somos asesores de comunicación, aliados para su negocio con el objetivo de dar a conocer su marca y posicionar su imagen para que los públicos puedan hablar de las maravillas de su servicio o producto. Construimos la imagen para su reconocida reputación. Somos traductores de comunicación entre públicos.",
+  "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705936129/hector-salmeron_xcj6do.jpg",
+  "phone_number": "+(503) 7844 2146",
+  "email":"hsalmeron@uno-ca.com",
+  "whatsapp": "50378442146",
+  "social_links":[
+    {"social_media": "Facebook","url":" https://www.facebook.com/hes.salmero?mibextid=LQQJ4d"},
+    {"social_media": "Instagram","url":"https://instagram.com/hes2201?igshid=YmMyMTA2M2Y="},
+    {"social_media": "LinkedIn","url":"https://www.linkedin.com/in/hector-eduardo-salmeron-15a01540"},
+    {"social_media": "Mail","optionalName":"hector2201@msn.com","url":"mailto:hector2201@msn.com"},
+    {"social_media": "Other","optionalName":"UNO CA","url":"https://uno-ca.com/"}
+  ]
+}
