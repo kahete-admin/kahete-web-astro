@@ -1,0 +1,18 @@
+{
+  "username": "Jaime Valladares",
+  "title": "Business Developer - Prowork Group",
+  "about": "Soy Jaime Valladares, Business Development Representative de PROWORK GROUP. En Prowork Group nos dedicamos a brindar un servicio de clase mundial, por lo que nos adelantamos a las condiciones del mercado, contamos con una amplia cartera de servicios a nivel nacional e internacional para atender de inmediato las necesidades y requerimientos que se generen en nuestras principales líneas de negocio, enfocadas en resultados rentables y productivos para nuestros clientes",
+  "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705936986/jaime-valladares_hnawfd.jpg",
+  "phone_number": "+(503) 7850 5023",
+  "email":"valladares@prowork.lat",
+  "whatsapp": "50377452651",
+  "social_links":[
+    {"social_media": "Phone","optionalName":"(503) 7055 2229","url":"tel:50370552229"},
+    {"social_media": "Phone","optionalName":"(503) 2254 6616","url":"tel:50322546616"},
+    {"social_media": "Facebook","url":"https://www.facebook.com/ProworkGroupMx"},
+    {"social_media": "Instagram","url":"https://www.instagram.com/proworkgroupmx/"},
+    {"social_media": "LinkedIn","url":"https://www.linkedin.com/in/jaimevalladares"},
+    {"social_media": "X","optionalName":"@ProworkGroupSv","url":"https://twitter.com/ProworkGroupSv"},
+    {"social_media": "Other","optionalName":"PROWORK","url":"https://prowork.lat/sv/"}
+  ]
+}

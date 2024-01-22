@@ -4,6 +4,7 @@ import BasicProfile from "@layouts/BasicProfile.astro";
 import incomingData from "@data/adriana-arriaza.json";
 ---
 
+
 <BasicProfile
   username={incomingData.username}
   title={incomingData.title}
@@ -15,11 +16,16 @@ import incomingData from "@data/adriana-arriaza.json";
 >
   {
     incomingData.social_links.map(
-      (socialMedia: { social_media: any; url: string }) => {
+      (socialMedia: {
+        social_media: any;
+        url: string;
+        optionalName?: string;
+      }) => {
         return (
           <SocialMediaItem
             socialMediaType={socialMedia.social_media}
             url={socialMedia.url}
+            optionalName={socialMedia.optionalName!}
           />
         );
       }
