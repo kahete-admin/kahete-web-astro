@@ -1,0 +1,12 @@
+{
+  "username": "José Manuel Ramírez",
+  "title": "Empresario y Consultor de Negocios",
+  "about": "Empresario independiente con más de 40 años de experiencia en la industria papelera, consultoría y multiniveles.",
+  "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705937966/jose-ramirez_edyajk.jpg",
+  "phone_number": "+(503) 7930 9197",
+  "email":"accionsiempre@gmail.com",
+  "whatsapp": "50379309197",
+  "social_links":[
+    {"social_media": "Other","optionalName":"¡Regístrate en línea aquí!","url":"https://accounts.myherbalife.com/Account/Create?appId=1&locale=es-SV&redirect=https://www.myherbalife.com/es-SV/"}
+  ]
+}
