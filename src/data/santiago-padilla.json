@@ -1,0 +1,14 @@
+{
+  "username": "Lic. Santiago Padilla",
+  "title": "Gerente Comercial",
+  "about": "En SHP SERVICE, somos la solución de tu compra, venta, alquiler, remodelaciones Y asesoría según tu necesidad. NO USES TARJETAS NI MENÚS DE PAPEL, SALVEMOS EL PLANETA.",
+  "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705969947/santiago-padilla_wq1p3r.jpg",
+  "phone_number": "+(503) 7695 8756",
+  "email":"santiago.padilla@shpservice.net",
+  "whatsapp": "50376560126",
+  "social_links":[
+    {"social_media": "Facebook","url":"https://www.facebook.com/profile.php?id=100088511574327&mibextid=ZbWKwL"},
+    {"social_media": "Instagram","url":"https://instagram.com/shpservicesv?igshid=NTA5ZTk1NTc="},
+    {"social_media": "Other","optionalName":"TuHome","url":"https://tuhome.biz/"}
+    ]
+}
