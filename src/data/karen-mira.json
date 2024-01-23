@@ -1,14 +1,12 @@
 {
-  "username": "Julio Rodríguez",
-  "title": "Periodista Cristiano",
-  "about": "Un cristiano imperfecto creyendo que las cosas pueden cambiar",
-  "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705968869/julio-rodriguez_vzbq24.jpg",
-  "phone_number": "+(503) 7768 6817",
-  "email":"periodistacristiano@gmail.com",
-  "whatsapp": "50377686817",
+  "username": "Karen Mira",
+  "title": "Auxiliar Contable/Administrativa en MH Auditores, S.A. de C.V.",
+  "about": "En  MH Auditores S.A. de C.V. somos firmas de  profesionales comprometidos con el desarrollo empresarial, con un servicio de excelencia y una visión de largo plazo. Nuestro objetivo es acompañar como un socio estratégico a nuestros clientes, en el logro de sus desafíos, potenciando con nuestra experiencia profesional el crecimiento de sus negocios",
+  "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705969273/karen-mira_tfe9l1.jpg",
+  "phone_number": "+(503) 7069 6167",
+  "email":"karenmiramorales0309@outlook.es",
+  "whatsapp": "50370696167",
   "social_links":[
-    {"social_media": "Facebook","url":"https://www.facebook.com/profile.php?id=100063452357695&mibextid=LQQJ4d"},
-    {"social_media": "Instagram","url":"https://instagram.com/periodistacristiano?igshid=OGQ5ZDc2ODk2ZA=="},
-    {"social_media": "X","optionalName":"@JulioR_ES","url":"https://twitter.com/julior_es?s=11"}
-  ]
+    {"social_media": "Facebook","url":"https://www.facebook.com/lissette.mira"},
+    {"social_media": "Instagram","url":"https://www.instagram.com/karen_mira05/?hl=es-la"}  ]
 }
