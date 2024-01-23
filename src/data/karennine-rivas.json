@@ -1,0 +1,14 @@
+{
+  "username": "Karennine Rivas",
+  "title": "Gerente Comercial",
+  "about": "Soy Karennine Rivas, promotora de seguros de ASESUISA una empresa SURA., Conoce los mejores planes de seguro para personas y empresas con coberturas especializadas que se acoplan a tus necesidades",
+  "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705969580/karennine-rivas_kdbqyp.jpg",
+  "phone_number": "+(503) 7695 8756",
+  "email":" jkrivas@asesuisa.com",
+  "whatsapp": "50376958756",
+  "social_links":[
+    {"social_media": "Other","optionalName":"Asesuisa","url":"https://www.asesuisa.com"},
+    {"social_media": "LinkedIn","url":"https://www.linkedin.com/in/jennifer-karennine-rivas-0593b7173/"},
+    {"social_media": "GoogleMaps","optionalName":"Centro Comercial Plaza Merliot, Nivel 1, Local 124","url":"https://www.google.com/maps/place/Plaza+Merliot/@13.6787642,-89.2785753,17z/data=!3m1!4b1!4m6!3m5!1s0x8f632febd8b2a869:0xd94c44d3b4db9b9f!8m2!3d13.6787642!4d-89.2760004!16s%2Fg%2F11hymbc4dt?entry=ttu"}
+    ]
+}
