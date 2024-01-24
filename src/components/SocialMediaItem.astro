@@ -23,6 +23,7 @@ import Telegram from "@public/social_media_logos/telegram.svg";
 import GoogleMaps from "@public/social_media_logos/google-maps.svg";
 import Other from "@public/social_media_logos/website-click.svg";
 import Phone from "@public/svg/call.svg";
+import WhatsApp from "@public/svg/whatsapp.svg";
 import Mail from "@public/svg/mail.svg";
 interface Props {
   url: string;
@@ -55,6 +56,7 @@ interface Props {
     | "Phone"
     | "Mail"
     | "TikTok"
+    | "WhatsApp"
     | "X";
 }
 const { url, socialMediaType, optionalName } = Astro.props;
@@ -131,6 +133,9 @@ switch (socialMediaType) {
     break;
   case "TikTok":
     IconUrl = TikTok;
+    break;
+  case "WhatsApp":
+    IconUrl = WhatsApp;
     break;
 
   default:
