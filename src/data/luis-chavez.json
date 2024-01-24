@@ -1,0 +1,13 @@
+{
+  "username": "Luis Ronaldo Chávez",
+  "title": "Estudiante Universitario",
+  "about": "Soy estudiante universitario",
+  "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1706059485/luis-chavez_odcquv.jpg",
+  "phone_number": "+(503) 7558 4006",
+  "email":"luisronaldochavez@gmail.com",
+  "whatsapp": "50375584006",
+  "social_links":[
+    {"social_media": "Instagram","url":"https://instagram.com/luis_rchavez?igshid=ZDc4ODBmNjlmNQ=="},
+    {"social_media": "LinkedIn","url":"https://www.linkedin.com/in/luis-ronaldo-chavez-escamilla-baa467281"}
+  ]
+}

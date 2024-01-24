@@ -22,17 +22,6 @@ const {
   <head>
     <BaseHead title={username} description={about} />
     <style>
-      .hideContent {
-        line-height: 1.3em;
-        width: 98%;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-      }
-      .showContent {
-        line-height: 1.3em;
-      }
       .custom-image-border {
         border-radius: 70px;
         min-width:200px !important;
@@ -72,15 +61,8 @@ const {
           </div>
 
           <div>
-            <div class="content hideContent mt-3 text-start text-about text-sm">
+            <div class="content mt-5 text-start text-about text-sm pb-4">
               {about}
-            </div>
-            <div class="show-more mt-2 text-left pb-4">
-              <button
-                type="submit"
-                id="show-text"
-                class="text-accent text-sm font-semibold">Show more</button
-              >
             </div>
             <div class="flex gap-3">
               <ContactButton
