@@ -1,0 +1,16 @@
+{
+  "username": "Rino Pierro",
+  "title": "RINO TALLER A TU SERVICIO",
+  "about": "En mi taller automotriz nos debemos 100% a nuestros clientes. » Cada día mi equipo de trabajo se esfuerza por dar lo mejor»",
+  "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1706065583/rino-pierro_tbo1tk.jpg",
+  "phone_number": "+(503) 7952 9956",
+  "email":"tallermontana@hotmail.com",
+  "whatsapp": "50379529956",
+  "social_links":[
+    {"social_media": "Phone","optionalName":"+(503) 2319 7101","url":"tel:50323197101"},
+    {"social_media": "WhatsApp","optionalName":"+(503) 6177 7684","url":"wa.me/50361777684"},
+    {"social_media": "Facebook","url":"https://www.facebook.com/TALLERMONTANA1234"},
+    {"social_media": "Instagram","url":"https://instagram.com/tallermontanarino?igshid=OGQ2MjdiOTE="},
+    {"social_media": "TikTok","url":"https://www.tiktok.com/@rinotaller"}
+      ]
+}
