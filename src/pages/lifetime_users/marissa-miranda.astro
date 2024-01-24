@@ -1,0 +1,33 @@
+---
+import SocialMediaItem from "@components/SocialMediaItem.astro";
+import BasicProfile from "@layouts/BasicProfile.astro";
+import incomingData from "@data/marissa-miranda.json";
+---
+
+<BasicProfile
+  username={incomingData.username}
+  title={incomingData.title}
+  about={incomingData.about}
+  profile_picture={incomingData.profile_picture}
+  email={incomingData.email}
+  phone_number={incomingData.phone_number}
+  whatsapp={incomingData.whatsapp}
+>
+  {
+    incomingData.social_links.map(
+      (socialMedia: {
+        social_media: any;
+        url: string;
+        optionalName?: string;
+      }) => {
+        return (
+          <SocialMediaItem
+            socialMediaType={socialMedia.social_media}
+            url={socialMedia.url}
+            optionalName={socialMedia.optionalName!}
+          />
+        );
+      }
+    )
+  }
+</BasicProfile>

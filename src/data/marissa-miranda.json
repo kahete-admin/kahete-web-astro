@@ -1,0 +1,14 @@
+{
+  "username": "Marissa Miranda",
+  "title": "Project Manager",
+  "about": "JC Contractors is a large-scale contracting company specializing in high-volume student housing turnover services. Additionally, we work across the United States in building, remodeling, painting, flooring, and much more.",
+  "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1706061666/Marissa-Miranda_jxtqcv.png",
+  "phone_number": "+1 (281) 210 4704",
+  "email":"marissa@jccontractorsinc.com",
+  "whatsapp": "12812104704",
+  "social_links":[
+    {"social_media": "Instagram","url":"https://instagram.com/jccontractorsinc?igshid=MjkzY2Y1YTY="},
+    {"social_media": "Phone","optionalName":"Office","url":"tel:18325304694"},
+    {"social_media": "Other","optionalName":"jccontractorsinc","url":"https://www.jccontractorsinc.com/"}
+    ]
+}
