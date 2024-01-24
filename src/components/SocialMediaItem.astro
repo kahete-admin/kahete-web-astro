@@ -54,6 +54,7 @@ interface Props {
     | "Other"
     | "Phone"
     | "Mail"
+    | "TikTok"
     | "X";
 }
 const { url, socialMediaType, optionalName } = Astro.props;
@@ -127,6 +128,9 @@ switch (socialMediaType) {
     break;
   case "Mail":
     IconUrl = Mail;
+    break;
+  case "TikTok":
+    IconUrl = TikTok;
     break;
 
   default:
