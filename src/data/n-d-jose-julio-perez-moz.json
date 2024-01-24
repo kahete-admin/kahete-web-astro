@@ -1,0 +1,14 @@
+{
+  "username": "N.D José Julio Pérez Moz",
+  "title": "Naturista, Quiropráctico y masajista científico",
+  "about": "En NUTRIVID somos una Clínica de Terapias Alternativas con terapias naturales y correcciones de la columna.",
+  "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1706064031/jose-perez_gafc6p.jpg",
+  "phone_number": "+(503) 7729 9118",
+  "email":"joseperezmozo1967@gmail.com",
+  "whatsapp": "50377299118",
+  "social_links":[
+    {"social_media": "Phone","optionalName":"+(503) 2228 3317","url":"50322283317"},
+    {"social_media": "Phone","optionalName":"+(503) 2564 1897","url":"50325641897"},
+    {"social_media": "GoogleMaps","optionalName":"5A Calle Pte Bis, Polígono B Casa # 46, Col. San Antonio Las Palmeras, Santa Tecla","url":"https://www.google.com/maps/place/13%C2%B040'42.3%22N+89%C2%B017'38.3%22W/@13.6784065,-89.2961657,17z/data=!3m1!4b1!4m4!3m3!8m2!3d13.6784065!4d-89.293977?hl=es&entry=ttu"}
+    ]
+}
