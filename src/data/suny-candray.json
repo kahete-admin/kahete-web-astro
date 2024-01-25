@@ -1,0 +1,15 @@
+{
+  "username": "Suny Candray",
+  "title": "Gerente Regional - Solucionadora de Empaques FLEXAPRINT  SA",
+  "about": "Flexaprint es una empresa fundada en 1990 y desde   entonces ha sido la solución a los problemas de empaque termoencogible en cuanto a calidad, tiempo de entrega, servicio pre y post venta y ha sido un gran apoyo para el desarrollo de productos nuevos en los diferentes ámbitos de la Industria, comercio y servicio.",
+  "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1706154693/suny-candray_s1whp4.jpg",
+  "phone_number": "+(503) 7786 6012",
+  "email":"suny@flexaprint.com",
+  "whatsapp": "50377866012",
+  "social_links":[
+    {"social_media": "Facebook","url":"https://www.facebook.com/profile.php?id=100069598689512"},
+    {"social_media": "Phone","optionalName":"+(503) 2264 7792","url":"tel:50322647792"},
+    {"social_media": "Phone","optionalName":"+(503) 2252 6524","url":"tel:50322526524"},
+    {"social_media": "Phone","optionalName":"+(503) 2252 6528","url":"tel:50322526528"},
+    {"social_media": "Other","optionalName":"Flexaprint","url":"http://www.flexaprint.com/"}    ]
+}
