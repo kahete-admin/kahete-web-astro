@@ -1,0 +1,17 @@
+{
+  "username": "Sonia Villalta de Belloso",
+  "title": "Directora de Más Comunicación",
+  "about": "Soy Sonia Villalta de Belloso, directora de Más Comunicación, somos asesores de comunicación, aliados para su negocio con el objetivo de dar a conocer su marca y posicionar su imagen para que los públicos puedan hablar de las maravillas de su servicio o producto.Construimos la imagen para su reconocida reputación.",
+  "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1706154161/sonia-villalta_d8unmz.jpg",
+  "phone_number": "+(503) 7910 2168",
+  "email":"sonia@mascomunicacion.com.sv",
+  "whatsapp": "50379102168",
+  "social_links":[
+    {"social_media": "Facebook","url":"https://www.facebook.com/MasComunicacionSV/"},
+    {"social_media": "Instagram","url":"https://www.instagram.com/mascomunicacionsv/"},
+    {"social_media": "X","optionalName":"@MASComSV","url":"https://twitter.com/MASComSV"},
+    {"social_media": "Youtube","url":"https://www.youtube.com/user/MASComunicacionSV"},
+    {"social_media": "Other","optionalName":"Mascomunicacionsv","url":"https://www.mascomunicacionsv.com/"},
+    {"social_media": "GoogleMaps","optionalName":"AVENIDA LAS CAMELIAS, CALLE LOS CASTAÑOS #17. SAN SALVADOR, EL SALVADOR","url":"https://goo.gl/maps/GsES115DM9F2Lh7f8"}
+    ]
+}
