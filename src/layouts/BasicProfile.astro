@@ -21,11 +21,6 @@ const {
 <html lang="en">
   <head>
     <BaseHead title={username} description={about} />
-    <style>
-      .custom-image-border {
-        border-radius: 70px;
-      }
-    </style>
   </head>
   <body>
     <NavBarProfile
@@ -42,11 +37,11 @@ const {
             <Image
               format={"avif"}
               alt={username}
-              class="custom-image-border"
               src={profile_picture ? profile_picture : blogPlaceholder}
               quality={"mid"}
               height={200}
               width={200}
+              style="border-radius: 70px"
             />
           </div>
           <div class="text-center pb-2 text-base">
