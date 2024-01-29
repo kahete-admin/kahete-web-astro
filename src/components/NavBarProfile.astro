@@ -83,7 +83,7 @@ END:VCARD
     // Triggering click event to download
     if (document.createEvent) {
       const event = document.createEvent("MouseEvents");
-      event.dispatchEvent("click", true, false);
+      event.initEvent("click", true, false);
       a.dispatchEvent(event);
     } else {
       a.click();
