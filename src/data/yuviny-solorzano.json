@@ -9,7 +9,6 @@
   "social_links":[
     {"social_media": "Facebook","url":"https://www.facebook.com/profile.php?id=100063927524117"},
     {"social_media": "Instagram","url":"https://www.instagram.com/asistencia_regional/?hl=es-la"},
-    {"social_media": "X","optionalName":"@Asis_Regional","url":"https://twitter.com/Asis_Regional"},
-    {"social_media": "Youtube","url":"https://www.youtube.com/@GuayoyYeliHerbalife"}
+    {"social_media": "X","optionalName":"@Asis_Regional","url":"https://twitter.com/Asis_Regional"}
   ]
 }
