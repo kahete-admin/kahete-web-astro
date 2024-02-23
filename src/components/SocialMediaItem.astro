@@ -22,6 +22,7 @@ import TikTok from "@public/social_media_logos/tiktok.svg";
 import Telegram from "@public/social_media_logos/telegram.svg";
 import GoogleMaps from "@public/social_media_logos/google-maps.svg";
 import Other from "@public/social_media_logos/website-click.svg";
+import Paypal from "@public/social_media_logos/paypal.svg";
 import Phone from "@public/svg/call.svg";
 import WhatsApp from "@public/svg/whatsapp.svg";
 import Mail from "@public/svg/mail.svg";
@@ -56,6 +57,7 @@ interface Props {
     | "Phone"
     | "Mail"
     | "TikTok"
+    | "Paypal"
     | "WhatsApp"
     | "X";
 }
@@ -136,6 +138,9 @@ switch (socialMediaType) {
     break;
   case "WhatsApp":
     IconUrl = WhatsApp;
+    break;
+  case "Paypal":
+    IconUrl = Paypal;
     break;
 
   default:
