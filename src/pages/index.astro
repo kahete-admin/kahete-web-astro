@@ -24,10 +24,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
             <Image
               src={logo}
               height={32}
-              width={130}
+              width={100}
               alt="Kahete Logo"
               format="avif"
-              quality="mid"
+              quality="high"
             />
           </a>
           <div class="flex items-center">
@@ -69,7 +69,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
       </nav>
     </header>
     <!-- HEADER -->
-    <section class="bg-neutral-1000 py-2.5 xl:px-16 px-8">
+    <section class="bg-neutral-1000 py-4 xl:px-16 px-8">
       <div
         class="lg:flex flex-wrap lg:flex-none lg:justify-between items-center max-w-screen-xl mx-auto"
       >
@@ -97,7 +97,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                   height={30}
                   width={30}
                   src={right_arrow}
-                  alt="Download contact"
+                  alt="Obtener tarjeta"
                   format={"avif"}
                   quality={"mid"}
                   class="justify-center pl-2"
@@ -109,7 +109,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         </div>
         <!-- Image -->
         <div class="lg:max-w-md">
-          <div class=" w-full">
+          <div class="w-full">
             <Image
               height={400}
               width={400}
@@ -123,29 +123,27 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         </div>
       </div>
     </section>
-
-
     <!-- CONNECTIONS -->
-    <section class="bg-neutral-1000">
-      <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <div class="max-w-screen-full mb-8 lg:mb-16 lg:px-32 text-center">
-          <h2
-            class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 text-white"
-          >
+    <section class="bg-neutral-1000 py-8 xl:px-16 px-8">
+      <div
+        class="max-w-screen-xl mx-auto text-center w-full"
+      >
+        <div>
+          <h2 class="mb-1 text-2xl font-semibold text-white">
             Todo en un solo lugar
           </h2>
-          <p class="text-white sm:text-xl">
-            Todo tu contenido ingresado en tu perfil
-          </p>
-          <Image
-            height={550}
-            width={550}
-            src={connection}
-            alt="Profile"
-            format={"avif"}
-            quality={"high"}
-            class="justify-start pr-2"
-          />
+          <p class="text-white pb-4">Todo tu contenido ingresado en tu perfil</p>
+        </div>
+        <div class="lg:px-16">
+            <Image
+              height={500}
+              width={1500}
+              src={connection}
+              alt="Connections"
+              format={"avif"}
+              quality={"high"}
+              class=""
+            />
         </div>
       </div>
     </section>
