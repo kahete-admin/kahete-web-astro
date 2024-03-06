@@ -9,6 +9,7 @@ import how_it_works from "@public/home_page_assets/how-it-works-card.svg";
 import tap_card_nfc from "@public/home_page_assets/tap-card-nfc.svg";
 import personalized_profile from "@public/home_page_assets/personalized_profile.svg";
 import connection from "@public/home_page_assets/connection.svg";
+import connection_sm from "@public/home_page_assets/connections-sm.svg";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
@@ -127,7 +128,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
       </div>
     </section>
     <!-- CONNECTIONS -->
-    <section class="bg-neutral-1000 py-8 xl:px-16 px-8">
+    <section class="bg-neutral-1000 py-8 xl:px-16 px-0">
       <div class="max-w-screen-xl mx-auto text-center w-full">
         <div>
           <h2 class="mb-1 text-2xl font-semibold text-white">
@@ -145,7 +146,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
             alt="Connections"
             format={"avif"}
             quality={"high"}
-            class=""
+            class="hidden lg:block"
+          />
+          <Image
+            height={1500}
+            width={1500}
+            src={connection_sm}
+            alt="Connections"
+            format={"avif"}
+            quality={"high"}
+            class="lg:hidden"
           />
         </div>
       </div>
