@@ -9,6 +9,7 @@ import how_it_works from "@public/home_page_assets/how-it-works-card.svg";
 import tap_card_nfc from "@public/home_page_assets/tap-card-nfc.svg";
 import personalized_profile from "@public/home_page_assets/personalized_profile.svg";
 import connection from "@public/home_page_assets/connection.svg";
+import premium_cards from "@public/home_page_assets/premium-cards.svg";
 import connection_sm from "@public/home_page_assets/connections-sm.svg";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
@@ -134,7 +135,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
           <h2 class="mb-1 text-2xl font-semibold text-white">
             Todo en un solo lugar
           </h2>
-          <p class=" text-[#CBD9E1] pb-4">
+          <p class="text-[#CBD9E1] pb-4">
             Todo tu contenido ingresado en tu perfil
           </p>
         </div>
@@ -161,7 +162,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
       </div>
     </section>
     <!-- /CONNECTIONS -->
-    <!-- PRICES -->
+    <!-- HOW IT WORKS -->
     <section class="bg-neutral-950">
       <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
@@ -178,7 +179,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
           <div
             class="flex flex-col p-6 mx-auto max-w-lg text-center bg-[#151922] rounded-xl border border-[#3F484D] shadow xl:p-8 text-white"
           >
-          <span class="text-accent font-extrabold pb-8">1</span>
+            <span class="text-accent font-extrabold pb-8">1</span>
             <Image
               height={300}
               width={300}
@@ -188,13 +189,15 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
               quality={"high"}
               class="h-40 mx-auto"
             />
-            <span class="pt-12 font-medium text-sm text-[#CBD9E1]">Crea tu perfil personalizado</span>
+            <span class="pt-12 font-medium text-sm text-[#CBD9E1]"
+              >Crea tu perfil personalizado</span
+            >
           </div>
           <!-- Pricing Card -->
           <div
             class="flex flex-col p-6 mx-auto max-w-lg text-center bg-[#151922] rounded-xl border border-[#3F484D] shadow xl:p-8 text-white"
           >
-          <span class="text-accent font-extrabold pb-8">2</span>
+            <span class="text-accent font-extrabold pb-8">2</span>
             <Image
               height={300}
               width={300}
@@ -204,13 +207,15 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
               quality={"high"}
               class="h-40 mx-auto"
             />
-            <span class="pt-12 font-medium text-sm text-[#CBD9E1]">Adquiere tu tarjeta</span>
+            <span class="pt-12 font-medium text-sm text-[#CBD9E1]"
+              >Adquiere tu tarjeta</span
+            >
           </div>
           <!-- Pricing Card -->
           <div
             class="flex flex-col p-6 mx-auto max-w-lg text-center bg-[#151922] rounded-xl border border-[#3F484D] shadow xl:p-8 text-white"
           >
-          <span class="text-accent font-extrabold pb-8">3</span>
+            <span class="text-accent font-extrabold pb-8">3</span>
             <Image
               height={300}
               width={300}
@@ -220,109 +225,222 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
               quality={"high"}
               class="h-40 mx-auto"
             />
-            <span class="pt-12 font-medium text-sm text-[#CBD9E1]">Comparte tu información con el código QR o el lector NFC</span>
+            <span class="pt-12 font-medium text-sm text-[#CBD9E1]"
+              >Comparte tu información con el código QR o el lector NFC</span
+            >
           </div>
         </div>
       </div>
-      <!-- /PRICES -->
-
-      <!-- TESTIMONIALS -->
-      <section class="bg-neutral-950 text-white pb-32">
-        <div
-          class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6"
-        >
-          <figure class="max-w-screen-md mx-auto">
-            <svg
-              class="h-12 mx-auto mb-3"
-              viewBox="0 0 24 27"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+      <!--/HOW IT WORKS -->
+      <!-- CARACTERISTICAS -->
+      <section>
+        <div class="py-8 px-4 mx-auto max-w-screen-xl">
+          <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+            <h2
+              class="lg:pb-12 pb-6 text-3xl tracking-tight font-semibold text-gray-90 text-white"
             >
-              <path
-                d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
-                fill="white"></path>
-            </svg>
-            <p class="text-2xl font-medium">
-              "Flowbite is just awesome. It contains tons of predesigned
-              components and pages starting from login screen to complex
-              dashboard. Perfect choice for your next SaaS application."
-            </p>
-            <figcaption class="flex items-center justify-center mt-6 space-x-3">
-              <img
-                class="w-6 h-6 rounded-full"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
-                alt="profile picture"
+              Características
+            </h2>
+          </div>
+          <div
+            class="lg:flex flex-row lg:flex-none lg:justify-between items-center max-w-screen-xl mx-auto"
+          >
+            <!-- IMG -->
+            <div class="lg:w-2/4 hidden lg:block">
+              <Image
+                height={1500}
+                width={1500}
+                src={premium_cards}
+                alt="personalized profiles"
+                format={"avif"}
+                quality={"high"}
+                class="h-50mx-auto"
               />
-              <div
-                class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700"
-              >
-                <div class="pr-3 font-medium">Micheal Gough</div>
-                <div class="pl-3 text-sm font-light text-white">
-                  CEO at Google
+            </div>
+            <!-- LIST -->
+            <div class="px-8 lg:w-2/4">
+              <!-- ITEM -->
+              <div class="flex pb-12 lg:pb-24">
+                <div
+                  class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-neutral-900 lg:h-12 lg:w-12"
+                >
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      id="mask0_32_599"
+                      style="mask-type:alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="32"
+                      height="32"
+                    >
+                      <rect width="32" height="32" fill="#70C6EB"></rect>
+                    </mask>
+                    <g mask="url(#mask0_32_599)">
+                      <path
+                        d="M15.6335 22.6667C17.3002 22.6667 18.7168 22.0833 19.8835 20.9167C21.0502 19.75 21.6335 18.3333 21.6335 16.6667C21.6335 15 21.0502 13.5833 19.8835 12.4167C18.7168 11.25 17.3002 10.6667 15.6335 10.6667C13.9668 10.6667 12.5502 11.25 11.3835 12.4167C10.2168 13.5833 9.6335 15 9.6335 16.6667C9.6335 18.3333 10.2168 19.75 11.3835 20.9167C12.5502 22.0833 13.9668 22.6667 15.6335 22.6667ZM15.6335 20.2667C14.6335 20.2667 13.7835 19.9167 13.0835 19.2167C12.3835 18.5167 12.0335 17.6667 12.0335 16.6667C12.0335 15.6667 12.3835 14.8167 13.0835 14.1167C13.7835 13.4167 14.6335 13.0667 15.6335 13.0667C16.6335 13.0667 17.4835 13.4167 18.1835 14.1167C18.8835 14.8167 19.2335 15.6667 19.2335 16.6667C19.2335 17.6667 18.8835 18.5167 18.1835 19.2167C17.4835 19.9167 16.6335 20.2667 15.6335 20.2667ZM15.6335 26.6667C12.6557 26.6667 9.93905 25.8667 7.4835 24.2667C5.02794 22.6667 3.08905 20.5556 1.66683 17.9333C1.55572 17.7333 1.47238 17.5278 1.41683 17.3167C1.36127 17.1056 1.3335 16.8889 1.3335 16.6667C1.3335 16.4444 1.36127 16.2278 1.41683 16.0167C1.47238 15.8056 1.55572 15.6 1.66683 15.4C3.08905 12.7778 5.02794 10.6667 7.4835 9.06667C9.93905 7.46667 12.6557 6.66667 15.6335 6.66667C18.6113 6.66667 21.3279 7.46667 23.7835 9.06667C26.239 10.6667 28.1779 12.7778 29.6002 15.4C29.7113 15.6 29.7946 15.8056 29.8502 16.0167C29.9057 16.2278 29.9335 16.4444 29.9335 16.6667C29.9335 16.8889 29.9057 17.1056 29.8502 17.3167C29.7946 17.5278 29.7113 17.7333 29.6002 17.9333C28.1779 20.5556 26.239 22.6667 23.7835 24.2667C21.3279 25.8667 18.6113 26.6667 15.6335 26.6667ZM15.6335 24C18.1446 24 20.4502 23.3389 22.5502 22.0167C24.6502 20.6944 26.2557 18.9111 27.3668 16.6667C26.2557 14.4222 24.6502 12.6389 22.5502 11.3167C20.4502 9.99445 18.1446 9.33334 15.6335 9.33334C13.1224 9.33334 10.8168 9.99445 8.71683 11.3167C6.61683 12.6389 5.01127 14.4222 3.90016 16.6667C5.01127 18.9111 6.61683 20.6944 8.71683 22.0167C10.8168 23.3389 13.1224 24 15.6335 24Z"
+                        fill="#65CED8"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="pl-4">
+                  <h3 class="text-xl font-bold text-white">Adaptabilidad</h3>
+                  <p class="text-[#CBD9E1]">
+                    Perfil personalizado diseñado según tus necesidades.
+                  </p>
                 </div>
               </div>
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-      <!-- /TESTIMONIALS -->
-      <!-- CONTACT -->
-      <section class="bg-neutral-950 text-white">
-        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-          <h2
-            class="mb-4 text-4xl tracking-tight font-extrabold text-center text-white"
-          >
-            Contact Us
-          </h2>
-          <p class="mb-8 lg:mb-16 font-light text-center text-white sm:text-xl">
-            Got a technical issue? Want to send feedback about a beta feature?
-            Need details about our Business plan? Let us know.
-          </p>
-          <form action="#" class="space-y-8">
-            <div>
-              <label for="email" class="block mb-2 text-sm font-medium"
-                >Your email</label
-              >
-              <input
-                type="email"
-                id="email"
-                class="shadow-sm bg-neutral-900 border border-neutral-300 text-sm rounded-lg focus:ring-primary-500 focus:border-neutral-500 block w-full p-2.5 text-white"
-                placeholder="name@flowbite.com"
-                required
+              <!-- ITEM -->
+              <div class="flex pb-12 lg:pb-24">
+                <div
+                  class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-neutral-1000 lg:h-12 lg:w-12"
+                >
+                  <svg
+                    width="56"
+                    height="56"
+                    viewBox="0 0 56 56"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="28"
+                      cy="28"
+                      r="28"
+                      fill="white"
+                      fill-opacity="0.1"></circle>
+                    <mask
+                      id="mask0_32_606"
+                      style="mask-type:alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="12"
+                      y="12"
+                      width="32"
+                      height="32"
+                    >
+                      <rect x="12" y="12" width="32" height="32" fill="#D9D9D9"
+                      ></rect>
+                    </mask>
+                    <g mask="url(#mask0_32_606)">
+                      <path
+                        d="M16 25.3333V17.3333C16 16.9556 16.1278 16.6389 16.3833 16.3833C16.6389 16.1278 16.9556 16 17.3333 16H25.3333C25.7111 16 26.0278 16.1278 26.2833 16.3833C26.5389 16.6389 26.6667 16.9556 26.6667 17.3333V25.3333C26.6667 25.7111 26.5389 26.0278 26.2833 26.2833C26.0278 26.5389 25.7111 26.6667 25.3333 26.6667H17.3333C16.9556 26.6667 16.6389 26.5389 16.3833 26.2833C16.1278 26.0278 16 25.7111 16 25.3333ZM18.6667 24H24V18.6667H18.6667V24ZM16 38.6667V30.6667C16 30.2889 16.1278 29.9722 16.3833 29.7167C16.6389 29.4611 16.9556 29.3333 17.3333 29.3333H25.3333C25.7111 29.3333 26.0278 29.4611 26.2833 29.7167C26.5389 29.9722 26.6667 30.2889 26.6667 30.6667V38.6667C26.6667 39.0444 26.5389 39.3611 26.2833 39.6167C26.0278 39.8722 25.7111 40 25.3333 40H17.3333C16.9556 40 16.6389 39.8722 16.3833 39.6167C16.1278 39.3611 16 39.0444 16 38.6667ZM18.6667 37.3333H24V32H18.6667V37.3333ZM29.3333 25.3333V17.3333C29.3333 16.9556 29.4611 16.6389 29.7167 16.3833C29.9722 16.1278 30.2889 16 30.6667 16H38.6667C39.0444 16 39.3611 16.1278 39.6167 16.3833C39.8722 16.6389 40 16.9556 40 17.3333V25.3333C40 25.7111 39.8722 26.0278 39.6167 26.2833C39.3611 26.5389 39.0444 26.6667 38.6667 26.6667H30.6667C30.2889 26.6667 29.9722 26.5389 29.7167 26.2833C29.4611 26.0278 29.3333 25.7111 29.3333 25.3333ZM32 24H37.3333V18.6667H32V24ZM37.3333 40V37.3333H40V40H37.3333ZM29.3333 32V29.3333H32V32H29.3333ZM32 34.6667V32H34.6667V34.6667H32ZM29.3333 37.3333V34.6667H32V37.3333H29.3333ZM32 40V37.3333H34.6667V40H32ZM34.6667 37.3333V34.6667H37.3333V37.3333H34.6667ZM34.6667 32V29.3333H37.3333V32H34.6667ZM37.3333 34.6667V32H40V34.6667H37.3333Z"
+                        fill="#70C6EB"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="pl-4">
+                  <h3 class="text-xl font-bold text-white">Tecnología</h3>
+                  <p class="text-[#CBD9E1]">
+                    Tarjeta con lector NFC y código QR permite el intercambio de
+                    información por diversos medios.
+                  </p>
+                </div>
+              </div>
+              <!-- ITEM -->
+              <div class="flex pb-12 lg:pb-24">
+                <div
+                  class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-neutral-1000 lg:h-12 lg:w-12"
+                >
+                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="28" cy="28" r="28" fill="white" fill-opacity="0.1"/>
+                  <mask id="mask0_32_615" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="12" y="12" width="32" height="32">
+                  <rect x="12" y="12" width="32" height="32" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_32_615)">
+                  <path d="M12 36V33.9C12 32.9444 12.4889 32.1667 13.4667 31.5667C14.4444 30.9667 15.7333 30.6667 17.3333 30.6667C17.6222 30.6667 17.9 30.6722 18.1667 30.6833C18.4333 30.6944 18.6889 30.7222 18.9333 30.7667C18.6222 31.2333 18.3889 31.7222 18.2333 32.2333C18.0778 32.7444 18 33.2778 18 33.8333V36H12ZM20 36V33.8333C20 33.1222 20.1944 32.4722 20.5833 31.8833C20.9722 31.2944 21.5222 30.7778 22.2333 30.3333C22.9444 29.8889 23.7944 29.5556 24.7833 29.3333C25.7722 29.1111 26.8444 29 28 29C29.1778 29 30.2611 29.1111 31.25 29.3333C32.2389 29.5556 33.0889 29.8889 33.8 30.3333C34.5111 30.7778 35.0556 31.2944 35.4333 31.8833C35.8111 32.4722 36 33.1222 36 33.8333V36H20ZM38 36V33.8333C38 33.2556 37.9278 32.7111 37.7833 32.2C37.6389 31.6889 37.4222 31.2111 37.1333 30.7667C37.3778 30.7222 37.6278 30.6944 37.8833 30.6833C38.1389 30.6722 38.4 30.6667 38.6667 30.6667C40.2667 30.6667 41.5556 30.9611 42.5333 31.55C43.5111 32.1389 44 32.9222 44 33.9V36H38ZM22.8333 33.3333H33.2C32.9778 32.8889 32.3611 32.5 31.35 32.1667C30.3389 31.8333 29.2222 31.6667 28 31.6667C26.7778 31.6667 25.6611 31.8333 24.65 32.1667C23.6389 32.5 23.0333 32.8889 22.8333 33.3333ZM17.3333 29.3333C16.6 29.3333 15.9722 29.0722 15.45 28.55C14.9278 28.0278 14.6667 27.4 14.6667 26.6667C14.6667 25.9111 14.9278 25.2778 15.45 24.7667C15.9722 24.2556 16.6 24 17.3333 24C18.0889 24 18.7222 24.2556 19.2333 24.7667C19.7444 25.2778 20 25.9111 20 26.6667C20 27.4 19.7444 28.0278 19.2333 28.55C18.7222 29.0722 18.0889 29.3333 17.3333 29.3333ZM38.6667 29.3333C37.9333 29.3333 37.3056 29.0722 36.7833 28.55C36.2611 28.0278 36 27.4 36 26.6667C36 25.9111 36.2611 25.2778 36.7833 24.7667C37.3056 24.2556 37.9333 24 38.6667 24C39.4222 24 40.0556 24.2556 40.5667 24.7667C41.0778 25.2778 41.3333 25.9111 41.3333 26.6667C41.3333 27.4 41.0778 28.0278 40.5667 28.55C40.0556 29.0722 39.4222 29.3333 38.6667 29.3333ZM28 28C26.8889 28 25.9444 27.6111 25.1667 26.8333C24.3889 26.0556 24 25.1111 24 24C24 22.8667 24.3889 21.9167 25.1667 21.15C25.9444 20.3833 26.8889 20 28 20C29.1333 20 30.0833 20.3833 30.85 21.15C31.6167 21.9167 32 22.8667 32 24C32 25.1111 31.6167 26.0556 30.85 26.8333C30.0833 27.6111 29.1333 28 28 28ZM28 25.3333C28.3778 25.3333 28.6944 25.2056 28.95 24.95C29.2056 24.6944 29.3333 24.3778 29.3333 24C29.3333 23.6222 29.2056 23.3056 28.95 23.05C28.6944 22.7944 28.3778 22.6667 28 22.6667C27.6222 22.6667 27.3056 22.7944 27.05 23.05C26.7944 23.3056 26.6667 23.6222 26.6667 24C26.6667 24.3778 26.7944 24.6944 27.05 24.95C27.3056 25.2056 27.6222 25.3333 28 25.3333Z" fill="#70C6EB"/>
+                  </g>
+                  </svg>
+                  
+                </div>
+                <div class="pl-4">
+                  <h3 class="text-xl font-bold text-white">Asesoramiento</h3>
+                  <p class="text-[#CBD9E1]">
+                    Nuestro equipo te acompañara a lo largo de todo el proceso.
+                  </p>
+                </div>
+              </div>
+                <!-- IMG -->
+            <div class="block lg:hidden pb-12">
+              <Image
+                height={1500}
+                width={1500}
+                src={premium_cards}
+                alt="personalized profiles"
+                format={"avif"}
+                quality={"high"}
+                class="h-50mx-auto"
               />
             </div>
-            <div>
-              <label for="subject" class="block mb-2 text-sm font-medium"
-                >Subject</label
-              >
-              <input
-                type="text"
-                id="subject"
-                class="block p-3 w-full text-sm bg-neutral-900 rounded-lg border border-neutral-300 shadow-sm focus:ring-neutral-500 focus:border-neutral-500 text-white"
-                placeholder="Let us know how we can help you"
-                required
-              />
             </div>
-            <div class="sm:col-span-2">
-              <label for="message" class="block mb-2 text-sm font-medium"
-                >Your message</label
+          </div>
+          <!--/CARACTERISTICAS-->
+
+          <!-- CONTACT -->
+          <section class="bg-neutral-950 text-white">
+            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+              <h2
+                class="mb-4 text-4xl tracking-tight font-extrabold text-center text-white"
               >
-              <textarea
-                id="message"
-                rows="6"
-                class="block p-2.5 w-full text-sm bg-neutral-900 rounded-lg shadow-sm border border-neutral-300 focus:ring-neutral-500 focus:border-neutral-500 text-white"
-                placeholder="Leave a comment..."></textarea>
+                Contact Us
+              </h2>
+              <p
+                class="mb-8 lg:mb-16 font-light text-center text-white sm:text-xl"
+              >
+                Got a technical issue? Want to send feedback about a beta
+                feature? Need details about our Business plan? Let us know.
+              </p>
+              <form action="#" class="space-y-8">
+                <div>
+                  <label for="email" class="block mb-2 text-sm font-medium"
+                    >Your email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="shadow-sm bg-neutral-900 border border-neutral-300 text-sm rounded-lg focus:ring-primary-500 focus:border-neutral-500 block w-full p-2.5 text-white"
+                    placeholder="name@flowbite.com"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="subject" class="block mb-2 text-sm font-medium"
+                    >Subject</label
+                  >
+                  <input
+                    type="text"
+                    id="subject"
+                    class="block p-3 w-full text-sm bg-neutral-900 rounded-lg border border-neutral-300 shadow-sm focus:ring-neutral-500 focus:border-neutral-500 text-white"
+                    placeholder="Let us know how we can help you"
+                    required
+                  />
+                </div>
+                <div class="sm:col-span-2">
+                  <label for="message" class="block mb-2 text-sm font-medium"
+                    >Your message</label
+                  >
+                  <textarea
+                    id="message"
+                    rows="6"
+                    class="block p-2.5 w-full text-sm bg-neutral-900 rounded-lg shadow-sm border border-neutral-300 focus:ring-neutral-500 focus:border-neutral-500 text-white"
+                    placeholder="Leave a comment..."></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-accent hover:bg-neutral-800 focus:ring-4 focus:outline-none"
+                  >Send message</button
+                >
+              </form>
             </div>
-            <button
-              type="submit"
-              class="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-accent hover:bg-neutral-800 focus:ring-4 focus:outline-none"
-              >Send message</button
-            >
-          </form>
+          </section>
+          <!-- END CONTACT -->
+          <Footer />
         </div>
       </section>
-      <!-- END CONTACT -->
-      <Footer />
     </section>
   </body>
 </html>
