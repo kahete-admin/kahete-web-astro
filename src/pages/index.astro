@@ -367,13 +367,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                 <!-- IMG -->
             <div class="block lg:hidden pb-12">
               <Image
-                height={1500}
-                width={1500}
+                height={500}
+                width={500}
                 src={premium_cards}
                 alt="personalized profiles"
                 format={"avif"}
                 quality={"high"}
-                class="h-50 mx-auto"
+                class="mx-auto"
               />
             </div>
             </div>
@@ -384,26 +384,25 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
           <section class="bg-neutral-950 text-white">
             <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
               <h2
-                class="mb-4 text-4xl tracking-tight font-extrabold text-center text-white"
+                class="mb-4 text-4xl tracking-tight font-semibold text-center text-white"
               >
-                Contact Us
+              Contáctanos
               </h2>
               <p
-                class="mb-8 lg:mb-16 font-light text-center text-white sm:text-xl"
+                class="mb-8 lg:mb-16 font-light text-center text-[#CBD9E1] sm:text-xl"
               >
-                Got a technical issue? Want to send feedback about a beta
-                feature? Need details about our Business plan? Let us know.
+              ¿Tiene algún problema, pregunta o comentario?
               </p>
               <form action="#" class="space-y-8">
                 <div>
                   <label for="email" class="block mb-2 text-sm font-medium"
-                    >Your email</label
+                    >Correo</label
                   >
                   <input
                     type="email"
                     id="email"
-                    class="shadow-sm bg-neutral-900 border border-neutral-300 text-sm rounded-lg focus:ring-primary-500 focus:border-neutral-500 block w-full p-2.5 text-white"
-                    placeholder="name@flowbite.com"
+                    class="shadow-sm bg-neutral-900 border  text-sm rounded-lg focus:ring-primary-500 focus:border-neutral-500 block w-full p-2.5 text-white"
+                    placeholder="nombre@kahete.com"
                     required
                   />
                 </div>
@@ -414,7 +413,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                   <input
                     type="text"
                     id="subject"
-                    class="block p-3 w-full text-sm bg-neutral-900 rounded-lg border border-neutral-300 shadow-sm focus:ring-neutral-500 focus:border-neutral-500 text-white"
+                    class="block p-3 w-full text-sm bg-neutral-900 rounded-lg border  shadow-sm focus:ring-neutral-500 focus:border-neutral-500 text-white"
                     placeholder="Let us know how we can help you"
                     required
                   />
@@ -426,7 +425,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                   <textarea
                     id="message"
                     rows="6"
-                    class="block p-2.5 w-full text-sm bg-neutral-900 rounded-lg shadow-sm border border-neutral-300 focus:ring-neutral-500 focus:border-neutral-500 text-white"
+                    class="block p-2.5 w-full text-sm bg-neutral-900 rounded-lg shadow-sm border  focus:ring-neutral-500 focus:border-neutral-500 text-white"
                     placeholder="Leave a comment..."></textarea>
                 </div>
                 <button
