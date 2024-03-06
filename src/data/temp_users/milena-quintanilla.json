@@ -1,14 +1,13 @@
 {
   "username": "Milena Quintanilla",
   "title": "Marketing Digital & Branding",
-  "about": "Ser un faro de esperanza y catalizador para un cambio transformador. Su visión audaz y liderazgo inspirador continúan guiando a la fundación hacia un futuro donde la esperanza se convierte en realidad para comunidades de todo el mundo",
-  "profile_picture": "https://media-gua1-1.cdn.whatsapp.net/v/t61.24694-24/377231398_857316546047199_6969732814790270812_n.jpg?ccb=11-4&oh=01_AdTFr2w0QOmjapZM61ONRtWl4Jd0MbpOjNpsXT7-vt_m2A&oe=65AD7289&_nc_sid=e6ed6c&_nc_cat=107",
+  "about": "",
+  "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1709741251/milena-quintanilla_torlrg.avif",
   "phone_number": "+(503) 7010 2975",
   "email":"milequinta@icloud.com",
   "whatsapp": "50370102975",
   "social_links":[
-    {"social_media": "LinkedIn","url":"https://www.linkedin.com/in/nicole-arriaza-ortiz-a42769192/"},
-    {"social_media": "Instagram","url":"https://www.instagram.com/adriseguros9/?igshid=YmMyMTA2M2Y%3D"},
-    {"social_media": "Instagram","url":"https://www.instagram.com/adriseguros9/?igshid=YmMyMTA2M2Y%3D"}
+    {"social_media": "Instagram","optionalName":"@milenaquintanilla_","url":"https://www.instagram.com/milenaquintanilla_/"},
+    {"social_media": "Instagram","optionalName":"@penpalsmediasv","url":"https://www.instagram.com/penpalsmediasv/"}
   ]
 }
