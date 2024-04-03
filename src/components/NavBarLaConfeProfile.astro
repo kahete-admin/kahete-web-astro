@@ -1,0 +1,95 @@
+---
+import download from "@public/svg/download.svg";
+import logo from "@public/svg/logo.svg";
+import { Image } from "astro:assets";
+interface Props {
+  username: string;
+  title: string;
+  profile_picture?: string; // URL to the photo
+}
+
+const { username, title, profile_picture } = Astro.props;
+const contactInformation = {
+  username: username,
+  title: title,
+  profile_picture: profile_picture,
+};
+---
+
+<header>
+  <nav
+    class="bg-neutral-1000 px-4 lg:px-6 py-2.5 border-b-neutral-700 border-b-[0.5px]"
+  >
+    <div
+      class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+    >
+      <a href="/" class="flex items-center">
+        <Image
+          height={40}
+          width={40}
+          src={logo}
+          alt="Kahete Logo"
+          format={"avif"}
+          quality={"mid"}
+        />
+      </a>
+      <button
+        id="createVCFCardButton"
+        type="submit"
+        class="inline-flex items-center justify-center rounded-full bg-white py-2 px-4 cursor-pointer"
+      >
+        <Image
+          height={30}
+          width={30}
+          src={download}
+          alt="Download contact"
+          format={"avif"}
+          quality={"mid"}
+          class="justify-start pr-2"
+        />
+        <span class="text-black font-semibold text-sm pr-2">Save contact</span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<script define:vars={{ contactInformation }}>
+  function createVCFWithPicture(contactInfo) {
+    const vcfContent = `
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:${contactInfo.username}
+TITLE;CHARSET=UTF-8:${contactInfo.title}
+TEL:${contactInfo.phone_number}
+PHOTO;JPEG:${contactInfo.profile_picture}
+END:VCARD
+`;
+
+    const blob = new Blob([vcfContent], { type: "text/vcard" });
+    const url = window.URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.style.display = "none";
+    a.href = url;
+    a.download = `${contactInfo.username}.vcf`;
+
+    document.body.appendChild(a);
+
+    // Triggering click event to download
+    if (document.createEvent) {
+      const event = document.createEvent("MouseEvents");
+      event.initEvent("click", true, false);
+      a.dispatchEvent(event);
+    } else {
+      a.click();
+    }
+
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+  }
+
+  const vcfButton = document.getElementById("createVCFCardButton");
+  vcfButton?.addEventListener("click", () =>
+    createVCFWithPicture(contactInformation)
+  );
+</script>
