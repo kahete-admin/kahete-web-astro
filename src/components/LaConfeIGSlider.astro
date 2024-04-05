@@ -1,0 +1,79 @@
+---
+import { Image } from "astro:assets";
+import delegacionHonduras from "@public/la_confe/delegacion-honduras.jpeg";
+---
+
+<div>
+  <label class="text-xl font-semibold text-start flex py-4">La Confe 28</label>
+  <div class="image-list-container">
+    <div class="image-list-item">
+      <Image
+        src={delegacionHonduras}
+        height={1000}
+        width={1000}
+        alt="Delegacion Honduras"
+        class={"card-banner"}
+      />
+      <label class="text-sm font-medium text-start flex pt-2"
+        >Delegacion de Honduras</label
+      >
+    </div>
+    <div class="image-list-item">
+      <Image
+        src={delegacionHonduras}
+        height={1000}
+        width={1000}
+        alt="Delegacion Honduras"
+        class={"card-banner"}
+      />
+      <label class="text-sm font-medium text-start flex pt-2"
+        >Delegacion de Honduras</label
+      >
+    </div>
+    <div class="image-list-item">
+      <Image
+        src={delegacionHonduras}
+        height={1000}
+        width={1000}
+        alt="Delegacion Honduras"
+        class={"card-banner"}
+      />
+      <label class="text-sm font-medium text-start flex pt-2"
+        >Delegacion de Honduras</label
+      >
+    </div>
+    <div class="image-list-item">
+      <Image
+        src={delegacionHonduras}
+        height={1000}
+        width={1000}
+        alt="Delegacion Honduras"
+        class={"card-banner"}
+      />
+      <label class="text-sm font-medium text-start flex pt-2"
+        >Delegacion de Honduras</label
+      >
+    </div>
+  </div>
+</div>
+
+<style>
+  .card-banner {
+    height: 250px;
+    width: 200px;
+    object-fit: cover;
+    border: 1px solid #939393;
+  }
+
+  .image-list-container {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .image-list-item {
+    display: inline-block;
+    margin-right: 25px;
+  }
+</style>

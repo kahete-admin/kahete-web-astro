@@ -2,6 +2,7 @@
 import LaConfeProfile from '@/layouts/LaConfeProfile.astro';
 import incomingData from "@/data/la_confe/el-salvador.json";
 import SocialMediaItem from '@/components/SocialMediaItem.astro';
+import LaConfeIGSlider from '@/components/LaConfeIGSlider.astro';
 
 
 export async function getStaticPaths() {
@@ -37,4 +38,5 @@ const { entry } = Astro.props;
       }
     )
   }
+  <LaConfeIGSlider/>
 </LaConfeProfile>
