@@ -1,11 +1,26 @@
 ---
 import { Image } from "astro:assets";
 import delegacionHonduras from "@public/la_confe/delegacion-honduras.jpeg";
+import togaParty from "@public/la_confe/toga-party.jpeg";
+import spiesParty from "@public/la_confe/spies-party.jpeg";
+import promParty from "@public/la_confe/prom-party.jpeg";
 ---
 
 <div>
   <label class="text-xl font-semibold text-start flex py-4">La Confe 28</label>
   <div class="image-list-container">
+    <a href="https://www.instagram.com/p/CyG5MRsAolp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="image-list-item">
+        <Image
+        src={togaParty}
+        height={1000}
+        width={1000}
+        alt="Toga Party"
+        class={"card-banner"}
+      />
+      <label class="text-sm font-medium text-start flex pt-2"
+        >Toga Party</label
+      >
+    </a>
     <a href="https://www.instagram.com/p/C5R9TFPA6ly/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="image-list-item">
       <Image
         src={delegacionHonduras}
@@ -18,40 +33,28 @@ import delegacionHonduras from "@public/la_confe/delegacion-honduras.jpeg";
         >Delegación de Honduras</label
       >
     </a>
-    <a href="" target="_blank" class="image-list-item">
+    <a href="https://www.instagram.com/p/C2Q7VPEAcBC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="image-list-item">
         <Image
-        src={delegacionHonduras}
+        src={spiesParty}
         height={1000}
         width={1000}
-        alt="Delegacion Honduras"
+        alt="Spies Party"
         class={"card-banner"}
       />
       <label class="text-sm font-medium text-start flex pt-2"
-        >Delegacion de Honduras</label
+        >Spies Party</label
       >
     </a>
-    <a href="" target="_blank" class="image-list-item">
+    <a href="https://www.instagram.com/p/C3ogSQMgof4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="image-list-item">
         <Image
-        src={delegacionHonduras}
+        src={promParty}
         height={1000}
         width={1000}
-        alt="Delegacion Honduras"
+        alt="Prom night"
         class={"card-banner"}
       />
       <label class="text-sm font-medium text-start flex pt-2"
-        >Delegacion de Honduras</label
-      >
-    </a>
-    <a href="" target="_blank" class="image-list-item">
-        <Image
-        src={delegacionHonduras}
-        height={1000}
-        width={1000}
-        alt="Delegacion Honduras"
-        class={"card-banner"}
-      />
-      <label class="text-sm font-medium text-start flex pt-2"
-        >Delegacion de Honduras</label
+        >Prom Night</label
       >
     </a>
   </div>
@@ -60,7 +63,7 @@ import delegacionHonduras from "@public/la_confe/delegacion-honduras.jpeg";
 <style>
   .card-banner {
     height: 250px;
-    width: 200px;
+    width: 250px;
     object-fit: cover;
     border: 1px solid #939393;
   }

@@ -22,7 +22,7 @@ const { entry } = Astro.props;
   profile_picture={entry.profile_picture}
   whatsapp={entry.whatsapp}
   phone_number={entry.whatsapp}
-  color_group="green"
+  color_group={entry.group_color}
 >
   {
     entry.social_links.map(
