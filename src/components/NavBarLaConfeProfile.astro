@@ -6,13 +6,15 @@ interface Props {
   username: string;
   title: string;
   profile_picture?: string;
+  phone_number:string;
 }
 
-const { username, title, profile_picture } = Astro.props;
+const { username, title, profile_picture, phone_number } = Astro.props;
 const contactInformation = {
   username: username,
   title: title,
   profile_picture: profile_picture,
+  phone_number: phone_number
 };
 ---
 

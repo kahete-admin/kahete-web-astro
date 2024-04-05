@@ -14,6 +14,7 @@ interface Props {
   profile_picture?: any;
   email?: string;
   whatsapp?: string;
+  phone_number?: string;
   color_group: "red" | "yellow" | "green" | "blue";
 }
 
@@ -24,21 +25,9 @@ const {
   profile_picture,
   email,
   whatsapp,
+  phone_number,
   color_group,
 } = Astro.props;
-
-let colorConvertion;
-switch (color_group) {
-  case "red":
-    colorConvertion = "border-red-600";
-    break;
-  case "yellow":
-    colorConvertion = "border-amber-600";
-    break;
-
-  default:
-    break;
-}
 ---
 
 <!doctype html>
@@ -51,6 +40,8 @@ switch (color_group) {
       username={username}
       title={title}
       profile_picture={profile_picture}
+      phone_number={phone_number!}
+
     />
     <section class="bg-neutral-1000 text-white">
       <div class="py-2 px-6 mx-auto max-w-screen-xl sm:py-8 lg:px-6">
@@ -89,22 +80,5 @@ switch (color_group) {
       </div>
       <Footer />
     </section>
-    <script>
-      const button = document.querySelector("div.show-more");
-      const content = document.querySelector("div.content");
-      let text = document.getElementById("show-text");
-
-      button?.addEventListener("click", () => {
-        if (text?.textContent?.toUpperCase() === "SHOW MORE") {
-          text.innerHTML = "Show less";
-          content?.classList.remove("hideContent");
-          content?.classList.add("showContent");
-        } else {
-          text!.innerHTML = "Show more";
-          content?.classList.remove("showContent");
-          content?.classList.add("hideContent");
-        }
-      });
-    </script>
   </body>
 </html>
