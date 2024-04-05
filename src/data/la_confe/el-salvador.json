@@ -592,25 +592,6 @@
     ]
   },
   {
-    "id": 32,
-    "slug": "sv-hugo-sanchez",
-    "username": "hugo sanchez",
-    "club": "club rotaract santa tecla-ESEN",
-    "country": "El Salvador 🇸🇻",
-    "profile_picture": "",
-    "whatsapp": "50364316623",
-    "social_links": [
-      {
-        "social_media": "WhatsApp",
-        "url": "https://wa.me/50364316623"
-      },
-      {
-        "social_media": "Instagram",
-        "url": "https://www.instagram.com/hugo.sc/"
-      }
-    ]
-  },
-  {
     "id": 33,
     "slug": "sv-javier-morales",
     "username": "javier morales",
