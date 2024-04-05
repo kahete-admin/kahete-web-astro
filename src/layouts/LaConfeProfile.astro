@@ -7,14 +7,16 @@ import { Image } from "astro:assets";
 import blogPlaceholder from "@public/la_confe/laconfe_square_logo.jpeg";
 import NavBarLaConfeProfile from "@/components/NavBarLaConfeProfile.astro";
 
-interface Props{
-  username:string,
-  title:string,
-  about:string,
-  profile_picture? :any,
-  email?:string,
-  whatsapp?:string,
+interface Props {
+  username: string;
+  title: string;
+  about: string;
+  profile_picture?: any;
+  email?: string;
+  whatsapp?: string;
+  color_group: "red" | "yellow" | "green" | "blue";
 }
+
 const {
   username,
   title,
@@ -22,7 +24,21 @@ const {
   profile_picture,
   email,
   whatsapp,
+  color_group,
 } = Astro.props;
+
+let colorConvertion;
+switch (color_group) {
+  case "red":
+    colorConvertion = "border-red-600";
+    break;
+  case "yellow":
+    colorConvertion = "border-amber-600";
+    break;
+
+  default:
+    break;
+}
 ---
 
 <!doctype html>
@@ -43,11 +59,11 @@ const {
             <Image
               format={"avif"}
               alt={username}
-              src={profile_picture === "" ? blogPlaceholder : profile_picture }
+              src={profile_picture === "" ? blogPlaceholder : profile_picture}
               quality={"mid"}
-              height={200}
-              width={200}
-              style="border-radius: 70px"
+              height={1000}
+              width={1000}
+              style={`border-radius: 60px;border: 4px solid ${color_group};padding: 6px; width: 200px; height: 200px;`}
             />
           </div>
           <div class="text-center pb-1 text-base">
@@ -58,7 +74,9 @@ const {
           </div>
 
           <div>
-            <div class="content mt-1 text-center text-about text-sm pb-6 capitalize">
+            <div
+              class="content mt-1 text-center text-about text-sm pb-6 capitalize"
+            >
               {about}
             </div>
           </div>

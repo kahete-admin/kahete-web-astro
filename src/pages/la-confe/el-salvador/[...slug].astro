@@ -1,14 +1,14 @@
 ---
-import LaConfeProfile from '@/layouts/LaConfeProfile.astro';
+import LaConfeProfile from "@/layouts/LaConfeProfile.astro";
 import incomingData from "@/data/la_confe/el-salvador.json";
-import SocialMediaItem from '@/components/SocialMediaItem.astro';
-import LaConfeIGSlider from '@/components/LaConfeIGSlider.astro';
-import LaConfeWAButton from '@/components/LaConfeWAButton.astro';
-
+import SocialMediaItem from "@/components/SocialMediaItem.astro";
+import LaConfeIGSlider from "@/components/LaConfeIGSlider.astro";
+import LaConfeWAButton from "@/components/LaConfeWAButton.astro";
 
 export async function getStaticPaths() {
-  return incomingData.map(entry => ({
-    params: { slug: entry.slug }, props: { entry },
+  return incomingData.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
   }));
 }
 
@@ -21,8 +21,8 @@ const { entry } = Astro.props;
   about={entry.club}
   profile_picture={entry.profile_picture}
   whatsapp={entry.whatsapp}
+  color_group="green"
 >
-<!-- WA BTN -->
   {
     entry.social_links.map(
       (socialMedia: {
@@ -30,8 +30,8 @@ const { entry } = Astro.props;
         url: string;
         optionalName?: string;
       }) => {
-        if(socialMedia.social_media === "WhatsApp"){
-         return <LaConfeWAButton url={socialMedia.url} />
+        if (socialMedia.social_media === "WhatsApp") {
+          return <LaConfeWAButton url={socialMedia.url} />;
         }
         return (
           <SocialMediaItem
@@ -43,5 +43,5 @@ const { entry } = Astro.props;
       }
     )
   }
-  <LaConfeIGSlider/>
+  <LaConfeIGSlider />
 </LaConfeProfile>
