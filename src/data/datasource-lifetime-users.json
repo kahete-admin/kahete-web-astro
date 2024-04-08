@@ -1046,5 +1046,224 @@
     "email": "rodolfomrf4@gmail.com",
     "whatsapp": "50372106723",
     "social_links": []
+  },
+  {
+    "slug": "sandracanessa",
+    "username": "Sandra Canessa",
+    "title": "Coordinadora de Compras de Amate of El Salvador S.A. de C.V.",
+    "about": "We are a Salvadoran wholesale and retail distributor of a variety of authentic nostalgic products, made by entrepreneurs from our country with a mission to connect with our brothers and friends in the US. Mission Committed to helping the growth of our country through the importation and exportation of products with Salvadoran roots for the American market. Vision Be the most profitable and respected supplier in our market, contributing to the growth",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1706153230/Sandra-Canessa_y6pt2z.avif",
+    "phone_number": "+(503) 6457 9833",
+    "email": "scanessa@amate.com.sv",
+    "whatsapp": "50364579833",
+    "social_links": [
+      {
+        "social_media": "Phone",
+        "optionalName": "+(503) 7870 0425",
+        "url": "tel:50378700425"
+      }
+    ]
+  },
+  {
+    "slug": "silviarivas",
+    "username": "Silvia Rivas",
+    "title": "Gerente de Recursos Humanos",
+    "about": "Bayer es una empresa multinacional con competencias clave en Ciencias de la Vida, agricultura y salud.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1706153791/silvia-rivas_bp1w60.avif",
+    "phone_number": "+(503) 7919 0096",
+    "email": "silvia.rivas@bayer.com",
+    "whatsapp": "50379190096",
+    "social_links": [
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/BayerAndinayCAC"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/bayerofficial/"
+      },
+      {
+        "social_media": "X",
+        "optionalName": "@Bayer",
+        "url": "https://twitter.com/bayer"
+      },
+      {
+        "social_media": "Youtube",
+        "url": "https://www.youtube.com/user/BayerTVinternational"
+      },
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/company/bayer/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Bayer",
+        "url": "https://www.bayer.com/en/"
+      }
+    ]
+  },
+  {
+    "slug": "soniavillaltadebelloso",
+    "username": "Sonia Villalta de Belloso",
+    "title": "Directora de Más Comunicación",
+    "about": "Soy Sonia Villalta de Belloso, directora de Más Comunicación, somos asesores de comunicación, aliados para su negocio con el objetivo de dar a conocer su marca y posicionar su imagen para que los públicos puedan hablar de las maravillas de su servicio o producto.Construimos la imagen para su reconocida reputación.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1706154161/sonia-villalta_d8unmz.avif",
+    "phone_number": "+(503) 7910 2168",
+    "email": "sonia@mascomunicacion.com.sv",
+    "whatsapp": "50379102168",
+    "social_links": [
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/MasComunicacionSV/"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/mascomunicacionsv/"
+      },
+      {
+        "social_media": "X",
+        "optionalName": "@MASComSV",
+        "url": "https://twitter.com/MASComSV"
+      },
+      {
+        "social_media": "Youtube",
+        "url": "https://www.youtube.com/user/MASComunicacionSV"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Mascomunicacionsv",
+        "url": "https://www.mascomunicacionsv.com/"
+      },
+      {
+        "social_media": "GoogleMaps",
+        "optionalName": "AVENIDA LAS CAMELIAS, CALLE LOS CASTAÑOS #17. SAN SALVADOR, EL SALVADOR",
+        "url": "https://goo.gl/maps/GsES115DM9F2Lh7f8"
+      }
+    ]
+  },
+  {
+    "slug": "sunycandray",
+    "username": "Suny Candray",
+    "title": "Gerente Regional - Solucionadora de Empaques FLEXAPRINT  SA",
+    "about": "Flexaprint es una empresa fundada en 1990 y desde   entonces ha sido la solución a los problemas de empaque termoencogible en cuanto a calidad, tiempo de entrega, servicio pre y post venta y ha sido un gran apoyo para el desarrollo de productos nuevos en los diferentes ámbitos de la Industria, comercio y servicio.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1706154693/suny-candray_s1whp4.avif",
+    "phone_number": "+(503) 7786 6012",
+    "email": "suny@flexaprint.com",
+    "whatsapp": "50377866012",
+    "social_links": [
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/profile.php?id=100069598689512"
+      },
+      {
+        "social_media": "Phone",
+        "optionalName": "+(503) 2264 7792",
+        "url": "tel:50322647792"
+      },
+      {
+        "social_media": "Phone",
+        "optionalName": "+(503) 2252 6524",
+        "url": "tel:50322526524"
+      },
+      {
+        "social_media": "Phone",
+        "optionalName": "+(503) 2252 6528",
+        "url": "tel:50322526528"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Flexaprint",
+        "url": "http://www.flexaprint.com/"
+      }
+    ]
+  },
+  {
+    "slug": "wilian-mira",
+    "username": "Lic. Wilian Mira",
+    "title": "Gerente General y Representante Legal",
+    "about": "En Soluciones Contables S.A. de C.V.  y MH Auditores S.A. de C.V. somos firmas de  profesionales comprometidos con el desarrollo empresarial, con un servicio de excelencia y una visión de largo plazo. Nuestro objetivo es acompañar como un socio estratégico a nuestros clientes, en el logro de sus desafíos, potenciando con nuestra experiencia profesional el crecimiento de sus negocios",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1706154882/Wilian-Mira_jisgxa.avif",
+    "phone_number": "+(503) 7069 0368",
+    "email": "wilian.mira@solucionescontables.net",
+    "whatsapp": "50370690368",
+    "social_links": [
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/SolucionesContablesContabilidadyAuditoria"
+      },
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/in/wilian-mira-b03bab44/"
+      },
+      {
+        "social_media": "Phone",
+        "optionalName": "+(503) 2226 1389",
+        "url": "tel:50322261389"
+      },
+      {
+        "social_media": "Mail",
+        "optionalName": "wilian.mira@mirahenriquezauditores.com",
+        "url": "mailto:wilian.mira@mirahenriquezauditores.com"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "solucionescontables.net",
+        "url": "https://solucionescontables.net/"
+      }
+    ]
+  },
+  {
+    "slug": "yelilanzilli",
+    "username": "Yeli Lanzilli",
+    "title": "Coach de Bienestar - INCAE Certification",
+    "about": "Te ayudo a generar ingresos extras e independencia financiera cuidando tu bienestar físico y manteniendo tu peso saludable en el tiempo. Mi Secreto: Desarrollar hábitos saludables cambiando la Mentalidad. Te enseño a combinar nutrición, ejercicio, saber escoger los alimentos, descanso y desarrollo personal.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1706155310/yeli-lanzilli_xaq2ss.avif",
+    "phone_number": "+(503) 7871 9992",
+    "email": "yelilanzilli@gmail.com",
+    "whatsapp": "50378719992",
+    "social_links": [
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/GuayoyYeli/"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/guayoyyeli/?utm_medium=copy_link"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Herbalife",
+        "url": "https://www.myherbalife.com/"
+      },
+      {
+        "social_media": "Youtube",
+        "url": "https://www.youtube.com/@GuayoyYeliHerbalife"
+      }
+    ]
+  },
+  {
+    "slug": "yuviny-solorzano",
+    "username": "Yuviny Solorzano",
+    "title": "Gerente General - Asistencia Regional",
+    "about": "En Asistencia Regional somos una empresa orientada hacia la satisfacción de nuestros clientes en cada atención de sus servicios, utilizando tecnología de vanguardia y un capital humano altamente calificado, que se traduce en servicio de calidad. nuestro compromiso hacia nuestros clientes es la mejora y la innovación continua, creando un balance entre nuestros clientes corporativos, capital humano y proveedores de servicios",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1706155732/yuviny-solorzano_ystgvd.avif",
+    "phone_number": "+(503) 7922 4050",
+    "email": "gerenciageneral@asistenciaregional.com",
+    "whatsapp": "50379224050",
+    "social_links": [
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/profile.php?id=100063927524117"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/asistencia_regional/?hl=es-la"
+      },
+      {
+        "social_media": "X",
+        "optionalName": "@Asis_Regional",
+        "url": "https://twitter.com/Asis_Regional"
+      }
+    ]
   }
 ]
