@@ -246,5 +246,503 @@
     "email": "eahsegurosyfianzas@hotmail.com",
     "whatsapp": "50377348767",
     "social_links": []
+  },
+  {
+    "slug": "ernestomaradiaga",
+    "username": "Lic. Ernesto Maradiaga",
+    "title": "Gerente General y Representante Legal",
+    "about": "Maradiaga & Compañía S.A de C.V. Es una firma de contabilidad ubicada en El Salvador que tiene como misión brindar a cada uno de nuestros clientes servicios de contabilidad altamente personalizados, nos enfocamos en convertirnos en un socio estratégico para la gestión y administración de su empresa.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705670489/ernesto-maradiaga_lslm7q.avif",
+    "phone_number": "+(503) 2367 6996",
+    "email": "ernesto@auditoriamcia.com",
+    "whatsapp": "50377361187",
+    "social_links": [
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/AuditoresYcontadores2010"
+      },
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/in/ernesto-maradiaga-351a666a/"
+      },
+      {
+        "social_media": "Mail",
+        "optionalName": "ernstop01@gmail.com",
+        "url": "mailto:ernstop01@gmail.com"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Auditoriamcia",
+        "url": "https://auditoriamcia.com/"
+      }
+    ]
+  },
+  {
+    "slug": "evelyncampos",
+    "username": "Evelyn Campos",
+    "title": "Fundadora y Directora de Fundación Altas Capacidades El Salvador",
+    "about": "Somos una organización sin fines de lucro comprometida a identificar, potenciar y cultivar el talento de los niños, niñas y adolescentes con altas capacidades para que tengan la oportunidad de desarrollar su potencial al servicio de la humanidad.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705670975/evelyn-campos_wlvaos.avif",
+    "phone_number": "+(503) 7723 9775",
+    "email": "evelyn.campos@altascapacidadessv.org",
+    "whatsapp": "50377239775",
+    "social_links": [
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/AACCElSalvador"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/aaccelsal/"
+      },
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/in/ealvar3z/"
+      },
+      {
+        "social_media": "X",
+        "optionalName": "@AACCELSAL",
+        "url": "https://twitter.com/AACCELSAL"
+      }
+    ]
+  },
+  {
+    "slug": "felixlatzo",
+    "username": "Félix Latzo",
+    "title": "Ecologista Salvadoreño Nominado al Premio Nobel de la Paz",
+    "about": "Environmentalist creator of the Educational Method for Environmental Awareness «Lets Plant America». A Member of the Human Species and a Citizen of Planet Earth",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1705671490/felix-latzo_tpswtz.avif",
+    "phone_number": "+(503) 7792 8031",
+    "email": "letsplantourplanet@gmail.com",
+    "whatsapp": "50377928031",
+    "social_links": [
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/FelixLatzoFoundation/"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/latzofelix/"
+      },
+      {
+        "social_media": "X",
+        "optionalName": "@LatzoFelix",
+        "url": "https://twitter.com/LatzoFelix"
+      },
+      {
+        "social_media": "Mail",
+        "optionalName": "felix.latzolpa@gmail.com",
+        "url": "mailto:felix.latzolpa@gmail.com"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Lets Plant Our Planet",
+        "url": "https://letsplantourplanet.wixsite.com/website"
+      }
+    ]
+  },
+  {
+    "slug": "flordeolivares",
+    "username": "Flor de Olivares",
+    "title": "Gerente General",
+    "about": "En Pan Trillizos, queremos ser conocidos por nuestros productos de calidad y sabor excepcional, a través de nuestra pasión por los altos estándares, brindando un buen servicio a nuestros clientes.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705672251/flor-de-olivares_cwh9nh.avif",
+    "phone_number": "+(503) 6200 4081",
+    "email": "flortorresv2706@gmail.com",
+    "whatsapp": "50362004081",
+    "social_links": [
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/pantrillizos"
+      },
+      {
+        "social_media": "Facebook",
+        "optionalName": "Alquiler de vehiculos",
+        "url": "https://www.facebook.com/profile.php?id=100085359036248&eav=AfZelics0M6OnTIdwyWeXs6MgREI3f5HTvnnU_pF2nl0gQEflsSVUkDUZswXcg4FPQ0&paipv=0"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/pantrillizos_sv/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Pan trillizos",
+        "url": "https://www.pantrillizos.com/"
+      }
+    ]
+  },
+  {
+    "slug": "gabrielacortez",
+    "username": "Gabriela Cortez",
+    "title": "Gerente de Cuentas",
+    "about": "Somos asesores de comunicación, aliados para su negocio con el objetivo de dar a conocer su marca y posicionar su imagen para que los públicos puedan hablar de las maravillas de su servicio o producto. Construimos la imagen para su reconocida reputación. Somos traductores de comunicación entre públicos.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1705673173/Gabriela-Cortez_rhzjmg.avif",
+    "phone_number": "+(503) 7954 4164",
+    "email": "gabriela.cortez@mascomunicacion.com.sv",
+    "whatsapp": "50379544164",
+    "social_links": [
+      {
+        "social_media": "LinkedIn",
+        "url": "https://sv.linkedin.com/company/mas-comunicaci-n-el-salvador"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/mascomunicacionsv/?hl=es"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Mascomunicacionsv",
+        "url": "https://www.mascomunicacionsv.com/"
+      }
+    ]
+  },
+  {
+    "slug": "hectorsalmeron",
+    "username": "Héctor Salmerón",
+    "title": "Asesor Comercial Retail",
+    "about": "Somos asesores de comunicación, aliados para su negocio con el objetivo de dar a conocer su marca y posicionar su imagen para que los públicos puedan hablar de las maravillas de su servicio o producto. Construimos la imagen para su reconocida reputación. Somos traductores de comunicación entre públicos.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705936129/hector-salmeron_xcj6do.avif",
+    "phone_number": "+(503) 7844 2146",
+    "email": "hsalmeron@uno-ca.com",
+    "whatsapp": "50378442146",
+    "social_links": [
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/hes.salmero?mibextid=LQQJ4d"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://instagram.com/hes2201?igshid=YmMyMTA2M2Y="
+      },
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/in/hector-eduardo-salmeron-15a01540"
+      },
+      {
+        "social_media": "Mail",
+        "optionalName": "hector2201@msn.com",
+        "url": "mailto:hector2201@msn.com"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "UNO CA",
+        "url": "https://uno-ca.com/"
+      }
+    ]
+  },
+  {
+    "slug": "oscarcruzlobo",
+    "username": "Ing. Oscar Cruz Lobo",
+    "title": "Director Presidente",
+    "about": "Constrisal S.A. de C.V. es una empresa de construcción especialista en diseño, construcción, supervisión y consultoría con más de 30 años de experiencia.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1705936560/oscar-lobo_rzbtwc.avif",
+    "phone_number": "+(503) 7844 2146",
+    "email": "oscarcruzlobo@gmail.com",
+    "whatsapp": "50374875652",
+    "social_links": [
+      {
+        "social_media": "Phone",
+        "optionalName": "(503) 7055 2229",
+        "url": "tel:50370552229"
+      },
+      {
+        "social_media": "Phone",
+        "optionalName": "(503) 2223 9684",
+        "url": "tel:50322239684"
+      }
+    ]
+  },
+  {
+    "slug": "jaimevalladares",
+    "username": "Jaime Valladares",
+    "title": "Business Developer - Prowork Group",
+    "about": "Soy Jaime Valladares, Business Development Representative de PROWORK GROUP. En Prowork Group nos dedicamos a brindar un servicio de clase mundial, por lo que nos adelantamos a las condiciones del mercado, contamos con una amplia cartera de servicios a nivel nacional e internacional para atender de inmediato las necesidades y requerimientos que se generen en nuestras principales líneas de negocio, enfocadas en resultados rentables y productivos para nuestros clientes",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500,g_auto/v1705936986/jaime-valladares_hnawfd.avif",
+    "phone_number": "+(503) 7850 5023",
+    "email": "valladares@prowork.lat",
+    "whatsapp": "50377452651",
+    "social_links": [
+      {
+        "social_media": "Phone",
+        "optionalName": "(503) 7055 2229",
+        "url": "tel:50370552229"
+      },
+      {
+        "social_media": "Phone",
+        "optionalName": "(503) 2254 6616",
+        "url": "tel:50322546616"
+      },
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/ProworkGroupMx"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/proworkgroupmx/"
+      },
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/in/jaimevalladares"
+      },
+      {
+        "social_media": "X",
+        "optionalName": "@ProworkGroupSv",
+        "url": "https://twitter.com/ProworkGroupSv"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "PROWORK",
+        "url": "https://prowork.lat/sv/"
+      }
+    ]
+  },
+  {
+    "slug": "josemanuelramirez",
+    "username": "José Manuel Ramírez",
+    "title": "Empresario y Consultor de Negocios",
+    "about": "Empresario independiente con más de 40 años de experiencia en la industria papelera, consultoría y multiniveles.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705937966/jose-ramirez_edyajk.avif",
+    "phone_number": "+(503) 7930 9197",
+    "email": "accionsiempre@gmail.com",
+    "whatsapp": "50379309197",
+    "social_links": [
+      {
+        "social_media": "Other",
+        "optionalName": "¡Regístrate en línea aquí!",
+        "url": "https://accounts.myherbalife.com/Account/Create?appId=1&locale=es-SV&redirect=https://www.myherbalife.com/es-SV/"
+      }
+    ]
+  },
+  {
+    "slug": "juanramoncaballero",
+    "username": "Juan Ramón Caballero",
+    "title": "Coach Empresarial",
+    "about": "Coach Empresarial apasionado por la enseñanza y el  desarrollo personal. Facilitador de Transformación Empresarial que genera cambios en las personas  y los procesos productivos de la empresa.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705968570/juan-caballero_dxt5l7.avif",
+    "phone_number": "+(503) 7585 9073",
+    "email": "caballero.teaching@gmail.com",
+    "whatsapp": "50375859073",
+    "social_links": [
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/juanramon.caballero.9?mibextid=ZbWKwL"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://instagram.com/both_uniformes?igshid=ZDdkNTZiNTM="
+      },
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/in/juan-ram%C3%B3n-caballero-67428583"
+      },
+      {
+        "social_media": "Mail",
+        "optionalName": "bothcompanysv@gmail.com",
+        "url": "mailto:bothcompanysv@gmail.com"
+      }
+    ]
+  },
+  {
+    "slug": "juliorodriguez",
+    "username": "Julio Rodríguez",
+    "title": "Periodista Cristiano",
+    "about": "Un cristiano imperfecto creyendo que las cosas pueden cambiar",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705968869/julio-rodriguez_vzbq24.avif",
+    "phone_number": "+(503) 7768 6817",
+    "email": "periodistacristiano@gmail.com",
+    "whatsapp": "50377686817",
+    "social_links": [
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/profile.php?id=100063452357695&mibextid=LQQJ4d"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://instagram.com/periodistacristiano?igshid=OGQ5ZDc2ODk2ZA=="
+      },
+      {
+        "social_media": "X",
+        "optionalName": "@JulioR_ES",
+        "url": "https://twitter.com/julior_es?s=11"
+      }
+    ]
+  },
+  {
+    "slug": "karenmira",
+    "username": "Karen Mira",
+    "title": "Auxiliar Contable/Administrativa en MH Auditores, S.A. de C.V.",
+    "about": "En  MH Auditores S.A. de C.V. somos firmas de  profesionales comprometidos con el desarrollo empresarial, con un servicio de excelencia y una visión de largo plazo. Nuestro objetivo es acompañar como un socio estratégico a nuestros clientes, en el logro de sus desafíos, potenciando con nuestra experiencia profesional el crecimiento de sus negocios",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_crop,w_500,h_500/v1705969273/karen-mira_tfe9l1.avif",
+    "phone_number": "+(503) 7069 6167",
+    "email": "karenmiramorales0309@outlook.es",
+    "whatsapp": "50370696167",
+    "social_links": [
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/lissette.mira"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/karen_mira05/?hl=es-la"
+      }
+    ]
+  },
+  {
+    "slug": "karenninerivas",
+    "username": "Karennine Rivas",
+    "title": "Gerente Comercial",
+    "about": "Soy Karennine Rivas, promotora de seguros de ASESUISA una empresa SURA., Conoce los mejores planes de seguro para personas y empresas con coberturas especializadas que se acoplan a tus necesidades",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1705969580/karennine-rivas_kdbqyp.avif",
+    "phone_number": "+(503) 7695 8756",
+    "email": "jkrivas@asesuisa.com",
+    "whatsapp": "50376958756",
+    "social_links": [
+      {
+        "social_media": "Other",
+        "optionalName": "Asesuisa",
+        "url": "https://www.asesuisa.com"
+      },
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/in/jennifer-karennine-rivas-0593b7173/"
+      },
+      {
+        "social_media": "GoogleMaps",
+        "optionalName": "Centro Comercial Plaza Merliot, Nivel 1, Local 124",
+        "url": "https://www.google.com/maps/place/Plaza+Merliot/@13.6787642,-89.2785753,17z/data=!3m1!4b1!4m6!3m5!1s0x8f632febd8b2a869:0xd94c44d3b4db9b9f!8m2!3d13.6787642!4d-89.2760004!16s%2Fg%2F11hymbc4dt?entry=ttu"
+      }
+    ]
+  },
+  {
+    "slug": "santiago-padilla",
+    "username": "Lic. Santiago Padilla",
+    "title": "Gerente Comercial",
+    "about": "En SHP SERVICE, somos la solución de tu compra, venta, alquiler, remodelaciones Y asesoría según tu necesidad. NO USES TARJETAS NI MENÚS DE PAPEL, SALVEMOS EL PLANETA.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705969947/santiago-padilla_wq1p3r.avif",
+    "phone_number": "+(503) 7695 8756",
+    "email": "santiago.padilla@shpservice.net",
+    "whatsapp": "50376560126",
+    "social_links": [
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/profile.php?id=100088511574327&mibextid=ZbWKwL"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://instagram.com/shpservicesv?igshid=NTA5ZTk1NTc="
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "TuHome",
+        "url": "https://tuhome.biz/"
+      }
+    ]
+  },
+  {
+    "slug": "esperanzabolainez",
+    "username": "Licda. Esperanza Bolaínez",
+    "title": "Abogada y notaria",
+    "about": "Bolaínez & Asociados es una empresa dedicada a la defensa de tus Derechos Personales y Empresariales en las áreas de: Penal, Familiar, Laboral, Civil y Mercantil.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,h_500,w_500/v1705970494/esperanza-bolaines_wo7w69.avif",
+    "phone_number": "+(503) 7246 7930",
+    "email": "bolainezyasociados@gmail.com",
+    "whatsapp": "50372467930",
+    "social_links": [
+      {
+        "social_media": "Phone",
+        "optionalName": "(503) 7288 7006",
+        "url": "tel:50372887006"
+      },
+      {
+        "social_media": "Phone",
+        "optionalName": "(503) 2624 4579",
+        "url": "tel:50326244579"
+      },
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/bolainezyasociados"
+      }
+    ]
+  },
+  {
+    "slug": "ivonnedoradea",
+    "username": "Licda. Ivonne Doradea",
+    "title": "Abogada y Notario",
+    "about": "Doradea & Asociados es un despacho jurídico y contable dedicado a la consultoría y defensa de tus Derechos Personales y empresariales en las áreas de: Penal, Familiar, Laboral, Civil y Mercantil.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1706027397/ivonne-doradea_xjawpq.avif",
+    "phone_number": "+(503) 7127 3759",
+    "email": "doradeaiv@hotmail.com",
+    "whatsapp": "50371273759",
+    "social_links": []
+  },
+  {
+    "slug": "lidia-cruz",
+    "username": "Licda. Lidia Cruz",
+    "title": "Empresaria Independiente",
+    "about": "Doradea & Asociados es un despacho jurídico y contable dedicado a la consultoría y defensa de tus Derechos Personales y empresariales en las áreas de: Penal, Familiar, Laboral, Civil y Mercantil.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1706028213/lidia-cruz_ecynvi.avif",
+    "phone_number": "+(503) 7384 8946",
+    "email": "lcruz.perez@hotmail.com",
+    "whatsapp": "50373848946",
+    "social_links": [
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/lidiaemperatrizc"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/lidia_cruzp/?hl=es-la"
+      },
+      {
+        "social_media": "TikTok",
+        "url": "https://www.tiktok.com/@lidiacruz809?_t=8aE34WCz1dt&_r=1"
+      },
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/in/lidia-cruz-4929a463"
+      }
+    ]
+  },
+  {
+    "slug": "luis-ronaldo-chavez",
+    "username": "Luis Ronaldo Chávez",
+    "title": "Estudiante Universitario",
+    "about": "Soy estudiante universitario",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1706059485/luis-chavez_odcquv.avif",
+    "phone_number": "+(503) 7558 4006",
+    "email": "luisronaldochavez@gmail.com",
+    "whatsapp": "50375584006",
+    "social_links": [
+      {
+        "social_media": "Instagram",
+        "url": "https://instagram.com/luis_rchavez?igshid=ZDc4ODBmNjlmNQ=="
+      },
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/in/luis-ronaldo-chavez-escamilla-baa467281"
+      }
+    ]
+  },
+  {
+    "slug": "luisroque",
+    "username": "Luis Roque",
+    "title": "Grupo Corporativo G",
+    "about": "Somos un grupo corporativo especialistas en OFFSET, TIPOGRAFIA, PRENSA DIGITAL, SERIGRAFIA, ROTULOS Y ARTICULOS PROMOCIONALES.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1706059836/Luis-Roque_exfkic.avif",
+    "phone_number": "+(503) 7448 0698",
+    "email": "impresospd@gmail.com",
+    "whatsapp": "50374480698",
+    "social_links": [
+      {
+        "social_media": "Phone",
+        "optionalName": "+(503) 2517 7466",
+        "url": "tel:50325177466"
+      },
+      {
+        "social_media": "Phone",
+        "optionalName": "+(503) 7771 8476",
+        "url": "tel:50377718476"
+      }
+    ]
   }
 ]
