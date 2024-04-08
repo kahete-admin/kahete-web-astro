@@ -162,5 +162,89 @@
         "url": "https://goo.gl/maps/rpFwwHpvQXYRqrKd7"
       }
     ]
+  },
+  {
+    "slug": "dianapena",
+    "username": "Diana Peña",
+    "title": "Asesora de Seguros",
+    "about": "Soy Diana Peña, asesora de seguros de MAPFRE El Salvador. Estoy cerca de ti para cuidar lo que más amas mediante mi asesoría, experiencia y conocimiento en el mundo de los seguros de personas y bienes.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705549636/kahete/diana-pena_wizc41.avif",
+    "phone_number": "+(503) 7837 5820",
+    "email": "dpena@mapfre.com.sv",
+    "whatsapp": "50378375820",
+    "social_links": [
+      {
+        "social_media": "Phone",
+        "optionalName": "(503) 2275 7544",
+        "url": "tel:50322757544"
+      },
+      {
+        "social_media": "Phone",
+        "optionalName": "(503) 2275 7543",
+        "url": "tel:50322757543"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "MAPFRE",
+        "url": "https://www.mapfre.com.sv/"
+      }
+    ]
+  },
+  {
+    "slug": "eduardoguzman",
+    "username": "Eduardo Guzmán",
+    "title": "Coach de Bienestar",
+    "about": "Te ayudo a controlar tu peso y mantenerlo en el tiempo a través de hábitos saludables. Mi secreto se basa en nutrición, ejercicio y saber escoger los alimentos además de un buen descanso y mentalidad positiva.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705550214/kahete/eduardo-guzman_bsm06k.avif",
+    "phone_number": "+(503) 7877 6271",
+    "email": "GuayoyYeli@gmail.com",
+    "whatsapp": "50378776271",
+    "social_links": [
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/GuayoyYeli/"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/guayoyyeli/?utm_medium=copy_link"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Herbalife",
+        "url": "https://www.myherbalife.com/"
+      },
+      {
+        "social_media": "Youtube",
+        "url": "https://www.youtube.com/@GuayoyYeliHerbalife"
+      }
+    ]
+  },
+  {
+    "slug": "eduardopreza",
+    "username": "Eduardo Preza",
+    "title": "Gerente general",
+    "about": "Somos Consultores de Auditoría Fiscal y Financiera,  estamos comprometidos con los valores éticos que garantizan la satisfacción de las necesidades de nuestros clientes y nos permita cumplir los objetivos de la firma.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705550818/kahete/eduardo-preza_h2unyg.avif",
+    "phone_number": "+(503) 7630 0841",
+    "email": "kya.preza@gmail.com",
+    "whatsapp": "50376300841",
+    "social_links": [
+      {
+        "social_media": "Mail",
+        "optionalName": "preza_eduardo@yahoo.es",
+        "url": "mailto:preza_eduardo@yahoo.es"
+      }
+    ]
+  },
+  {
+    "slug": "ernestoherrera",
+    "username": "Ernesto Herrera",
+    "title": "Corredor de Seguros",
+    "about": "Soy un Insurance Broker - Corredor de Seguros que trabaja con las mejores aseguradoras del mercado, doy atención personalizadas y busco la mejor opción para mis clientes haciendo un análisis detallado de sus necesidades.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705670173/ernesto-herrera_aeg3z1.avif",
+    "phone_number": "+(503) 7734 8767",
+    "email": "eahsegurosyfianzas@hotmail.com",
+    "whatsapp": "50377348767",
+    "social_links": []
   }
 ]
