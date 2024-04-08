@@ -1,0 +1,69 @@
+[
+  {
+    "slug": "adrianaarriaza",
+    "username": "Adriana Nicole Arriaza",
+    "title": "Corredor de Seguros",
+    "about": "Soy asesora independiente de seguros, autorizada por la SSF, que trabaja con las mejores Aseguradoras de mercado, ofreciendo un servicio personalizado mediante un análisis de riesgos para buscar la mejor opción de cobertura que se adapte a las necesidades de mis clientes.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705544898/kahete/adriana-arriaza_axlkrt.avif",
+    "phone_number": "+(503) 7857-8020",
+    "email": "adrianaseguros9@gmail.com",
+    "whatsapp": "50378578020",
+    "social_links": [
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/in/nicole-arriaza-ortiz-a42769192/"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/adriseguros9/?igshid=YmMyMTA2M2Y%3D"
+      }
+    ]
+  },
+  {
+    "slug": "alejandraarevalo",
+    "username": "Alejandra Arévalo",
+    "title": "Gerente de Comunicaciones",
+    "about": "Nos dedicamos a la generación de energía eléctrica por medio de pequeñas centrales hidroeléctricas mediante la modernización de nuestras operaciones, contribuyendo con el bienestar económico, social y ambiental de los salvadoreños.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1705544638/kahete/alejandra-arevalo_weiuvp.avif",
+    "phone_number": "+(503) 7603 1894",
+    "email": "aarevalo@cecsa.com.sv",
+    "whatsapp": "50376031894",
+    "social_links": [
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/profile.php?id=100057494767447"
+      },
+      {
+        "social_media": "X",
+        "optionalName": "@CECSA_SV",
+        "url": "https://twitter.com/CECSA_SV?t=y3K8dgW2cjho0IfY8496qg&s=08"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "CECSA_SV",
+        "url": "https://cecsa.com.sv/"
+      }
+    ]
+  },
+  {
+    "slug": "alexalvarez",
+    "username": "Alex Álvarez",
+    "title": "Agente Inmobiliario Alexpress Realtor",
+    "about": "En Alexpress somos tú mejor opción en Bienes Raíces. Nosotros te ayudamos a comprar, vender o alquilar de forma express! CONTACTANOS SERÁ UN GUSTO ATENDERTE.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705545109/kahete/alex-alvarez_eoqkv0.avif",
+    "phone_number": "+(503) 7970 2382",
+    "email": "alexpress.realtor@gmail.com",
+    "whatsapp": "50378578020",
+    "social_links": [
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/in/nicole-arriaza-ortiz-a42769192/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "alexpressr",
+        "url": "https://sites.google.com/view/alexpressr"
+      }
+    ]
+  }
+]
