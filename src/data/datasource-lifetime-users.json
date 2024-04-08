@@ -120,5 +120,47 @@
         "url": "https://www.linkedin.com/in/anabella-gardner-dunn-b80276220/"
       }
     ]
+  },
+  {
+    "slug": "arielrubio",
+    "username": "Ariel Rubio",
+    "title": "ECIJA Legal | Centroamérica",
+    "about": "ECIJA Legal es una firma Iberoamericana full service, con especial expertise en Tecnología, Medios y Telecomunicaciones (TMT). Nuestra operación en Centroamérica incluye 6 jurisdicciones: Guatemala Honduras El Salvador Nicaragua Costa Rica Panamá",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705547175/kahete/ariel-rubio_c3vwyz.avif",
+    "phone_number": "+(503) 7224 2780",
+    "email": "arielrubio2@gmail.com",
+    "whatsapp": "50372242780",
+    "social_links": [
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/in/ariel-rubio-919bb8245/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Ecija",
+        "url": "https://ecija.com/"
+      }
+    ]
+  },
+  {
+    "slug": "bethygonzalezderodriguez",
+    "username": "Licda. Ana Elizabeth González de Rodríguez",
+    "title": "Terapista Respiratoria Certificada",
+    "about": "Terapeuta respiratorio certificada - rehabilitadora pulmonar como de 30 años de experiencia en el sector salud.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705548232/kahete/ana-elizabeth-gonzalez_dm51gl.avif",
+    "phone_number": "+(503) 7741 0466",
+    "email": "tr_bethy@hotmail.com",
+    "whatsapp": "50377410466",
+    "social_links": [
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/in/ana-elizabeth-gonzalez-de-rodriguez-83b1572a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B4%2Berx7gwRTyMq0pEaLjP2A%3D%3D"
+      },
+      {
+        "social_media": "GoogleMaps",
+        "optionalName": "Hospital de Diagnóstico ",
+        "url": "https://goo.gl/maps/rpFwwHpvQXYRqrKd7"
+      }
+    ]
   }
 ]
