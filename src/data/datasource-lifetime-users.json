@@ -65,5 +65,60 @@
         "url": "https://sites.google.com/view/alexpressr"
       }
     ]
+  },
+  {
+    "slug": "alfredorosa",
+    "username": "Alfredo Rosa",
+    "title": "Coach de Ventas",
+    "about": "Gestión de Proyectos  Comerciales",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705546076/kahete/alfredo-rosa_vdquml.avif",
+    "phone_number": "+(503) 7415 3679",
+    "email": "alfredorosapuente@gmail.com",
+    "whatsapp": "50374153679",
+    "social_links": []
+  },
+  {
+    "slug": "anabellrodriguez",
+    "username": "Anabell Rodríguez",
+    "title": "Gestión de Proyectos",
+    "about": "Diseño Curricular",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1705546446/kahete/anabell-rodriguez_ukzzl2.avif",
+    "phone_number": "+(503) 7624 1789",
+    "email": "anabellrodriguez.sv@gmail.com",
+    "whatsapp": "50376241789",
+    "social_links": [
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/anabellrodriguezsv?mibextid=ZbWKwL"
+      },
+      {
+        "social_media": "LinkedIn",
+        "url": "https://sv.linkedin.com/in/anabell-rodriguez"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/anabellrodriguezsv/?hl=es"
+      }
+    ]
+  },
+  {
+    "slug": "anabella-gardner",
+    "username": "Anabella Gardner",
+    "title": "Global Digital Marketing",
+    "about": "Business Intelligence Analytics Exponential Sales Growth",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1706531778/anabella-gardner_eqsvjb.avif",
+    "phone_number": "+1 (857) 999-6242",
+    "email": "frecles@hotmail.com",
+    "whatsapp": "18579996242",
+    "social_links": [
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/anabella.gardnerdunn.7?mibextid=9R9pXO"
+      },
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/in/anabella-gardner-dunn-b80276220/"
+      }
+    ]
   }
 ]
