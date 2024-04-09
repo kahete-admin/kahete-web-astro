@@ -3,6 +3,7 @@ import BaseHead from "@components/BaseHead.astro";
 import Footer from "@components/Footer.astro";
 import { Image } from "astro:assets";
 import blogPlaceholder from "@public/la_confe/laconfe_square_logo.jpeg";
+import qrCode from "@public/svg/qr-code.svg";
 import NavBarLaConfeProfile from "@/components/NavBarLaConfeProfile.astro";
 
 interface Props {
@@ -39,7 +40,6 @@ const {
       title={title}
       profile_picture={profile_picture}
       phone_number={phone_number!}
-
     />
     <section class="bg-neutral-1000 text-white">
       <div class="py-2 px-6 mx-auto max-w-screen-xl sm:py-8 lg:px-6">
@@ -74,6 +74,21 @@ const {
             <slot />
           </div>
           <!-- /SOCIALMEDIA -->
+          <!-- QR -->
+          <div id="qr-code" class="p-12 mt-12 bg-white rounded-lg">
+            <Image
+              format={"avif"}
+              alt={"qr"}
+              src={qrCode}
+              quality={"mid"}
+              height={1000}
+              width={1000}
+            />
+            <lable class="text-black font-bold">{username}</lable>
+            <br />
+            <lable class="text-black capitalize">{about}</lable>
+          </div>
+          <!-- /QR -->
         </div>
       </div>
       <Footer />
