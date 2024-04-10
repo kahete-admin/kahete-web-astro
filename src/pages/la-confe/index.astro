@@ -32,47 +32,164 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
     </nav>
   </header>
   <body>
-    <section class="bg-neutral-1000 py-4 xl:px-16 px-8">
-      <label class="text-white text-lg">La Confe 28</label>
+    <section class="bg-neutral-1000 pt-8 xl:px-16 px-8">
+      <label class="text-white text-xl font-semibold">La Confe 28</label>
       <div class="mt-6 flex mb-4 breadcrum-list-container">
         <span
-          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
+          id="AllBtn"
+          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background active:bg-accent cursor-pointer px-2 border-typography-dark-secondary border-2 rounded-lg"
           >All</span
         >
         <span
-          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
+          id="SVBtn"
+          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background active:bg-accent cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg"
           >El Salvador</span
         >
         <span
-          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
+          id="GuateBtn"
+          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background active:bg-accent cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg"
+          >Guatemala</span
+        >
+        <span
+          id="PNMbtn"
+          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background active:bg-accent cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg"
           >Panamá</span
         >
         <span
-          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
+          id="HNbtn"
+          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background active:bg-accent cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg"
           >Honduras</span
         >
         <span
-          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
+          id="NCbtn"
+          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background active:bg-accent cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg"
           >Nicaragua</span
         >
         <span
-          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
+          id="CRbtn"
+          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background active:bg-accent cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg"
           >Costa Rica</span
         >
         <span
-          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
+          id="BZbtn"
+          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background active:bg-accent cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg"
           >Belice</span
         >
+        <span
+          id="PRbtn"
+          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background active:bg-accent cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg"
+          >Perú</span
+        >
       </div>
-      {
-        incomingData.map((entry) => {
-          return <LaConfeCard entry={entry} />;
-        })
-      }
+      <div id="all">
+        <div class="pb-4">
+          <label class="text-white">All countries 🇸🇻🇵🇪🇭🇳🇳🇮🇨🇷🇧🇿🇬🇹🇵🇦</label>
+        </div>
+        {
+          incomingData.map((entry) => {
+            return <LaConfeCard entry={entry} />;
+          })
+        }
+      </div>
+      <div id="el-salvador">
+        <div class="pb-4">
+          <label class="text-white">El Salvador 🇸🇻</label>
+        </div>
+        {
+          incomingData
+            .filter((entry) => entry.country.toLowerCase() === "el salvador")
+            .map((entry) => {
+              return <LaConfeCard entry={entry} />;
+            })
+        }
+      </div>
+      <div id="honduras">
+        <div class="pb-4">
+          <label class="text-white">Honduras 🇭🇳</label>
+        </div>
+        {
+          incomingData
+            .filter((entry) => entry.country.toLowerCase() === "honduras")
+            .map((entry) => {
+              return <LaConfeCard entry={entry} />;
+            })
+        }
+      </div>
+      <div id="guatemala">
+        <div class="pb-4">
+          <label class="text-white">Guatemala 🇬🇹</label>
+        </div>
+        {
+          incomingData
+            .filter((entry) => entry.country.toLowerCase() === "guatemala")
+            .map((entry) => {
+              return <LaConfeCard entry={entry} />;
+            })
+        }
+      </div>
+      <div id="panama">
+        <div class="pb-4">
+          <label class="text-white">Panamá 🇵🇦</label>
+        </div>
+        {
+          incomingData
+            .filter((entry) => entry.country.toLowerCase() === "panama")
+            .map((entry) => {
+              return <LaConfeCard entry={entry} />;
+            })
+        }
+      </div>
+      <div id="costa-rica">
+        <div class="pb-4">
+          <label class="text-white">Costa Rica 🇨🇷</label>
+        </div>
+        {
+          incomingData
+            .filter((entry) => entry.country.toLowerCase() === "costa rica")
+            .map((entry) => {
+              return <LaConfeCard entry={entry} />;
+            })
+        }
+      </div>
+      <div id="belice">
+        <div class="pb-4">
+          <label class="text-white">Belice 🇧🇿</label>
+        </div>
+        {
+          incomingData
+            .filter((entry) => entry.country.toLowerCase() === "belice")
+            .map((entry) => {
+              return <LaConfeCard entry={entry} />;
+            })
+        }
+      </div>
+      <div id="nicaragua">
+        <div class="pb-4">
+          <label class="text-white">Nicaragua 🇳🇮</label>
+        </div>
+        {
+          incomingData
+            .filter((entry) => entry.country.toLowerCase() === "nicaragua")
+            .map((entry) => {
+              return <LaConfeCard entry={entry} />;
+            })
+        }
+      </div>
+      <div id="peru">
+        <div class="pb-4">
+          <label class="text-white">Perú 🇵🇪</label>
+        </div>
+        {
+          incomingData
+            .filter((entry) => entry.country.toLowerCase() === "peru")
+            .map((entry) => {
+              return <LaConfeCard entry={entry} />;
+            })
+        }
+      </div>
     </section>
     <Footer />
   </body>
-
   <style>
     .breadcrum-list-container {
       width: 100%;
@@ -84,8 +201,148 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
 
     .breadcrum-list-item {
       display: inline-block;
-      margin-right: 25px;
+      margin-right: 12px;
       color: white;
     }
   </style>
+  <script is:inline>
+    const showAll = document.querySelector("#all");
+    const showElSalvador = document.querySelector("#el-salvador");
+    const showGuatemala = document.querySelector("#guatemala");
+    const showHonduras = document.querySelector("#honduras");
+    const showNicaragua = document.querySelector("#nicaragua");
+    const showCR = document.querySelector("#costa-rica");
+    const showPanama = document.querySelector("#panama");
+    const showPeru = document.querySelector("#peru");
+    const showBelice = document.querySelector("#belice");
+
+    const AllBtn = document.querySelector("#AllBtn");
+    const SVBtn = document.querySelector("#SVBtn");
+    const GuateBtn = document.querySelector("#GuateBtn");
+    const HNbtn = document.querySelector("#HNbtn");
+    const NCbtn = document.querySelector("#NCbtn");
+    const CRbtn = document.querySelector("#CRbtn");
+    const PNMbtn = document.querySelector("#PNMbtn");
+    const PRbtn = document.querySelector("#PRbtn");
+    const BZbtn = document.querySelector("#BZbtn");
+
+    AllBtn.addEventListener("click", () => {
+      showAll.style.display = "block";
+      showGuatemala.style.display = "none";
+      showElSalvador.style.display = "none";
+      showHonduras.style.display = "none";
+      showNicaragua.style.display = "none";
+      showCR.style.display = "none";
+      showPanama.style.display = "none";
+      showPeru.style.display = "none";
+      showBelice.style.display = "none";
+    });
+
+    SVBtn.addEventListener("click", () => {
+      showAll.style.display = "none";
+      showGuatemala.style.display = "none";
+      showElSalvador.style.display = "block";
+      showHonduras.style.display = "none";
+      showNicaragua.style.display = "none";
+      showCR.style.display = "none";
+      showPanama.style.display = "none";
+      showPeru.style.display = "none";
+      showBelice.style.display = "none";
+    });
+
+    GuateBtn.addEventListener("click", () => {
+      showGuatemala.style.display = "block";
+      showAll.style.display = "none";
+      showElSalvador.style.display = "none";
+      showHonduras.style.display = "none";
+      showNicaragua.style.display = "none";
+      showCR.style.display = "none";
+      showPanama.style.display = "none";
+      showPeru.style.display = "none";
+      showBelice.style.display = "none";
+    });
+
+    HNbtn.addEventListener("click", () => {
+      showGuatemala.style.display = "none";
+      showAll.style.display = "none";
+      showElSalvador.style.display = "none";
+      showHonduras.style.display = "block";
+      showNicaragua.style.display = "none";
+      showCR.style.display = "none";
+      showPanama.style.display = "none";
+      showPeru.style.display = "none";
+      showBelice.style.display = "none";
+    });
+
+    NCbtn.addEventListener("click", () => {
+      showGuatemala.style.display = "none";
+      showAll.style.display = "none";
+      showElSalvador.style.display = "none";
+      showHonduras.style.display = "none";
+      showNicaragua.style.display = "block";
+      showCR.style.display = "none";
+      showPanama.style.display = "none";
+      showPeru.style.display = "none";
+      showBelice.style.display = "none";
+    });
+
+    CRbtn.addEventListener("click", () => {
+      showGuatemala.style.display = "none";
+      showAll.style.display = "none";
+      showElSalvador.style.display = "none";
+      showHonduras.style.display = "none";
+      showNicaragua.style.display = "none";
+      showCR.style.display = "block";
+      showPanama.style.display = "none";
+      showPeru.style.display = "none";
+      showBelice.style.display = "none";
+    });
+
+    PNMbtn.addEventListener("click", () => {
+      showGuatemala.style.display = "none";
+      showAll.style.display = "none";
+      showElSalvador.style.display = "none";
+      showHonduras.style.display = "none";
+      showNicaragua.style.display = "none";
+      showCR.style.display = "none";
+      showPanama.style.display = "block";
+      showPeru.style.display = "none";
+      showBelice.style.display = "none";
+    });
+
+    PRbtn.addEventListener("click", () => {
+      showGuatemala.style.display = "none";
+      showAll.style.display = "none";
+      showElSalvador.style.display = "none";
+      showHonduras.style.display = "none";
+      showNicaragua.style.display = "none";
+      showCR.style.display = "none";
+      showPanama.style.display = "none";
+      showPeru.style.display = "block";
+      showBelice.style.display = "none";
+    });
+
+    BZbtn.addEventListener("click", () => {
+      showGuatemala.style.display = "none";
+      showAll.style.display = "none";
+      showElSalvador.style.display = "none";
+      showHonduras.style.display = "none";
+      showNicaragua.style.display = "none";
+      showCR.style.display = "none";
+      showPanama.style.display = "none";
+      showPeru.style.display = "none";
+      showBelice.style.display = "block";
+    });
+    PRbtn.addEventListener("click", () => {
+      showGuatemala.style.display = "none";
+      showAll.style.display = "none";
+      showElSalvador.style.display = "none";
+      showHonduras.style.display = "none";
+      showNicaragua.style.display = "none";
+      showCR.style.display = "none";
+      showPanama.style.display = "none";
+      showPeru.style.display = "block";
+      showBelice.style.display = "none";
+    });
+  </script>
 </html>
