@@ -1,12 +1,25 @@
 ---
 import { Image } from "astro:assets";
+import blogPlaceholder from "@public/la_confe/laconfe_square_logo.jpeg";
 
 const { entry } = Astro.props;
 ---
-<a href={`/la-confe/${entry.country.toLowerCase()}/${entry.slug}`}>
-    <div class="p-4 rounded-lg bg-main-buttons my-12">
-      <h1 class="text-white">{entry.username}</h1>
-      <h3 class="text-white">{entry.country}</h3>
-      <h6 class="text-white">{entry.club}</h6>
-    </div>
-  </a>
+
+<a
+  href={`/la-confe/${entry.country.toLowerCase()}/${entry.slug}`}
+  class="flex w-full align-middle items-center mb-6"
+>
+  <Image
+    format={"avif"}
+    alt={"Image"}
+    src={entry.profile_picture ? entry.profile_picture : blogPlaceholder}
+    quality={"mid"}
+    height={1000}
+    width={1000}
+    style="border-radius: 20px; height: 150px; width: 150px;"
+  />
+  <div class="pl-4 blo">
+    <label class="text-lg text-white block font-bold">{entry.username}</label>
+    <label class="text-lg text-typography-light-secondary">{entry.club}</label>
+  </div>
+</a>
