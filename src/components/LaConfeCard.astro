@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+
+const { entry } = Astro.props;
+---
+<a href={`/la-confe/${entry.country.toLowerCase()}/${entry.slug}`}>
+    <div class="p-4 rounded-lg bg-main-buttons my-12">
+      <h1 class="text-white">{entry.username}</h1>
+      <h3 class="text-white">{entry.country}</h3>
+      <h6 class="text-white">{entry.club}</h6>
+    </div>
+  </a>
