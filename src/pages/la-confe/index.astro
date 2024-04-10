@@ -34,33 +34,33 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
   <body>
     <section class="bg-neutral-1000 py-4 xl:px-16 px-8">
       <label class="text-white text-lg">La Confe 28</label>
-      <div class="mt-6 flex flex-wrap mb-4">
+      <div class="mt-6 flex mb-4 breadcrum-list-container">
         <span
-          class="text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
+          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
           >All</span
         >
         <span
-          class="text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
+          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
           >El Salvador</span
         >
         <span
-          class="text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
+          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
           >Panamá</span
         >
         <span
-          class="text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
+          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
           >Honduras</span
         >
         <span
-          class="text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
+          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
           >Nicaragua</span
         >
         <span
-          class="text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
+          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
           >Costa Rica</span
         >
         <span
-          class="text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
+          class="breadcrum-list-item text-white text-sm py-2 text-center bg-background cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg mr-4 mb-4"
           >Belice</span
         >
       </div>
@@ -72,4 +72,20 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
     </section>
     <Footer />
   </body>
+
+  <style>
+    .breadcrum-list-container {
+      width: 100%;
+      height: auto;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-bottom: 12px;
+    }
+
+    .breadcrum-list-item {
+      display: inline-block;
+      margin-right: 25px;
+      color: white;
+    }
+  </style>
 </html>
