@@ -46,7 +46,7 @@ const {
       console.log("Page is fully loaded");
       const qrcode = new QRCode(document.getElementById("qrcode"), {
         text:
-          "https://kahete-web-blond.vercel.app/la-confe/" + title + "/" + slug,
+          "https://kahete-web-blond.vercel.app/la-confe/" + title.toLowerCase() + "/" + slug,
         width: 1000,
         height: 1000,
         colorDark: "#000",
