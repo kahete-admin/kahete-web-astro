@@ -36,10 +36,10 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
     <section class="bg-neutral-1000">
       <div class="justify-between items-center mx-auto max-w-screen-xl pt-8">
         <label class="text-white text-xl font-semibold pl-6">La Confe 28</label>
-        <div class="mt-6 flex mb-4 breadcrum-list-container">
+        <div class="mt-6 ml-6 flex mb-4 breadcrum-list-container">
           <span
             id="AllBtn"
-            class="breadcrum-list-item text-white text-sm pl-6 pr-2 text-center bg-background active:bg-accent cursor-pointer px-2 border-typography-dark-secondary border-2 rounded-lg"
+            class="breadcrum-list-item text-white text-sm py-2 text-center bg-background active:bg-accent cursor-pointer px-2 border-typography-dark-secondary border-2 rounded-lg"
             >All</span
           >
           <span
@@ -209,6 +209,47 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
     }
   </style>
   <script is:inline>
+    document.onreadystatechange = function () {
+      if (document.readyState === "loading") {
+        console.log("Page is loading");
+      }
+      if (document.readyState === "interactive") {
+        console.log("DOM is ready");
+      }
+      if (document.readyState === "complete") {
+        // Button active
+        AllBtn.style.background = "rgb(101 206 216)";
+        AllBtn.style.color = "black";
+        // disable others
+        SVBtn.style.background = "rgb(20 25 28)";
+        SVBtn.style.color = "white";
+        GuateBtn.style.background = "rgb(20 25 28)";
+        GuateBtn.style.color = "white";
+        HNbtn.style.background = "rgb(20 25 28)";
+        HNbtn.style.color = "white";
+        CRbtn.style.background = "rgb(20 25 28)";
+        CRbtn.style.color = "white";
+        PNMbtn.style.background = "rgb(20 25 28)";
+        PNMbtn.style.color = "white";
+        PRbtn.style.background = "rgb(20 25 28)";
+        PRbtn.style.color = "white";
+        BZbtn.style.background = "rgb(20 25 28)";
+        BZbtn.style.color = "white";
+        NCbtn.style.background = "rgb(20 25 28)";
+        NCbtn.style.color = "white";
+        // styles
+        SVBtn.style.background = "transparent";
+        showAll.style.display = "block";
+        showGuatemala.style.display = "none";
+        showElSalvador.style.display = "none";
+        showHonduras.style.display = "none";
+        showNicaragua.style.display = "none";
+        showCR.style.display = "none";
+        showPanama.style.display = "none";
+        showPeru.style.display = "none";
+        showBelice.style.display = "none";
+      }
+    };
     const showAll = document.querySelector("#all");
     const showElSalvador = document.querySelector("#el-salvador");
     const showGuatemala = document.querySelector("#guatemala");
@@ -230,6 +271,28 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
     const BZbtn = document.querySelector("#BZbtn");
 
     AllBtn.addEventListener("click", () => {
+      // Button active
+      AllBtn.style.background = "rgb(101 206 216)";
+      AllBtn.style.color = "black";
+      // disable others
+      SVBtn.style.background = "rgb(20 25 28)";
+      SVBtn.style.color = "white";
+      GuateBtn.style.background = "rgb(20 25 28)";
+      GuateBtn.style.color = "white";
+      HNbtn.style.background = "rgb(20 25 28)";
+      HNbtn.style.color = "white";
+      CRbtn.style.background = "rgb(20 25 28)";
+      CRbtn.style.color = "white";
+      PNMbtn.style.background = "rgb(20 25 28)";
+      PNMbtn.style.color = "white";
+      PRbtn.style.background = "rgb(20 25 28)";
+      PRbtn.style.color = "white";
+      BZbtn.style.background = "rgb(20 25 28)";
+      BZbtn.style.color = "white";
+      NCbtn.style.background = "rgb(20 25 28)";
+      NCbtn.style.color = "white";
+      // styles
+      SVBtn.style.background = "transparent";
       showAll.style.display = "block";
       showGuatemala.style.display = "none";
       showElSalvador.style.display = "none";
@@ -242,6 +305,27 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
     });
 
     SVBtn.addEventListener("click", () => {
+      // Button active
+      SVBtn.style.background = "rgb(101 206 216)";
+      SVBtn.style.color = "black";
+      // disable others
+      AllBtn.style.background = "rgb(20 25 28)";
+      AllBtn.style.color = "white";
+      GuateBtn.style.background = "rgb(20 25 28)";
+      GuateBtn.style.color = "white";
+      HNbtn.style.background = "rgb(20 25 28)";
+      HNbtn.style.color = "white";
+      CRbtn.style.background = "rgb(20 25 28)";
+      CRbtn.style.color = "white";
+      PNMbtn.style.background = "rgb(20 25 28)";
+      PNMbtn.style.color = "white";
+      PRbtn.style.background = "rgb(20 25 28)";
+      PRbtn.style.color = "white";
+      BZbtn.style.background = "rgb(20 25 28)";
+      BZbtn.style.color = "white";
+      NCbtn.style.background = "rgb(20 25 28)";
+      NCbtn.style.color = "white";
+
       showAll.style.display = "none";
       showGuatemala.style.display = "none";
       showElSalvador.style.display = "block";
@@ -254,6 +338,27 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
     });
 
     GuateBtn.addEventListener("click", () => {
+      // Button active
+      GuateBtn.style.background = "rgb(101 206 216)";
+      GuateBtn.style.color = "black";
+      // disable others
+      AllBtn.style.background = "rgb(20 25 28)";
+      AllBtn.style.color = "white";
+      SVBtn.style.background = "rgb(20 25 28)";
+      SVBtn.style.color = "white";
+      HNbtn.style.background = "rgb(20 25 28)";
+      HNbtn.style.color = "white";
+      CRbtn.style.background = "rgb(20 25 28)";
+      CRbtn.style.color = "white";
+      PNMbtn.style.background = "rgb(20 25 28)";
+      PNMbtn.style.color = "white";
+      PRbtn.style.background = "rgb(20 25 28)";
+      PRbtn.style.color = "white";
+      BZbtn.style.background = "rgb(20 25 28)";
+      BZbtn.style.color = "white";
+      NCbtn.style.background = "rgb(20 25 28)";
+      NCbtn.style.color = "white";
+
       showGuatemala.style.display = "block";
       showAll.style.display = "none";
       showElSalvador.style.display = "none";
@@ -266,6 +371,27 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
     });
 
     HNbtn.addEventListener("click", () => {
+      // Button active
+      HNbtn.style.background = "rgb(101 206 216)";
+      HNbtn.style.color = "black";
+      // disable others
+      AllBtn.style.background = "rgb(20 25 28)";
+      AllBtn.style.color = "white";
+      SVBtn.style.background = "rgb(20 25 28)";
+      SVBtn.style.color = "white";
+      GuateBtn.style.background = "rgb(20 25 28)";
+      GuateBtn.style.color = "white";
+      CRbtn.style.background = "rgb(20 25 28)";
+      CRbtn.style.color = "white";
+      PNMbtn.style.background = "rgb(20 25 28)";
+      PNMbtn.style.color = "white";
+      PRbtn.style.background = "rgb(20 25 28)";
+      PRbtn.style.color = "white";
+      BZbtn.style.background = "rgb(20 25 28)";
+      BZbtn.style.color = "white";
+      NCbtn.style.background = "rgb(20 25 28)";
+      NCbtn.style.color = "white";
+
       showGuatemala.style.display = "none";
       showAll.style.display = "none";
       showElSalvador.style.display = "none";
@@ -278,6 +404,27 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
     });
 
     NCbtn.addEventListener("click", () => {
+      // Button active
+      NCbtn.style.background = "rgb(101 206 216)";
+      NCbtn.style.color = "black";
+      // disable others
+      AllBtn.style.background = "rgb(20 25 28)";
+      AllBtn.style.color = "white";
+      SVBtn.style.background = "rgb(20 25 28)";
+      SVBtn.style.color = "white";
+      GuateBtn.style.background = "rgb(20 25 28)";
+      GuateBtn.style.color = "white";
+      CRbtn.style.background = "rgb(20 25 28)";
+      CRbtn.style.color = "white";
+      PNMbtn.style.background = "rgb(20 25 28)";
+      PNMbtn.style.color = "white";
+      PRbtn.style.background = "rgb(20 25 28)";
+      PRbtn.style.color = "white";
+      BZbtn.style.background = "rgb(20 25 28)";
+      BZbtn.style.color = "white";
+      HNbtn.style.background = "rgb(20 25 28)";
+      HNbtn.style.color = "white";
+
       showGuatemala.style.display = "none";
       showAll.style.display = "none";
       showElSalvador.style.display = "none";
@@ -290,6 +437,27 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
     });
 
     CRbtn.addEventListener("click", () => {
+      // Button active
+      CRbtn.style.background = "rgb(101 206 216)";
+      CRbtn.style.color = "black";
+      // disable others
+      AllBtn.style.background = "rgb(20 25 28)";
+      AllBtn.style.color = "white";
+      SVBtn.style.background = "rgb(20 25 28)";
+      SVBtn.style.color = "white";
+      GuateBtn.style.background = "rgb(20 25 28)";
+      GuateBtn.style.color = "white";
+      NCbtn.style.background = "rgb(20 25 28)";
+      NCbtn.style.color = "white";
+      PNMbtn.style.background = "rgb(20 25 28)";
+      PNMbtn.style.color = "white";
+      PRbtn.style.background = "rgb(20 25 28)";
+      PRbtn.style.color = "white";
+      BZbtn.style.background = "rgb(20 25 28)";
+      BZbtn.style.color = "white";
+      HNbtn.style.background = "rgb(20 25 28)";
+      HNbtn.style.color = "white";
+
       showGuatemala.style.display = "none";
       showAll.style.display = "none";
       showElSalvador.style.display = "none";
@@ -302,6 +470,27 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
     });
 
     PNMbtn.addEventListener("click", () => {
+      // Button active
+      PNMbtn.style.background = "rgb(101 206 216)";
+      PNMbtn.style.color = "black";
+      // disable others
+      AllBtn.style.background = "rgb(20 25 28)";
+      AllBtn.style.color = "white";
+      SVBtn.style.background = "rgb(20 25 28)";
+      SVBtn.style.color = "white";
+      GuateBtn.style.background = "rgb(20 25 28)";
+      GuateBtn.style.color = "white";
+      NCbtn.style.background = "rgb(20 25 28)";
+      NCbtn.style.color = "white";
+      CRbtn.style.background = "rgb(20 25 28)";
+      CRbtn.style.color = "white";
+      PRbtn.style.background = "rgb(20 25 28)";
+      PRbtn.style.color = "white";
+      BZbtn.style.background = "rgb(20 25 28)";
+      BZbtn.style.color = "white";
+      HNbtn.style.background = "rgb(20 25 28)";
+      HNbtn.style.color = "white";
+
       showGuatemala.style.display = "none";
       showAll.style.display = "none";
       showElSalvador.style.display = "none";
@@ -314,6 +503,27 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
     });
 
     PRbtn.addEventListener("click", () => {
+      // Button active
+      PRbtn.style.background = "rgb(101 206 216)";
+      PRbtn.style.color = "black";
+      // disable others
+      AllBtn.style.background = "rgb(20 25 28)";
+      AllBtn.style.color = "white";
+      SVBtn.style.background = "rgb(20 25 28)";
+      SVBtn.style.color = "white";
+      GuateBtn.style.background = "rgb(20 25 28)";
+      GuateBtn.style.color = "white";
+      NCbtn.style.background = "rgb(20 25 28)";
+      NCbtn.style.color = "white";
+      CRbtn.style.background = "rgb(20 25 28)";
+      CRbtn.style.color = "white";
+      PNMbtn.style.background = "rgb(20 25 28)";
+      PNMbtn.style.color = "white";
+      BZbtn.style.background = "rgb(20 25 28)";
+      BZbtn.style.color = "white";
+      HNbtn.style.background = "rgb(20 25 28)";
+      HNbtn.style.color = "white";
+
       showGuatemala.style.display = "none";
       showAll.style.display = "none";
       showElSalvador.style.display = "none";
@@ -326,6 +536,27 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
     });
 
     BZbtn.addEventListener("click", () => {
+      // Button active
+      BZbtn.style.background = "rgb(101 206 216)";
+      BZbtn.style.color = "black";
+      // disable others
+      AllBtn.style.background = "rgb(20 25 28)";
+      AllBtn.style.color = "white";
+      SVBtn.style.background = "rgb(20 25 28)";
+      SVBtn.style.color = "white";
+      GuateBtn.style.background = "rgb(20 25 28)";
+      GuateBtn.style.color = "white";
+      NCbtn.style.background = "rgb(20 25 28)";
+      NCbtn.style.color = "white";
+      CRbtn.style.background = "rgb(20 25 28)";
+      CRbtn.style.color = "white";
+      PNMbtn.style.background = "rgb(20 25 28)";
+      PNMbtn.style.color = "white";
+      PRbtn.style.background = "rgb(20 25 28)";
+      PRbtn.style.color = "white";
+      HNbtn.style.background = "rgb(20 25 28)";
+      HNbtn.style.color = "white";
+
       showGuatemala.style.display = "none";
       showAll.style.display = "none";
       showElSalvador.style.display = "none";
@@ -336,7 +567,29 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
       showPeru.style.display = "none";
       showBelice.style.display = "block";
     });
+
     PRbtn.addEventListener("click", () => {
+      // Button active
+      PRbtn.style.background = "rgb(101 206 216)";
+      PRbtn.style.color = "black";
+      // disable others
+      AllBtn.style.background = "rgb(20 25 28)";
+      AllBtn.style.color = "white";
+      SVBtn.style.background = "rgb(20 25 28)";
+      SVBtn.style.color = "white";
+      GuateBtn.style.background = "rgb(20 25 28)";
+      GuateBtn.style.color = "white";
+      NCbtn.style.background = "rgb(20 25 28)";
+      NCbtn.style.color = "white";
+      CRbtn.style.background = "rgb(20 25 28)";
+      CRbtn.style.color = "white";
+      PNMbtn.style.background = "rgb(20 25 28)";
+      PNMbtn.style.color = "white";
+      BZbtn.style.background = "rgb(20 25 28)";
+      BZbtn.style.color = "white";
+      HNbtn.style.background = "rgb(20 25 28)";
+      HNbtn.style.color = "white";
+
       showGuatemala.style.display = "none";
       showAll.style.display = "none";
       showElSalvador.style.display = "none";
