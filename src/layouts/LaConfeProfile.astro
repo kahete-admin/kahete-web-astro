@@ -7,6 +7,7 @@ import qrCode from "@public/svg/qr-code.svg";
 import NavBarLaConfeProfile from "@/components/NavBarLaConfeProfile.astro";
 
 interface Props {
+  slug: string;
   username: string;
   title: string;
   about: string;
@@ -18,6 +19,7 @@ interface Props {
 }
 
 const {
+  slug,
   username,
   title,
   about,
@@ -29,7 +31,31 @@ const {
 } = Astro.props;
 ---
 
-<!doctype html>
+<script
+  is:inline
+  src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+<script define:vars={{ title, slug }}>
+  document.onreadystatechange = function () {
+    if (document.readyState === "loading") {
+      console.log("Page is loading");
+    }
+    if (document.readyState === "interactive") {
+      console.log("DOM is ready");
+    }
+    if (document.readyState === "complete") {
+      console.log("Page is fully loaded");
+      const qrcode = new QRCode(document.getElementById("qrcode"), {
+        text:
+          "https://kahete-web-blond.vercel.app/la-confe/" + title + "/" + slug,
+        width: 1000,
+        height: 1000,
+        colorDark: "#000",
+        colorLight: "#fff",
+        correctLevel: QRCode.CorrectLevel.H,
+      });
+    }
+  };
+</script>
 <html lang="en">
   <head>
     <BaseHead title={username} description={about} />
@@ -75,16 +101,11 @@ const {
           </div>
           <!-- /SOCIALMEDIA -->
           <!-- QR -->
-          <div id="qr-code" class="p-12 my-12 bg-white rounded-lg">
-            <Image
-              format={"avif"}
-              alt={"qr"}
-              src={qrCode}
-              quality={"mid"}
-              height={1000}
-              width={1000}
-            />
-            <lable class="text-black font-bold text-sm capitalize">{username}</lable>
+          <div class="p-12 my-12 bg-white rounded-lg justify-center">
+            <div id="qrcode" class="w-full pb-4"></div>
+            <lable class="text-black font-bold text-sm capitalize"
+              >{username}</lable
+            >
             <br />
             <lable class="text-black capitalize text-xs">{about}</lable>
           </div>
