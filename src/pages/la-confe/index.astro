@@ -16,7 +16,7 @@ import Footer from "@/components/Footer.astro";
       {
         incomingData.map((entry) => {
           return (
-            <a href={`${entry.country.toLowerCase()}/${entry.slug}`}>
+            <a href={`/la-confe/${entry.country.toLowerCase()}/${entry.slug}`}>
               <div class="p-4 rounded-lg bg-main-buttons my-12">
                 <h1 class="text-white">{entry.username}</h1>
                 <h3 class="text-white">{entry.country}</h3>
