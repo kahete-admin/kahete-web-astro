@@ -8,7 +8,7 @@ import LaConfeWAButton from "@/components/LaConfeWAButton.astro";
 export async function getStaticPaths() {
   return incomingData.map((entry) => ({
     params: {
-      slug: entry.country.toLowerCase() + "/" + entry.slug.toLowerCase(),
+      slug: entry.country.toLowerCase() + "/" + entry.slug,
     },
     props: { entry },
   }));
