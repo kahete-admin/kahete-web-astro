@@ -1,13 +1,36 @@
-<!DOCTYPE html>
+---
+import LaConfeProfile from "@/layouts/LaConfeProfile.astro";
+import incomingData from "@/data/la_confe/test-datasource.json";
+import SocialMediaItem from "@/components/SocialMediaItem.astro";
+import LaConfeIGSlider from "@/components/LaConfeIGSlider.astro";
+import LaConfeWAButton from "@/components/LaConfeWAButton.astro";
+import BaseHead from "@/components/BaseHead.astro";
+import Footer from "@/components/Footer.astro";
+---
+
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LaConfe</title>
-</head>
-<body>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => window.open('https://www.laconfe.com', '_self'));
-  </script>
-</body>
+  <head>
+    <BaseHead title={"La Confe"} description={"All users"} />
+  </head>
+  <body>
+    <header></header>
+    <!-- HEADER -->
+    <section class="bg-neutral-1000 py-4 xl:px-16 px-8">
+      {
+        incomingData.map((entry) => {
+          return (
+            <a href={`${entry.country.toLowerCase()}/${entry.slug}`}>
+              <div class="p-4 rounded-lg bg-main-buttons my-12">
+                <h1 class="text-white">{entry.username}</h1>
+                <h3 class="text-white">{entry.country}</h3>
+                <h6 class="text-white">{entry.club}</h6>
+              </div>
+            </a>
+          );
+        })
+      }
+    </section>
+    <Footer />
+  </body>
 </html>
