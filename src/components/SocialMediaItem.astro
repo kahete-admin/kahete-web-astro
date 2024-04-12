@@ -21,6 +21,7 @@ import Airbnb from "@public/social_media_logos/airbnb.svg";
 import TikTok from "@public/social_media_logos/tiktok.svg";
 import Telegram from "@public/social_media_logos/telegram.svg";
 import GoogleMaps from "@public/social_media_logos/google-maps.svg";
+import Pinterest from "@public/social_media_logos/pinterest.svg";
 import Other from "@public/social_media_logos/website-click.svg";
 import Paypal from "@public/social_media_logos/paypal.svg";
 import Phone from "@public/svg/call.svg";
@@ -59,6 +60,7 @@ interface Props {
     | "TikTok"
     | "Paypal"
     | "WhatsApp"
+    | "Pinterest"
     | "X";
 }
 const { url, socialMediaType, optionalName } = Astro.props;
@@ -141,6 +143,9 @@ switch (socialMediaType) {
     break;
   case "Paypal":
     IconUrl = Paypal;
+    break;
+  case "Pinterest":
+    IconUrl = Pinterest;
     break;
 
   default:

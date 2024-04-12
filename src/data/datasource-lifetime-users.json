@@ -1267,6 +1267,66 @@
     ]
   },
   {
+    "slug": "ing-luis-siliezar",
+    "username": "Ing. Luis Siliézar",
+    "title": "Gerente General",
+    "about": "Portal Mi Pais.com S.A. de C.V. es una empresa líder en transformación digital de las PYMES. Nuestros productos comelongo.com, aplicación para restaurante y kahete.com , aplicación de tarjetas digitales, están diseñadas para promover y desarrollar pequeños y medianos negocios protegiendo el medio ambiente. SALVEMOS EL PLANETA, NO USES MENÚS Y TARJETAS DE PAPEL",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1712960759/ing-luis-siliezar_ee78cy.avif",
+    "phone_number": "+(503) 7740 8486",
+    "email": "luis.siliezar@portalmipais.com",
+    "whatsapp": "50377408486",
+    "social_links": [
+      {
+        "social_media": "Other",
+        "optionalName": "Portalmipais.com",
+        "url": "https://www.portalmipais.com/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Comelongo.com",
+        "url": "https://comelongo.com/"
+      },
+      {
+        "social_media": "Mail",
+        "optionalName": "luis.siliezar@gmail.com",
+        "url": "mailto:luis.siliezar@gmail.com"
+      },
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/comelongo"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/comelongo/?hl=es-la"
+      },
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/in/ing-luis-siliezar-30a7205/"
+      },
+      {
+        "social_media": "TikTok",
+        "url": "https://www.tiktok.com/@comelongo?_t=8YCyxmgmL3N&_r=1"
+      },
+      {
+        "social_media": "Youtube",
+        "url": "https://www.youtube.com/@comelongo2025"
+      },
+      {
+        "social_media": "Spotify",
+        "url": "https://open.spotify.com/playlist/1Mj2oTATkL1sccRPjqwWYY?si=GQNLb52IThm8HV_oet-LTQ&nd=1&dlsi=c52e40462e2f4357"
+      },
+      {
+        "social_media": "Pinterest",
+        "url": "https://www.pinterest.com/lsiliezarperaza/?invite_code=05a3a316151746bbba09e2aff8b05fe6&sender=517491950841004405"
+      },
+      {
+        "social_media": "X",
+        "optionalName": "@Luis_Siliezar",
+        "url": "https://twitter.com/Luis_Siliezar?t=rNXspTzrGcH4rIzV3PRXgQ&s=09"
+      }
+    ]
+  },
+  {
     "slug": "milena-quintanilla",
     "username": "Milena Quintanilla",
     "title": "Marketing Digital & Branding",
