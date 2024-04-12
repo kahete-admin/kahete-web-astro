@@ -1311,5 +1311,25 @@
         "url": "https://www.linkedin.com/in/luis-siliezar-0bab07158/"
       }
     ]
+  },
+  {
+    "slug": "andrea-velasquez",
+    "username": "Andrea Velásquez",
+    "title": "Kahete Founder",
+    "about": "",
+    "profile_picture": "",
+    "phone_number": "+(503) 7885 3224",
+    "email": "andrea.velasquezguerra@gmail.com",
+    "whatsapp": "50378853224",
+    "social_links": [
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/andds/"
+      },
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/in/am-velasquezguerra/"
+      }
+    ]
   }
 ]

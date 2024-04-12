@@ -4,7 +4,7 @@ import Footer from "@components/Footer.astro";
 import NavBarProfile from "@components/NavBarProfile.astro";
 import ContactButton from "@components/ContactButton.astro";
 import { Image } from "astro:assets";
-import blogPlaceholder from "@public/blog-placeholder-1.jpg";
+import logo from "@public/svg/logo.svg";
 
 const {
   slug,
@@ -61,7 +61,7 @@ const {
             <Image
               format={"avif"}
               alt={username}
-              src={profile_picture ? profile_picture : blogPlaceholder}
+              src={profile_picture ? profile_picture : logo}
               quality={"mid"}
               height={200}
               width={200}
