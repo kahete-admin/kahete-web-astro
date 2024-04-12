@@ -1265,5 +1265,55 @@
         "url": "https://twitter.com/Asis_Regional"
       }
     ]
+  },
+  {
+    "slug": "milena-quintanilla",
+    "username": "Milena Quintanilla",
+    "title": "Marketing Digital & Branding",
+    "about": "",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1709741251/milena-quintanilla_torlrg.avif",
+    "phone_number": "+(503) 7010 2975",
+    "email": "milequinta@icloud.com",
+    "whatsapp": "50370102975",
+    "social_links": [
+      {
+        "social_media": "Instagram",
+        "optionalName": "@milenaquintanilla_",
+        "url": "https://www.instagram.com/milenaquintanilla_/"
+      },
+      {
+        "social_media": "Instagram",
+        "optionalName": "@penpalsmediasv",
+        "url": "https://www.instagram.com/penpalsmediasv/"
+      }
+    ]
+  },
+  {
+    "slug": "luis-siliezar",
+    "username": "Luis Siliezar",
+    "title": "Kahete Founder",
+    "about": "",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500,g_auto/v1712933246/IMG_5938_nffh6f.avif",
+    "phone_number": "+(503) 7742 0066",
+    "email": "lsiliezarjr@gmail.com",
+    "whatsapp": "50377420064",
+    "social_links": [
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/luis_siliezar/"
+      },
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/luis.siliezar17/"
+      },
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/in/luis-siliezar-0bab07158/"
+      },
+      {
+        "social_media": "Dribbble",
+        "url": "https://dribbble.com/silx_720"
+      }
+    ]
   }
 ]
