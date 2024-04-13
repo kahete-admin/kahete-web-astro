@@ -17,7 +17,6 @@ const {
   whatsapp,
 } = Astro.props;
 ---
-
 <script
   is:inline
   src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
@@ -108,22 +107,5 @@ const {
       </div>
       <Footer />
     </section>
-    <script>
-      const button = document.querySelector("div.show-more");
-      const content = document.querySelector("div.content");
-      let text = document.getElementById("show-text");
-
-      button?.addEventListener("click", () => {
-        if (text?.textContent?.toUpperCase() === "SHOW MORE") {
-          text.innerHTML = "Show less";
-          content?.classList.remove("hideContent");
-          content?.classList.add("showContent");
-        } else {
-          text!.innerHTML = "Show more";
-          content?.classList.remove("showContent");
-          content?.classList.add("hideContent");
-        }
-      });
-    </script>
   </body>
 </html>
