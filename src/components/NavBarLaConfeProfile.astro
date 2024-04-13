@@ -4,16 +4,18 @@ import { Image } from "astro:assets";
 interface Props {
   username: string;
   title: string;
-  profile_picture?: string;
   phone_number: string;
+  email: string;
+  profile_picture: string; // URL to the photo
 }
 
-const { username, title, profile_picture, phone_number } = Astro.props;
-const contactInfo = {
+const { username, title, profile_picture, phone_number, email } = Astro.props;
+const contactInformation = {
   username: username,
   title: title,
-  profile_picture: profile_picture,
   phone_number: phone_number,
+  email: email,
+  profile_picture: profile_picture,
 };
 ---
 
@@ -54,7 +56,7 @@ const contactInfo = {
           <span class="text-white pl-4 text-sm">Show QR</span>
         </a>
         <button
-          id="createVCFCardButton"
+          id="createVCFCardButtonLaConfe"
           type="submit"
           class="inline-flex items-center justify-center cursor-pointer rounded-full w-10 h-10"
           style="border: 1px solid white;"
@@ -76,53 +78,47 @@ const contactInfo = {
   </nav>
 </header>
 
-<script define:vars={{ contactInfo }}>
-  // const userFirstName = contactInfo.username.split(" ");
-  //   const vcfButton = document.getElementById("createVCFCardButton");
+<script define:vars={{ contactInformation }}>
+  const modifiedUserName = contactInformation.username.split(" ");
+  const newUserName =
+    modifiedUserName[0] + " " + modifiedUserName[1] + " " + modifiedUserName[2];
 
-  // vcfButton?.addEventListener("click", () => {
-  //   if (userFirstName[3] === null || undefined) {
-  //     console.log("this name has more variables");
-  //   }
-  //   console.log(userFirstName[2]);
-  //   console.log(userFirstName[0]);
-  // });
-    function createVCFWithPicture(contactInfo) {
-      const vcfContent = `
-  BEGIN:VCARD
-  VERSION:3.0
-  FN;CHARSET=UTF-8:${contactInfo.username}
-  FN;CHARSET=UTF-8:${contactInfo.username}
-  TITLE;CHARSET=UTF-8:${contactInfo.title}
-  TEL:${contactInfo.phone_number}
-  PHOTO;JPEG:${contactInfo.profile_picture}
-  END:VCARD
-  `;
+  function createVCFWithPicture(contactInfo) {
+    const vcfContent = `
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:${newUserName}
+TITLE;CHARSET=UTF-8:${contactInfo.title}
+TEL:${contactInfo.phone_number}
+EMAIL:${contactInfo.email}
+PHOTO;JPEG:${contactInfo.profile_picture}
+END:VCARD
+`;
 
-      const blob = new Blob([vcfContent], { type: "text/vcard" });
-      const url = window.URL.createObjectURL(blob);
+    const blob = new Blob([vcfContent], { type: "text/vcard" });
+    const url = window.URL.createObjectURL(blob);
 
-      const a = document.createElement("a");
-      a.style.display = "none";
-      a.href = url;
-      a.download = `${contactInfo.username}.vcf`;
+    const a = document.createElement("a");
+    a.style.display = "none";
+    a.href = url;
+    a.download = `${contactInfo.username}.vcf`;
 
-      document.body.appendChild(a);
+    document.body.appendChild(a);
 
-      // Triggering click event to download
-      if (document.createEvent) {
-        const event = document.createEvent("MouseEvents");
-        event.initEvent("click", true, false);
-        a.dispatchEvent(event);
-      } else {
-        a.click();
-      }
-
-      document.body.removeChild(a);
-      window.URL.revokeObjectURL(url);
+    // Triggering click event to download
+    if (document.createEvent) {
+      const event = document.createEvent("MouseEvents");
+      event.initEvent("click", true, false);
+      a.dispatchEvent(event);
+    } else {
+      a.click();
     }
 
-    const vcfButton = document.getElementById("createVCFCardButton");
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+  }
+
+  const vcfButton = document.getElementById("createVCFCardButtonLaConfe");
   vcfButton?.addEventListener("click", () =>
     createVCFWithPicture(contactInformation)
   );

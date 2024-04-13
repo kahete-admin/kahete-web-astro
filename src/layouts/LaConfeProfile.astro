@@ -45,10 +45,7 @@ const {
       console.log("Page is fully loaded");
       const qrcode = new QRCode(document.getElementById("qrcode"), {
         text:
-          "https://www.kahete.com/la-confe/" +
-          title.toLowerCase() +
-          "/" +
-          slug,
+          "https://www.kahete.com/la-confe/" + title.toLowerCase() + "/" + slug,
         width: 1000,
         height: 1000,
         colorDark: "#000",
