@@ -46,8 +46,10 @@ const {
       const qrcode = new QRCode(document.getElementById("qrcode"), {
         text:
           "https://www.kahete.com/la-confe/" + title.toLowerCase() + "/" + slug,
-        width: 1000,
-        height: 1000,
+        maxWidth: 600,
+        maxHeight: 600,
+        minWidth: 500,
+        minHeight: 500,
         colorDark: "#000",
         colorLight: "#fff",
         correctLevel: QRCode.CorrectLevel.H,
@@ -100,8 +102,8 @@ const {
           </div>
           <!-- /SOCIALMEDIA -->
           <!-- QR -->
-          <div class="p-12 my-12 bg-white rounded-lg justify-center">
-            <div id="qrcode" class="w-full pb-4"></div>
+          <div class="bg-white rounded-lg pb-8 mt-6">
+            <div id="qrcode" class="flex mx-auto justify-center p-12"></div>
             <lable class="text-black font-bold text-sm capitalize"
               >{username}</lable
             >
