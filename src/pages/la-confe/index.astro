@@ -88,9 +88,19 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
             <label class="text-white">All countries 🇸🇻🇵🇪🇭🇳🇳🇮🇨🇷🇧🇿🇬🇹🇵🇦</label>
           </div>
           {
-            incomingData.map((entry) => {
-              return <LaConfeCard entry={entry} />;
-            })
+            incomingData
+              .sort(function (a, b) {
+                if (a.username < b.username) {
+                  return -1;
+                }
+                if (a.username > b.username) {
+                  return 1;
+                }
+                return 0;
+              })
+              .map((entry) => {
+                return <LaConfeCard entry={entry} />;
+              })
           }
         </div>
         <div id="el-salvador" class="px-6">
@@ -100,6 +110,15 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
           {
             incomingData
               .filter((entry) => entry.country.toLowerCase() === "el salvador")
+              .sort(function (a, b) {
+                if (a.username < b.username) {
+                  return -1;
+                }
+                if (a.username > b.username) {
+                  return 1;
+                }
+                return 0;
+              })
               .map((entry) => {
                 return <LaConfeCard entry={entry} />;
               })
@@ -112,6 +131,15 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
           {
             incomingData
               .filter((entry) => entry.country.toLowerCase() === "honduras")
+              .sort(function (a, b) {
+                if (a.username < b.username) {
+                  return -1;
+                }
+                if (a.username > b.username) {
+                  return 1;
+                }
+                return 0;
+              })
               .map((entry) => {
                 return <LaConfeCard entry={entry} />;
               })
@@ -124,6 +152,15 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
           {
             incomingData
               .filter((entry) => entry.country.toLowerCase() === "guatemala")
+              .sort(function (a, b) {
+                if (a.username < b.username) {
+                  return -1;
+                }
+                if (a.username > b.username) {
+                  return 1;
+                }
+                return 0;
+              })
               .map((entry) => {
                 return <LaConfeCard entry={entry} />;
               })
@@ -136,6 +173,15 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
           {
             incomingData
               .filter((entry) => entry.country.toLowerCase() === "panama")
+              .sort(function (a, b) {
+                if (a.username < b.username) {
+                  return -1;
+                }
+                if (a.username > b.username) {
+                  return 1;
+                }
+                return 0;
+              })
               .map((entry) => {
                 return <LaConfeCard entry={entry} />;
               })
@@ -148,6 +194,15 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
           {
             incomingData
               .filter((entry) => entry.country.toLowerCase() === "costa rica")
+              .sort(function (a, b) {
+                if (a.username < b.username) {
+                  return -1;
+                }
+                if (a.username > b.username) {
+                  return 1;
+                }
+                return 0;
+              })
               .map((entry) => {
                 return <LaConfeCard entry={entry} />;
               })
@@ -160,6 +215,15 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
           {
             incomingData
               .filter((entry) => entry.country.toLowerCase() === "belice")
+              .sort(function (a, b) {
+                if (a.username < b.username) {
+                  return -1;
+                }
+                if (a.username > b.username) {
+                  return 1;
+                }
+                return 0;
+              })
               .map((entry) => {
                 return <LaConfeCard entry={entry} />;
               })
@@ -172,6 +236,15 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
           {
             incomingData
               .filter((entry) => entry.country.toLowerCase() === "nicaragua")
+              .sort(function (a, b) {
+                if (a.username < b.username) {
+                  return -1;
+                }
+                if (a.username > b.username) {
+                  return 1;
+                }
+                return 0;
+              })
               .map((entry) => {
                 return <LaConfeCard entry={entry} />;
               })
@@ -184,6 +257,15 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
           {
             incomingData
               .filter((entry) => entry.country.toLowerCase() === "peru")
+              .sort(function (a, b) {
+                if (a.username < b.username) {
+                  return -1;
+                }
+                if (a.username > b.username) {
+                  return 1;
+                }
+                return 0;
+              })
               .map((entry) => {
                 return <LaConfeCard entry={entry} />;
               })
