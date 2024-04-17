@@ -81,7 +81,7 @@ const contactInformation = {
 <script define:vars={{ contactInformation }}>
   const modifiedUserName = contactInformation.username.split(" ");
   const newUserName =
-    modifiedUserName[0] + " " + modifiedUserName[1] + " " + modifiedUserName[2];
+    modifiedUserName[0] + " " + modifiedUserName[1];
 
   function createVCFWithPicture(contactInfo) {
     const vcfContent = `
