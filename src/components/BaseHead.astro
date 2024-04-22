@@ -40,8 +40,8 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
 <meta
   property="og:image"
   content={new URL(
-    image,
-    "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713285924/photo-output_-_Tehri-Ann_Brown_poxk2d.jpg"
+    "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713285924/photo-output_-_Tehri-Ann_Brown_poxk2d.jpg",
+    Astro.url
   )}
 />
 
@@ -53,7 +53,7 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
 <meta
   property="twitter:image"
   content={new URL(
-    image,
-    "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713285924/photo-output_-_Tehri-Ann_Brown_poxk2d.jpg"
+    "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713285924/photo-output_-_Tehri-Ann_Brown_poxk2d.jpg",
+    Astro.url
   )}
 />
