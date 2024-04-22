@@ -9,7 +9,11 @@ import { Image } from "astro:assets";
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={"404"} description={"Page not found"} />
+    <BaseHead
+      title={"404"}
+      description={"Page not found"}
+      image="https://res.cloudinary.com/dmisxmy8o/image/upload/v1713747315/kahete_icon_logo_itc9mz.svg"
+    />
   </head>
   <body>
     <Header displayGetStartedButton={false} />
@@ -17,9 +21,7 @@ import { Image } from "astro:assets";
       <div
         class="py-2 px-6 mx-auto max-w-screen-xl sm:py-8 lg:px-6 h-screen justify-items-center"
       >
-        <div
-          class="mx-auto max-w-screen-sm text-center relative top-36"
-        >
+        <div class="mx-auto max-w-screen-sm text-center relative top-36">
           <div class="text-center pb-8 text-base">
             <h1 class="font-bold text-white text-8xl">404</h1>
             <h4 class="text-white font-semibold">Page not found</h4>
