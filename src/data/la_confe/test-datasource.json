@@ -65,7 +65,7 @@
     },
     {
         "slug": "santiago-briceno",
-        "group_color": "black",
+        "group_color": "#404040",
         "country": "Belice",
         "username": "Santiago Briceño",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713285870/72314000784__C239D8AD-58C5-4967-B4BF-261AC5C42A32_-_Santiago_Briceno_rreqkc.avif",
@@ -97,7 +97,7 @@
     },
     {
         "slug": "monica-heredia",
-        "group_color": "black",
+        "group_color": "#404040",
         "country": "Belice",
         "username": "Monica  Heredia",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1713285906/IMG_7408_-_Monica_Heredia_fgb30h.avif",
@@ -1169,7 +1169,7 @@
     },
     {
         "slug": "ingrid-esthela-villalobos-mendoza",
-        "group_color": "black",
+        "group_color": "#404040",
         "country": "Honduras",
         "username": "Ingrid Esthela Villalobos Mendoza",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715391/IngridVillalobos_Honduras_-_Ingrid_Villalobos_xpdvgr.avif",
@@ -1281,7 +1281,7 @@
     },
     {
         "slug": "eddy-eduardo-maldonado-fuentes",
-        "group_color": "black",
+        "group_color": "#404040",
         "country": "Guatemala",
         "username": "Eddyeduardo Maldonado Fuentes",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715236/EDDYEDUARDOMALDONADOFUENTES_GUATEMALA_-_Eddy_Maldonado_io72wt.avif",
@@ -1377,7 +1377,7 @@
     },
     {
         "slug": "katherine-victoria-anleu-andrade",
-        "group_color": "black",
+        "group_color": "#404040",
         "country": "Guatemala",
         "username": "Katherine Victoria Anleu Andrade",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715434/KatherineAnleu_Guatemala_-_Katherine_Anleu_pzln2b.avif",
@@ -1393,7 +1393,7 @@
     },
     {
         "slug": "luis-alejandro-chavez-orozco",
-        "group_color": "black",
+        "group_color": "#404040",
         "country": "Guatemala",
         "username": "Luis Alejandro Chávez Orozco",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715473/LuisChavez_Guatemala_-_Luis_Alejandro_Chavez_Orozco_neyqhf.avif",
@@ -1537,7 +1537,7 @@
     },
     {
         "slug": "ericka-barrantes-solorzano",
-        "group_color": "black",
+        "group_color": "#404040",
         "country": "Costa Rica",
         "username": "Ericka Barrantes Solórzano ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715247/ErickaBarrantesCostaRica_-_Ericka_Barrantes_ojdwux.avif",
@@ -1601,7 +1601,7 @@
     },
     {
         "slug": "leonardo-solano-vargas",
-        "group_color": "black",
+        "group_color": "#404040",
         "country": "Costa Rica",
         "username": "Leonardo Solano Vargas",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715457/LeonardoSolano_CostaRica2_-_Leonardo_Solano_Vargas_xqzdux.avif",
@@ -1777,7 +1777,7 @@
     },
     {
         "slug": "manuela-eugenia-gomez-chapilliquen",
-        "group_color": "black",
+        "group_color": "#404040",
         "country": "Peru",
         "username": "Manuela Eugenia Gomez Chapilliquen",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715489/ManuelaGomez_Panam%C3%A1_-_Manuela_Gomez_rdacjm.avif",
@@ -1809,7 +1809,7 @@
     },
     {
         "slug": "claudia-echeverria",
-        "group_color": "black",
+        "group_color": "#404040",
         "country": "Panama",
         "username": "Claudia Echeverria",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715386/IMG-20240403-WA0038_-_Claudia_Echeverria_gyw4as.avif",
@@ -2241,7 +2241,7 @@
     },
     {
         "slug": "ivana-giselle-salazar-diaz",
-        "group_color": "black",
+        "group_color": "#404040",
         "country": "Guatemala",
         "username": "Ivana Giselle Salazar Díaz ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715403/IvanaSalazar_Guatemala_-_ivana_salazar_vwbmjz.avif",
