@@ -1,13 +1,13 @@
 [
     {
         "slug": "tehri-ann-brown",
+        "group_color": "#5b3e31",
         "country": "Belice",
         "username": "Tehri-Ann Brown",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713285924/photo-output_-_Tehri-Ann_Brown_poxk2d.avif",
         "email": "tehri.law@gmail.com",
         "club": "Belize City",
         "whatsapp": 5016057036,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -17,13 +17,13 @@
     },
     {
         "slug": "alexi-habet",
+        "group_color": "cyan",
         "country": "Belice",
         "username": "Alexi Habet",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713285887/Facetune_08-09-2023-18-22-26_-_Alexi_Habet_xehb0o.avif",
         "email": "alexihabet20@gmail.com",
         "club": "Rotaract Club of San Ignacio",
         "whatsapp": 5016149182,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -33,13 +33,13 @@
     },
     {
         "slug": "adelfo-alcala",
+        "group_color": "#90EE90",
         "country": "Belice",
         "username": "Adelfo Alcalá ",
         "profile_picture": "",
         "email": "adelfoalcala17@gmail.com",
         "club": "Rotaract Club of Belize City ",
         "whatsapp": 5016086784,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -49,13 +49,13 @@
     },
     {
         "slug": "najwa-cadle",
+        "group_color": "white",
         "country": "Belice",
         "username": "Najwa Cadle",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713285880/F93FAABD-C816-4902-B92C-D1A39378534C_-_najwa_cadle_wipu4h.avif",
         "email": "najita.cadle@gmail.com",
         "club": "Belize City Club",
         "whatsapp": 5016242278,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -65,13 +65,13 @@
     },
     {
         "slug": "santiago-briceno",
+        "group_color": "black",
         "country": "Belice",
         "username": "Santiago Briceño",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713285870/72314000784__C239D8AD-58C5-4967-B4BF-261AC5C42A32_-_Santiago_Briceno_rreqkc.avif",
         "email": "santiagobriceno15@gmail.com",
         "club": "Rotaract Club of Orange Walk",
         "whatsapp": 5016748007,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -81,13 +81,13 @@
     },
     {
         "slug": "marvin-edward-williams",
+        "group_color": "pink",
         "country": "Belice",
         "username": "Marvin Edward Williams ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1713285875/E2BC4BF7-3582-40E2-AA81-E20DBC561640_-_Marvin_Williams_Eddy_iakijw.avif",
         "email": "mrvsthrland@gmail.com",
         "club": "Orange Walk ",
         "whatsapp": 5016112389,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -97,13 +97,13 @@
     },
     {
         "slug": "monica-heredia",
+        "group_color": "black",
         "country": "Belice",
-        "username": "Monica Heredia",
+        "username": "Monica  Heredia",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1713285906/IMG_7408_-_Monica_Heredia_fgb30h.avif",
         "email": "monicayheredia13@gmail.com",
         "club": "San Ignacio",
         "whatsapp": 5016275970,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -113,13 +113,13 @@
     },
     {
         "slug": "kristoff-nicholson",
+        "group_color": "orange",
         "country": "Belice",
         "username": "Kristoff Nicholson",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713285899/Headshot_Kristoff_PassportSize_-_Kristoff_Nicholson_ohbsws.avif",
         "email": "krisnick93@gmail.com",
         "club": "Rotaract Club of Belize City",
         "whatsapp": 5016141172,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -129,13 +129,13 @@
     },
     {
         "slug": "yasel-acosta",
+        "group_color": "orange",
         "country": "Belice",
         "username": "Yasel Acosta",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713285862/309170319_631129651950480_8685439507264257024_n_-_Yasel_Acosta_i2vkl4.avif",
         "email": "yasel.acosta@gmail.com",
         "club": "Orange Walk",
         "whatsapp": 5016148905,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -145,13 +145,13 @@
     },
     {
         "slug": "henry-martin-hernandez",
+        "group_color": "#5b3e31",
         "country": "Belice",
         "username": "Henry Martin Hernandez",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713285917/IMG-20240404-WA0007_1_-_Henry_Hernandez_rvukzp.avif",
         "email": "Hhernandez9908@gmail.com",
         "club": "Rotary Club of Corozal ",
         "whatsapp": 5016364940,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -161,13 +161,13 @@
     },
     {
         "slug": "kristy-dominguez",
+        "group_color": "#90EE90",
         "country": "Belice",
         "username": "Kristy  Dominguez ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1713285913/IMG_20230601_121841_-_Kristy_Dominguez_akjvfw.avif",
         "email": "kristydominguez13@gmail.com",
         "club": "Rotaract Club Of Benque Viejo",
         "whatsapp": 5016020428,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -177,13 +177,13 @@
     },
     {
         "slug": "solangie-salazar",
+        "group_color": "pink",
         "country": "Belice",
         "username": "Solangie Salazar",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713285930/Screenshot_20240406_195223_Drive_-_Solangie_Salazar_lmjmzu.avif",
         "email": "solangiemarie@gmail.com",
         "club": "Rotaract club of Belize City",
         "whatsapp": 5016272223,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -193,13 +193,13 @@
     },
     {
         "slug": "christian-nah",
+        "group_color": "red",
         "country": "Belice",
         "username": "Christian Nah",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1713285935/uuid_E3935396-7A28-471A-9A61-F7B2A781A366_library_1_type_1_mode_1_loc_true_cap_true_-_Christian_Nah_rypzbj.avif",
         "email": "christian.nah.71.81@gmail.com",
         "club": "Rotaract Orange Walk",
         "whatsapp": 5016714307,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -209,13 +209,13 @@
     },
     {
         "slug": "andrea-marcela-gomez-romero",
+        "group_color": "pink",
         "country": "Honduras",
         "username": "Andrea Marcela Gómez Romero ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715119/Andrea_gomez_Honduras_-_Marcela_Romero_1_voeron.avif",
         "email": "andreamarcelagomezromero@gmail.com",
         "club": "RTC de Tegucigalpa ",
         "whatsapp": 50495052439,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -225,13 +225,13 @@
     },
     {
         "slug": "carolina-giselle-bustamante-lara",
+        "group_color": "green",
         "country": "Honduras",
         "username": "Carolina Giselle Bustamante Lara",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715179/CarolinaBustamante_Honduras_-_Carolina_Bustamante_k6zcvq.avif",
         "email": "Carolinagisellebustamantelara@gmail.com",
         "club": "El Progreso",
         "whatsapp": 50433620317,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -241,13 +241,13 @@
     },
     {
         "slug": "david-alejandro-wolozny-alvarenga",
+        "group_color": "#90EE90",
         "country": "Honduras",
         "username": "David Alejandro Wolozny Alvarenga",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715282/IMG_2568_-_David_Wolozny_s7295k.avif",
         "email": "Davidwolozny@gmail.com",
         "club": "Rotaract San Pedro Sula",
         "whatsapp": 50495431974,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -257,13 +257,13 @@
     },
     {
         "slug": "carlos-roberto-nunez-flores",
+        "group_color": "yellow",
         "country": "Honduras",
         "username": "Carlos Roberto Nuñez Flores",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1712715176/CarlosNu%C3%B1ez_Honduras_-_carlos_nu%C3%B1ez_u4vor2.avif",
         "email": "cn639205@gmail.com",
         "club": "Club Rotaract Choloma ",
         "whatsapp": 50488562611,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -273,13 +273,13 @@
     },
     {
         "slug": "sharon-giron",
+        "group_color": "white",
         "country": "Honduras",
         "username": "Sharon Giron",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715630/SharonGiron_Honduras_-_sharon_giron_nln8rr.avif",
         "email": "Sharon.giron99@gmail.com",
         "club": "Club Rotaract Choluteca",
         "whatsapp": 50495327350,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -289,13 +289,13 @@
     },
     {
         "slug": "alejandro-maselli",
+        "group_color": "pink",
         "country": "Guatemala",
         "username": "Alejandro Maselli",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715369/IMG-20240313-WA0012_-_Alejandro_Maselli_SolidMas_nbdvvx.avif",
         "email": "alejandro.maselli.paiz@gmail.com",
         "club": "Club Rotario Guatemala de la Ermita",
         "whatsapp": 50252000513,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -305,13 +305,13 @@
     },
     {
         "slug": "heriberto-perez-montalvo",
+        "group_color": "yellow",
         "country": "Panama",
         "username": "Heriberto Pérez Montalvo ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715018/20200217_023341_-_Heriberto_P%C3%A9rez_Montalvo_yhntu1.avif",
         "email": "Herikmontalvo@gmail.com",
         "club": "Club Rotaract de Panamá ",
         "whatsapp": 50769515709,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -321,13 +321,13 @@
     },
     {
         "slug": "maria-eugenia-mairena-calix",
+        "group_color": "blue",
         "country": "Honduras",
         "username": "Maria Eugenia Mairena Calix",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715505/MariaMairena_Honduras_-_maru_mairena_azc8nk.avif",
         "email": "mairenamaru@gmail.com",
         "club": "Rotaract San Pedro Sula",
         "whatsapp": 50494746702,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -337,13 +337,13 @@
     },
     {
         "slug": "danilo-rodriguez",
+        "group_color": "white",
         "country": "Panama",
         "username": "Danilo Rodriguez",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715215/DaniloRodriguez_Panama_-_Danilo_Rodriguez_qbesh4.avif",
         "email": "jorgerodri40@gmail.com",
         "club": "Club Rotaract de Panamá",
         "whatsapp": 50764650611,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -353,13 +353,13 @@
     },
     {
         "slug": "jean-villega",
+        "group_color": "#5b3e31",
         "country": "Panama",
         "username": "Jean Villega ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715003/093B68AA-46D2-4357-A0E8-E18F388DB914_-_Jean_Villega_nsxwvi.avif",
         "email": "Jeancvc91@gmail.com",
         "club": "Club Rotaract Panamá Sur ",
         "whatsapp": 50767714323,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -369,13 +369,13 @@
     },
     {
         "slug": "ricardo-abdiel-toulier-peralta",
+        "group_color": "blue",
         "country": "Panama",
         "username": "Ricardo Abdiel Toulier Peralta",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715606/RICARDO_TOULIER__PANAMA_-_Ricardo_Toulier_j1rtg3.avif",
         "email": "Toulierrotaract@gmail.com ",
         "club": "Panama",
         "whatsapp": 50764534364,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -385,13 +385,13 @@
     },
     {
         "slug": "celeste-nicolle-martinez-leiva",
+        "group_color": "green",
         "country": "El Salvador",
         "username": "Celeste Nicolle Martinez Leiva ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715579/NicolleMartinez_ElSalvador_-_Nicolle_Mart%C3%ADnez_qqjx2p.avif",
         "email": "nicollemartinez51@gmail.com",
         "club": "Rotaract Noroeste",
         "whatsapp": 50378896833,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -401,13 +401,13 @@
     },
     {
         "slug": "nelson-saul-aguilar",
+        "group_color": "#90EE90",
         "country": "Panama",
         "username": "Nelson Saúl Aguilar ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715574/NelsonAguilar_panama_-_Nelson_Aguilar_R_wqcz3x.avif",
         "email": "Nelsonsaul201010@hotmail.com",
         "club": "Rotaract Panamá Norte",
         "whatsapp": 50766348144,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -417,13 +417,13 @@
     },
     {
         "slug": "blanca-cecilia-mejia-valladares",
+        "group_color": "pink",
         "country": "Honduras",
         "username": "Blanca Cecilia Mejia Valladares ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715140/Blanca_Mej%C3%ADa_Honduras_-_Blanca_Mejia_gxzoaj.avif",
         "email": "bmejia159@gmail.com",
         "club": "Valle de Sula ",
         "whatsapp": 50432889445,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -433,13 +433,13 @@
     },
     {
         "slug": "lazaro-abel-mondragon-avila",
+        "group_color": "#90EE90",
         "country": "Honduras",
         "username": "Lazaro Abel Mondragon Avila",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715452/LazaroMondragon_Honduras_-_lazaro_mondragon_i4y6ld.avif",
         "email": "mondragon_avila@hotmail.com",
         "club": "Rotaract Usula",
         "whatsapp": 50496713631,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -449,13 +449,13 @@
     },
     {
         "slug": "hector-arnulfo-cueva-paredes",
+        "group_color": "#5b3e31",
         "country": "Honduras",
         "username": "Hector Arnulfo Cueva Paredes",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713568136/WhatsApp_Image_2023-04-15_at_11.43.50_AM_-_04_Arquitectos_abhknz.jpg",
         "email": "hector.cueva@outlook.es",
         "club": "RTC Comunidad Universitaria & Profesional",
         "whatsapp": 50495363459,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -465,13 +465,13 @@
     },
     {
         "slug": "ameth-aaron-hernandez-pitti",
+        "group_color": "red",
         "country": "Panama",
         "username": "Ameth Aarón Hernández Pittí",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715077/Ameth_Hern%C3%A1ndez_Panam%C3%A1_-_Rotaract_Panama_norte_qkpolv.avif",
         "email": "amethpitti2026@gmail.com",
         "club": "Panamá Norte",
         "whatsapp": 50768067436,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -481,13 +481,13 @@
     },
     {
         "slug": "marissa-kiplyn-mortis",
+        "group_color": "white",
         "country": "Belice",
         "username": "Marissa Kiplyn Mortis ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715525/MarissaKiplynMortis_Belize_-_Kiplyn_Mortis_qre82n.avif",
         "email": "marissamortis23@gmail.com",
         "club": "Belize",
         "whatsapp": 5016150332,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -497,13 +497,13 @@
     },
     {
         "slug": "maria-reyna-urbina-martinez",
+        "group_color": "cyan",
         "country": "Honduras",
         "username": "Maria Reyna Urbina Martinez",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715510/MariaUrbina_Honduras_-_Maria_Urbina_ech0jc.avif",
         "email": "Xosgur16@gmail.com",
         "club": "Rotaract Usula ",
         "whatsapp": 50494650631,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -513,13 +513,13 @@
     },
     {
         "slug": "victor-alberto-melgar-serrano",
+        "group_color": "orange",
         "country": "Panama",
         "username": "Victor Alberto Melgar Serrano",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715293/IMG_2896_-_Victor_Melgar_zxjsee.avif",
         "email": "victormelg@gmail.com",
         "club": "Club Rotaract de Panamá",
         "whatsapp": 50762344630,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -529,13 +529,13 @@
     },
     {
         "slug": "analucia-gamero-jensen",
+        "group_color": "purple",
         "country": "Honduras",
         "username": "Analucia Gamero Jensen",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715092/AnaluciaGamero_Honduras_-_Analuc%C3%ADa_Gamero_Jensen_ctwgtc.avif",
         "email": "analucia.gamero@gmail.com",
         "club": "Rotaract San Pedro Sula ",
         "whatsapp": 50494522197,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -545,13 +545,13 @@
     },
     {
         "slug": "j-alexander-garcia-bravo",
+        "group_color": "cyan",
         "country": "Panama",
         "username": "J. Alexander García Bravo",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715408/J.AlexanderGarc%C3%ADa_Panam%C3%A1_-_Jorge_Alexander_Garc%C3%ADa_apma16.avif",
         "email": "jorge.garcia2590@gmail.com",
         "club": "Club Rotaract de Chitré",
         "whatsapp": 50762330382,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -561,13 +561,13 @@
     },
     {
         "slug": "jazmin-nicole-lopez-paz",
+        "group_color": "orange",
         "country": "Honduras",
         "username": "Jazmin Nicole Lopez Paz",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715413/JazminLopez_ElSalvador_rjpite.avif",
         "email": "001jazminlopez@gmail.com",
         "club": "San Pedro Sula ",
         "whatsapp": 50495135151,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -577,13 +577,13 @@
     },
     {
         "slug": "ana-lucia-rivera-guifarro",
+        "group_color": "red",
         "country": "Honduras",
         "username": "Ana Lucia Rivera Guifarro",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715098/AnaLuciaRivera_Honduras_-_Ana_Lucia_Rivera_ztctgv.avif",
         "email": "alriveragui@gmail.com",
         "club": "Club Rotaract Villa Real de Tegucigalpa",
         "whatsapp": 50431804510,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -593,13 +593,13 @@
     },
     {
         "slug": "efrain-zelaya",
+        "group_color": "blue",
         "country": "Honduras",
         "username": "Efrain Zelaya",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715242/Efra%C3%ADnzelaya_Honduras_-_efrain_zelaya_lm03tr.avif",
         "email": "Ezelayac@gmail.com",
         "club": "Villa Real de Tegucigalpa",
         "whatsapp": 50499079534,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -609,13 +609,13 @@
     },
     {
         "slug": "luis-roberto-siliezar-duarte",
+        "group_color": "#C0C0C0",
         "country": "El Salvador",
         "username": "Luis Roberto Siliezar Duarte",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715479/LuisSiliezar_ElSalvador_-_Luis_Siliezar_q5uwuo.avif",
         "email": " Lsiliezarjr@gmail.com",
         "club": "San Salvador Noroeste",
         "whatsapp": 50377420064,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -625,13 +625,13 @@
     },
     {
         "slug": "daniela-renee-rodriguez-perez",
+        "group_color": "pink",
         "country": "El Salvador",
         "username": "Daniela Reneé Rodríguez Pérez ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715210/Daniela_Rodriguez_El_Salvador_-_Daniela_Renee_Rodriguez_Perez_kth2l7.avif",
         "email": "danielarenee.r@gmail.com",
         "club": "San Salvador Noroeste ",
         "whatsapp": 50370092407,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -641,13 +641,13 @@
     },
     {
         "slug": "gerardo-alberto-cabrera-perez",
+        "group_color": "red",
         "country": "El Salvador",
         "username": "Gerardo Alberto Cabrera Perez",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715268/IMG_0285_-_Gerardo_Cabrera_qq4upz.avif",
         "email": "Grrcabrera@gmail.com",
         "club": "San Salvador Noroeste",
         "whatsapp": 50375886055,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -657,13 +657,13 @@
     },
     {
         "slug": "andrea-lucia-rodriguez-perez",
+        "group_color": "cyan",
         "country": "El Salvador",
         "username": "Andrea Lucia Rodríguez Pérez ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1712715108/Andrea_Rodr%C3%ADguez_El_Salvador_-_Andrea_Rodr%C3%ADguez_P%C3%A9rez_mmh8xx.avif",
         "email": "andrealuciarp27@gmail.com",
         "club": "San Salvador  Noroeste ",
         "whatsapp": 50370351200,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -673,13 +673,13 @@
     },
     {
         "slug": "levin-andre-martinez-vargas",
+        "group_color": "orange",
         "country": "Honduras",
         "username": "Levin Andre Martinez Vargas",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715463/LevinAndreMartinez_Honduras_-_Levin_Andre_Mart%C3%ADnez_sf1jj7.avif",
         "email": "levinandrem@gmail.com",
         "club": "Choluteca ",
         "whatsapp": 50496485830,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -689,13 +689,13 @@
     },
     {
         "slug": "carlos-enrique-mazariegos-ramirez",
+        "group_color": "yellow",
         "country": "Guatemala",
         "username": "Carlos Enrique Mazariegos Ramírez",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715194/CarlosMazariegos_Guatemala_-_Carlos_Enrique_Mazariegos_Ramirez_oyo1fv.avif",
         "email": "cmazariegosramirez@gmail.com",
         "club": "Del Valle Guatemala",
         "whatsapp": 50233125072,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -705,13 +705,13 @@
     },
     {
         "slug": "ana-lucia-gereda-ixco",
+        "group_color": "purple",
         "country": "Guatemala",
         "username": "Ana Lucía Gereda Ixcó ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1712715087/AnaGereda_Guatemala_-_Ana_Gereda_hdjren.avif",
         "email": "nalugeredai@gmail.com",
         "club": "Club Rotaract Guatemala de la Ermita ",
         "whatsapp": 50242143551,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -721,13 +721,13 @@
     },
     {
         "slug": "sabrina-escalon-illescas",
+        "group_color": "#90EE90",
         "country": "Guatemala",
         "username": "Sabrina Escalón Illescas",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715623/SabrinaEscalon_Guatemala_-_Sabrina_Escal%C3%B3n_eh5pye.avif",
         "email": "Sabri23900@gmail.com",
         "club": "Ciudad de Guatemala",
         "whatsapp": 50257158645,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -737,13 +737,13 @@
     },
     {
         "slug": "ricardo-francisco-cummings-mendez",
+        "group_color": "purple",
         "country": "El Salvador",
         "username": "Ricardo Francisco Cummings Mendez ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715612/RicardoCummings_-_Ricardo_Cummings_t7wivm.avif",
         "email": "ricardocummings985@gmail.com",
         "club": "Club Rotaract San Salvador Noroeste ",
         "whatsapp": 50376121708,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -753,13 +753,13 @@
     },
     {
         "slug": "nancy-esmeralda-medina-rivera",
+        "group_color": "#5b3e31",
         "country": "Honduras",
         "username": "Nancy Esmeralda Medina Rivera",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715552/NancyMedina_Honduras_-_Nancy_Medina_hkscs8.avif",
         "email": "nan.esmeralda@gmail.com",
         "club": "Rotaract Villa Real de Tegucigalpa",
         "whatsapp": 50496166207,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -769,13 +769,13 @@
     },
     {
         "slug": "nadia-isabel-caballero-diaz",
+        "group_color": "yellow",
         "country": "Honduras",
         "username": "Nadia Isabel Caballero Díaz",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715301/IMG_3154_-_Nadia_Caballero_slbg9e.avif",
         "email": "nadiaisabel12@live.com ",
         "club": "Club Rotaract San Pedro Sula",
         "whatsapp": 50432448733,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -785,13 +785,13 @@
     },
     {
         "slug": "nahomy-valeria-aleman-aceituno",
+        "group_color": "blue",
         "country": "Honduras",
         "username": "Nahomy Valeria Aleman Aceituno",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715262/Imagen_de_WhatsApp_2024-03-15_a_las_20.09.04_c7635c7f_-_Nahomy_Aleman_xfk0ao.avif",
         "email": "vale_05@hotmail.es",
         "club": "Club San Pedro Sula",
         "whatsapp": 50498299376,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -801,13 +801,13 @@
     },
     {
         "slug": "nelly-maria-atuan-carias",
+        "group_color": "green",
         "country": "Honduras",
         "username": "Nelly Maria Atuán Carías",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715568/NellyAtuan_Honduras_-_Nelly_Atu%C3%A1n_t7vswq.avif",
         "email": "ne.atuan99@gmail.com",
         "club": "Fuerza Tegucigalpa Sur",
         "whatsapp": 50431945685,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -817,13 +817,13 @@
     },
     {
         "slug": "maria-jose-argenal-rodriguez",
+        "group_color": "red",
         "country": "Honduras",
         "username": "María José Argeñal Rodríguez",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715500/MariaArge%C3%B1al_Honduras_-_Maria_Jose_Arge%C3%B1al_fbv8py.avif",
         "email": "majo.crum@gmail.com",
         "club": "Club Rotaract Unitec Metropolitano",
         "whatsapp": 50489970630,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -833,13 +833,13 @@
     },
     {
         "slug": "jorge-fernando-arteaga-martinez",
+        "group_color": "white",
         "country": "Honduras",
         "username": "Jorge Fernando Arteaga Martinez",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715026/20210711_131536_-_Jorge_Fernando_wfp47d.avif",
         "email": "joferarma92@gmail.com",
         "club": "Club Rotaract de Tegucigalpa",
-        "whatsapp": "50432690688",
-        "group_color": "red",
+        "whatsapp": 50432690688,
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -849,13 +849,13 @@
     },
     {
         "slug": "jose-luis-elvir-vilches",
+        "group_color": "cyan",
         "country": "Honduras",
         "username": "Jose Luis Elvir Vilches",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715376/IMG-20240315-WA0025_-_Jos%C3%A9_Elvir_wknmw7.avif",
         "email": "jlelvir36@gmail.com",
         "club": "Rotaract SPS",
         "whatsapp": 50496293922,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -865,13 +865,13 @@
     },
     {
         "slug": "suyapa-alejandra-portillo-maldonado",
+        "group_color": "green",
         "country": "Honduras",
         "username": "Suyapa Alejandra Portillo Maldonado ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715039/20240217_175957_-_Alejandra_Portillo_g0d6nj.avif",
         "email": "portillo19ale@gmail.com ",
         "club": "Comunidad Universitaria y Profesional ",
         "whatsapp": 50498496679,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -881,13 +881,13 @@
     },
     {
         "slug": "christian-alexander-castro-lopez",
+        "group_color": "cyan",
         "country": "Honduras",
         "username": "Christian Alexander Castro López",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715177/ChristianCastro_Honduras_-_Christian_Castro_xtg8dx.avif",
         "email": "christian.castro@rotaracthonduras.org",
         "club": "Rotaract El Progreso",
         "whatsapp": 50494989059,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -897,13 +897,13 @@
     },
     {
         "slug": "alejandra-tatiana-hernandez-rodriguez",
+        "group_color": "blue",
         "country": "El Salvador",
         "username": "Alejandra Tatiana Hernandez Rodríguez",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1712715072/AlejandraHern%C3%A1ndez_ElSalvador_re94kt.avif",
         "email": "alejandraherrod@gmail.com",
         "club": "San Salvador Cuscatlán",
         "whatsapp": 50379289374,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -913,13 +913,13 @@
     },
     {
         "slug": "ernesto-carballo",
+        "group_color": "#C0C0C0",
         "country": "El Salvador",
         "username": "Ernesto Carballo",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715023/20200705_192947_-_Ernesto_Carballo_Lopez_ixotfk.avif",
         "email": "e.carbalo@gmail.com",
         "club": "Santa Tecla-ESEN",
         "whatsapp": 50360063862,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -929,13 +929,13 @@
     },
     {
         "slug": "luis-enrique-jovel-gonzalez",
+        "group_color": "#5b3e31",
         "country": "El Salvador",
         "username": "Luis Enrique Jovel González",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712714999/35b4a3d9-5a64-4f7e-9d66-ea03c5f1491a_-_luis_jovel_y8npwi.avif",
         "email": "ljovel23@gmail.com",
         "club": "San Salvador Cuscatlán",
         "whatsapp": 50377860552,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -945,13 +945,13 @@
     },
     {
         "slug": "luis-eduardo-vasquez-villalta",
+        "group_color": "pink",
         "country": "El Salvador",
         "username": "Luis Eduardo Vásquez Villalta",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715043/17109500341928466827443027259187_-_Luis_Eduardo_V%C3%A1squez_Villalta_kej0de.avif",
         "email": "vasquez.eduardoluis@gmail.com",
         "club": "San Salvador Sur",
         "whatsapp": 50378824036,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -961,13 +961,13 @@
     },
     {
         "slug": "samuel-alfonso-zuniga-villatoro",
+        "group_color": "yellow",
         "country": "El Salvador",
         "username": "Samuel Alfonso Zuniga Villatoro",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715150/Captura_de_pantalla_2024-03-20_a_la_s_10.25.33_-_Samuel_A._Z%C3%BAniga_d2ppaj.avif",
         "email": "samuelzuniga78@gmail.com",
         "club": "San Miguel Decano",
         "whatsapp": 50372272589,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -977,13 +977,13 @@
     },
     {
         "slug": "kevin-alexander-valladares-martinez",
+        "group_color": "cyan",
         "country": "Nicaragua",
         "username": "Kevin Alexander Valladares Martínez ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715446/KevinValladares_Nicaragua_-_kev_100_uqd6aa.avif",
         "email": "kevin.valladares.kv@gmail.com",
         "club": "Chinandega san cristobal",
         "whatsapp": 50581990153,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -993,13 +993,13 @@
     },
     {
         "slug": "natalia-gomez",
+        "group_color": "#C0C0C0",
         "country": "El Salvador",
         "username": "Natalia Gomez",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715557/NataliaGomez_Elsalvador_-_Natalia_Gomez_ilnhbc.avif",
         "email": "Gomezorellana7@gmail.com",
         "club": "Rotaract Santa Tecla ESEN",
         "whatsapp": 50378858439,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1009,13 +1009,13 @@
     },
     {
         "slug": "rafael-eduardo-gomes-villela",
+        "group_color": "green",
         "country": "Guatemala",
         "username": "Rafael Eduardo Gomes Villela",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715601/RafaelGomes_Guatemala_-_Rafael_Eduardo_G._Villela_p9ldqi.avif",
         "email": "regvillela@gmail.com",
         "club": "Rotaract Del Valle de Guatemala",
         "whatsapp": 50233123343,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1025,13 +1025,13 @@
     },
     {
         "slug": "ana-carolina-brenes-mora",
+        "group_color": "yellow",
         "country": "Costa Rica",
         "username": "Ana Carolina Brenes Mora ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715082/AnaBrenes_CostaRica_-_Carolina_Brenes_ro650g.avif",
         "email": "caro29brenes@gmail.com",
         "club": "Club Rotaract San Pedro Curridabat ",
         "whatsapp": 50686543985,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1041,13 +1041,13 @@
     },
     {
         "slug": "giancarlo-castiglioni-gonzalez",
+        "group_color": "#5b3e31",
         "country": "Costa Rica",
         "username": "Giancarlo Castiglioni González ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715053/17109638165442868027845606974753_-_Giancarlo_Castiglioni_kiojli.avif",
         "email": "giancarlo.cg.coach@gmail.com",
         "club": "Heredia ",
         "whatsapp": 50687395972,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1057,13 +1057,13 @@
     },
     {
         "slug": "katty-paola-alvarenga-mendez",
+        "group_color": "green",
         "country": "Guatemala",
         "username": "Katty Paola Alvarenga Méndez",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715440/KattyAlvarenga_Guatemala_-_Katty_Paola_Alvarenga_M%C3%A9ndez_nt30ev.avif",
         "email": "katty.alvarenga@gmail.com",
         "club": "Rotaract Del Valle de Guatemala",
         "whatsapp": 50233123408,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1073,13 +1073,13 @@
     },
     {
         "slug": "roberto-carlos-lozano-pineda",
+        "group_color": "purple",
         "country": "Honduras",
         "username": "Roberto Carlos Lozano Pineda",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715618/RobertoLozano_Honduras_-_Roberto_Carlos_Lozano_Pineda_cid913.avif",
         "email": "Lozanoroberto85@gmail.com",
         "club": "Club Rotaract Tegucigalpa Sur",
         "whatsapp": 50494854404,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1089,13 +1089,13 @@
     },
     {
         "slug": "monica-villeda",
+        "group_color": "cyan",
         "country": "El Salvador",
         "username": "Mónica Villeda ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715547/M%C3%B3nica_Villeda_El_Salvador_-_monica_Villeda_salinas_g4ipn8.avif",
         "email": "Monivilled4@gmail.com",
         "club": "Club Rotaract San Salvador Maquilishuat ",
         "whatsapp": 50379235372,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1105,13 +1105,13 @@
     },
     {
         "slug": "isabella-romero-valladares",
+        "group_color": "red",
         "country": "Honduras",
         "username": "Isabella Romero Valladares ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715397/Isabella_Romero_Honduras_-_Isabella_Romero_rjsi3t.avif",
         "email": "isaromero04.ir@gmail.com",
         "club": "Rotaract Villa Real ",
         "whatsapp": 50431733528,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1121,13 +1121,13 @@
     },
     {
         "slug": "wilson-ricardo-lanza-osorto",
+        "group_color": "purple",
         "country": "Honduras",
         "username": "Wilson Ricardo Lanza Osorto",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715645/Wilson_Lanza_Honduras_-_Wilson_Lanza_ljdzrd.avif",
         "email": "Wrosorto@gmail.com",
         "club": "Tegucigalpa ",
         "whatsapp": 50495731793,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1137,13 +1137,13 @@
     },
     {
         "slug": "luciana-graciela-benitez-morales",
+        "group_color": "green",
         "country": "Honduras",
         "username": "Luciana Graciela Benítez Morales",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715468/LucianaBenitez_Honduras_-_Luciana_Benitez_v1zrsx.avif",
         "email": "lucianabenitezmo@gmail.com",
         "club": "Club Rotaract de Tegucigalpa",
         "whatsapp": 50497557337,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1153,13 +1153,13 @@
     },
     {
         "slug": "angel-josue-hernandez-reyes",
+        "group_color": "purple",
         "country": "Honduras",
         "username": "Angel Josue Hernandez Reyes ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1712715133/AngelHernandez_Honduras_-_angel_hernandez_hr9cqh.avif",
         "email": "hernandezangel9899@gmail.com",
         "club": "Club Rotaract de Choloma",
         "whatsapp": 50498414825,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1169,13 +1169,13 @@
     },
     {
         "slug": "ingrid-esthela-villalobos-mendoza",
+        "group_color": "black",
         "country": "Honduras",
         "username": "Ingrid Esthela Villalobos Mendoza",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715391/IngridVillalobos_Honduras_-_Ingrid_Villalobos_xpdvgr.avif",
         "email": "ingridvm55@gmail.com",
         "club": "Villa Real Tegucigalpa ",
         "whatsapp": 50498224539,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1185,13 +1185,13 @@
     },
     {
         "slug": "douglas-enrique-suarez-hernandez",
+        "group_color": "pink",
         "country": "Honduras",
         "username": "Douglas Enrique Suárez Hernández",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715311/IMG_4097_-_Douglas_Suarez_k7irxu.avif",
         "email": "douglassuare2006@gmail.com ",
         "club": "Club Rotaract Villa Real de Tegucigalpa ",
         "whatsapp": 50432741447,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1201,13 +1201,13 @@
     },
     {
         "slug": "jose-arturo-cordova-rivera",
+        "group_color": "red",
         "country": "Honduras",
         "username": "Jose Arturo Cordova Rivera",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715423/JoseCordova_Honduras_-_Arthur_Cordova_xo6ha2.avif",
         "email": "atu.cr92@gmail.com",
         "club": "Comunidad Universitaria y Profesional",
         "whatsapp": 50495931297,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1217,13 +1217,13 @@
     },
     {
         "slug": "andrea-paola-osorio-reyes",
+        "group_color": "#90EE90",
         "country": "Honduras",
         "username": "Andrea Paola Osorio Reyes",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1712715035/20240210_200128_-_andrea_osorio_ndns5j.avif",
         "email": "Burcio432@gmail.com ",
         "club": "De Tegucigalpa ",
         "whatsapp": 50499570404,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1233,13 +1233,13 @@
     },
     {
         "slug": "cesar-augusto-manzanares",
+        "group_color": "red",
         "country": "Honduras",
         "username": "Cesar Augusto Manzanares",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715175/CesarManzanares_Honduras_-_Cesar_Manzanares_jbps3g.avif",
         "email": "cesar.manzanaressc@gmail.com",
         "club": "Club Rotaract USULA",
         "whatsapp": 50497052025,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1249,13 +1249,13 @@
     },
     {
         "slug": "guadalupe-solera",
+        "group_color": "white",
         "country": "Costa Rica",
         "username": "Guadalupe Solera",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715484/Lupe_Solera_Costa_Rica_-_Guadalupe_Solera_jpivrz.avif",
         "email": "guadalupesoa@gmail.com",
         "club": "Club Rotaract Alajuela ",
         "whatsapp": 50687556502,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1265,13 +1265,13 @@
     },
     {
         "slug": "pedro-guzman",
+        "group_color": "yellow",
         "country": "Guatemala",
         "username": "Pedro Guzmán ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715596/PedroGuzmanGuate_-_Pedro_Guzm%C3%A1n_zqarxh.avif",
         "email": "pedro.guz13@gmail.com",
         "club": "Rotaract de Quetzaltenango ",
         "whatsapp": 50253197291,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1281,13 +1281,13 @@
     },
     {
         "slug": "eddy-eduardo-maldonado-fuentes",
+        "group_color": "black",
         "country": "Guatemala",
         "username": "Eddyeduardo Maldonado Fuentes",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715236/EDDYEDUARDOMALDONADOFUENTES_GUATEMALA_-_Eddy_Maldonado_io72wt.avif",
         "email": "ing.eddymf@gmail.com",
         "club": "Quetzaltenango ",
         "whatsapp": 50254342967,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1297,13 +1297,13 @@
     },
     {
         "slug": "camila-gabriela-hasbun-lopez",
+        "group_color": "#C0C0C0",
         "country": "El Salvador",
         "username": "Camila Gabriela Hasbún López ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715342/IMG_8234_-_camila_Hasbun_wog0ir.avif",
         "email": "camilag.hasbun@gmail.com",
         "club": "San Salvador cuscatlan ",
         "whatsapp": 50377375309,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1313,13 +1313,13 @@
     },
     {
         "slug": "rolando-alberto-ramos-aguirre",
+        "group_color": "pink",
         "country": "Honduras",
         "username": "Rolando Alberto Ramos Aguirre",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715048/1711077717385833122213782940440_-_Albert_Ramos_wravuc.avif",
         "email": "Albert16Ramx@gmail.com",
         "club": "Comunidad Universitaria & Profesional / CU&P",
         "whatsapp": 50496858302,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1329,13 +1329,13 @@
     },
     {
         "slug": "aaron-jafet-cardoza-ramos",
+        "group_color": "#5b3e31",
         "country": "Honduras",
         "username": "Aaron Jafet Cardoza Ramos",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713329105/AaronCardoza_honduras_q8nmy5.png",
         "email": "aaroncardoza9880@gmail.com",
         "club": "Club Rotaract de Puerto Cortés ",
         "whatsapp": 50496507925,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1345,13 +1345,13 @@
     },
     {
         "slug": "milena-lissette-quintanilla-bonilla",
+        "group_color": "#C0C0C0",
         "country": "El Salvador",
         "username": "Milena Lissette Quintanilla Bonilla",
         "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1709741251/milena-quintanilla_torlrg.avif",
         "email": "milequinta@icloud.com",
         "club": "San Salvador Noroeste",
         "whatsapp": 50370102975,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1361,13 +1361,13 @@
     },
     {
         "slug": "andre-sebastian-meyers",
+        "group_color": "#C0C0C0",
         "country": "El Salvador",
         "username": "André Sebastian Meyers",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715101/Andr%C3%A9_Meyers_-_Andy_Meyers_cya26a.avif",
         "email": "andymeyers_@outlook.com",
         "club": "San Salvador Noroeste",
         "whatsapp": 50374899858,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1377,13 +1377,13 @@
     },
     {
         "slug": "katherine-victoria-anleu-andrade",
+        "group_color": "black",
         "country": "Guatemala",
         "username": "Katherine Victoria Anleu Andrade",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715434/KatherineAnleu_Guatemala_-_Katherine_Anleu_pzln2b.avif",
         "email": "katerinvictoriaanleu@gmail.com",
         "club": "RTC de Quetzaltenango",
         "whatsapp": 50259226514,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1393,13 +1393,13 @@
     },
     {
         "slug": "luis-alejandro-chavez-orozco",
+        "group_color": "black",
         "country": "Guatemala",
         "username": "Luis Alejandro Chávez Orozco",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715473/LuisChavez_Guatemala_-_Luis_Alejandro_Chavez_Orozco_neyqhf.avif",
         "email": "Alejandro1luis234@gmail.com",
         "club": "Club Rotaract de Quetzaltenango",
         "whatsapp": 50237590437,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1409,13 +1409,13 @@
     },
     {
         "slug": "majo-huezo",
+        "group_color": "#C0C0C0",
         "country": "El Salvador",
         "username": "Majo Huezo",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1712715204/D20DF75E-7258-46AD-B905-0DCDF8AEE4AA_-_Mar%C3%ADa_Jos%C3%A9_Huezo_Molina_spnuei.avif",
         "email": "mjhuezo8@gamil.com",
         "club": "Club Rotaract San Salvador Noroeste",
         "whatsapp": 50377473500,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1425,13 +1425,13 @@
     },
     {
         "slug": "mario-ramirez",
+        "group_color": "purple",
         "country": "El Salvador",
         "username": "Mario Ramirez",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715348/IMG_20240120_131223_-_Mario_Ram%C3%ADrez_moyqcb.avif",
         "email": "marioalramirez927@gmail.com",
         "club": "San Salvador Noroeste",
         "whatsapp": 50379854743,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1441,13 +1441,13 @@
     },
     {
         "slug": "mauricio-alexander-saca-menendez",
+        "group_color": "purple",
         "country": "El Salvador",
         "username": "Mauricio Alexander Saca Menéndez",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715531/MauricioSaca_ElSalvador_-_Mauricio_Alexander_Saca_Menendez_gxcjl1.avif",
         "email": "saca.menendez@gmail.com",
         "club": "San Salvador Sur",
         "whatsapp": 50376623964,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1457,13 +1457,13 @@
     },
     {
         "slug": "christian-dominguez",
+        "group_color": "white",
         "country": "Honduras",
         "username": "Christian Dominguez ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715291/IMG_2619_-_Christian_Dominguez_nealxe.avif",
         "email": "christian96.josephp98@gmail.com",
         "club": "Comunidad Universitaria & Profesional ",
         "whatsapp": 50433543706,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1473,13 +1473,13 @@
     },
     {
         "slug": "ana-carolina-arriaza-guzman",
+        "group_color": "purple",
         "country": "Honduras",
         "username": "Ana Carolina Arriaza Guzmán",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715353/IMG-20220606-WA0007_1_-_Ana_Carolina_Arriaza_Guzman_xyowch.avif",
         "email": "anicarol237@gmail.com",
         "club": "Club Villa Real de Tegucigalpa",
         "whatsapp": 50433296056,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1489,13 +1489,13 @@
     },
     {
         "slug": "cristina-elena-duran-escobar",
+        "group_color": "pink",
         "country": "El Salvador",
         "username": "Cristina Elena Duran Escobar",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1712715197/CristinaDuran_ElSalvador_-_cristina_duran_pizudn.avif",
         "email": "Cristinaelenad@hotmail.com",
         "club": "Noroeste ",
         "whatsapp": 50376126582,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1505,13 +1505,13 @@
     },
     {
         "slug": "jorge-andres-santiago-casanova-mena",
+        "group_color": "#90EE90",
         "country": "Honduras",
         "username": "Jorge Andrés Santiago Casanova Mena",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713568634/Screenshot_2024-04-19_at_5.09.47_PM_oatbqr.png",
         "email": "Medadospozolesporfa@gmail.com",
         "club": "Rotaract de Tegucigalpa",
         "whatsapp": 50488416373,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1521,13 +1521,13 @@
     },
     {
         "slug": "adriana-margarita-kattan-sibrian",
+        "group_color": "pink",
         "country": "El Salvador",
         "username": "Adriana Margarita Kattán Sibrián",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1712715063/ADRIANA_KATTAN_EL_SALVADOR_-_Adri_Katt%C3%A1n_xgzq5x.avif",
         "email": "adrimargaret95@gmail.com",
         "club": "Club Rotaract Ciudad Merliot",
         "whatsapp": 50372627064,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1537,13 +1537,13 @@
     },
     {
         "slug": "ericka-barrantes-solorzano",
+        "group_color": "black",
         "country": "Costa Rica",
         "username": "Ericka Barrantes Solórzano ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715247/ErickaBarrantesCostaRica_-_Ericka_Barrantes_ojdwux.avif",
         "email": "ericomnio31@gmail.com",
         "club": "Heredia ",
         "whatsapp": 50683339035,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1553,13 +1553,13 @@
     },
     {
         "slug": "marcela-alejandra-villafranco",
+        "group_color": "#C0C0C0",
         "country": "El Salvador",
         "username": "Marcela Alejandra Villafranco",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1712715056/A7CC83FA-9FB7-4F29-83A3-575872B1E830_-_Marcela_._Villafranco_ufi45h.avif",
         "email": "villafrancomarcela@gmail.com ",
         "club": "San salvador Cuscatlan",
         "whatsapp": 50377421318,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1569,13 +1569,13 @@
     },
     {
         "slug": "katia-andrea-robert-bustamante",
+        "group_color": "orange",
         "country": "El Salvador",
         "username": "Katia Andrea Robert Bustamante",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715020/20190411_212200_-_Katia_Robert_xzno6o.avif",
         "email": "katiarobert99@gmail.com",
         "club": "Cuidad Merliot",
         "whatsapp": 50378733858,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1585,13 +1585,13 @@
     },
     {
         "slug": "nathalie-sofia-flores-delgado",
+        "group_color": "#C0C0C0",
         "country": "El Salvador",
         "username": "Nathalie Sofía Flores Delgado",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715562/NathalieFlores_ElSalvador_-_Nathalie_Flores_u1bd0c.avif",
         "email": "nathaliesflores2@gmail.com",
         "club": "Rotaract Santa Tecla - ESEN",
         "whatsapp": 50377469678,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1601,13 +1601,13 @@
     },
     {
         "slug": "leonardo-solano-vargas",
+        "group_color": "black",
         "country": "Costa Rica",
         "username": "Leonardo Solano Vargas",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715457/LeonardoSolano_CostaRica2_-_Leonardo_Solano_Vargas_xqzdux.avif",
         "email": "leosolano229@hotmail.com",
         "club": "San Pedro - Curridabat",
         "whatsapp": 50687267383,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1617,13 +1617,13 @@
     },
     {
         "slug": "maria-angelica-escobar-garcia",
+        "group_color": "#5b3e31",
         "country": "El Salvador",
         "username": "María Angélica Escobar García",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715326/IMG_7791_-_Angelica_Escobar_fdezjg.avif",
         "email": "angelica.escobar2021@gmail.com",
         "club": "Rotaract Santa Tecla - ESEN",
         "whatsapp": 50372085272,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1633,13 +1633,13 @@
     },
     {
         "slug": "valenciano-alvarez-chavarria",
+        "group_color": "red",
         "country": "Costa Rica",
         "username": "Valenciano Álvarez Chavarría",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715635/Valenciano%C3%81lvarez_Costa_Rica_-_Valenciano_%C3%81lvarez_w7xjeq.avif",
         "email": "rdalvarez90@gmail.com",
         "club": "Club Rotaract San Pedro-Curridabat",
         "whatsapp": 50687753518,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1649,13 +1649,13 @@
     },
     {
         "slug": "mario-antonio-guzman-mendoza",
+        "group_color": "white",
         "country": "El Salvador",
         "username": "Mario Antonio Guzmán Mendoza",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715522/MarioGuzm%C3%A1n_El_Salvador_-_Mario_Guzman_iyzvzc.avif",
         "email": "majuniorg@gmail.com ",
         "club": "Rotaract Santa Elena - ESEN",
         "whatsapp": 50376032227,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1665,13 +1665,13 @@
     },
     {
         "slug": "claudia-paulina-hernandez-ramirez",
+        "group_color": "green",
         "country": "El Salvador",
         "username": "Claudia Paulina Hernandez Ramirez",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715590/PaulinaHernandez_ElSalvador_a1ebfc.avif",
         "email": "paulinaher@hotmail.com",
         "club": "San Salvador Cuscatlan",
         "whatsapp": 50370245614,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1681,13 +1681,13 @@
     },
     {
         "slug": "juan-carlos-guevara-padilla",
+        "group_color": "#C0C0C0",
         "country": "El Salvador",
         "username": "Juan Carlos Guevara Padilla ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715272/IMG_1013_-_Juan_Carlos_Guevara_isavra.avif",
         "email": "Jkrlos.guevara@gmail.com",
         "club": "Chaparrastique San Miguel ",
         "whatsapp": 50379400656,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1697,13 +1697,13 @@
     },
     {
         "slug": "diego-oswaldo-miguel-ramirez",
+        "group_color": "#5b3e31",
         "country": "Guatemala",
         "username": "Diego Oswaldo Miguel Ramirez",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715231/DiegoMiguel_Guatemala_-_Diego_Miguel_ovhtkr.avif",
         "email": "dm.elementary@gmail.com",
         "club": "Guatemala Oeste",
         "whatsapp": 50243921845,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1713,13 +1713,13 @@
     },
     {
         "slug": "hernan-alberto-lopez-pinaud",
+        "group_color": "orange",
         "country": "El Salvador",
         "username": "Hernan Alberto Lopez pinaud",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1712715279/IMG_1670_-_HERNAN_LOPEZ_yhakpt.avif",
         "email": "Hernan.lopez11b@gmail.com",
         "club": "San Salvador Cuscatlan ",
         "whatsapp": 50378419621,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1729,13 +1729,13 @@
     },
     {
         "slug": "hector-cea",
+        "group_color": "#C0C0C0",
         "country": "El Salvador",
         "username": "Héctor Cea",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715305/IMG_3826_-_Raul_Cea_aa9y9r.avif",
         "email": "raul.cea@gmail.com",
         "club": "Ss cuscatlán ",
         "whatsapp": 50377400034,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1745,13 +1745,13 @@
     },
     {
         "slug": "adriana-canales",
+        "group_color": "purple",
         "country": "El Salvador",
         "username": "Adriana Canales",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715220/deb180c3-2e17-43a4-a9ba-e0cc2dae0563_-_Adriana_Canales_d22opx.avif",
         "email": "acanales1103@gmail.com",
         "club": "Club Rotaract Santa Tecla - ESEN",
         "whatsapp": 50378375284,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1761,13 +1761,13 @@
     },
     {
         "slug": "diego-gerardo-martinez-leiva",
+        "group_color": "#C0C0C0",
         "country": "El Salvador",
         "username": "Diego Gerardo Martinez Leiva",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1712715031/20230909_181854_-_Diego_Martinez_ub6mlx.avif",
         "email": "martinezleiva.diego@gmail.com",
         "club": "Rotaract Santa Tecla - ESEN",
         "whatsapp": 50379368083,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1777,13 +1777,13 @@
     },
     {
         "slug": "manuela-eugenia-gomez-chapilliquen",
+        "group_color": "black",
         "country": "Peru",
         "username": "Manuela Eugenia Gomez Chapilliquen",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715489/ManuelaGomez_Panam%C3%A1_-_Manuela_Gomez_rdacjm.avif",
         "email": "manuelago65@gmail.com",
         "club": "Panama Sur",
         "whatsapp": 51971758292,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1793,13 +1793,13 @@
     },
     {
         "slug": "miguel-pinilla",
+        "group_color": "yellow",
         "country": "Panama",
         "username": "Miguel Pinilla",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715363/IMG-20230919-WA0016_-_Miguel_Pinilla_evmsci.avif",
         "email": "rssmiguelinfo@gmail.com",
         "club": "Club Rotaract Panamá Sur",
         "whatsapp": 50765427383,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1809,13 +1809,13 @@
     },
     {
         "slug": "claudia-echeverria",
+        "group_color": "black",
         "country": "Panama",
         "username": "Claudia Echeverria",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715386/IMG-20240403-WA0038_-_Claudia_Echeverria_gyw4as.avif",
         "email": "claudi.regin@gmail.com",
         "club": "Club Rotaract de Panamá",
         "whatsapp": 50766306628,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1825,13 +1825,13 @@
     },
     {
         "slug": "miguel-adolfo-molina-rush",
+        "group_color": "pink",
         "country": "Honduras",
         "username": "Miguel Adolfo Molina Rush",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715537/MiguelMolina_Honduras_-_Miguel_Molina_k3kfm1.avif",
         "email": "miguelmolinarush@gmail.com",
         "club": "De Tegucigalpa ",
         "whatsapp": 50489884615,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1841,13 +1841,13 @@
     },
     {
         "slug": "maria-isabel-sanchez-saavedra",
+        "group_color": "blue",
         "country": "Panama",
         "username": "María Isabel Sánchez Saavedra",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715495/Mar%C3%ADa_S%C3%A1nchez_-_Maria_Isabel_Sanchez_dg5rmt.avif",
         "email": "misanchezsaavedra@gmail.com",
         "club": "Club Rotaract de Panamá",
         "whatsapp": 50761141423,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1857,13 +1857,13 @@
     },
     {
         "slug": "javier-morales",
+        "group_color": "red",
         "country": "El Salvador",
         "username": "Javier Morales",
         "profile_picture": "",
         "email": "javier.fma.presidente@gmail.com",
         "club": "San Salvador Cuscatlán",
         "whatsapp": 50370395210,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1873,13 +1873,13 @@
     },
     {
         "slug": "andrea-maria-velasquez-guerra",
+        "group_color": "#C0C0C0",
         "country": "El Salvador",
         "username": "Andrea Maria Velasquez Guerra",
         "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1713791228/andie-velasquez_szhdnt.avif",
         "email": "andrea.velasquezguerra@gmail.com",
         "club": "Rotaract Santa Tecla - ESEN",
         "whatsapp": 50378853224,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1889,13 +1889,13 @@
     },
     {
         "slug": "lilian-marcela-landaverde-callejas",
+        "group_color": "blue",
         "country": "El Salvador",
         "username": "Lilian Marcela Landaverde Callejas ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715337/IMG_7997_-_Marcela_Landaverde_q624uz.avif",
         "email": "Marcelandaverde97@gmail.com",
         "club": "Rotaract San Salvador Cuscatlán ",
         "whatsapp": 50376837673,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1905,13 +1905,13 @@
     },
     {
         "slug": "angeles-dennis--sanchez-lopez",
+        "group_color": "blue",
         "country": "Costa Rica",
         "username": "Ángeles Dennis Sánchez López ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1712715131/%C3%81ngelesSanchez_CostaRica_-_%C3%81ngeles_S%C3%A1nchez_b8w5qc.avif",
         "email": "Frandelue@gmail.com",
         "club": "Club Rotaract Heredia ",
         "whatsapp": 50689486868,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1921,13 +1921,13 @@
     },
     {
         "slug": "alejandra-jazmin--espinoza-medina",
+        "group_color": "#90EE90",
         "country": "Honduras",
         "username": "Alejandra Jazmin Espinoza Medina ",
         "profile_picture": "",
         "email": "Espinoza30_06@hotmail.com",
         "club": "Club Rotaract Puerto Cortes",
         "whatsapp": 50487470064,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1937,13 +1937,13 @@
     },
     {
         "slug": "belen-isabela--aguilar-torres",
+        "group_color": "red",
         "country": "El Salvador",
         "username": "Belén Isabela  Aguilar Torres ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715655/Yo_Carma_2_-_Belen_Isabela_Aguilar_Torres_w5belv.avif",
         "email": "belen.aguilar1512@gmail.com",
         "club": "Club Rotaract San Salvador Noroeste ",
         "whatsapp": 50378377056,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1953,13 +1953,13 @@
     },
     {
         "slug": "karla-beatriz-cruz-silva",
+        "group_color": "#C0C0C0",
         "country": "El Salvador",
         "username": "Karla Beatriz Cruz Silva",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715176/CE3025A7-3F22-4BA4-A73F-6C0622C7EC2B_-_Karla_Cruz_Silva_tbe0px.avif",
         "email": "karlahermisbeatriz@gmail.com",
         "club": "Santa Tecla ESEN",
         "whatsapp": 50370699500,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1969,13 +1969,13 @@
     },
     {
         "slug": "milena-alejandra-alvarenga-navarrete",
+        "group_color": "#C0C0C0",
         "country": "El Salvador",
         "username": "Milena Alejandra Alvarenga Navarrete",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715256/fotoconfe_-_Alejandra_Alvarenga_lf0jjb.avif",
         "email": "milenaalvarenganav@gmail.com",
         "club": "Santa Tecla - ESEN",
         "whatsapp": 50378567330,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -1985,13 +1985,13 @@
     },
     {
         "slug": "jorge-andres-ceren-lovo",
+        "group_color": "white",
         "country": "El Salvador",
         "username": "Jorge Andrés Cerén Lovo",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715418/JorgeCeren_ElSalvador_-_Jorge_A._Cer%C3%A9n_jkfupl.avif",
         "email": "ja.cerenl@gmail.com",
         "club": "Santa Tecla - ESEN",
         "whatsapp": 50372800007,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2001,13 +2001,13 @@
     },
     {
         "slug": "carolina-denisse-villalta-juarez",
+        "group_color": "green",
         "country": "Honduras",
         "username": "Carolina Denisse Villalta Juarez ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715177/CarolinaVillalta_Honduras_-_Carolina_Villalta_brm6qc.avif",
         "email": "cdvillalta96@gmail.com",
         "club": "Unitec Metropolitano ",
         "whatsapp": 50499708873,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2017,13 +2017,13 @@
     },
     {
         "slug": "ana-luisa-palacios-degwitz",
+        "group_color": "red",
         "country": "Costa Rica",
         "username": "Ana Luisa Palacios Degwitz",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712714988/5fb43529-5066-48b3-aff3-0f20beb9ebf1_-_ana_luisa_palacios_degwitz_yf1szg.avif",
         "email": "apalaciosdegwitz@gmail.com",
         "club": "Escazu",
         "whatsapp": 50370335937,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2033,13 +2033,13 @@
     },
     {
         "slug": "justine--salazar-diaz",
+        "group_color": "orange",
         "country": "Guatemala",
-        "username": "Justine Salazar Diaz ",
+        "username": "Justine  Salazar Diaz ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715429/JustineSalazar_Guatemala_-_justine_salazar_t89pre.avif",
         "email": "justinemarisol@live.com",
         "club": "Guatemala Norte ",
         "whatsapp": 50242706805,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2049,13 +2049,13 @@
     },
     {
         "slug": "yinnette-obando-velasquez",
+        "group_color": "cyan",
         "country": "Costa Rica",
         "username": "Yinnette Obando Velásquez",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715650/YinnetteObando_CostaRica_-_Yinnette_Obando_fduckx.avif",
         "email": "yinneth_obando@hotmail.com",
         "club": "Club Rotaract de Heredia",
         "whatsapp": 50687500609,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2065,13 +2065,13 @@
     },
     {
         "slug": "adriana-beatriz-hernandez-lizama",
+        "group_color": "orange",
         "country": "El Salvador",
         "username": "Adriana Beatriz Hernandez Lizama",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715012/511681D4-CA27-4E28-AD6A-4EE3A56865FE_-_Adriana_Hern%C3%A1ndez_Lizama_j88dhl.avif",
         "email": "lizamahadriana97@gmail.com",
         "club": "San Salvador Cuscatlán",
         "whatsapp": 50361706865,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2081,13 +2081,13 @@
     },
     {
         "slug": "crista-stefania-riepele-diaz",
+        "group_color": "green",
         "country": "Guatemala",
         "username": "Crista Stefania  Riépele Díaz ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1712715191/CristaRiepele_-_Crista_Riepele_lhfxlv.avif",
         "email": "criepelediaz@gmail.com ",
         "club": "Club Rotaract Guatemala Norte ",
         "whatsapp": 50241671430,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2097,13 +2097,13 @@
     },
     {
         "slug": "adriana-margarita-melendez-navarrete",
+        "group_color": "#5b3e31",
         "country": "El Salvador",
         "username": "Adriana Margarita Meléndez Navarrete",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715067/Adriana_Mel%C3%A9ndez_El_Salvador_-_Adriana_Mel%C3%A9ndez_dptlen.avif",
         "email": "adtiana17melendez@gmail.com",
         "club": "San Salvador",
         "whatsapp": 50376772024,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2112,14 +2112,14 @@
         ]
     },
     {
-        "slug": "oriana-andreina-saez-canizalez",
+        "slug": "oriana-andreina-saez-cañizalez",
+        "group_color": "purple",
         "country": "El Salvador",
         "username": "Oriana Andreina Saez Cañizalez",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715585/OrianaSaez_ElSalvador_-_Oriana_Saez_ihrw5e.avif",
         "email": "Oasaez52@gmail.com",
         "club": "San Salvador Noroeste ",
         "whatsapp": 50379690525,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2129,13 +2129,13 @@
     },
     {
         "slug": "meybis-karina-flores-gallardo",
+        "group_color": "cyan",
         "country": "Panama",
         "username": "Meybis Karina Flores Gallardo",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1712714991/8A968808-AAE0-464C-8238-94143EF1578A_-_Meybis_Karina_Flores_m6gvwj.avif",
         "email": "mkarinaflores24@gmail.com",
         "club": "Club Rotaract Panamá Sur",
-        "whatsapp": "50765585567",
-        "group_color": "red",
+        "whatsapp": 50765585567,
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2145,13 +2145,13 @@
     },
     {
         "slug": "liam-ariel-wolozny",
+        "group_color": "green",
         "country": "Honduras",
         "username": "Liam Ariel Wolozny",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712714995/9c3ebdc5-d8ef-4481-8094-6db781e66295_-_liam_Wolozny_skuovg.avif",
         "email": "Liamwolozny1999@gmail.com",
         "club": "Rotaract SPS",
         "whatsapp": 50495142012,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2161,13 +2161,13 @@
     },
     {
         "slug": "angelo-lezcano",
+        "group_color": "cyan",
         "country": "Panama",
         "username": "Angelo Lezcano",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715380/IMG-20240320-WA0142_-_Angelo_Guerra_xdhgkr.avif",
         "email": "Alezcano67@gmail.com",
         "club": "Club Rotaract el Dorado ",
-        "whatsapp": "50763794194",
-        "group_color": "red",
+        "whatsapp": 50763794194,
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2177,13 +2177,13 @@
     },
     {
         "slug": "mario-fernando-diaz-cabezas",
+        "group_color": "white",
         "country": "El Salvador",
         "username": "Mario Fernando Díaz Cabezas",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715516/Mario_Diaz_Perfil_-_Mario_Diaz_uwwocb.avif",
         "email": "marito.diaz16@gmail.com",
         "club": "Rotaract San Salvador Noroeste",
         "whatsapp": 50378652365,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2193,13 +2193,13 @@
     },
     {
         "slug": "luis-fernando-chacon-soto",
+        "group_color": "orange",
         "country": "Costa Rica",
         "username": "Luis Fernando Chacon Soto",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715358/IMG-20230122-WA0018_-_Luis_Chacon_t3u5i9.avif",
         "email": "lchacon@rartaviayasoc.com",
         "club": "HEREDIA",
         "whatsapp": 50685001510,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2209,13 +2209,13 @@
     },
     {
         "slug": "ana-isabel-ovalle-sandoval",
+        "group_color": "yellow",
         "country": "Guatemala",
         "username": "Ana Isabel Ovalle Sandoval ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715321/IMG_5997_-_Ana_Isabel_Ovalle_Sandoval_dpduul.avif",
         "email": "anaisabelovallesandoval@gmail.com",
         "club": "Guatemala de la Ermita ",
         "whatsapp": 50255105797,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2225,13 +2225,13 @@
     },
     {
         "slug": "diegodavid-rojas-vasquez",
+        "group_color": "blue",
         "country": "Costa Rica",
         "username": "Diego David Rojas Vásquez",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715225/DiegodavidRojas_CostaRica_-_Diegodavid_Rojas_mbwkz5.avif",
         "email": "diegodavidrojas95@gmail.com",
         "club": "Heredia",
         "whatsapp": 50663790748,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2241,13 +2241,13 @@
     },
     {
         "slug": "ivana-giselle-salazar-diaz",
+        "group_color": "black",
         "country": "Guatemala",
         "username": "Ivana Giselle Salazar Díaz ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715403/IvanaSalazar_Guatemala_-_ivana_salazar_vwbmjz.avif",
         "email": "ivanasalazar25@gmail.com",
         "club": "Rotaract Guatemala Sur",
         "whatsapp": 50258373485,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2257,13 +2257,13 @@
     },
     {
         "slug": "evelyn-adriana-castillo-hernandez",
+        "group_color": "#90EE90",
         "country": "Guatemala",
         "username": "Evelyn Adriana Castillo Hernández ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715251/EvelynCastillo-GUATEMALA_-_Castillo_Hern%C3%A1ndez_Evelyn_Adriana_201805595_xjf1na.avif",
         "email": "each16599@gmail.com",
         "club": "CLUB OESTE ",
         "whatsapp": 50241101302,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2273,13 +2273,13 @@
     },
     {
         "slug": "melissa-stephania-lopez-najera",
+        "group_color": "blue",
         "country": "Honduras",
         "username": "Melissa Stephania López Nájera",
         "profile_picture": "",
         "email": "melissanajera8@gmail.com",
         "club": "Club Rotaract de Tegus",
         "whatsapp": 50432720645,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2289,13 +2289,13 @@
     },
     {
         "slug": "julio-aldana",
+        "group_color": "orange",
         "country": "Belice",
         "username": "Julio Aldana",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715316/IMG_5614_-_Julio_Aldana_pautzn.avif",
         "email": "julioaldana238@gmail.com",
         "club": "Rotaract Club benque viejo ",
         "whatsapp": 5016063778,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2305,13 +2305,13 @@
     },
     {
         "slug": "diana-giulliana-torrecilla-bazan",
+        "group_color": "orange",
         "country": "Peru",
         "username": "Diana Giulliana Torrecilla Bazán",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713568136/Screenshot_20240415-151435_-_giulliana_torrecilla_ppo7rj.png",
         "email": "july_torrecilla@hotmail.com",
         "club": "Monterrico - Surco",
         "whatsapp": 51943991357,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2321,13 +2321,13 @@
     },
     {
         "slug": "eva-cecilia-oliva-eguigurens",
+        "group_color": "cyan",
         "country": "Honduras",
         "username": "Eva Cecilia Oliva Eguigurens",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715332/IMG_7795_-_eva_cecilia_oliva_eguigurens_auyhjm.avif",
         "email": "evaceciliaolivaeguigurens@gmail.com",
         "club": "Choluteca ",
         "whatsapp": 50487347454,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2337,13 +2337,13 @@
     },
     {
         "slug": "gabriel-salvador-ramos",
+        "group_color": "yellow",
         "country": "El Salvador",
         "username": "Gabriel Salvador Ramos",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713568135/GabrielRamos_-_Gabriel_Ramos_ogey4s.jpg",
         "email": "gabo_69r@hotmail.com",
         "club": "Maquilishuat",
         "whatsapp": 50372167271,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2353,13 +2353,13 @@
     },
     {
         "slug": "imer-cordova",
+        "group_color": "blue",
         "country": "Belice",
         "username": "Imer Cordova",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713285941/WhatsApp_Image_2024-02-27_at_3.26.26_PM_2_-_Imer_Cordova_qjln3z.avif",
         "email": "imerjcordova@gmail.com",
         "club": "RTC Ambergris Caye",
         "whatsapp": 5016207370,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2369,13 +2369,13 @@
     },
     {
         "slug": "javier-gamboa-viquez",
+        "group_color": "#90EE90",
         "country": "Costa Rica",
         "username": "Javier Gambia Viquez",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715145/Captura_de_Pantalla_2023-03-15_a_la_s_12.26.49_a._m._-_Javier_Gamboa_V%C3%ADquez_ibysps.avif",
         "email": "javitogamboa@gmail.com",
         "club": "Heredia",
         "whatsapp": 50683156200,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2385,13 +2385,13 @@
     },
     {
         "slug": "jenifer-andrea-chavez-acosta",
+        "group_color": "yellow",
         "country": "El Salvador",
         "username": "Jenifer Andrea Chávez Acosta",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713568136/20240114_122220_-_Andre_ChA%CC%83_vez_zzgiop.jpg",
         "email": "chavez20.ac@gmail.com",
         "club": "Noroeste ",
         "whatsapp": 50361008839,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2401,13 +2401,13 @@
     },
     {
         "slug": "kevin-alexander-ramos-figueroa",
+        "group_color": "#90EE90",
         "country": "El Salvador",
         "username": "Kevin Alexander Ramos Figueroa",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713568135/IMG_1666_-_Kevin_Ramos_upbmvk.jpg",
         "email": "ramoskv.22@gmaail.com",
         "club": "San Salvador Noroeste",
         "whatsapp": 50378107875,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2417,13 +2417,13 @@
     },
     {
         "slug": "loui-godoy-guillen",
+        "group_color": "white",
         "country": "Belice",
         "username": "Loui Godoy-Guillen",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713285893/Headshot_-_Loui_Godoy_h9mcsf.avif",
         "email": "louigodoy@gmail.com",
         "club": "San Ignacio",
         "whatsapp": 5016055069,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2433,13 +2433,13 @@
     },
     {
         "slug": "mario-edilberto-estevez-nuñez",
+        "group_color": "green",
         "country": "Honduras",
         "username": "Mario Edilberto Estevez Nuñez",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1713568135/MarioEstevez_Honduras_-_Mario_Estevez_inzyr8.jpg",
         "email": "mario.estevez18@gmail.com",
         "club": "La Cebia",
         "whatsapp": 50432560770,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
@@ -2449,13 +2449,13 @@
     },
     {
         "slug": "ruth-edith-escudero-tacusi-oblitas",
+        "group_color": "yellow",
         "country": "Peru",
         "username": "Ruth Edith Escudero Tacusi-Oblitas",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713568135/7759C888-B5E9-4EFF-8ECF-79B507165EE5_-_Ruth_Escudero_otzsos.jpg",
         "email": "r.escuderoto@gmail.com",
         "club": "Rotaract Lima Sunrise",
         "whatsapp": 51980927641,
-        "group_color": "red",
         "social_links": [
             {
                 "social_media": "WhatsApp",
