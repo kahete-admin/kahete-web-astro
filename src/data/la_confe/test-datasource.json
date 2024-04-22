@@ -81,7 +81,7 @@
     },
     {
         "slug": "marvin-edward-williams",
-        "group_color": "pink",
+        "group_color": "#FF69B4",
         "country": "Belice",
         "username": "Marvin Edward Williams ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1713285875/E2BC4BF7-3582-40E2-AA81-E20DBC561640_-_Marvin_Williams_Eddy_iakijw.avif",
@@ -177,7 +177,7 @@
     },
     {
         "slug": "solangie-salazar",
-        "group_color": "pink",
+        "group_color": "#FF69B4",
         "country": "Belice",
         "username": "Solangie Salazar",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713285930/Screenshot_20240406_195223_Drive_-_Solangie_Salazar_lmjmzu.avif",
@@ -209,7 +209,7 @@
     },
     {
         "slug": "andrea-marcela-gomez-romero",
-        "group_color": "pink",
+        "group_color": "#FF69B4",
         "country": "Honduras",
         "username": "Andrea Marcela Gómez Romero ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715119/Andrea_gomez_Honduras_-_Marcela_Romero_1_voeron.avif",
@@ -289,7 +289,7 @@
     },
     {
         "slug": "alejandro-maselli",
-        "group_color": "pink",
+        "group_color": "#FF69B4",
         "country": "Guatemala",
         "username": "Alejandro Maselli",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715369/IMG-20240313-WA0012_-_Alejandro_Maselli_SolidMas_nbdvvx.avif",
@@ -417,7 +417,7 @@
     },
     {
         "slug": "blanca-cecilia-mejia-valladares",
-        "group_color": "pink",
+        "group_color": "#FF69B4",
         "country": "Honduras",
         "username": "Blanca Cecilia Mejia Valladares ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715140/Blanca_Mej%C3%ADa_Honduras_-_Blanca_Mejia_gxzoaj.avif",
@@ -609,7 +609,7 @@
     },
     {
         "slug": "luis-roberto-siliezar-duarte",
-        "group_color": "#C0C0C0",
+        "group_color": "black",
         "country": "El Salvador",
         "username": "Luis Roberto Siliezar Duarte",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715479/LuisSiliezar_ElSalvador_-_Luis_Siliezar_q5uwuo.avif",
@@ -625,7 +625,7 @@
     },
     {
         "slug": "daniela-renee-rodriguez-perez",
-        "group_color": "pink",
+        "group_color": "#FF69B4",
         "country": "El Salvador",
         "username": "Daniela Reneé Rodríguez Pérez ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715210/Daniela_Rodriguez_El_Salvador_-_Daniela_Renee_Rodriguez_Perez_kth2l7.avif",
@@ -913,7 +913,7 @@
     },
     {
         "slug": "ernesto-carballo",
-        "group_color": "#C0C0C0",
+        "group_color": "black",
         "country": "El Salvador",
         "username": "Ernesto Carballo",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715023/20200705_192947_-_Ernesto_Carballo_Lopez_ixotfk.avif",
@@ -945,7 +945,7 @@
     },
     {
         "slug": "luis-eduardo-vasquez-villalta",
-        "group_color": "pink",
+        "group_color": "#FF69B4",
         "country": "El Salvador",
         "username": "Luis Eduardo Vásquez Villalta",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715043/17109500341928466827443027259187_-_Luis_Eduardo_V%C3%A1squez_Villalta_kej0de.avif",
@@ -993,7 +993,7 @@
     },
     {
         "slug": "natalia-gomez",
-        "group_color": "#C0C0C0",
+        "group_color": "black",
         "country": "El Salvador",
         "username": "Natalia Gomez",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715557/NataliaGomez_Elsalvador_-_Natalia_Gomez_ilnhbc.avif",
@@ -1185,7 +1185,7 @@
     },
     {
         "slug": "douglas-enrique-suarez-hernandez",
-        "group_color": "pink",
+        "group_color": "#FF69B4",
         "country": "Honduras",
         "username": "Douglas Enrique Suárez Hernández",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715311/IMG_4097_-_Douglas_Suarez_k7irxu.avif",
@@ -1297,7 +1297,7 @@
     },
     {
         "slug": "camila-gabriela-hasbun-lopez",
-        "group_color": "#C0C0C0",
+        "group_color": "black",
         "country": "El Salvador",
         "username": "Camila Gabriela Hasbún López ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715342/IMG_8234_-_camila_Hasbun_wog0ir.avif",
@@ -1313,7 +1313,7 @@
     },
     {
         "slug": "rolando-alberto-ramos-aguirre",
-        "group_color": "pink",
+        "group_color": "#FF69B4",
         "country": "Honduras",
         "username": "Rolando Alberto Ramos Aguirre",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715048/1711077717385833122213782940440_-_Albert_Ramos_wravuc.avif",
@@ -1345,7 +1345,7 @@
     },
     {
         "slug": "milena-lissette-quintanilla-bonilla",
-        "group_color": "#C0C0C0",
+        "group_color": "black",
         "country": "El Salvador",
         "username": "Milena Lissette Quintanilla Bonilla",
         "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1709741251/milena-quintanilla_torlrg.avif",
@@ -1361,7 +1361,7 @@
     },
     {
         "slug": "andre-sebastian-meyers",
-        "group_color": "#C0C0C0",
+        "group_color": "black",
         "country": "El Salvador",
         "username": "André Sebastian Meyers",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715101/Andr%C3%A9_Meyers_-_Andy_Meyers_cya26a.avif",
@@ -1409,7 +1409,7 @@
     },
     {
         "slug": "majo-huezo",
-        "group_color": "#C0C0C0",
+        "group_color": "black",
         "country": "El Salvador",
         "username": "Majo Huezo",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1712715204/D20DF75E-7258-46AD-B905-0DCDF8AEE4AA_-_Mar%C3%ADa_Jos%C3%A9_Huezo_Molina_spnuei.avif",
@@ -1489,7 +1489,7 @@
     },
     {
         "slug": "cristina-elena-duran-escobar",
-        "group_color": "pink",
+        "group_color": "#FF69B4",
         "country": "El Salvador",
         "username": "Cristina Elena Duran Escobar",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1712715197/CristinaDuran_ElSalvador_-_cristina_duran_pizudn.avif",
@@ -1521,7 +1521,7 @@
     },
     {
         "slug": "adriana-margarita-kattan-sibrian",
-        "group_color": "pink",
+        "group_color": "#FF69B4",
         "country": "El Salvador",
         "username": "Adriana Margarita Kattán Sibrián",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1712715063/ADRIANA_KATTAN_EL_SALVADOR_-_Adri_Katt%C3%A1n_xgzq5x.avif",
@@ -1553,7 +1553,7 @@
     },
     {
         "slug": "marcela-alejandra-villafranco",
-        "group_color": "#C0C0C0",
+        "group_color": "black",
         "country": "El Salvador",
         "username": "Marcela Alejandra Villafranco",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1712715056/A7CC83FA-9FB7-4F29-83A3-575872B1E830_-_Marcela_._Villafranco_ufi45h.avif",
@@ -1585,7 +1585,7 @@
     },
     {
         "slug": "nathalie-sofia-flores-delgado",
-        "group_color": "#C0C0C0",
+        "group_color": "black",
         "country": "El Salvador",
         "username": "Nathalie Sofía Flores Delgado",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715562/NathalieFlores_ElSalvador_-_Nathalie_Flores_u1bd0c.avif",
@@ -1681,7 +1681,7 @@
     },
     {
         "slug": "juan-carlos-guevara-padilla",
-        "group_color": "#C0C0C0",
+        "group_color": "black",
         "country": "El Salvador",
         "username": "Juan Carlos Guevara Padilla ",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715272/IMG_1013_-_Juan_Carlos_Guevara_isavra.avif",
@@ -1729,7 +1729,7 @@
     },
     {
         "slug": "hector-cea",
-        "group_color": "#C0C0C0",
+        "group_color": "black",
         "country": "El Salvador",
         "username": "Héctor Cea",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715305/IMG_3826_-_Raul_Cea_aa9y9r.avif",
@@ -1761,7 +1761,7 @@
     },
     {
         "slug": "diego-gerardo-martinez-leiva",
-        "group_color": "#C0C0C0",
+        "group_color": "black",
         "country": "El Salvador",
         "username": "Diego Gerardo Martinez Leiva",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500,g_auto/v1712715031/20230909_181854_-_Diego_Martinez_ub6mlx.avif",
@@ -1825,7 +1825,7 @@
     },
     {
         "slug": "miguel-adolfo-molina-rush",
-        "group_color": "pink",
+        "group_color": "#FF69B4",
         "country": "Honduras",
         "username": "Miguel Adolfo Molina Rush",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715537/MiguelMolina_Honduras_-_Miguel_Molina_k3kfm1.avif",
@@ -1873,7 +1873,7 @@
     },
     {
         "slug": "andrea-maria-velasquez-guerra",
-        "group_color": "#C0C0C0",
+        "group_color": "black",
         "country": "El Salvador",
         "username": "Andrea Maria Velasquez Guerra",
         "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1713791228/andie-velasquez_szhdnt.avif",
@@ -1953,7 +1953,7 @@
     },
     {
         "slug": "karla-beatriz-cruz-silva",
-        "group_color": "#C0C0C0",
+        "group_color": "black",
         "country": "El Salvador",
         "username": "Karla Beatriz Cruz Silva",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715176/CE3025A7-3F22-4BA4-A73F-6C0622C7EC2B_-_Karla_Cruz_Silva_tbe0px.avif",
@@ -1969,7 +1969,7 @@
     },
     {
         "slug": "milena-alejandra-alvarenga-navarrete",
-        "group_color": "#C0C0C0",
+        "group_color": "black",
         "country": "El Salvador",
         "username": "Milena Alejandra Alvarenga Navarrete",
         "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715256/fotoconfe_-_Alejandra_Alvarenga_lf0jjb.avif",
