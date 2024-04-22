@@ -7,17 +7,11 @@ interface Props {
   title: string;
   description: string;
   image?: string;
-  profile_image_url: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const {
-  title,
-  description,
-  image = "/blog-placeholder-1.jpg",
-  profile_image_url,
-} = Astro.props;
+const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -45,7 +39,7 @@ const {
 <meta property="og:description" content={description} />
 <meta
   property="og:image"
-  content={profile_image_url ? profile_image_url : new URL(image, Astro.url)}
+  content={"https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713285924/photo-output_-_Tehri-Ann_Brown_poxk2d.jpg"}
 />
 
 <!-- Twitter -->
@@ -55,5 +49,5 @@ const {
 <meta property="twitter:description" content={description} />
 <meta
   property="twitter:image"
-  content={profile_image_url ? profile_image_url : new URL(image, Astro.url)}
+  content={"https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1713285924/photo-output_-_Tehri-Ann_Brown_poxk2d.jpg"}
 />
