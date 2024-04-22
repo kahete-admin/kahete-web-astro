@@ -17,6 +17,7 @@ const {
   whatsapp,
 } = Astro.props;
 ---
+
 <script
   is:inline
   src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
@@ -45,7 +46,11 @@ const {
 </script>
 <html lang="en">
   <head>
-    <BaseHead title={username} description={about} />
+    <BaseHead
+      title={username}
+      description={about}
+      profile_image_url={profile_picture}
+    />
   </head>
   <body>
     <NavBarProfile
@@ -77,7 +82,7 @@ const {
           </div>
 
           <div>
-            <div class="content mt-1 text-start text-about text-sm pb-6">
+            <div class="content mt-1 text-center text-about text-sm pb-6">
               {about}
             </div>
             <div class="flex gap-3">
