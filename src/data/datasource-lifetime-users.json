@@ -1376,5 +1376,29 @@
         "url": "https://www.linkedin.com/in/am-velasquezguerra/"
       }
     ]
+  },
+  {
+    "slug": "makeiteasy",
+    "username": "Make it easy",
+    "title": "Beverage restaurant",
+    "about": "",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1713999313/makeiteasy_tlab4y.avif",
+    "phone_number": "+(503) 6003 4325",
+    "email": "",
+    "whatsapp": "50360034325",
+    "social_links": [
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/makeiteasy.sv?igsh=dXk4bGwzaTdqNDlt"
+      },
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/profile.php?id=100087997734026&mibextid=LQQJ4d"
+      },
+      {
+        "social_media": "TikTok",
+        "url": "https://www.tiktok.com/@makeiteasy.sv?_t=8lo47G8EC06&_r=1"
+      }
+    ]
   }
 ]
