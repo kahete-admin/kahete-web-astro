@@ -1358,31 +1358,6 @@
     ]
   },
   {
-    "slug": "ernesto-carballo",
-    "username": "Ernesto Carballo",
-    "title": "Revenue Management and Business Intelligence",
-    "about": "",
-    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500,g_auto/v1714142994/ernesto-carballo_dztmze.avif",
-    "phone_number": "+(503) 6006 3862",
-    "email": "e.carbalo@gmail.com",
-    "whatsapp": "50360063862",
-    "social_links": [
-      {
-        "social_media": "Mail",
-        "optionalName": "ernesto.carballo@tcs246.com",
-        "url": "mailto:ernesto.carballo@tcs246.com"
-      },
-      {
-        "social_media": "Instagram",
-        "url": "https://www.instagram.com/carbalo1"
-      },
-      {
-        "social_media": "LinkedIn",
-        "url": "https://www.linkedin.com/in/ernesto-carballo-890508155/"
-      }
-    ]
-  },
-  {
     "slug": "andrea-velasquez",
     "username": "Andrea Velásquez",
     "title": "Kahete Founder",
@@ -1423,6 +1398,31 @@
       {
         "social_media": "TikTok",
         "url": "https://www.tiktok.com/@makeiteasy.sv?_t=8lo47G8EC06&_r=1"
+      }
+    ]
+  },
+  {
+    "slug": "ernesto-carballo",
+    "username": "Ernesto Carballo",
+    "title": "Revenue Management and Business Intelligence",
+    "about": "",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500,g_auto/v1714142994/ernesto-carballo_dztmze.avif",
+    "phone_number": "+(503) 6006 3862",
+    "email": "e.carbalo@gmail.com",
+    "whatsapp": "50360063862",
+    "social_links": [
+      {
+        "social_media": "Mail",
+        "optionalName": "ernesto.carballo@tcs246.com",
+        "url": "mailto:ernesto.carballo@tcs246.com"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/carbalo1"
+      },
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/in/ernesto-carballo-890508155/"
       }
     ]
   }
