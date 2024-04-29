@@ -1425,5 +1425,41 @@
         "url": "https://www.linkedin.com/in/ernesto-carballo-890508155/"
       }
     ]
+  },
+  {
+    "slug": "maria-fernanda-hidalgo",
+    "username": "Maria Fernanda Hidalgo",
+    "title": "Marketing Manager",
+    "about": "",
+    "profile_picture": "",
+    "phone_number": "+(503) 7681 0038",
+    "email": "",
+    "whatsapp": "50376810038",
+    "social_links": [
+      {
+        "social_media": "Mail",
+        "optionalName": "ernesto.carballo@tcs246.com",
+        "url": "mailto:ernesto.carballo@tcs246.com"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/carbalo1"
+      },
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/in/ernesto-carballo-890508155/"
+      }
+    ]
+  },
+  {
+    "slug": "oscar-henriquez-bonilla",
+    "username": "Lic. Óscar Joel Henríquez Bonilla",
+    "title": "Abogado",
+    "about": "Servicios notariales y asistencia legal en procesos y diligencias judiciales en el área civil, familia, penal, laboral, mercantil y más.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1714361141/hb_u9ornx.avif",
+    "phone_number": "+(503) 7807 5345",
+    "email": "oscarhb9807@gmail.com",
+    "whatsapp": "50378075345",
+    "social_links": []
   }
 ]
