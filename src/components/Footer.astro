@@ -8,21 +8,21 @@ const { isIndex } = Astro.props;
 <footer
   class="bg-neutral-900 shadow sm:block sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 antialiased"
 >
-  <div>
-    {
-      !isIndex && (
+  {
+    !isIndex && (
+      <div>
         <div class="max-w-14 flex justify-center mb-6">
           <a
             style="border-radius: 100px;"
-            href="http://localhost:4321/#pre-order"
+            href="/#pre-order"
             class="sm:block w-44 py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-accent hover:bg-neutral-800 focus:ring-4 focus:outline-none"
           >
             Pre registrate aquí
           </a>
         </div>
-      )
-    }
-  </div>
+      </div>
+    )
+  }
   <p class="mb-4 text-sm text-center text-white sm:mb-6">
     &copy; 2020-2024 <a
       href=""
