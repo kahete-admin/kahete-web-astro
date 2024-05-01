@@ -5,7 +5,7 @@ import BaseHead from "@components/BaseHead.astro";
 import { Image } from "astro:assets";
 import logo from "@public/logo_complete.svg";
 import Footer from "@components/Footer.astro";
-import right_arrow from "@public/svg/right_arrow.svg";
+// import right_arrow from "@public/svg/right_arrow.svg";
 import header_picture from "@public/home_page_assets/home-page-header-picture.svg";
 import how_it_works from "@public/home_page_assets/how-it-works-card.svg";
 import tap_card_nfc from "@public/home_page_assets/tap-card-nfc.svg";
@@ -64,7 +64,7 @@ const envURL = import.meta.env.MAILER_SERVICE_URL;
               class="text-black hover:text-black font-medium text-sm inline-flex items-center justify-center rounded-full bg-accent py-2 px-4 cursor-pointer"
             >
               Pre registrate aquí
-              <Image
+              <!-- <Image
                 height={30}
                 width={30}
                 src={right_arrow}
@@ -72,7 +72,7 @@ const envURL = import.meta.env.MAILER_SERVICE_URL;
                 format={"avif"}
                 quality={"mid"}
                 class="justify-start pl-2"
-              />
+              /> -->
             </a>
           </div>
         </div>
@@ -103,7 +103,7 @@ const envURL = import.meta.env.MAILER_SERVICE_URL;
                 class="text-black hover:text-black font-medium text-sm inline-flex items-center justify-center rounded-full bg-accent py-2 px-4 cursor-pointer"
               >
                 Obtener perfil
-                <Image
+                <!-- <Image
                   height={30}
                   width={30}
                   src={right_arrow}
@@ -111,7 +111,7 @@ const envURL = import.meta.env.MAILER_SERVICE_URL;
                   format={"avif"}
                   quality={"mid"}
                   class="justify-center pl-2"
-                />
+                /> -->
               </a>
               <!-- END BUTTON -->
             </div>
