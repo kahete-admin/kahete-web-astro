@@ -59,10 +59,10 @@ import post from "axios";
               Contáctanos
             </a>
             <a
-              href="#"
+              href="#pre-order"
               class="text-black hover:text-black font-medium text-sm inline-flex items-center justify-center rounded-full bg-accent py-2 px-4 cursor-pointer"
             >
-              Comienza ahora
+              Pre registrate aquí
               <Image
                 height={30}
                 width={30}
@@ -98,10 +98,10 @@ import post from "axios";
             <div class="w-full text-center lg:text-start">
               <!-- BUTTON -->
               <a
-                href="#"
-                class="text-black font-medium text-sm inline-flex items-center justify-center rounded-full bg-accent py-2 px-4 cursor-pointer"
+                href="#pre-order"
+                class="text-black hover:text-black font-medium text-sm inline-flex items-center justify-center rounded-full bg-accent py-2 px-4 cursor-pointer"
               >
-                Obtener tarjeta
+                Obtener perfil
                 <Image
                   height={30}
                   width={30}
@@ -410,17 +410,18 @@ import post from "axios";
           <!--/CARACTERISTICAS-->
 
           <!-- CONTACT -->
-          <section class="bg-neutral-950 text-white">
+          <section id="pre-order" class="bg-neutral-950 text-white">
             <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
               <h2
                 class="mb-4 text-4xl tracking-tight font-semibold text-center text-white"
               >
-                Contáctanos
+                Pre registrate aquí
               </h2>
               <p
                 class="mb-8 lg:mb-16 font-light text-center text-[#CBD9E1] sm:text-xl"
               >
-                ¿Tiene algún problema, pregunta o comentario?
+                Completa el formulario y sé de los primeros en innovar la forma
+                de conectar con los demás
               </p>
               <form id="contactForm" method="post" class="space-y-8">
                 <div>
@@ -482,23 +483,16 @@ import post from "axios";
                   >Enviar</button
                 >
               </form>
-              <form
-                action="mailto:email@email.com"
-                method="post"
-                enctype="text/plain"
-              >
-                <label for="email">Your Email:</label><br />
-                <input type="email" id="email" name="email" required /><br /><br
-                />
-                <input type="submit" value="Submit" />
-              </form>
             </div>
           </section>
           <!-- END CONTACT -->
         </div>
       </section>
     </section>
-    <Footer />
+    <Footer isIndex={true} />
+    <script is:inline src="https://unpkg.com/axios/dist/axios.min.js">
+      import axios from "axios";
+    </script>
     <script is:inline>
       document
         .getElementById("contactForm")
@@ -518,46 +512,19 @@ import post from "axios";
           };
 
           (async () => {
-            const response = await fetch(
-              "http://localhost:3000/users/pre-release",
-              {
-                method: "POST",
-                mode: "no-cors",
-                headers: {
-                  "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formData),
-              }
-            );
+            await axios
+              .post(import.meta.env.MAILER_SERVICE_URL, formData)
+              .then((response) => {
+                if (!response.statusText === "OK") {
+                  throw new Error("Network response was not ok");
+                }
 
-            console.log(response.json());
+                alert("Correo enviado exitosamente!");
+
+                // Optionally, reset the form
+                document.getElementById("contactForm").reset();
+              });
           })();
-
-          console.log(JSON.stringify(formData));
-
-          // fetch("http://localhost:3000/users/pre-release", {
-          //   method: "POST",
-          //   mode: "no-cors",
-          //   headers: {
-          //     // "Content-Type": "application/json",
-          //   },
-          //   body: JSON.stringify(formData),
-          // })
-          //   .then((response) => {
-          //     console.log(response);
-          //     if (!response.ok) {
-          //       throw new Error("Network response was not ok");
-          //     }
-          //     return response.json();
-          //   })
-          //   .then((data) => {
-          //     // Handle success response
-          //     console.log("Email sent successfully:", data);
-          //     alert("Email sent successfully!");
-
-          //     // Optionally, reset the form
-          //     document.getElementById("contactForm").reset();
-          //   });
         });
     </script>
   </body>

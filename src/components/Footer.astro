@@ -1,12 +1,29 @@
 ---
 import { Image } from "astro:assets";
 import logo from "@public/svg/logo.svg";
+
+const { isIndex } = Astro.props;
 ---
 
 <footer
-  class="bg-neutral-900 shadow sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 antialiased"
+  class="bg-neutral-900 shadow sm:block sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 antialiased"
 >
-  <p class="mb-4 text-sm text-center text-white sm:mb-0">
+  <div>
+    {
+      !isIndex && (
+        <div class="max-w-14 flex justify-center mb-6">
+          <a
+            style="border-radius: 100px;"
+            href="http://localhost:4321/#pre-order"
+            class="sm:block w-44 py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-accent hover:bg-neutral-800 focus:ring-4 focus:outline-none"
+          >
+            Pre registrate aquí
+          </a>
+        </div>
+      )
+    }
+  </div>
+  <p class="mb-4 text-sm text-center text-white sm:mb-6">
     &copy; 2020-2024 <a
       href=""
       class="hover:underline text-white"
@@ -18,7 +35,7 @@ import logo from "@public/svg/logo.svg";
       src={logo}
       height={45}
       width={45}
-      class="mr-3 h-6 sm:h-9"
+      class="sm:block mr-3 h-6 sm:h-9"
       alt="Kahete Logo"
       format="avif"
       quality="mid"
