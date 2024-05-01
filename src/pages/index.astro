@@ -489,9 +489,7 @@ const envURL = import.meta.env.MAILER_SERVICE_URL;
       </section>
     </section>
     <Footer isIndex={true} />
-    <script is:inline src="https://unpkg.com/axios/dist/axios.min.js">
-      import axios from "axios";
-    </script>
+    <script is:inline src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script is:inline define:vars={{ envURL }}>
       document
         .getElementById("contactForm")
