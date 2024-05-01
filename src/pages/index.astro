@@ -23,7 +23,7 @@ const envURL = import.meta.env.MAILER_SERVICE_URL;
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
-    <header>
+    <header id="header-nav">
       <nav class="bg-neutral-1000 py-2.5 xl:px-16 px-8">
         <div
           class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
@@ -513,10 +513,9 @@ const envURL = import.meta.env.MAILER_SERVICE_URL;
               if (!response.statusText === "OK") {
                 throw new Error("Network response was not ok");
               }
-
-              alert("Correo enviado exitosamente!");
-
-              // Optionally, reset the form
+              if (!alert("Correo enviado exitosamente"))
+                document.location = "/";
+              
               document.getElementById("contactForm").reset();
             });
           })();
