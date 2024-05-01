@@ -5,21 +5,17 @@ import logo from "@public/svg/logo.svg";
 const { isIndex } = Astro.props;
 ---
 
-<footer
-  class="bg-neutral-900 shadow p-4 antialiased"
->
+<footer class="bg-neutral-900 shadow p-4 antialiased">
   {
     !isIndex && (
-      <div>
-        <div class="max-w-14 flex justify-center mb-6">
-          <a
-            style="border-radius: 100px;"
-            href="/#pre-order"
-            class="w-44 py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-accent hover:bg-neutral-800 focus:ring-4 focus:outline-none"
-          >
-            Pre registrate aquí
-          </a>
-        </div>
+      <div class="flex justify-center mb-5 mt-2">
+        <a
+          style="border-radius: 100px;"
+          href="/#pre-order"
+          class="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-accent hover:bg-neutral-800 focus:ring-4 focus:outline-none"
+        >
+          Pre registrate aquí
+        </a>
       </div>
     )
   }
