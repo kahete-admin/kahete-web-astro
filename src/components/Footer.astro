@@ -6,7 +6,7 @@ const { isIndex } = Astro.props;
 ---
 
 <footer
-  class="bg-neutral-900 shadow sm:items-center sm:justify-between p-4 antialiased"
+  class="bg-neutral-900 shadow p-4 antialiased"
 >
   {
     !isIndex && (
@@ -23,7 +23,7 @@ const { isIndex } = Astro.props;
       </div>
     )
   }
-  <p class="mb-4 text-sm text-center text-white sm:mb-6">
+  <p class="mb-4 text-sm text-center text-white">
     &copy; 2020-2024 <a
       href=""
       class="hover:underline text-white"
@@ -35,7 +35,7 @@ const { isIndex } = Astro.props;
       src={logo}
       height={45}
       width={45}
-      class="sm:block mr-3 h-6 sm:h-9"
+      class="mr-3 h-6"
       alt="Kahete Logo"
       format="avif"
       quality="mid"
