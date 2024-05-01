@@ -15,7 +15,8 @@ import premium_cards from "@public/home_page_assets/premium-cards.svg";
 import premium_cards_png from "@public/home_page_assets/premium_cards.png";
 import connection_sm from "@public/home_page_assets/connections-sm.svg";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import post from "axios";
+
+const envURL = import.meta.env.MAILER_SERVICE_URL;
 ---
 
 <!doctype html>
@@ -493,7 +494,7 @@ import post from "axios";
     <script is:inline src="https://unpkg.com/axios/dist/axios.min.js">
       import axios from "axios";
     </script>
-    <script is:inline>
+    <script is:inline define:vars={{ envURL }}>
       document
         .getElementById("contactForm")
         .addEventListener("submit", function (event) {
@@ -512,18 +513,16 @@ import post from "axios";
           };
 
           (async () => {
-            await axios
-              .post(import.meta.env.MAILER_SERVICE_URL, formData)
-              .then((response) => {
-                if (!response.statusText === "OK") {
-                  throw new Error("Network response was not ok");
-                }
+            await axios.post(envURL, formData).then((response) => {
+              if (!response.statusText === "OK") {
+                throw new Error("Network response was not ok");
+              }
 
-                alert("Correo enviado exitosamente!");
+              alert("Correo enviado exitosamente!");
 
-                // Optionally, reset the form
-                document.getElementById("contactForm").onreset();
-              });
+              // Optionally, reset the form
+              document.getElementById("contactForm").reset();
+            });
           })();
         });
     </script>
