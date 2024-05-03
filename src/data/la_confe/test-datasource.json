@@ -2401,7 +2401,7 @@
     },
     {
         "slug": "diego-andres-portillo-espana",
-        "group_color": "BROWN",
+        "group_color": "brown",
         "country": "Honduras",
         "username": "Diego Andrés Portillo España",
         "profile_picture": "",
@@ -2417,7 +2417,7 @@
     },
     {
         "slug": "cesar-campos",
-        "group_color": "YELLOW",
+        "group_color": "yellow",
         "country": "El Salvador",
         "username": "Cesar Campos",
         "profile_picture": "",
@@ -2433,7 +2433,7 @@
     },
     {
         "slug": "maria-fernanda-mendez-escobar",
-        "group_color": "BLACK",
+        "group_color": "black",
         "country": "El Salvador",
         "username": "María Fernanda Méndez Escobar",
         "profile_picture": "",
@@ -2449,7 +2449,7 @@
     },
     {
         "slug": "mario-andres-martinez-gutierrez",
-        "group_color": "RED",
+        "group_color": "red",
         "country": "El Salvador",
         "username": "Mario Andres Martinez Gutierrez",
         "profile_picture": "",
@@ -2465,7 +2465,7 @@
     },
     {
         "slug": "elsa-gabriela-lanza-alvarado",
-        "group_color": "PURPLE",
+        "group_color": "purple",
         "country": "Honduras",
         "username": "Elsa Gabriela Lanza Alvarado",
         "profile_picture": "",
