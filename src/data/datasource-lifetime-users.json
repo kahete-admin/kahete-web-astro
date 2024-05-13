@@ -1402,6 +1402,30 @@
     ]
   },
   {
+    "slug": "conecta-y-gana-makeiteasy",
+    "username": "Make it easy",
+    "title": "Protein shake bar 🥤",
+    "about": "En Make it Easy podrás disfrutar de lo mejor de tus comidas💚 en un solo vaso, Meal in a Glass! Atrévete a probar nuestros shakes, llegó el momento de hacerlo fácil. ",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1713999313/makeiteasy_tlab4y.avif",
+    "phone_number": "+(503) 6003 4325",
+    "email": "makeiteasysv1.1@gmail.com",
+    "whatsapp": "50360034325",
+    "social_links": [
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/makeiteasy.sv?igsh=dXk4bGwzaTdqNDlt"
+      },
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/profile.php?id=100087997734026&mibextid=LQQJ4d"
+      },
+      {
+        "social_media": "TikTok",
+        "url": "https://www.tiktok.com/@makeiteasy.sv?_t=8lo47G8EC06&_r=1"
+      }
+    ]
+  },
+  {
     "slug": "ernesto-carballo",
     "username": "Ernesto Carballo",
     "title": "Revenue Management and Business Intelligence",
