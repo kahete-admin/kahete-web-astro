@@ -10,7 +10,7 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={"La Confe"} description={"All users"} />
+    <BaseHead title={"Amazonas"} description={"Selected members only"} />
   </head>
   <header>
     <nav
@@ -187,7 +187,7 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
               })
           }
         </div>
-        <div id="costa-rica" class="px-6">
+        <div id="costa-rica" class="min-h-screen px-6">
           <div class="pb-4">
             <label class="text-white">Costa Rica 🇨🇷</label>
           </div>
@@ -215,27 +215,6 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
           {
             incomingData
               .filter((entry) => entry.country.toLowerCase() === "belice")
-              .sort(function (a, b) {
-                if (a.username < b.username) {
-                  return -1;
-                }
-                if (a.username > b.username) {
-                  return 1;
-                }
-                return 0;
-              })
-              .map((entry) => {
-                return <LaConfeCard entry={entry} />;
-              })
-          }
-        </div>
-        <div id="nicaragua" class="min-h-screen px-6">
-          <div class="pb-4">
-            <label class="text-white">Nicaragua 🇳🇮</label>
-          </div>
-          {
-            incomingData
-              .filter((entry) => entry.country.toLowerCase() === "nicaragua")
               .sort(function (a, b) {
                 if (a.username < b.username) {
                   return -1;
