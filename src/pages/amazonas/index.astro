@@ -1,0 +1,687 @@
+---
+import incomingData from "@/data/la_confe/amazon-seleccionadas.json";
+import BaseHead from "@/components/BaseHead.astro";
+import Footer from "@/components/Footer.astro";
+import logo from "@public/svg/logo.svg";
+import { Image } from "astro:assets";
+import LaConfeCard from "@/components/LaConfeCard.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={"La Confe"} description={"All users"} />
+  </head>
+  <header>
+    <nav
+      class="bg-neutral-1000 px-4 lg:px-6 py-2.5 border-b-neutral-700 border-b-[0.5px]"
+    >
+      <div
+        class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+      >
+        <a href="/" class="flex items-center">
+          <Image
+            height={40}
+            width={40}
+            src={logo}
+            alt="Kahete Logo"
+            format={"avif"}
+            quality={"mid"}
+          />
+        </a>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <section class="bg-neutral-1000">
+      <div class="justify-between items-center mx-auto max-w-screen-xl pt-8">
+        <label class="text-white text-xl font-semibold pl-6">La Confe 28</label>
+        <div class="mt-6 ml-6 flex mb-4 breadcrum-list-container">
+          <span
+            id="AllBtn"
+            class="breadcrum-list-item text-white text-sm py-2 text-center bg-background active:bg-accent cursor-pointer px-2 border-typography-dark-secondary border-2 rounded-lg"
+            >All rotaractors</span
+          >
+          <span
+            id="SVBtn"
+            class="breadcrum-list-item text-white text-sm py-2 text-center bg-background active:bg-accent cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg"
+            >El Salvador</span
+          >
+          <span
+            id="GuateBtn"
+            class="breadcrum-list-item text-white text-sm py-2 text-center bg-background active:bg-accent cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg"
+            >Guatemala</span
+          >
+          <span
+            id="PNMbtn"
+            class="breadcrum-list-item text-white text-sm py-2 text-center bg-background active:bg-accent cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg"
+            >Panamá</span
+          >
+          <span
+            id="HNbtn"
+            class="breadcrum-list-item text-white text-sm py-2 text-center bg-background active:bg-accent cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg"
+            >Honduras</span
+          >
+          <span
+            id="NCbtn"
+            class="breadcrum-list-item text-white text-sm py-2 text-center bg-background active:bg-accent cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg"
+            >Nicaragua</span
+          >
+          <span
+            id="CRbtn"
+            class="breadcrum-list-item text-white text-sm py-2 text-center bg-background active:bg-accent cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg"
+            >Costa Rica</span
+          >
+          <span
+            id="BZbtn"
+            class="breadcrum-list-item text-white text-sm py-2 text-center bg-background active:bg-accent cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg"
+            >Belice</span
+          >
+          <span
+            id="PRbtn"
+            class="breadcrum-list-item text-white text-sm py-2 text-center bg-background active:bg-accent cursor-pointer px-4 border-typography-dark-secondary border-2 rounded-lg"
+            >Perú</span
+          >
+        </div>
+        <div id="all" class="px-6">
+          <div class="pb-4">
+            <label class="text-white">All countries 🇸🇻🇵🇪🇭🇳🇳🇮🇨🇷🇧🇿🇬🇹🇵🇦</label>
+          </div>
+          {
+            incomingData
+              .sort(function (a, b) {
+                if (a.username < b.username) {
+                  return -1;
+                }
+                if (a.username > b.username) {
+                  return 1;
+                }
+                return 0;
+              })
+              .map((entry) => {
+                return <LaConfeCard entry={entry} />;
+              })
+          }
+        </div>
+        <div id="el-salvador" class="px-6">
+          <div class="pb-4">
+            <label class="text-white">El Salvador 🇸🇻</label>
+          </div>
+          {
+            incomingData
+              .filter((entry) => entry.country.toLowerCase() === "el salvador")
+              .sort(function (a, b) {
+                if (a.username < b.username) {
+                  return -1;
+                }
+                if (a.username > b.username) {
+                  return 1;
+                }
+                return 0;
+              })
+              .map((entry) => {
+                return <LaConfeCard entry={entry} />;
+              })
+          }
+        </div>
+        <div id="honduras" class="px-6">
+          <div class="pb-4">
+            <label class="text-white">Honduras 🇭🇳</label>
+          </div>
+          {
+            incomingData
+              .filter((entry) => entry.country.toLowerCase() === "honduras")
+              .sort(function (a, b) {
+                if (a.username < b.username) {
+                  return -1;
+                }
+                if (a.username > b.username) {
+                  return 1;
+                }
+                return 0;
+              })
+              .map((entry) => {
+                return <LaConfeCard entry={entry} />;
+              })
+          }
+        </div>
+        <div id="guatemala" class="px-6">
+          <div class="pb-4">
+            <label class="text-white">Guatemala 🇬🇹</label>
+          </div>
+          {
+            incomingData
+              .filter((entry) => entry.country.toLowerCase() === "guatemala")
+              .sort(function (a, b) {
+                if (a.username < b.username) {
+                  return -1;
+                }
+                if (a.username > b.username) {
+                  return 1;
+                }
+                return 0;
+              })
+              .map((entry) => {
+                return <LaConfeCard entry={entry} />;
+              })
+          }
+        </div>
+        <div id="panama" class="px-6">
+          <div class="pb-4">
+            <label class="text-white">Panamá 🇵🇦</label>
+          </div>
+          {
+            incomingData
+              .filter((entry) => entry.country.toLowerCase() === "panama")
+              .sort(function (a, b) {
+                if (a.username < b.username) {
+                  return -1;
+                }
+                if (a.username > b.username) {
+                  return 1;
+                }
+                return 0;
+              })
+              .map((entry) => {
+                return <LaConfeCard entry={entry} />;
+              })
+          }
+        </div>
+        <div id="costa-rica" class="px-6">
+          <div class="pb-4">
+            <label class="text-white">Costa Rica 🇨🇷</label>
+          </div>
+          {
+            incomingData
+              .filter((entry) => entry.country.toLowerCase() === "costa rica")
+              .sort(function (a, b) {
+                if (a.username < b.username) {
+                  return -1;
+                }
+                if (a.username > b.username) {
+                  return 1;
+                }
+                return 0;
+              })
+              .map((entry) => {
+                return <LaConfeCard entry={entry} />;
+              })
+          }
+        </div>
+        <div id="belice" class="px-6">
+          <div class="pb-4">
+            <label class="text-white">Belice 🇧🇿</label>
+          </div>
+          {
+            incomingData
+              .filter((entry) => entry.country.toLowerCase() === "belice")
+              .sort(function (a, b) {
+                if (a.username < b.username) {
+                  return -1;
+                }
+                if (a.username > b.username) {
+                  return 1;
+                }
+                return 0;
+              })
+              .map((entry) => {
+                return <LaConfeCard entry={entry} />;
+              })
+          }
+        </div>
+        <div id="nicaragua" class="min-h-screen px-6">
+          <div class="pb-4">
+            <label class="text-white">Nicaragua 🇳🇮</label>
+          </div>
+          {
+            incomingData
+              .filter((entry) => entry.country.toLowerCase() === "nicaragua")
+              .sort(function (a, b) {
+                if (a.username < b.username) {
+                  return -1;
+                }
+                if (a.username > b.username) {
+                  return 1;
+                }
+                return 0;
+              })
+              .map((entry) => {
+                return <LaConfeCard entry={entry} />;
+              })
+          }
+        </div>
+        <div id="peru" class="min-h-screen px-6">
+          <div class="pb-4">
+            <label class="text-white">Perú 🇵🇪</label>
+          </div>
+          {
+            incomingData
+              .filter((entry) => entry.country.toLowerCase() === "peru")
+              .sort(function (a, b) {
+                if (a.username < b.username) {
+                  return -1;
+                }
+                if (a.username > b.username) {
+                  return 1;
+                }
+                return 0;
+              })
+              .map((entry) => {
+                return <LaConfeCard entry={entry} />;
+              })
+          }
+        </div>
+      </div>
+      <Footer />
+    </section>
+  </body>
+  <style>
+    .breadcrum-list-container {
+      width: 90%;
+      max-width: 90%;
+      height: auto;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-bottom: 12px;
+    }
+
+    .breadcrum-list-item {
+      display: inline-block;
+      margin-right: 12px;
+      color: white;
+    }
+  </style>
+  <script is:inline>
+    document.onreadystatechange = function () {
+      if (document.readyState === "loading") {
+        console.log("Page is loading");
+      }
+      if (document.readyState === "interactive") {
+        console.log("DOM is ready");
+      }
+      if (document.readyState === "complete") {
+        // Button active
+        AllBtn.style.background = "rgb(101 206 216)";
+        AllBtn.style.color = "black";
+        // disable others
+        SVBtn.style.background = "rgb(20 25 28)";
+        SVBtn.style.color = "white";
+        GuateBtn.style.background = "rgb(20 25 28)";
+        GuateBtn.style.color = "white";
+        HNbtn.style.background = "rgb(20 25 28)";
+        HNbtn.style.color = "white";
+        CRbtn.style.background = "rgb(20 25 28)";
+        CRbtn.style.color = "white";
+        PNMbtn.style.background = "rgb(20 25 28)";
+        PNMbtn.style.color = "white";
+        PRbtn.style.background = "rgb(20 25 28)";
+        PRbtn.style.color = "white";
+        BZbtn.style.background = "rgb(20 25 28)";
+        BZbtn.style.color = "white";
+        NCbtn.style.background = "rgb(20 25 28)";
+        NCbtn.style.color = "white";
+        // styles
+        SVBtn.style.background = "transparent";
+        showAll.style.display = "block";
+        showGuatemala.style.display = "none";
+        showElSalvador.style.display = "none";
+        showHonduras.style.display = "none";
+        showNicaragua.style.display = "none";
+        showCR.style.display = "none";
+        showPanama.style.display = "none";
+        showPeru.style.display = "none";
+        showBelice.style.display = "none";
+      }
+    };
+    const showAll = document.querySelector("#all");
+    const showElSalvador = document.querySelector("#el-salvador");
+    const showGuatemala = document.querySelector("#guatemala");
+    const showHonduras = document.querySelector("#honduras");
+    const showNicaragua = document.querySelector("#nicaragua");
+    const showCR = document.querySelector("#costa-rica");
+    const showPanama = document.querySelector("#panama");
+    const showPeru = document.querySelector("#peru");
+    const showBelice = document.querySelector("#belice");
+
+    const AllBtn = document.querySelector("#AllBtn");
+    const SVBtn = document.querySelector("#SVBtn");
+    const GuateBtn = document.querySelector("#GuateBtn");
+    const HNbtn = document.querySelector("#HNbtn");
+    const NCbtn = document.querySelector("#NCbtn");
+    const CRbtn = document.querySelector("#CRbtn");
+    const PNMbtn = document.querySelector("#PNMbtn");
+    const PRbtn = document.querySelector("#PRbtn");
+    const BZbtn = document.querySelector("#BZbtn");
+
+    AllBtn.addEventListener("click", () => {
+      // Button active
+      AllBtn.style.background = "rgb(101 206 216)";
+      AllBtn.style.color = "black";
+      // disable others
+      SVBtn.style.background = "rgb(20 25 28)";
+      SVBtn.style.color = "white";
+      GuateBtn.style.background = "rgb(20 25 28)";
+      GuateBtn.style.color = "white";
+      HNbtn.style.background = "rgb(20 25 28)";
+      HNbtn.style.color = "white";
+      CRbtn.style.background = "rgb(20 25 28)";
+      CRbtn.style.color = "white";
+      PNMbtn.style.background = "rgb(20 25 28)";
+      PNMbtn.style.color = "white";
+      PRbtn.style.background = "rgb(20 25 28)";
+      PRbtn.style.color = "white";
+      BZbtn.style.background = "rgb(20 25 28)";
+      BZbtn.style.color = "white";
+      NCbtn.style.background = "rgb(20 25 28)";
+      NCbtn.style.color = "white";
+      // styles
+      SVBtn.style.background = "transparent";
+      showAll.style.display = "block";
+      showGuatemala.style.display = "none";
+      showElSalvador.style.display = "none";
+      showHonduras.style.display = "none";
+      showNicaragua.style.display = "none";
+      showCR.style.display = "none";
+      showPanama.style.display = "none";
+      showPeru.style.display = "none";
+      showBelice.style.display = "none";
+    });
+
+    SVBtn.addEventListener("click", () => {
+      // Button active
+      SVBtn.style.background = "rgb(101 206 216)";
+      SVBtn.style.color = "black";
+      // disable others
+      AllBtn.style.background = "rgb(20 25 28)";
+      AllBtn.style.color = "white";
+      GuateBtn.style.background = "rgb(20 25 28)";
+      GuateBtn.style.color = "white";
+      HNbtn.style.background = "rgb(20 25 28)";
+      HNbtn.style.color = "white";
+      CRbtn.style.background = "rgb(20 25 28)";
+      CRbtn.style.color = "white";
+      PNMbtn.style.background = "rgb(20 25 28)";
+      PNMbtn.style.color = "white";
+      PRbtn.style.background = "rgb(20 25 28)";
+      PRbtn.style.color = "white";
+      BZbtn.style.background = "rgb(20 25 28)";
+      BZbtn.style.color = "white";
+      NCbtn.style.background = "rgb(20 25 28)";
+      NCbtn.style.color = "white";
+
+      showAll.style.display = "none";
+      showGuatemala.style.display = "none";
+      showElSalvador.style.display = "block";
+      showHonduras.style.display = "none";
+      showNicaragua.style.display = "none";
+      showCR.style.display = "none";
+      showPanama.style.display = "none";
+      showPeru.style.display = "none";
+      showBelice.style.display = "none";
+    });
+
+    GuateBtn.addEventListener("click", () => {
+      // Button active
+      GuateBtn.style.background = "rgb(101 206 216)";
+      GuateBtn.style.color = "black";
+      // disable others
+      AllBtn.style.background = "rgb(20 25 28)";
+      AllBtn.style.color = "white";
+      SVBtn.style.background = "rgb(20 25 28)";
+      SVBtn.style.color = "white";
+      HNbtn.style.background = "rgb(20 25 28)";
+      HNbtn.style.color = "white";
+      CRbtn.style.background = "rgb(20 25 28)";
+      CRbtn.style.color = "white";
+      PNMbtn.style.background = "rgb(20 25 28)";
+      PNMbtn.style.color = "white";
+      PRbtn.style.background = "rgb(20 25 28)";
+      PRbtn.style.color = "white";
+      BZbtn.style.background = "rgb(20 25 28)";
+      BZbtn.style.color = "white";
+      NCbtn.style.background = "rgb(20 25 28)";
+      NCbtn.style.color = "white";
+
+      showGuatemala.style.display = "block";
+      showAll.style.display = "none";
+      showElSalvador.style.display = "none";
+      showHonduras.style.display = "none";
+      showNicaragua.style.display = "none";
+      showCR.style.display = "none";
+      showPanama.style.display = "none";
+      showPeru.style.display = "none";
+      showBelice.style.display = "none";
+    });
+
+    HNbtn.addEventListener("click", () => {
+      // Button active
+      HNbtn.style.background = "rgb(101 206 216)";
+      HNbtn.style.color = "black";
+      // disable others
+      AllBtn.style.background = "rgb(20 25 28)";
+      AllBtn.style.color = "white";
+      SVBtn.style.background = "rgb(20 25 28)";
+      SVBtn.style.color = "white";
+      GuateBtn.style.background = "rgb(20 25 28)";
+      GuateBtn.style.color = "white";
+      CRbtn.style.background = "rgb(20 25 28)";
+      CRbtn.style.color = "white";
+      PNMbtn.style.background = "rgb(20 25 28)";
+      PNMbtn.style.color = "white";
+      PRbtn.style.background = "rgb(20 25 28)";
+      PRbtn.style.color = "white";
+      BZbtn.style.background = "rgb(20 25 28)";
+      BZbtn.style.color = "white";
+      NCbtn.style.background = "rgb(20 25 28)";
+      NCbtn.style.color = "white";
+
+      showGuatemala.style.display = "none";
+      showAll.style.display = "none";
+      showElSalvador.style.display = "none";
+      showHonduras.style.display = "block";
+      showNicaragua.style.display = "none";
+      showCR.style.display = "none";
+      showPanama.style.display = "none";
+      showPeru.style.display = "none";
+      showBelice.style.display = "none";
+    });
+
+    NCbtn.addEventListener("click", () => {
+      // Button active
+      NCbtn.style.background = "rgb(101 206 216)";
+      NCbtn.style.color = "black";
+      // disable others
+      AllBtn.style.background = "rgb(20 25 28)";
+      AllBtn.style.color = "white";
+      SVBtn.style.background = "rgb(20 25 28)";
+      SVBtn.style.color = "white";
+      GuateBtn.style.background = "rgb(20 25 28)";
+      GuateBtn.style.color = "white";
+      CRbtn.style.background = "rgb(20 25 28)";
+      CRbtn.style.color = "white";
+      PNMbtn.style.background = "rgb(20 25 28)";
+      PNMbtn.style.color = "white";
+      PRbtn.style.background = "rgb(20 25 28)";
+      PRbtn.style.color = "white";
+      BZbtn.style.background = "rgb(20 25 28)";
+      BZbtn.style.color = "white";
+      HNbtn.style.background = "rgb(20 25 28)";
+      HNbtn.style.color = "white";
+
+      showGuatemala.style.display = "none";
+      showAll.style.display = "none";
+      showElSalvador.style.display = "none";
+      showHonduras.style.display = "none";
+      showNicaragua.style.display = "block";
+      showCR.style.display = "none";
+      showPanama.style.display = "none";
+      showPeru.style.display = "none";
+      showBelice.style.display = "none";
+    });
+
+    CRbtn.addEventListener("click", () => {
+      // Button active
+      CRbtn.style.background = "rgb(101 206 216)";
+      CRbtn.style.color = "black";
+      // disable others
+      AllBtn.style.background = "rgb(20 25 28)";
+      AllBtn.style.color = "white";
+      SVBtn.style.background = "rgb(20 25 28)";
+      SVBtn.style.color = "white";
+      GuateBtn.style.background = "rgb(20 25 28)";
+      GuateBtn.style.color = "white";
+      NCbtn.style.background = "rgb(20 25 28)";
+      NCbtn.style.color = "white";
+      PNMbtn.style.background = "rgb(20 25 28)";
+      PNMbtn.style.color = "white";
+      PRbtn.style.background = "rgb(20 25 28)";
+      PRbtn.style.color = "white";
+      BZbtn.style.background = "rgb(20 25 28)";
+      BZbtn.style.color = "white";
+      HNbtn.style.background = "rgb(20 25 28)";
+      HNbtn.style.color = "white";
+
+      showGuatemala.style.display = "none";
+      showAll.style.display = "none";
+      showElSalvador.style.display = "none";
+      showHonduras.style.display = "none";
+      showNicaragua.style.display = "none";
+      showCR.style.display = "block";
+      showPanama.style.display = "none";
+      showPeru.style.display = "none";
+      showBelice.style.display = "none";
+    });
+
+    PNMbtn.addEventListener("click", () => {
+      // Button active
+      PNMbtn.style.background = "rgb(101 206 216)";
+      PNMbtn.style.color = "black";
+      // disable others
+      AllBtn.style.background = "rgb(20 25 28)";
+      AllBtn.style.color = "white";
+      SVBtn.style.background = "rgb(20 25 28)";
+      SVBtn.style.color = "white";
+      GuateBtn.style.background = "rgb(20 25 28)";
+      GuateBtn.style.color = "white";
+      NCbtn.style.background = "rgb(20 25 28)";
+      NCbtn.style.color = "white";
+      CRbtn.style.background = "rgb(20 25 28)";
+      CRbtn.style.color = "white";
+      PRbtn.style.background = "rgb(20 25 28)";
+      PRbtn.style.color = "white";
+      BZbtn.style.background = "rgb(20 25 28)";
+      BZbtn.style.color = "white";
+      HNbtn.style.background = "rgb(20 25 28)";
+      HNbtn.style.color = "white";
+
+      showGuatemala.style.display = "none";
+      showAll.style.display = "none";
+      showElSalvador.style.display = "none";
+      showHonduras.style.display = "none";
+      showNicaragua.style.display = "none";
+      showCR.style.display = "none";
+      showPanama.style.display = "block";
+      showPeru.style.display = "none";
+      showBelice.style.display = "none";
+    });
+
+    PRbtn.addEventListener("click", () => {
+      // Button active
+      PRbtn.style.background = "rgb(101 206 216)";
+      PRbtn.style.color = "black";
+      // disable others
+      AllBtn.style.background = "rgb(20 25 28)";
+      AllBtn.style.color = "white";
+      SVBtn.style.background = "rgb(20 25 28)";
+      SVBtn.style.color = "white";
+      GuateBtn.style.background = "rgb(20 25 28)";
+      GuateBtn.style.color = "white";
+      NCbtn.style.background = "rgb(20 25 28)";
+      NCbtn.style.color = "white";
+      CRbtn.style.background = "rgb(20 25 28)";
+      CRbtn.style.color = "white";
+      PNMbtn.style.background = "rgb(20 25 28)";
+      PNMbtn.style.color = "white";
+      BZbtn.style.background = "rgb(20 25 28)";
+      BZbtn.style.color = "white";
+      HNbtn.style.background = "rgb(20 25 28)";
+      HNbtn.style.color = "white";
+
+      showGuatemala.style.display = "none";
+      showAll.style.display = "none";
+      showElSalvador.style.display = "none";
+      showHonduras.style.display = "none";
+      showNicaragua.style.display = "none";
+      showCR.style.display = "none";
+      showPanama.style.display = "none";
+      showPeru.style.display = "block";
+      showBelice.style.display = "none";
+    });
+
+    BZbtn.addEventListener("click", () => {
+      // Button active
+      BZbtn.style.background = "rgb(101 206 216)";
+      BZbtn.style.color = "black";
+      // disable others
+      AllBtn.style.background = "rgb(20 25 28)";
+      AllBtn.style.color = "white";
+      SVBtn.style.background = "rgb(20 25 28)";
+      SVBtn.style.color = "white";
+      GuateBtn.style.background = "rgb(20 25 28)";
+      GuateBtn.style.color = "white";
+      NCbtn.style.background = "rgb(20 25 28)";
+      NCbtn.style.color = "white";
+      CRbtn.style.background = "rgb(20 25 28)";
+      CRbtn.style.color = "white";
+      PNMbtn.style.background = "rgb(20 25 28)";
+      PNMbtn.style.color = "white";
+      PRbtn.style.background = "rgb(20 25 28)";
+      PRbtn.style.color = "white";
+      HNbtn.style.background = "rgb(20 25 28)";
+      HNbtn.style.color = "white";
+
+      showGuatemala.style.display = "none";
+      showAll.style.display = "none";
+      showElSalvador.style.display = "none";
+      showHonduras.style.display = "none";
+      showNicaragua.style.display = "none";
+      showCR.style.display = "none";
+      showPanama.style.display = "none";
+      showPeru.style.display = "none";
+      showBelice.style.display = "block";
+    });
+
+    PRbtn.addEventListener("click", () => {
+      // Button active
+      PRbtn.style.background = "rgb(101 206 216)";
+      PRbtn.style.color = "black";
+      // disable others
+      AllBtn.style.background = "rgb(20 25 28)";
+      AllBtn.style.color = "white";
+      SVBtn.style.background = "rgb(20 25 28)";
+      SVBtn.style.color = "white";
+      GuateBtn.style.background = "rgb(20 25 28)";
+      GuateBtn.style.color = "white";
+      NCbtn.style.background = "rgb(20 25 28)";
+      NCbtn.style.color = "white";
+      CRbtn.style.background = "rgb(20 25 28)";
+      CRbtn.style.color = "white";
+      PNMbtn.style.background = "rgb(20 25 28)";
+      PNMbtn.style.color = "white";
+      BZbtn.style.background = "rgb(20 25 28)";
+      BZbtn.style.color = "white";
+      HNbtn.style.background = "rgb(20 25 28)";
+      HNbtn.style.color = "white";
+
+      showGuatemala.style.display = "none";
+      showAll.style.display = "none";
+      showElSalvador.style.display = "none";
+      showHonduras.style.display = "none";
+      showNicaragua.style.display = "none";
+      showCR.style.display = "none";
+      showPanama.style.display = "none";
+      showPeru.style.display = "block";
+      showBelice.style.display = "none";
+    });
+  </script>
+</html>
