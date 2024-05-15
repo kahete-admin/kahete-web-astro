@@ -10,7 +10,7 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={"Amazonas"} description={"Selected members only"} />
+    <BaseHead title={"La Confe"} description={"All users"} />
   </head>
   <header>
     <nav
@@ -103,7 +103,7 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
               })
           }
         </div>
-        <div id="el-salvador" class="px-6">
+        <div id="el-salvador" class="min-h-screen px-6">
           <div class="pb-4">
             <label class="text-white">El Salvador 🇸🇻</label>
           </div>
@@ -124,7 +124,7 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
               })
           }
         </div>
-        <div id="honduras" class="px-6">
+        <div id="honduras" class="min-h-screen px-6">
           <div class="pb-4">
             <label class="text-white">Honduras 🇭🇳</label>
           </div>
@@ -145,7 +145,7 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
               })
           }
         </div>
-        <div id="guatemala" class="px-6">
+        <div id="guatemala" class="min-h-screen px-6">
           <div class="pb-4">
             <label class="text-white">Guatemala 🇬🇹</label>
           </div>
@@ -166,7 +166,7 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
               })
           }
         </div>
-        <div id="panama" class="px-6">
+        <div id="panama" class="min-h-screen px-6">
           <div class="pb-4">
             <label class="text-white">Panamá 🇵🇦</label>
           </div>
@@ -208,13 +208,34 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
               })
           }
         </div>
-        <div id="belice" class="px-6">
+        <div id="belice" class="min-h-screen px-6">
           <div class="pb-4">
             <label class="text-white">Belice 🇧🇿</label>
           </div>
           {
             incomingData
               .filter((entry) => entry.country.toLowerCase() === "belice")
+              .sort(function (a, b) {
+                if (a.username < b.username) {
+                  return -1;
+                }
+                if (a.username > b.username) {
+                  return 1;
+                }
+                return 0;
+              })
+              .map((entry) => {
+                return <LaConfeCard entry={entry} />;
+              })
+          }
+        </div>
+        <div id="nicaragua" class="min-h-screen px-6">
+          <div class="pb-4">
+            <label class="text-white">Nicaragua 🇳🇮</label>
+          </div>
+          {
+            incomingData
+              .filter((entry) => entry.country.toLowerCase() === "nicaragua")
               .sort(function (a, b) {
                 if (a.username < b.username) {
                   return -1;
