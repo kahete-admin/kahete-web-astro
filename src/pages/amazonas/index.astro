@@ -33,7 +33,7 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
     </nav>
   </header>
   <body>
-    <section class="bg-neutral-1000">
+    <section class="bg-neutral-1000 px-8">
       <div class="justify-between items-center mx-auto max-w-screen-xl pt-8">
         <label class="text-white text-xl font-semibold">La Confe 28</label>
         <div class="mt-6 flex mb-4 breadcrum-list-container">
@@ -310,8 +310,8 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
   </body>
   <style>
     .breadcrum-list-container {
-      width: 90%;
-      max-width: 90%;
+      width: 100%;
+      max-width: 100%;
       height: auto;
       overflow-x: auto;
       white-space: nowrap;
@@ -325,11 +325,12 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
       background: transparent;
       border: 1px solid white;
       border-radius: 10px;
-      padding: 8px 20px 8px 20px;
+      padding: 8px 12px 8px 12px;
       cursor: pointer;
     }
     .active {
       background: #65ced8;
+      color: black;
       border: 1px solid transparent;
     }
   </style>
