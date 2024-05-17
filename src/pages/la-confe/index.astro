@@ -293,12 +293,6 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
   </style>
   <script is:inline>
     document.onreadystatechange = function () {
-      if (document.readyState === "loading") {
-        console.log("Page is loading");
-      }
-      if (document.readyState === "interactive") {
-        console.log("DOM is ready");
-      }
       if (document.readyState === "complete") {
         // Button active
         AllBtn.style.background = "rgb(101 206 216)";

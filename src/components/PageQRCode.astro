@@ -11,11 +11,7 @@
     constructor() {
       super();
       document.onreadystatechange = function () {
-        if (document.readyState === "loading") {
-          console.log("Page is loading");
-        }
         if (document.readyState === "interactive") {
-          console.log("DOM is ready");
           new QRCode(document.getElementById("qrcode"), {
             // TODO: Change this if you want to test on Localhost
             text: window.location.href,
