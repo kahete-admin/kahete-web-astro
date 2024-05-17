@@ -5,6 +5,7 @@ import NavBarProfile from "@components/NavBarProfile.astro";
 import ContactButton from "@components/ContactButton.astro";
 import { Image } from "astro:assets";
 import logo from "@public/svg/logo.svg";
+import PageQRCode from "@/components/PageQRCode.astro";
 
 const {
   slug,
@@ -18,32 +19,6 @@ const {
 } = Astro.props;
 ---
 
-<script
-  is:inline
-  src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
-<script define:vars={{ slug }}>
-  document.onreadystatechange = function () {
-    if (document.readyState === "loading") {
-      console.log("Page is loading");
-    }
-    if (document.readyState === "interactive") {
-      console.log("DOM is ready");
-    }
-    if (document.readyState === "complete") {
-      console.log("Page is fully loaded");
-      const qrcode = new QRCode(document.getElementById("qrcode"), {
-        text: "https://www.kahete.com/" + slug,
-        maxWidth: 600,
-        maxHeight: 600,
-        minWidth: 500,
-        minHeight: 500,
-        colorDark: "#000",
-        colorLight: "#fff",
-        correctLevel: QRCode.CorrectLevel.H,
-      });
-    }
-  };
-</script>
 <html lang="en">
   <head>
     <BaseHead title={username} description={about} image={profile_picture} />
@@ -98,7 +73,7 @@ const {
           <!-- /SOCIALMEDIA -->
           <!-- QR -->
           <div class="bg-white rounded-lg pb-8">
-            <div id="qrcode" class="flex mx-auto justify-center p-12"></div>
+            <PageQRCode />
             <label class="text-black font-bold text-sm capitalize"
               >{username}</label
             >

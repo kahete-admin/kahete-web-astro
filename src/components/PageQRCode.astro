@@ -1,0 +1,38 @@
+<page-qrcode>
+  <div id="qrcode" class="flex mx-auto justify-center p-12"></div>
+</page-qrcode>
+<!-- Scripts -->
+<script
+  is:inline
+  src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+
+<script is:inline>
+  class PageQRCode extends HTMLElement {
+    constructor() {
+      super();
+      document.onreadystatechange = function () {
+        if (document.readyState === "loading") {
+          console.log("Page is loading");
+        }
+        if (document.readyState === "interactive") {
+          console.log("DOM is ready");
+          new QRCode(document.getElementById("qrcode"), {
+            // TODO: Change this if you want to test on Localhost
+            text: window.location.href,
+            maxWidth: 600,
+            maxHeight: 600,
+            minWidth: 500,
+            minHeight: 500,
+            colorDark: "#000",
+            colorLight: "#fff",
+            correctLevel: QRCode.CorrectLevel.H,
+          });
+        }
+        if (document.readyState === "complete") {
+          console.log("Page is fully loaded");
+        }
+      };
+    }
+  }
+  customElements.define("page-qrcode", PageQRCode);
+</script>

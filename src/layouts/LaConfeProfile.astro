@@ -4,6 +4,7 @@ import Footer from "@components/Footer.astro";
 import { Image } from "astro:assets";
 import blogPlaceholder from "@public/la_confe/laconfe_square_logo.jpeg";
 import NavBarLaConfeProfile from "@/components/NavBarLaConfeProfile.astro";
+import PageQRCode from "@/components/PageQRCode.astro";
 
 interface Props {
   slug: string;
@@ -29,34 +30,6 @@ const {
   color_group,
 } = Astro.props;
 ---
-
-<script
-  is:inline
-  src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
-<script define:vars={{ title, slug }}>
-  document.onreadystatechange = function () {
-    if (document.readyState === "loading") {
-      console.log("Page is loading");
-    }
-    if (document.readyState === "interactive") {
-      console.log("DOM is ready");
-    }
-    if (document.readyState === "complete") {
-      console.log("Page is fully loaded");
-      const qrcode = new QRCode(document.getElementById("qrcode"), {
-        text:
-          "https://www.kahete.com/la-confe/" + title.toLowerCase() + "/" + slug,
-        maxWidth: 600,
-        maxHeight: 600,
-        minWidth: 500,
-        minHeight: 500,
-        colorDark: "#000",
-        colorLight: "#fff",
-        correctLevel: QRCode.CorrectLevel.H,
-      });
-    }
-  };
-</script>
 <html lang="en">
   <head>
     <BaseHead title={username} description={about} image={profile_picture} />
@@ -104,7 +77,7 @@ const {
           <!-- /SOCIALMEDIA -->
           <!-- QR -->
           <div class="bg-white rounded-lg pb-8 mt-6 mb-8">
-            <div id="qrcode" class="flex mx-auto justify-center p-12"></div>
+            <PageQRCode />
             <label class="text-black font-bold text-sm capitalize"
               >{username}</label
             >
