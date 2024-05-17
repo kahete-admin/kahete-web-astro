@@ -14,8 +14,8 @@ document.onreadystatechange = function () {
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
-    buttons.forEach((btn) => btn.classList.remove("active"));
-    button.classList.add("active");
+    buttons.forEach((btn) => btn.classList.remove("active-breadcrumb"));
+    button.classList.add("active-breadcrumb");
 
     const targetPanelId = button.dataset.target;
     panels.forEach((panel) => {
