@@ -1,5 +1,4 @@
 ---
-import download from "@public/svg/download.svg";
 import logo from "@public/svg/logo.svg";
 import { Image } from "astro:assets";
 import DownloadContactButton from "./DownloadContactButton.astro";
@@ -7,8 +6,6 @@ import type { NavBarProfileProps } from "@/interfaces";
 
 const { username, title, profile_picture, phone_number, email } =
   Astro.props as NavBarProfileProps;
-
-
 ---
 
 <header>
