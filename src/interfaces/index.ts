@@ -3,12 +3,13 @@ import type SocialMediaItemProps from "./socialMediaItem";
 import type BreadcrumbProps from "./breadcrumb";
 import type BaseHeadProps from "./baseHead";
 import type ContactButtonProps from "./contactButton";
+import type NavBarProfileProps from "./navBarProfile";
 
 export type {
     SocialMediaIconsProps,
     BreadcrumbProps,
     SocialMediaItemProps,
     BaseHeadProps,
-    ContactButtonProps
-
+    ContactButtonProps,
+    NavBarProfileProps
 }

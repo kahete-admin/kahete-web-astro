@@ -2,10 +2,10 @@
 import Call from "@public/svg/call.svg";
 import Mail from "@public/svg/mail.svg";
 import Whatsapp from "@public/svg/whatsapp.svg";
-import type { ContactButtonProps } from "@interfaces/index";
+import type {ContactButtonProps} from "@/interfaces";
 
-const { buttonType, email, phone, whatsapp } =
-  Astro.props as ContactButtonProps;
+const { buttonType, email, phone, whatsapp } = Astro.props as ContactButtonProps;
+
 let svgUrl: string = "";
 let url: string = "";
 
