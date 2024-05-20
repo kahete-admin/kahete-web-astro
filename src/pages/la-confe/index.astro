@@ -14,9 +14,7 @@ import "@styles/breadcrumbs.css";
     <BaseHead title={"La Confe"} description={"All users"} />
   </head>
   <header>
-    <nav
-      class=" px-4 lg:px-6 py-2.5 border-b-neutral-700 border-b-[0.5px]"
-    >
+    <nav class="px-4 lg:px-6 py-2.5 border-b-neutral-700 border-b-[0.5px]">
       <div
         class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
       >
@@ -282,4 +280,18 @@ import "@styles/breadcrumbs.css";
     </section>
   </body>
   <script src="../../utils/breadcrumbs.js"></script>
+  <script is:inline>
+    const panels = document.querySelectorAll(".panel");
+    document.onreadystatechange = function () {
+      if (document.readyState === "interactive") {
+        panels.forEach((panel) => {
+          if (panel.id === "all") {
+            panel.style.display = "block";
+          } else {
+            panel.style.display = "none";
+          }
+        });
+      }
+    };
+  </script>
 </html>

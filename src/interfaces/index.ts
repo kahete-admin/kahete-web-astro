@@ -1,9 +1,14 @@
-import type SocialMediaIcons from "./socialMediaIcons";
-import type SocialMediaItem from "./socialMediaItem";
-import type BreadcrumbProps from "./breadcrumbProps";
+import type SocialMediaIconsProps from "./socialMediaIcons";
+import type SocialMediaItemProps from "./socialMediaItem";
+import type BreadcrumbProps from "./breadcrumb";
+import type BaseHeadProps from "./baseHead";
+import type ContactButtonProps from "./contactButton";
+
 export type {
-    SocialMediaIcons,
+    SocialMediaIconsProps,
     BreadcrumbProps,
-    SocialMediaItem
+    SocialMediaItemProps,
+    BaseHeadProps,
+    ContactButtonProps
 
 }

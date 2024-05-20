@@ -27,11 +27,15 @@ import Paypal from "@public/social_media_logos/paypal.svg";
 import Phone from "@public/svg/call.svg";
 import WhatsApp from "@public/svg/whatsapp.svg";
 import Mail from "@public/svg/mail.svg";
-import type { SocialMediaIcons, SocialMediaItem } from "@interfaces/index";
+import type {
+  SocialMediaIconsProps,
+  SocialMediaItemProps,
+} from "@interfaces/index";
 
-const { url, socialMediaType, optionalName } = Astro.props as SocialMediaItem;
+const { url, socialMediaType, optionalName } =
+  Astro.props as SocialMediaItemProps;
 
-const socialMediaIcons: SocialMediaIcons = {
+const socialMediaIcons: SocialMediaIconsProps = {
   Youtube: Youtube,
   Facebook: Facebook,
   Github: Github,
