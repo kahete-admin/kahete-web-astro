@@ -6,6 +6,7 @@ import logo from "@public/svg/logo.svg";
 import { Image } from "astro:assets";
 import LaConfeCard from "@/components/LaConfeCard.astro";
 import "@styles/breadcrumbs.css";
+import Breadcrumb from "@/components/Breadcrumb.astro";
 ---
 
 <!doctype html>
@@ -40,6 +41,11 @@ import "@styles/breadcrumbs.css";
       >
         <label class="text-white text-xl font-semibold">La Confe 28</label>
         <div class="mt-6 flex mb-4 breadcrum-list-container">
+          <Breadcrumb 
+          data-target="all"
+          title="All rotaractors"
+          />
+
           <span
             data-target="all"
             class="active-breadcrumb nav-btn breadcrum-list-item text-sm text-center"

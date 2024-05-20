@@ -1,9 +1,6 @@
 ---
-const { dataTarget, title } = Astro.props;
+import type { BreadcrumbProps } from "@interfaces/index";
+const { dataTarget, title } = Astro.props as BreadcrumbProps;
 ---
 
-<span
-  data-target={dataTarget}
-  class="active-breadcrumb nav-btn breadcrum-list-item text-sm text-center"
-  >{title}</span
->
+<span class="nav-btn breadcrum-list-item text-sm text-center">{title}</span>
