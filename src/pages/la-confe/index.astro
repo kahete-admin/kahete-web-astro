@@ -5,6 +5,8 @@ import Footer from "@/components/Footer.astro";
 import logo from "@public/svg/logo.svg";
 import { Image } from "astro:assets";
 import LaConfeCard from "@/components/LaConfeCard.astro";
+import "@styles/breadcrumbs.css";
+
 ---
 
 <!doctype html>
@@ -280,7 +282,7 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
       <Footer />
     </section>
   </body>
-  <style>
+  <!-- <style>
     .breadcrum-list-container {
       width: 100%;
       max-width: 100%;
@@ -306,7 +308,7 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
       color: black;
       border: 1px solid transparent;
     }
-  </style>
+  </style> -->
   <script is:inline>
     const buttons = document.querySelectorAll(".nav-btn");
     const panels = document.querySelectorAll(".panel");
