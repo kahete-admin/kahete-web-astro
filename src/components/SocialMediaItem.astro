@@ -27,126 +27,40 @@ import Paypal from "@public/social_media_logos/paypal.svg";
 import Phone from "@public/svg/call.svg";
 import WhatsApp from "@public/svg/whatsapp.svg";
 import Mail from "@public/svg/mail.svg";
-interface Props {
-  url: string;
-  optionalName?: string;
-  socialMediaType:
-    | "Facebook"
-    | "Instagram"
-    | "Website"
-    | "Telegram"
-    | "Dribbble"
-    | "Github"
-    | "Bēhance"
-    | "Youtube"
-    | "Discord"
-    | "Twitch"
-    | "Spotify"
-    | "LinkedIn"
-    | "Binance"
-    | "Snapchat"
-    | "Facebook Messenger"
-    | "Slack"
-    | "Tinder"
-    | "Soundcloud"
-    | "Airbnb"
-    | "Tik Tok"
-    | "GoogleMaps"
-    | "Waze"
-    | "Other"
-    | "Phone"
-    | "Mail"
-    | "TikTok"
-    | "Paypal"
-    | "WhatsApp"
-    | "Pinterest"
-    | "X";
-}
-const { url, socialMediaType, optionalName } = Astro.props;
-let IconUrl: ImageMetadata;
-switch (socialMediaType) {
-  case "Youtube":
-    IconUrl = Youtube;
-    break;
-  case "Facebook":
-    IconUrl = Facebook;
-    break;
-  case "Github":
-    IconUrl = Github;
-    break;
-  case "Bēhance":
-    IconUrl = Behance;
-    break;
-  case "Instagram":
-    IconUrl = Instagram;
-    break;
-  case "Snapchat":
-    IconUrl = Snapchat;
-    break;
-  case "LinkedIn":
-    IconUrl = LinkedIn;
-    break;
-  case "X":
-    IconUrl = XUrl;
-    break;
-  case "Dribbble":
-    IconUrl = Dribble;
-    break;
-  case "Spotify":
-    IconUrl = Spotify;
-    break;
-  case "Facebook Messenger":
-    IconUrl = FBmessenger;
-    break;
-  case "Binance":
-    IconUrl = Binance;
-    break;
-  case "Twitch":
-    IconUrl = Twitch;
-    break;
-  case "Soundcloud":
-    IconUrl = Soundcloud;
-    break;
-  case "Tinder":
-    IconUrl = Tinder;
-    break;
-  case "Slack":
-    IconUrl = Slack;
-    break;
-  case "Airbnb":
-    IconUrl = Airbnb;
-    break;
-  case "Telegram":
-    IconUrl = Telegram;
-    break;
-  case "GoogleMaps":
-    IconUrl = GoogleMaps;
-    break;
-  case "Other":
-    IconUrl = Other;
-    break;
-  case "Phone":
-    IconUrl = Phone;
-    break;
-  case "Mail":
-    IconUrl = Mail;
-    break;
-  case "TikTok":
-    IconUrl = TikTok;
-    break;
-  case "WhatsApp":
-    IconUrl = WhatsApp;
-    break;
-  case "Paypal":
-    IconUrl = Paypal;
-    break;
-  case "Pinterest":
-    IconUrl = Pinterest;
-    break;
+import type SocialMediaIcons from "@interfaces/socialMediaIcons";
 
-  default:
-    break;
-}
+const { url, socialMediaType, optionalName } = Astro.props;
+
+const socialMediaIcons: SocialMediaIcons = {
+  Youtube: Youtube,
+  Facebook: Facebook,
+  Github: Github,
+  Bēhance: Behance,
+  Instagram: Instagram,
+  Snapchat: Snapchat,
+  LinkedIn: LinkedIn,
+  X: XUrl,
+  Dribbble: Dribble,
+  Spotify: Spotify,
+  FacebookMessenger: FBmessenger,
+  Binance: Binance,
+  Twitch: Twitch,
+  Soundcloud: Soundcloud,
+  Tinder: Tinder,
+  Slack: Slack,
+  Airbnb: Airbnb,
+  Telegram: Telegram,
+  GoogleMaps: GoogleMaps,
+  Other: Other,
+  Phone: Phone,
+  Mail: Mail,
+  TikTok: TikTok,
+  WhatsApp: WhatsApp,
+  Paypal: Paypal,
+  Pinterest: Pinterest,
+};
+
+let IconUrl = socialMediaIcons[socialMediaType];
 ---
 
 <a href={url} target="_blank">
