@@ -32,15 +32,15 @@ const contactInformation = Astro.props as NavBarProfileProps;
   function createVCFWithPicture(contactInfo) {
     // Do not move this vcfContent neither align due to issues exporting the VCard
     const vcfContent = `
-      BEGIN:VCARD
-      VERSION:3.0
-      FN;CHARSET=UTF-8:${contactInfo.username}
-      TITLE;CHARSET=UTF-8:${contactInfo.title}
-      TEL:${contactInfo.phone_number}
-      EMAIL:${contactInfo.email}
-      PHOTO;JPEG:${contactInfo.profile_picture}
-      END:VCARD
-      `;
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:${contactInfo.username}
+TITLE;CHARSET=UTF-8:${contactInfo.title}
+TEL:${contactInfo.phone_number}
+EMAIL:${contactInfo.email}
+PHOTO;JPEG:${contactInfo.profile_picture}
+END:VCARD
+`;
 
     const blob = new Blob([vcfContent], { type: "text/vcard" });
     const url = window.URL.createObjectURL(blob);
