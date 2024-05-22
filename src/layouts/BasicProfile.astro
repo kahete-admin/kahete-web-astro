@@ -71,16 +71,7 @@ const {
             <slot />
           </div>
           <!-- /SOCIALMEDIA -->
-          <!-- QR -->
-          <div class="bg-white rounded-lg pb-8 mb-8">
-            <PageQRCode />
-            <label class="text-black font-bold text-sm capitalize"
-              >{username}</label
-            >
-            <br />
-            <label class="text-black capitalize text-xs">{title}</label>
-          </div>
-          <!-- /QR -->
+          <PageQRCode username={username} title={title} />
         </div>
       </div>
       <Footer />

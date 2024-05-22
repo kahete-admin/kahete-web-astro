@@ -5,6 +5,7 @@ import type BaseHeadProps from "./baseHead";
 import type ContactButtonProps from "./contactButton";
 import type NavBarProfileProps from "./navBarProfile";
 import type WhatsAppButtonProps from "./whatsappButton";
+import type QRCodeProps from "./qrCode";
 
 export type {
     SocialMediaIconsProps,
@@ -13,5 +14,6 @@ export type {
     BaseHeadProps,
     ContactButtonProps,
     NavBarProfileProps,
-    WhatsAppButtonProps
+    WhatsAppButtonProps,
+    QRCodeProps
 }
