@@ -1,0 +1,65 @@
+---
+import type { NavBarProfileProps } from "@/interfaces";
+
+const contactInformation = Astro.props as NavBarProfileProps;
+---
+
+<button
+  id="downloadContactButton"
+  type="submit"
+  class="inline-flex items-center justify-center cursor-pointer rounded-full w-10 h-10 bg-[#E3E3E4]"
+>
+  <svg
+    width="14"
+    height="14"
+    viewBox="0 0 14 14"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M6.99998 10.3333L2.83331 6.16668L3.99998 4.95834L6.16665 7.12501V0.333344H7.83331V7.12501L9.99998 4.95834L11.1666 6.16668L6.99998 10.3333ZM1.99998 13.6667C1.54165 13.6667 1.14929 13.5035 0.822896 13.1771C0.496507 12.8507 0.333313 12.4583 0.333313 12V9.50001H1.99998V12H12V9.50001H13.6666V12C13.6666 12.4583 13.5035 12.8507 13.1771 13.1771C12.8507 13.5035 12.4583 13.6667 12 13.6667H1.99998Z"
+      fill="black"></path>
+  </svg>
+</button>
+
+<!-- Scripts -->
+<script is:inline define:vars={{ contactInformation }}>
+  const vcfButton = document.getElementById("downloadContactButton");
+  vcfButton?.addEventListener("click", () =>
+    createVCFWithPicture(contactInformation)
+  );
+  function createVCFWithPicture(contactInfo) {
+    // Do not move this vcfContent neither align due to issues exporting the VCard
+    const vcfContent = `
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:${contactInfo.username}
+TITLE;CHARSET=UTF-8:${contactInfo.title}
+TEL:${contactInfo.phone_number}
+EMAIL:${contactInfo.email}
+PHOTO;JPEG:${contactInfo.profile_picture}
+END:VCARD
+`;
+
+    const blob = new Blob([vcfContent], { type: "text/vcard" });
+    const url = window.URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.style.display = "none";
+    a.href = url;
+    a.download = `${contactInfo.username}.vcf`;
+
+    document.body.appendChild(a);
+
+    if (document.createEvent) {
+      const event = document.createEvent("MouseEvents");
+      event.initEvent("click", true, false);
+      a.dispatchEvent(event);
+    } else {
+      a.click();
+    }
+
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+  }
+</script>

@@ -21,7 +21,7 @@ import GoogleMaps from "@public/social_media_logos/google-maps.svg";
 import Pinterest from "@public/social_media_logos/pinterest.svg";
 import Other from "@public/social_media_logos/website-click.svg";
 import Paypal from "@public/social_media_logos/paypal.svg";
-
+import Survey  from "@public/social_media_logos/assignment.svg";
 export {
     Youtube,
     Facebook,
@@ -46,4 +46,5 @@ export {
     Pinterest,
     Other,
     Paypal,
+    Survey
 }

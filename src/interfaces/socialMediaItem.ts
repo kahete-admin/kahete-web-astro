@@ -31,5 +31,6 @@ export default interface SocialMediaItem {
     | "Paypal"
     | "WhatsApp"
     | "Pinterest"
-    | "X";
+    | "X"
+    | "Survey";
 }
