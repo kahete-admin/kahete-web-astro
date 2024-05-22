@@ -4,6 +4,7 @@ import type BreadcrumbProps from "./breadcrumb";
 import type BaseHeadProps from "./baseHead";
 import type ContactButtonProps from "./contactButton";
 import type NavBarProfileProps from "./navBarProfile";
+import type WhatsAppButtonProps from "./whatsappButton";
 
 export type {
     SocialMediaIconsProps,
@@ -11,5 +12,6 @@ export type {
     SocialMediaItemProps,
     BaseHeadProps,
     ContactButtonProps,
-    NavBarProfileProps
+    NavBarProfileProps,
+    WhatsAppButtonProps
 }
