@@ -62,22 +62,55 @@ const {
             </h6>
             <h6 class="text-white font-normal">{title}</h6>
           </div>
-          <div>
-            <div class="content mt-1 text-center text-about text-sm pb-6">
-              {about}
-            </div>
-            <!-- CONTACT BUTTONS -->
-            <div class="flex justify-around align-middle">
-              <WhatsAppButton whatsappNumber={whatsapp} widthClass="w-[60%]" />
-              <RoundedPhoneNumberButton whatsappNumber={whatsapp} />
-              <RoundedEmailButton email={email} />
-            </div>
+          <div class="content mt-1 text-center text-about text-sm pb-6">
+            {about}
+          </div>
+          <!-- CONTACT BUTTONS -->
+          <div class="flex justify-around align-middle">
+            <WhatsAppButton whatsappNumber={whatsapp} widthClass="w-[60%]" />
+            <RoundedPhoneNumberButton whatsappNumber={whatsapp} />
+            <RoundedEmailButton email={email} />
           </div>
           <!-- SOCIALMEDIA -->
           <div>
             <slot />
           </div>
-          <!-- /SOCIALMEDIA -->
+          <!-- DIRECTORY -->
+          <div
+            class="my-12 py-8 px-4 rounded-lg mx-auto max-w-screen-xl bg-neutral-900"
+          >
+            <div class="text-start">
+              <div>
+                <svg
+                  class="w-8 h-8 mb-6"
+                  fill="#65CED8"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  ><path
+                    fill-rule="evenodd"
+                    d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path></svg
+                >
+                <h3 class="mb-2 text-xl font-semibold text-white">
+                  Conecta con nuestro equipo
+                </h3>
+                <p class="text-white text-sm leading-6">
+                  Comuníquese con los miembros de nuestros distintos
+                  departamentos para recibir la asistencia que necesita.
+                </p>
+                <div class="justify-start mt-12 pb-4">
+                  <a
+                    style="border-radius: 100px;"
+                    href="/"
+                    class="py-4 px-5 text-base font-semibold text-center text-white rounded-lg bg-neutral-700"
+                  >
+                    Ver directorio
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- QR CODE -->
           <PageQRCode username={username} title={title} />
         </div>
       </div>
