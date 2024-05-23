@@ -7,6 +7,7 @@ import PageQRCode from "@/components/PageQRCode.astro";
 import TASNavbar from "@/components/TASNavbar.astro";
 import WhatsAppButton from "@/components/WhatsAppButton.astro";
 import RoundedPhoneNumberButton from "@/components/RoundedPhoneNumberButton.astro";
+import DownloadContactButtonWhiteBGFull from "@/components/DownloadContactButtonFullWhiteBG.astro";
 
 const {
   slug,
@@ -39,7 +40,10 @@ const {
     />
     <section class="text-white min-h-screen">
       <div class="py-2 px-6 mx-auto max-w-screen-xl sm:py-8 lg:px-6">
-        <div class="mx-auto max-w-screen-sm text-center">
+        <div class="mx-auto max-w-screen-sm text-right">
+          <div class="pt-6 pb-8">
+            <DownloadContactButtonWhiteBGFull {...Astro.props} />
+          </div>
           <div class="flex justify-center items-center pt-4 lg:mb-6 mb-6">
             <Image
               format={"avif"}

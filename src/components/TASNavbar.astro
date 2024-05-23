@@ -1,27 +1,31 @@
 ---
 import TASlogo from "@public/companies/tas.jpeg";
 import { Image } from "astro:assets";
-import DownloadContactButtonWhiteBG from "./DownloadContactButtonWhiteBG.astro";
 ---
 
 <header class="bg-white">
-  <nav class="px-4 lg:px-6 py-2.5 border-b-neutral-700 border-b-[0.5px]">
-    <div
-      class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
-    >
-      <a href="/" class="flex items-center h-12 w-20">
-        <Image
-          height={1600}
-          width={911}
-          src={TASlogo}
-          alt="TAS Logo"
-          format={"avif"}
-          quality={"high"}
-        />
-      </a>
-      <div class="justify-center align-middle">
-        <DownloadContactButtonWhiteBG {...Astro.props} />
-      </div>
+  <nav class="max-w-screen-xl">
+    <div class="align-logo">
+      <Image
+        height={1600}
+        width={911}
+        src={TASlogo}
+        alt="TAS Logo"
+        format={"avif"}
+        quality={"high"}
+      />
     </div>
   </nav>
 </header>
+
+<style>
+  .align-logo {
+    width: 120px;
+    height: 5rem;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
