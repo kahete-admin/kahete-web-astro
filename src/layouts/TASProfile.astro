@@ -8,6 +8,7 @@ import TASNavbar from "@/components/TASNavbar.astro";
 import WhatsAppButton from "@/components/WhatsAppButton.astro";
 import RoundedPhoneNumberButton from "@/components/RoundedPhoneNumberButton.astro";
 import DownloadContactButtonWhiteBGFull from "@/components/DownloadContactButtonFullWhiteBG.astro";
+import RoundedEmailButton from "@/components/RoundedEmailButton.astro";
 
 const {
   slug,
@@ -66,9 +67,10 @@ const {
               {about}
             </div>
             <!-- CONTACT BUTTONS -->
-            <div class="flex justify-between align-middle">
-              <WhatsAppButton whatsappNumber={whatsapp} widthClass="w-[80%]" />
+            <div class="flex justify-around align-middle">
+              <WhatsAppButton whatsappNumber={whatsapp} widthClass="w-[70%]" />
               <RoundedPhoneNumberButton whatsappNumber={whatsapp} />
+              <RoundedEmailButton email={email} />
             </div>
           </div>
           <!-- SOCIALMEDIA -->
