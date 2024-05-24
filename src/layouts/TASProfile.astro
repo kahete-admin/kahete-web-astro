@@ -10,7 +10,8 @@ import RoundedPhoneNumberButton from "@/components/RoundedPhoneNumberButton.astr
 import DownloadContactButtonWhiteBGFull from "@/components/DownloadContactButtonFullWhiteBG.astro";
 import RoundedEmailButton from "@/components/RoundedEmailButton.astro";
 import arrow_outward from "@public/svg/arrow_outward.svg";
-import TASLogoClear from "@public/companies/logo-tas-clear.png";
+import TASLogoClear from "@public/companies/tas-clear.png";
+import TASLogoSlogan from "@public/companies/tas-slogan.png";
 
 const {
   slug,
@@ -86,24 +87,24 @@ const {
               border-color: #939393;"
             >
               <div class="flex items-center gap-3">
-                <Image
+                <!-- <Image
                   format={"avif"}
                   alt="arrow_outward"
                   src={TASLogoClear!}
                   quality={"high"}
                   height={24}
                   width={24}
-                />
-                <!-- <svg
+                /> -->
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="24px"
                   viewBox="0 -960 960 960"
                   width="24px"
                   fill="#FFFFFF"
                   ><path
-                    d="M120-520v-320h320v320H120Zm0 400v-320h320v320H120Zm400-400v-320h320v320H520Zm0 400v-320h320v320H520ZM200-600h160v-160H200v160Zm400 0h160v-160H600v160Zm0 400h160v-160H600v160Zm-400 0h160v-160H200v160Zm400-400Zm0 240Zm-240 0Zm0-240Z"
+                    d="M560-564v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-600q-38 0-73 9.5T560-564Zm0 220v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-380q-38 0-73 9t-67 27Zm0-110v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-490q-38 0-73 9.5T560-454ZM260-320q47 0 91.5 10.5T440-278v-394q-41-24-87-36t-93-12q-36 0-71.5 7T120-692v396q35-12 69.5-18t70.5-6Zm260 42q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-396q-33-14-68.5-21t-71.5-7q-47 0-93 12t-87 36v394Zm-40 118q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q58 0 113.5 15T480-740q51-30 106.5-45T700-800q52 0 102 12t96 36q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59ZM280-494Z"
                   ></path></svg
-                > -->
+                >
                 <div class="text-base text-start items-center">
                   Directorio TAS
                 </div>
@@ -111,12 +112,23 @@ const {
             </div>
           </a>
           <!--  -->
-          <!-- <div
-            class="my-12 py-8 px-4 rounded-lg mx-auto max-w-screen-xl bg-neutral-900"
+          <div
+            class="mb-4 pt-6 py-2 px-4 rounded-lg mx-auto max-w-screen-xl bg-white"
           >
             <div class="text-start">
               <div>
-                <svg
+                <div class="pb-2">
+                  <Image
+                    format={"avif"}
+                    alt="arrow_outward"
+                    src={TASLogoSlogan!}
+                    quality={"high"}
+                    height={100}
+                    width={1000}
+                    class="h-16 w-32"
+                  />
+                </div>
+                <!-- <svg
                   class="w-8 h-8 mb-6"
                   fill="#65CED8"
                   viewBox="0 0 20 20"
@@ -125,26 +137,39 @@ const {
                     fill-rule="evenodd"
                     d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
                     clip-rule="evenodd"></path></svg
-                >
-                <h3 class="mb-2 text-xl font-semibold text-white">
+                > -->
+                <h3 class="mb-2 pt-4 text-xl font-semibold text-black">
                   Conecta con nuestro equipo
                 </h3>
-                <p class="text-white text-sm leading-6">
+                <p class="text-black text-sm leading-6">
                   Comuníquese con los miembros de nuestros distintos
                   departamentos para recibir la asistencia que necesita.
                 </p>
-                <div class="justify-start mt-12 pb-4">
-                  <a
-                    style="border-radius: 100px;"
-                    href="/"
-                    class="py-4 px-5 text-base font-semibold text-center text-white rounded-lg bg-neutral-700"
-                  >
-                    Ver directorio
+                <div class="justify-start mt-4 w-60">
+                  <a href="/" class="px-6 text-base font-semibold text-center">
+                    <div
+                      style="border-radius: 100px;"
+                      class="flex justify-center items-center cursor-pointer mb-6 item-border h-14 text-danger-900 rounded-lg bg-danger-100 border-danger-900 border-2 pl-4"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24px"
+                        viewBox="0 -960 960 960"
+                        width="24px"
+                        fill="#981B25"
+                        ><path
+                          d="M560-564v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-600q-38 0-73 9.5T560-564Zm0 220v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-380q-38 0-73 9t-67 27Zm0-110v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-490q-38 0-73 9.5T560-454ZM260-320q47 0 91.5 10.5T440-278v-394q-41-24-87-36t-93-12q-36 0-71.5 7T120-692v396q35-12 69.5-18t70.5-6Zm260 42q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-396q-33-14-68.5-21t-71.5-7q-47 0-93 12t-87 36v394Zm-40 118q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q58 0 113.5 15T480-740q51-30 106.5-45T700-800q52 0 102 12t96 36q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59ZM280-494Z"
+                        ></path></svg
+                      >
+                      <div class="text-base font-semibold text-start pl-2">
+                        Ver directorio TAS
+                      </div>
+                    </div>
                   </a>
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>
           <!-- QR CODE -->
           <PageQRCode username={username} title={title} />
         </div>
