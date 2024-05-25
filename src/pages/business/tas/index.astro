@@ -53,21 +53,23 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
             <!-- ICON -->
             <input
               type="text"
-              id="simple-search"
+              id="searchbox"
               class="bg-neutral-900 border border-neutral-700 text-white text-sm rounded-lg w-full ps-10 p-2.5 focus:ring-0"
               placeholder="Buscar"
               required
             />
           </div>
         </form>
-        <!-- PANELS -->
-        <div id="panels" class="min-h-screen pt-4">
+
+        <!-- Dropdown -->
+        <div class="min-h-screen pt-4">
           <button
-            id="dropdownDefaultButton"
-            data-dropdown-toggle="dropdown"
+            id="dropdown-button"
+            data-dropdown-toggle="dropdown-content"
             class="mx-auto w-full bg-neutral-900 border border-neutral-700 text-white text-sm rounded-lg justify-between p-2.5 hover:bg-blue-800 focus:ring-0 focus:outline-none focus:ring-blue-300 font-medium px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            type="button"
-            >Todos los departamentos <svg
+          >
+            Todos los departamentos
+            <svg
               class="w-2.5 h-2.5 ms-3"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +87,7 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
 
           <!-- Dropdown menu -->
           <div
-            id="dropdown"
+            id="dropdown-content"
             class="z-10 hidden bg-neutral-700 divide-y divide-white rounded-lg shadow w-10/12 mx-auto"
           >
             <ul
@@ -94,68 +96,85 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
             >
               <li>
                 <a
+                  onclick="updateFilter('ventas')"
                   class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                   >Ventas</a
                 >
               </li>
               <li>
                 <a
+                  onclick="updateFilter('administracion')"
                   class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                   >Administración</a
                 >
               </li>
               <li>
                 <a
+                  onclick="updateFilter('finanzas')"
                   class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                   >Finanzas</a
                 >
               </li>
               <li>
                 <a
+                  onclick="updateFilter('mantenimiento')"
                   class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                   >Mantenimiento</a
                 >
               </li>
               <li>
                 <a
+                  onclick="updateFilter('soporte')"
                   class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                   >Soporte</a
                 >
               </li>
               <li>
                 <a
+                  onclick="updateFilter('proyectos')"
                   class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                   >Proyectos</a
                 >
               </li>
               <li>
                 <a
+                  onclick="updateFilter('operaciones')"
                   class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                   >Operaciones</a
                 >
               </li>
               <li>
                 <a
+                  onclick="updateFilter('i+d')"
                   class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                   >I + D</a
                 >
               </li>
               <li>
                 <a
+                  onclick="updateFilter('compras')"
                   class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                   >Compras</a
                 >
               </li>
               <li>
                 <a
+                  onclick="updateFilter('talento_humano')"
                   class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                   >Talento Humano</a
                 >
               </li>
             </ul>
           </div>
-          <!--  -->
+          <!-- LOOPED DATA -->
           <div class="pt-8">
+            <div class="pb-5">
+              <label id="currentFilterDataLabel" class="text-white text-lg"
+              ></label>
+              <label id="currentFilterSearchLabel" class="text-white text-lg"
+              ></label>
+            </div>
+
             {
               incomingData
                 .sort(function (a, b) {
@@ -176,5 +195,34 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
       </div>
       <Footer />
     </section>
+
+    <script is:inline>
+      const currentFilterDataLabel = document.getElementById(
+        "currentFilterDataLabel"
+      );
+      const currentFilterSearchLabel = document.getElementById(
+        "currentFilterSearchLabel"
+      );
+      const currentFilterSearchValue = document.getElementById("searchbox");
+
+      document.onreadystatechange = function () {
+        if (document.readyState === "interactive") {
+          currentFilterDataLabel.innerText = "todos_depto";
+        }
+      };
+
+      function updateFilter(filterParam) {
+        currentFilterDataLabel.innerText = filterParam;
+        document.getElementById("dropdown-content").classList.add("hidden");
+        document.getElementById("dropdown-button").innerText = filterParam;
+      }
+
+      document
+        .getElementById("searchbox")
+        .addEventListener("input", function () {
+          currentFilterSearchLabel.innerText =
+            "+ " + currentFilterSearchValue.value;
+        });
+    </script>
   </body>
 </html>
