@@ -3,8 +3,8 @@ import incomingData from "@/data/temp_users/testing-tas-datasource.json";
 import BaseHead from "@/components/BaseHead.astro";
 import Footer from "@/components/Footer.astro";
 import TASNavbar from "@/components/TASNavbar.astro";
+import { sectionTitleFilter } from "@utils/utils";
 import TASCard from "@/components/TASCard.astro";
-import "@styles/breadcrumbs.css";
 ---
 
 <!doctype html>
@@ -20,18 +20,16 @@ import "@styles/breadcrumbs.css";
   <body>
     <TASNavbar />
     <section>
-      <div class="mx-auto max-w-screen-xl px-8 pt-6">
+      <div class="mx-auto max-w-screen-xl px-8 pt-6 pb-8">
         <!-- LABEL -->
         <label class="text-white text-xl font-semibold">Directorio TAS</label>
         <!-- FORM -->
-        <form class="flex items-center mx-auto w-full pt-4">
-          <!-- SEARCH -->
+        <!-- <form class="flex items-center mx-auto w-full pt-4">
           <label for="simple-search" class="sr-only">Search</label>
           <div class="relative w-full">
             <div
               class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
             >
-              <!-- ICON -->
               <svg
                 width="20"
                 height="20"
@@ -47,7 +45,6 @@ import "@styles/breadcrumbs.css";
                   fill-opacity="0.6"></path>
               </svg>
             </div>
-            <!-- ICON -->
             <input
               type="text"
               id="searchbox"
@@ -56,7 +53,7 @@ import "@styles/breadcrumbs.css";
               required
             />
           </div>
-        </form>
+        </form> -->
 
         <!-- Dropdown -->
         <div class="min-h-screen pt-4">
@@ -93,147 +90,471 @@ import "@styles/breadcrumbs.css";
             >
               <li>
                 <a
-                  onclick="updateFilter('all_dept')"
-                  class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
+                  data-dropdown="All"
+                  class="dropdown-data block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                 >
                   Todos los departamentos</a
                 >
               </li>
               <li>
                 <a
-                  onclick="updateFilter('ventas')"
-                  class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
+                  data-dropdown="Ventas"
+                  class="dropdown-data block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                   >Ventas</a
                 >
               </li>
               <li>
                 <a
-                  onclick="updateFilter('administracion')"
-                  class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
+                  data-dropdown="Administración"
+                  class="dropdown-data block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                   >Administración</a
                 >
               </li>
               <li>
                 <a
-                  onclick="updateFilter('finanzas')"
-                  class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
+                  data-dropdown="Finanzas"
+                  class="dropdown-data block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                   >Finanzas</a
                 >
               </li>
               <li>
                 <a
-                  onclick="updateFilter('mantenimiento')"
-                  class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
+                  data-dropdown="Mantenimiento"
+                  class="dropdown-data block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                   >Mantenimiento</a
                 >
               </li>
               <li>
                 <a
-                  onclick="updateFilter('soporte')"
-                  class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
+                  data-dropdown="Soporte"
+                  class="dropdown-data block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                   >Soporte</a
                 >
               </li>
               <li>
                 <a
-                  onclick="updateFilter('proyectos')"
-                  class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
+                  data-dropdown="Proyectos"
+                  class="dropdown-data block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                   >Proyectos</a
                 >
               </li>
               <li>
                 <a
-                  onclick="updateFilter('operaciones')"
-                  class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
+                  data-dropdown="Operaciones"
+                  class="dropdown-data block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                   >Operaciones</a
                 >
               </li>
               <li>
                 <a
-                  onclick="updateFilter('i_d')"
-                  class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
+                  data-dropdown="I + D"
+                  class="dropdown-data block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                   >I + D</a
                 >
               </li>
               <li>
                 <a
-                  onclick="updateFilter('compras')"
-                  class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
+                  data-dropdown="Compras"
+                  class="dropdown-data block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                   >Compras</a
                 >
               </li>
               <li>
                 <a
-                  onclick="updateFilter('talento_humano')"
-                  class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
-                  >Talento Humano</a
+                  data-dropdown="Talento humano"
+                  class="dropdown-data block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
+                  >Talento humano</a
                 >
               </li>
             </ul>
           </div>
           <!-- LOOPED DATA -->
           <div class="pt-8">
-            <label id="currentFilterDataLabel" class=""></label>
-            <br />
-            <label id="currentFilterSearchLabel" class=""></label>
-
-            {
-              incomingData
-                .sort(function (a, b) {
-                  if (a.username < b.username) {
-                    return -1;
-                  }
-                  if (a.username > b.username) {
-                    return 1;
-                  }
-                  return 0;
-                })
-                .map((entry) => {
+            <div id="section-all" class="panel">
+              {
+                sectionTitleFilter(incomingData, null).map((entry: any) => {
                   return <TASCard entry={entry} />;
                 })
+              }
+            </div>
+            <div id="section-ventas" class="panel">
+              {
+                sectionTitleFilter(incomingData, "Ventas").map((entry: any) => {
+                  return <TASCard entry={entry} />;
+                })
+              }
+            </div>
+            <div id="section-administracion" class="panel">
+              {
+                sectionTitleFilter(incomingData, "Administración").map(
+                  (entry: any) => {
+                    return <TASCard entry={entry} />;
+                  }
+                )
+              }
+            </div>
+            <div id="section-finanzas" class="panel">
+              {
+                sectionTitleFilter(incomingData, "Finanzas").map(
+                  (entry: any) => {
+                    return <TASCard entry={entry} />;
+                  }
+                )
+              }
+            </div>
+            <div id="section-mantenimiento" class="panel">
+              {
+                sectionTitleFilter(incomingData, "Mantenimiento").map(
+                  (entry: any) => {
+                    return <TASCard entry={entry} />;
+                  }
+                )
+              }
+            </div>
+            <div id="section-soporte" class="panel">
+              {
+                sectionTitleFilter(incomingData, "Soporte").map(
+                  (entry: any) => {
+                    return <TASCard entry={entry} />;
+                  }
+                )
+              }
+            </div>
+          </div>
+          <div id="section-proyectos" class="panel">
+            {
+              sectionTitleFilter(incomingData, "Proyectos").map(
+                (entry: any) => {
+                  return <TASCard entry={entry} />;
+                }
+              )
             }
           </div>
+          <div id="section-operaciones" class="panel">
+            {
+              sectionTitleFilter(incomingData, "Operaciones").map(
+                (entry: any) => {
+                  return <TASCard entry={entry} />;
+                }
+              )
+            }
+          </div>
+          <div id="section-a-d" class="panel">
+            {
+              sectionTitleFilter(incomingData, "I + D").map((entry: any) => {
+                return <TASCard entry={entry} />;
+              })
+            }
+          </div>
+          <div id="section-compras" class="panel">
+            {
+              sectionTitleFilter(incomingData, "Compras").map((entry: any) => {
+                return <TASCard entry={entry} />;
+              })
+            }
+          </div>
+          <div id="section-talento-humano" class="panel">
+            {
+              sectionTitleFilter(incomingData, "Talento humano").map(
+                (entry: any) => {
+                  return <TASCard entry={entry} />;
+                }
+              )
+            }
+          </div>
+          <!-- END FILTERS -->
         </div>
       </div>
-      <Footer />
     </section>
+    <Footer />
 
     <script is:inline>
-      const currentFilterDataLabel = document.getElementById(
-        "currentFilterDataLabel"
-      );
       const currentFilterSearchLabel = document.getElementById(
         "currentFilterSearchLabel"
       );
+      const dropdownButtons = document.querySelectorAll(".dropdown-data");
+      const panels = document.querySelectorAll(".panel");
 
+      // INITIAL STATE
       document.onreadystatechange = function () {
         if (document.readyState === "interactive") {
-          currentFilterDataLabel.innerText = "";
+          const dropdownLabel = document.getElementById(
+            "dropdown-button-label"
+          );
+          const sections = {
+            "section-all": true,
+            "section-ventas": false,
+            "section-administracion": false,
+            "section-finanzas": false,
+            "section-mantenimiento": false,
+            "section-soporte": false,
+            "section-proyectos": false,
+            "section-operaciones": false,
+            "section-a-d": false,
+            "section-compras": false,
+            "section-talento-humano": false,
+          };
+
+          for (const sectionId in sections) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+              if (sectionId === "section-all") {
+                dropdownLabel.innerText = "Todos los departamentos";
+                section.classList.remove("hidden");
+              } else {
+                section.classList.add("hidden");
+              }
+            }
+          }
         }
       };
 
-      function updateFilter(filterParam) {
-        const filterMap = {
-          all_dept: "Todos los departamentos",
-          ventas: "Ventas",
-          administracion: "Administración",
-          finanzas: "Finanzas",
-          mantenimiento: "Mantenimiento",
-          soporte: "Soporte",
-          proyectos: "Proyectos",
-          operaciones: "Operaciones",
-          i_d: "I + D",
-          compras: "Compras",
-          talento_humano: "Talento humano",
-        };
-
-        const keyToStringValue = filterMap[filterParam] || "";
-
-        currentFilterDataLabel.innerText = "Dropdown: " + keyToStringValue;
-        document.getElementById("dropdown-content").classList.add("hidden");
-        document.getElementById("dropdown-button-label").innerText =
-          keyToStringValue;
+      function toggleSectionVisibility(sectionId, isVisible) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          if (isVisible) {
+            section.classList.remove("hidden");
+          } else {
+            section.classList.add("hidden");
+          }
+        }
       }
+
+      dropdownButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const targetPanelId = button.dataset.dropdown;
+          const dropdownContent = document.getElementById("dropdown-content");
+          const dropdownLabel = document.getElementById(
+            "dropdown-button-label"
+          );
+          const sections = document.querySelectorAll("[id^='section-']");
+          dropdownContent.classList.add("hidden");
+
+          sections.forEach((section) => {
+            console.log("Section", section.id);
+
+            if (targetPanelId === "All") {
+              dropdownLabel.innerText = "Todos los departamentos";
+            } else {
+              dropdownLabel.innerText = targetPanelId;
+            }
+
+            switch (targetPanelId) {
+              case "All":
+                sectionValue = "section-all";
+                toggleSectionVisibility("section-all", true);
+                [
+                  "ventas",
+                  "administracion",
+                  "finanzas",
+                  "mantenimiento",
+                  "soporte",
+                  "proyectos",
+                  "operaciones",
+                  "a-d",
+                  "compras",
+                  "talento-humano",
+                ].forEach((section) =>
+                  toggleSectionVisibility("section-" + section, false)
+                );
+                break;
+              case "Ventas":
+                sectionValue = "section-ventas";
+                toggleSectionVisibility("section-ventas", true);
+                [
+                  "all",
+                  "administracion",
+                  "finanzas",
+                  "mantenimiento",
+                  "soporte",
+                  "proyectos",
+                  "operaciones",
+                  "a-d",
+                  "compras",
+                  "talento-humano",
+                ].forEach((section) =>
+                  toggleSectionVisibility("section-" + section, false)
+                );
+                break;
+              case "Administración":
+                sectionValue = "section-administracion";
+                toggleSectionVisibility("section-administracion", true);
+                [
+                  "all",
+                  "ventas",
+                  "finanzas",
+                  "mantenimiento",
+                  "soporte",
+                  "proyectos",
+                  "operaciones",
+                  "a-d",
+                  "compras",
+                  "talento-humano",
+                ].forEach((section) =>
+                  toggleSectionVisibility("section-" + section, false)
+                );
+                break;
+              case "Finanzas":
+                sectionValue = "section-finanzas";
+                toggleSectionVisibility("section-finanzas", true);
+                [
+                  "all",
+                  "ventas",
+                  "administracion",
+                  "mantenimiento",
+                  "soporte",
+                  "proyectos",
+                  "operaciones",
+                  "a-d",
+                  "compras",
+                  "talento-humano",
+                ].forEach((section) =>
+                  toggleSectionVisibility("section-" + section, false)
+                );
+                break;
+              case "Mantenimiento":
+                sectionValue = "section-mantenimiento";
+                toggleSectionVisibility("section-mantenimiento", true);
+                [
+                  "all",
+                  "ventas",
+                  "administracion",
+                  "finanzas",
+                  "soporte",
+                  "proyectos",
+                  "operaciones",
+                  "a-d",
+                  "compras",
+                  "talento-humano",
+                ].forEach((section) =>
+                  toggleSectionVisibility("section-" + section, false)
+                );
+                break;
+              case "Soporte":
+                sectionValue = "section-soporte";
+                toggleSectionVisibility("section-soporte", true);
+                [
+                  "all",
+                  "ventas",
+                  "administracion",
+                  "finanzas",
+                  "mantenimiento",
+                  "proyectos",
+                  "operaciones",
+                  "a-d",
+                  "compras",
+                  "talento-humano",
+                ].forEach((section) =>
+                  toggleSectionVisibility("section-" + section, false)
+                );
+                break;
+              case "Proyectos":
+                sectionValue = "section-proyectos";
+                toggleSectionVisibility("section-proyectos", true);
+                [
+                  "all",
+                  "ventas",
+                  "administracion",
+                  "finanzas",
+                  "mantenimiento",
+                  "soporte",
+                  "operaciones",
+                  "a-d",
+                  "compras",
+                  "talento-humano",
+                ].forEach((section) =>
+                  toggleSectionVisibility("section-" + section, false)
+                );
+                break;
+              case "Operaciones":
+                sectionValue = "section-operaciones";
+                toggleSectionVisibility("section-operaciones", true);
+                [
+                  "all",
+                  "ventas",
+                  "administracion",
+                  "finanzas",
+                  "mantenimiento",
+                  "soporte",
+                  "proyectos",
+                  "a-d",
+                  "compras",
+                  "talento-humano",
+                ].forEach((section) =>
+                  toggleSectionVisibility("section-" + section, false)
+                );
+                break;
+              case "I + D":
+                sectionValue = "section-a-d";
+                toggleSectionVisibility("section-a-d", true);
+                [
+                  "all",
+                  "ventas",
+                  "administracion",
+                  "finanzas",
+                  "mantenimiento",
+                  "soporte",
+                  "proyectos",
+                  "operaciones",
+                  "compras",
+                  "talento-humano",
+                ].forEach((section) =>
+                  toggleSectionVisibility("section-" + section, false)
+                );
+                break;
+              case "Compras":
+                sectionValue = "section-compras";
+                toggleSectionVisibility("section-compras", true);
+                [
+                  "all",
+                  "ventas",
+                  "administracion",
+                  "finanzas",
+                  "mantenimiento",
+                  "soporte",
+                  "proyectos",
+                  "operaciones",
+                  "a-d",
+                  "talento-humano",
+                ].forEach((section) =>
+                  toggleSectionVisibility("section-" + section, false)
+                );
+                break;
+              case "Talento humano":
+              case "Compras":
+                sectionValue = "section-talento-humano";
+                toggleSectionVisibility("section-talento-humano", true);
+                [
+                  "all",
+                  "ventas",
+                  "administracion",
+                  "finanzas",
+                  "mantenimiento",
+                  "soporte",
+                  "proyectos",
+                  "operaciones",
+                  "a-d",
+                  "compras",
+                ].forEach((section) =>
+                  toggleSectionVisibility("section-" + section, false)
+                );
+                break;
+                break;
+              default:
+                break;
+            }
+            // if (
+            //   targetPanelId === "All" ||
+            //   section.id === `section-${targetPanelId.toLowerCase()}`
+            // ) {
+            //   section.classList.remove("hidden");
+            //   shouldBeVisible = true;
+            // } else {
+            //   section.classList.add("hidden");
+            // }
+          });
+        });
+      });
 
       document
         .getElementById("searchbox")

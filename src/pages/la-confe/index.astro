@@ -6,6 +6,7 @@ import logo from "@public/svg/logo.svg";
 import { Image } from "astro:assets";
 import LaConfeCard from "@/components/LaConfeCard.astro";
 import "@styles/breadcrumbs.css";
+import { orderDataByUsername } from "@utils/utils";
 ---
 
 <!doctype html>
@@ -89,19 +90,9 @@ import "@styles/breadcrumbs.css";
               <label class="text-white">All countries 🇸🇻🇵🇪🇭🇳🇳🇮🇨🇷🇧🇿🇬🇹🇵🇦</label>
             </div>
             {
-              incomingData
-                .sort(function (a, b) {
-                  if (a.username < b.username) {
-                    return -1;
-                  }
-                  if (a.username > b.username) {
-                    return 1;
-                  }
-                  return 0;
-                })
-                .map((entry) => {
-                  return <LaConfeCard entry={entry} />;
-                })
+              orderDataByUsername(incomingData).map((entry: any) => {
+                return <LaConfeCard entry={entry} />;
+              })
             }
           </div>
           <div id="el-salvador" class="panel" style="display: block;">
@@ -109,20 +100,11 @@ import "@styles/breadcrumbs.css";
               <label class="text-white">El Salvador 🇸🇻</label>
             </div>
             {
-              incomingData
+              orderDataByUsername(incomingData)
                 .filter(
-                  (entry) => entry.country.toLowerCase() === "el salvador"
+                  (entry: any) => entry.country.toLowerCase() === "el salvador"
                 )
-                .sort(function (a, b) {
-                  if (a.username < b.username) {
-                    return -1;
-                  }
-                  if (a.username > b.username) {
-                    return 1;
-                  }
-                  return 0;
-                })
-                .map((entry) => {
+                .map((entry: any) => {
                   return <LaConfeCard entry={entry} />;
                 })
             }
@@ -132,18 +114,11 @@ import "@styles/breadcrumbs.css";
               <label class="text-white">Honduras 🇭🇳</label>
             </div>
             {
-              incomingData
-                .filter((entry) => entry.country.toLowerCase() === "honduras")
-                .sort(function (a, b) {
-                  if (a.username < b.username) {
-                    return -1;
-                  }
-                  if (a.username > b.username) {
-                    return 1;
-                  }
-                  return 0;
-                })
-                .map((entry) => {
+              orderDataByUsername(incomingData)
+                .filter(
+                  (entry: any) => entry.country.toLowerCase() === "honduras"
+                )
+                .map((entry: any) => {
                   return <LaConfeCard entry={entry} />;
                 })
             }
