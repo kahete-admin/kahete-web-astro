@@ -9,7 +9,8 @@ import WhatsAppButton from "@/components/WhatsAppButton.astro";
 import RoundedPhoneNumberButton from "@/components/RoundedPhoneNumberButton.astro";
 import DownloadContactButtonWhiteBGFull from "@/components/DownloadContactButtonFullWhiteBG.astro";
 import RoundedEmailButton from "@/components/RoundedEmailButton.astro";
-import TASLogoSlogan from "@public/companies/tas-slogan.png";
+import TASLogoSlogan from "@public/companies/tas/tas-slogan.png";
+import TASSquare from "@public/companies/tas/tas-square.jpg";
 
 const {
   slug,
@@ -44,11 +45,11 @@ const {
             <Image
               format={"avif"}
               alt={username}
-              src={profile_picture ? profile_picture : logo}
-              quality={"mid"}
-              height={200}
-              width={200}
-              style="border-radius: 70px"
+              src={profile_picture ? profile_picture : TASSquare}
+              quality={"high"}
+              height={1000}
+              width={1000}
+              style="border-radius: 30px; height: 200px;width: 200px;"
             />
           </div>
           <div class="text-center pb-2 text-base">
@@ -71,7 +72,7 @@ const {
             <slot />
           </div>
           <!-- DIRECTORY -->
-          <a href={"/"} target="_blank">
+          <a href={"./"} target="_blank">
             <div
               class="flex justify-between items-center rounded-lg text-white cursor-pointer mb-4 p-4 bg-danger-900"
               style="border-width: 1.3px;
@@ -120,7 +121,7 @@ const {
                   departamentos para recibir la asistencia que necesita.
                 </p>
                 <div class="justify-start mt-4 w-60">
-                  <a href="/" class="px-6 text-base font-semibold text-center">
+                  <a href="./" class="px-6 text-base font-semibold text-center">
                     <div
                       style="border-radius: 100px;"
                       class="flex justify-center items-center cursor-pointer mb-6 item-border h-14 text-danger-900 rounded-lg bg-danger-100 border-danger-900 border-2 pl-4"

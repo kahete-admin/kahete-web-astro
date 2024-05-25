@@ -1,13 +1,10 @@
 ---
-import incomingData from "@/data/la_confe/test-datasource.json";
+import incomingData from "@/data/temp_users/testing-tas-datasource.json";
 import BaseHead from "@/components/BaseHead.astro";
 import Footer from "@/components/Footer.astro";
-import logo from "@public/svg/logo.svg";
-import { Image } from "astro:assets";
-import "@styles/breadcrumbs.css";
-import TASLogoSlogan from "@public/companies/tas-slogan.png";
 import TASNavbar from "@/components/TASNavbar.astro";
-import LaConfeCard from "@/components/LaConfeCard.astro";
+import TASCard from "@/components/TASCard.astro";
+import "@styles/breadcrumbs.css";
 ---
 
 <!doctype html>
@@ -68,7 +65,7 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
             data-dropdown-toggle="dropdown-content"
             class="mx-auto w-full bg-neutral-900 border border-neutral-700 text-white text-sm rounded-lg justify-between p-2.5 hover:bg-blue-800 focus:ring-0 focus:outline-none focus:ring-blue-300 font-medium px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
-            Selecciona un departamento
+            <span id="dropdown-button-label">Selecciona un departamento</span>
             <svg
               class="w-2.5 h-2.5 ms-3"
               aria-hidden="true"
@@ -176,13 +173,9 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
           </div>
           <!-- LOOPED DATA -->
           <div class="pt-8">
-            <div class="pb-5">
-              <label id="currentFilterDataLabel" class="text-white text-lg"
-              ></label>
-              <br />
-              <label id="currentFilterSearchLabel" class="text-white text-lg"
-              ></label>
-            </div>
+            <label id="currentFilterDataLabel" class=""></label>
+            <br />
+            <label id="currentFilterSearchLabel" class=""></label>
 
             {
               incomingData
@@ -196,7 +189,7 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
                   return 0;
                 })
                 .map((entry) => {
-                  return <LaConfeCard entry={entry} />;
+                  return <TASCard entry={entry} />;
                 })
             }
           </div>
@@ -238,7 +231,8 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
 
         currentFilterDataLabel.innerText = "Dropdown: " + keyToStringValue;
         document.getElementById("dropdown-content").classList.add("hidden");
-        document.getElementById("dropdown-button").innerText = keyToStringValue;
+        document.getElementById("dropdown-button-label").innerText =
+          keyToStringValue;
       }
 
       document

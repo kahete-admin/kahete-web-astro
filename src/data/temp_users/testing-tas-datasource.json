@@ -1,0 +1,44 @@
+[
+    {
+        "slug": "hernan-lopez",
+        "username": "Hernan Lopez-Pinaud",
+        "title": "ventas",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+        "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1716348305/hernan-lopez_xl7nvk.avif",
+        "phone_number": "50378419621",
+        "email": "hpinaud@tas-seguridad.com",
+        "whatsapp": "50378419621",
+        "social_links": [
+            {
+                "social_media": "Survey",
+                "optionalName": "Encuesta NPS",
+                "url": "https://www.kahete.com/"
+            },
+            {
+                "social_media": "LinkedIn",
+                "url": "https://www.linkedin.com/in/hernan-lopez-pinaud-74a70319a/"
+            }
+        ]
+    },
+    {
+        "slug": "juan-guerra",
+        "username": "Juan Guerra",
+        "title": "administracion",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+        "profile_picture": null,
+        "phone_number": "50378419621",
+        "email": "hpinaud@tas-seguridad.com",
+        "whatsapp": "50378419621",
+        "social_links": [
+            {
+                "social_media": "Survey",
+                "optionalName": "Encuesta NPS",
+                "url": "https://www.kahete.com/"
+            },
+            {
+                "social_media": "LinkedIn",
+                "url": "https://www.linkedin.com/in/hernan-lopez-pinaud-74a70319a/"
+            }
+        ]
+    }
+]
