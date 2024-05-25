@@ -68,7 +68,7 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
             data-dropdown-toggle="dropdown-content"
             class="mx-auto w-full bg-neutral-900 border border-neutral-700 text-white text-sm rounded-lg justify-between p-2.5 hover:bg-blue-800 focus:ring-0 focus:outline-none focus:ring-blue-300 font-medium px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
-            Todos los departamentos
+            Selecciona un departamento
             <svg
               class="w-2.5 h-2.5 ms-3"
               aria-hidden="true"
@@ -94,6 +94,14 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
               class="py-2 text-sm text-white"
               aria-labelledby="dropdownDefaultButton"
             >
+              <li>
+                <a
+                  onclick="updateFilter('all_dept')"
+                  class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
+                >
+                  Todos los departamentos</a
+                >
+              </li>
               <li>
                 <a
                   onclick="updateFilter('ventas')"
@@ -145,7 +153,7 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
               </li>
               <li>
                 <a
-                  onclick="updateFilter('i+d')"
+                  onclick="updateFilter('i_d')"
                   class="block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
                   >I + D</a
                 >
@@ -171,6 +179,7 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
             <div class="pb-5">
               <label id="currentFilterDataLabel" class="text-white text-lg"
               ></label>
+              <br />
               <label id="currentFilterSearchLabel" class="text-white text-lg"
               ></label>
             </div>
@@ -203,25 +212,39 @@ import LaConfeCard from "@/components/LaConfeCard.astro";
       const currentFilterSearchLabel = document.getElementById(
         "currentFilterSearchLabel"
       );
-      const currentFilterSearchValue = document.getElementById("searchbox");
 
       document.onreadystatechange = function () {
         if (document.readyState === "interactive") {
-          currentFilterDataLabel.innerText = "todos_depto";
+          currentFilterDataLabel.innerText = "";
         }
       };
 
       function updateFilter(filterParam) {
-        currentFilterDataLabel.innerText = filterParam;
+        const filterMap = {
+          all_dept: "Todos los departamentos",
+          ventas: "Ventas",
+          administracion: "Administración",
+          finanzas: "Finanzas",
+          mantenimiento: "Mantenimiento",
+          soporte: "Soporte",
+          proyectos: "Proyectos",
+          operaciones: "Operaciones",
+          i_d: "I + D",
+          compras: "Compras",
+          talento_humano: "Talento humano",
+        };
+
+        const keyToStringValue = filterMap[filterParam] || "";
+
+        currentFilterDataLabel.innerText = "Dropdown: " + keyToStringValue;
         document.getElementById("dropdown-content").classList.add("hidden");
-        document.getElementById("dropdown-button").innerText = filterParam;
+        document.getElementById("dropdown-button").innerText = keyToStringValue;
       }
 
       document
         .getElementById("searchbox")
         .addEventListener("input", function () {
-          currentFilterSearchLabel.innerText =
-            "+ " + currentFilterSearchValue.value;
+          currentFilterSearchLabel.innerText = "Searchbox: " + this.value;
         });
     </script>
   </body>
