@@ -5,20 +5,27 @@ import TASSquare from "@public/companies/tas/tas-square.jpg";
 const { entry } = Astro.props;
 ---
 
-<a href={`/business/tas/${entry.slug}`} class="flex w-full align-middle items-center mb-6">
+<a
+  href={`/business/tas/${entry.slug}`}
+  class="flex w-full align-middle items-center mb-6"
+>
   <Image
     format={"avif"}
     alt={"Image"}
-    src={entry.profile_picture ? entry.profile_picture : TASSquare}
+    src={entry.basic_user_profile.profile_picture
+      ? entry.basic_user_profile.profile_picture
+      : TASSquare}
     quality={"mid"}
     height={1000}
     width={1000}
     style="border-radius: 20px; height: 120px; width: 120px;"
   />
   <div class="pl-4">
-    <label class="text-lg text-white block capitalize">{entry.username}</label>
+    <label class="text-lg text-white block capitalize"
+      >{entry.basic_user_profile.name}</label
+    >
     <label class="text-sm text-typography-light-secondary capitalize"
-      >{entry.title}</label
+      >{entry.basic_user_profile.title}</label
     >
   </div>
 </a>

@@ -1,41 +1,46 @@
 ---
-import incomingData from "@/data/temp_users/testing-tas-datasource.json";
+// import incomingData from "@/data/temp_users/testing-tas-datasource.json";
 import SocialMediaItem from "@/components/SocialMediaItem.astro";
 import TASProfile from "@/layouts/TASProfile.astro";
+import fetchApi from "@/lib/strapi";
 
 export async function getStaticPaths() {
-  return incomingData.map((entry) => ({
+  const data: any = await fetchApi({
+    endpoint: "/businesses/kahete-test/all-employees",
+  });
+  const incomingData = data.profiles;
+  return incomingData.map((entry: any) => ({
     params: {
-      slug:  entry.slug,
+      slug: entry.slug,
     },
     props: { entry },
   }));
 }
 
-const { entry } = Astro.props;
+const { entry } = Astro.props as any;
+
+const data: any = entry.basic_user_profile;
+
+console.log(data.profile_picture);
 ---
 
 <TASProfile
-  username={entry.username}
-  title={entry.title}
-  about={entry.about}
-  email={entry.email}
-  profile_picture={entry.profile_picture}
-  phone_number={entry.phone_number}
-  whatsapp={entry.whatsapp}
+  username={entry.basic_user_profile.name}
+  title={entry.basic_user_profile.title}
+  about={entry.basic_user_profile.about}
+  email={entry.basic_user_profile.email}
+  profile_picture={entry.basic_user_profile.profile_picture}
+  phone_number={entry.basic_user_profile.phone_number.toString()}
+  whatsapp={entry.basic_user_profile.whatsapp_number.toString()}
 >
   {
     entry.social_links.map(
-      (socialMedia: {
-        social_media: any;
-        url: string;
-        optionalName?: string;
-      }) => {
+      (socialMedia: { type: any; link: string; optionalName?: string }) => {
         return (
           <SocialMediaItem
-            socialMediaType={socialMedia.social_media}
-            url={socialMedia.url}
-            optionalName={socialMedia.optionalName!}
+            socialMediaType={socialMedia.type}
+            url={socialMedia.link}
+            optionalName={socialMedia.optionalName}
           />
         );
       }
