@@ -6,6 +6,12 @@ export function orderDataByUsername(incomingData) {
     );
 }
 
+export function orderDataByUsernameLaConfe(incomingData) {
+  return incomingData
+    .slice()
+    .sort((a, b) => a.username.localeCompare(b.username));
+}
+
 // ADD NULL TO SECOND PARAM IF ALL DEPARTMENTS ARE SELECTED
 export function sectionTitleFilter(incomingData, filterName) {
   if (filterName === null) {

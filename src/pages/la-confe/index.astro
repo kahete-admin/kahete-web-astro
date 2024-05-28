@@ -6,7 +6,7 @@ import logo from "@public/svg/logo.svg";
 import { Image } from "astro:assets";
 import LaConfeCard from "@/components/LaConfeCard.astro";
 import "@styles/breadcrumbs.css";
-import { orderDataByUsername } from "@utils/utils";
+import { orderDataByUsernameLaConfe } from "@utils/utils";
 ---
 
 <!doctype html>
@@ -90,7 +90,7 @@ import { orderDataByUsername } from "@utils/utils";
               <label class="text-white">All countries 🇸🇻🇵🇪🇭🇳🇳🇮🇨🇷🇧🇿🇬🇹🇵🇦</label>
             </div>
             {
-              orderDataByUsername(incomingData).map((entry: any) => {
+              orderDataByUsernameLaConfe(incomingData).map((entry: any) => {
                 return <LaConfeCard entry={entry} />;
               })
             }
@@ -100,7 +100,7 @@ import { orderDataByUsername } from "@utils/utils";
               <label class="text-white">El Salvador 🇸🇻</label>
             </div>
             {
-              orderDataByUsername(incomingData)
+              orderDataByUsernameLaConfe(incomingData)
                 .filter(
                   (entry: any) => entry.country.toLowerCase() === "el salvador"
                 )
@@ -114,7 +114,7 @@ import { orderDataByUsername } from "@utils/utils";
               <label class="text-white">Honduras 🇭🇳</label>
             </div>
             {
-              orderDataByUsername(incomingData)
+              orderDataByUsernameLaConfe(incomingData)
                 .filter(
                   (entry: any) => entry.country.toLowerCase() === "honduras"
                 )
