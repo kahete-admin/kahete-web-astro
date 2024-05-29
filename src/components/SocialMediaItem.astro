@@ -73,7 +73,7 @@ let IconUrl = socialMediaIcons[socialMediaType];
   <div
     class="flex justify-between items-center rounded-lg text-white cursor-pointer mb-4 item-border p-4"
   >
-    <div class="flex items-center gap-3">
+    <div class="flex items-center gap-3 max-w-full	">
       <Image
         format={"avif"}
         alt="arrow_outward"
@@ -82,7 +82,7 @@ let IconUrl = socialMediaIcons[socialMediaType];
         height={24}
         width={24}
       />
-      <div class="text-base text-start items-center">
+      <div class="text-base text-start items-center truncate">
         {optionalName ? optionalName : socialMediaType}
       </div>
     </div>
@@ -101,5 +101,9 @@ let IconUrl = socialMediaIcons[socialMediaType];
     border-width: 1.3px;
     border-radius: 15px;
     border-color: #939393;
+  }
+
+  .text-wrapper {
+
   }
 </style>
