@@ -2,7 +2,9 @@ export function orderDataByUsername(incomingData) {
   return incomingData
     .slice()
     .sort((a, b) =>
-      a.basic_user_profile.name.localeCompare(b.basic_user_profile.name)
+      a.basic_user_profile.full_name.localeCompare(
+        b.basic_user_profile.full_name
+      )
     );
 }
 

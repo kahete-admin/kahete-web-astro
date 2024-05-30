@@ -25,7 +25,7 @@ console.log(data.profile_picture);
 ---
 
 <TASProfile
-  username={entry.basic_user_profile.name}
+  username={entry.basic_user_profile.full_name}
   title={entry.basic_user_profile.title}
   about={entry.basic_user_profile.about}
   email={entry.basic_user_profile.email}
@@ -35,12 +35,12 @@ console.log(data.profile_picture);
 >
   {
     entry.social_links.map(
-      (socialMedia: { type: any; link: string; optionalName?: string }) => {
+      (socialMedia: { type: any; link: string; optional_name?: string }) => {
         return (
           <SocialMediaItem
             socialMediaType={socialMedia.type}
             url={socialMedia.link}
-            optionalName={socialMedia.optionalName}
+            optionalName={socialMedia.optional_name}
           />
         );
       }
