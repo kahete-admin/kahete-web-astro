@@ -1,10 +1,17 @@
 ---
-import incomingData from "@/data/temp_users/testing-tas-datasource.json";
+// import incomingData from "@/data/temp_users/testing-tas-datasource.json";
 import BaseHead from "@/components/BaseHead.astro";
 import Footer from "@/components/Footer.astro";
 import TASNavbar from "@/components/TASNavbar.astro";
 import { sectionTitleFilter } from "@utils/utils";
 import TASCard from "@/components/TASCard.astro";
+import fetchApi from "@/lib/strapi";
+
+const data: any = await fetchApi({
+  endpoint: "/businesses/kahete-test/all-employees",
+});
+
+const incomingData = data.profiles;
 ---
 
 <!doctype html>
