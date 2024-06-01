@@ -1263,6 +1263,11 @@
     "social_links": [
       {
         "social_media": "Other",
+        "optionalName": "tuhome.biz",
+        "url": "https://tuhome.biz/"
+      },
+      {
+        "social_media": "Other",
         "optionalName": "Portalmipais.com",
         "url": "https://www.portalmipais.com/"
       },
@@ -1484,6 +1489,17 @@
     "phone_number": "+(503) 7807 5345",
     "email": "oscarhb9807@gmail.com",
     "whatsapp": "50378075345",
+    "social_links": []
+  },
+  {
+    "slug": "loly-duarte-de-siliezar",
+    "username": "Loly Duarte de Siliezar",
+    "title": "Empresaria",
+    "about": "",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1717246604/loly-duarte-de-siliezar_utejw6.avif",
+    "phone_number": "+(503) 7855 0970",
+    "email": "siliezal@yahoo.com",
+    "whatsapp": "50378550970",
     "social_links": []
   }
 ]
