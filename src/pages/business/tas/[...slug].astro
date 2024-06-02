@@ -20,6 +20,9 @@ export async function getStaticPaths() {
 const { entry } = Astro.props as any;
 
 const data: any = entry.basic_user_profile;
+
+console.log(data);
+
 ---
 
 <TASProfile
