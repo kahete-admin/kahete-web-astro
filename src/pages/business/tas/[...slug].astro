@@ -20,7 +20,6 @@ export async function getStaticPaths() {
 const { entry } = Astro.props as any;
 
 const data: any = entry.basic_user_profile;
-
 ---
 
 <TASProfile
@@ -32,6 +31,17 @@ const data: any = entry.basic_user_profile;
   phone_number={data.phone_number.toString()}
   whatsapp={data.whatsapp_number.toString()}
 >
+  {
+    data.title === "Soporte" || "Mantenimiento" || "Proyectos" ? (
+      <SocialMediaItem
+        socialMediaType={"Survey"}
+        url={"https://forms.gle/epXbX6zVqE7DdrnF7"}
+        optionalName={"Encuesta NPS"}
+      />
+    ) : (
+      <div />
+    )
+  }
   {
     entry.social_links.map(
       (socialMedia: { type: any; link: string; optional_name?: string }) => {
