@@ -21,18 +21,16 @@ const { entry } = Astro.props as any;
 
 const data: any = entry.basic_user_profile;
 
-console.log(data);
-
 ---
 
 <TASProfile
-  username={entry.basic_user_profile.full_name}
-  title={entry.basic_user_profile.title}
-  about={entry.basic_user_profile.about}
-  email={entry.basic_user_profile.email}
-  profile_picture={entry.basic_user_profile.profile_picture}
-  phone_number={entry.basic_user_profile.phone_number.toString()}
-  whatsapp={entry.basic_user_profile.whatsapp_number.toString()}
+  username={data.full_name}
+  title={data.title}
+  about={data.about}
+  email={data.email}
+  profile_picture={data.profile_picture}
+  phone_number={data.phone_number.toString()}
+  whatsapp={data.whatsapp_number.toString()}
 >
   {
     entry.social_links.map(
