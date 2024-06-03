@@ -32,16 +32,33 @@ const data: any = entry.basic_user_profile;
   whatsapp={data.whatsapp_number.toString()}
 >
   {
-    data.title === "Soporte" || "Mantenimiento" || "Proyectos" ? (
+    data.title === "Soporte" && (
       <SocialMediaItem
         socialMediaType={"Survey"}
         url={"https://forms.gle/epXbX6zVqE7DdrnF7"}
         optionalName={"Encuesta NPS"}
       />
-    ) : (
-      <div />
     )
   }
+  {
+    data.title === "Mantenimiento" && (
+      <SocialMediaItem
+        socialMediaType={"Survey"}
+        url={"https://forms.gle/epXbX6zVqE7DdrnF7"}
+        optionalName={"Encuesta NPS"}
+      />
+    )
+  }
+  {
+    data.title === "Proyectos" && (
+      <SocialMediaItem
+        socialMediaType={"Survey"}
+        url={"https://forms.gle/epXbX6zVqE7DdrnF7"}
+        optionalName={"Encuesta NPS"}
+      />
+    )
+  }
+
   {
     entry.social_links.map(
       (socialMedia: { type: any; link: string; optional_name?: string }) => {
