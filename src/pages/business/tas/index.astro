@@ -8,7 +8,7 @@ import TASCard from "@/components/TASCard.astro";
 import fetchApi from "@/lib/strapi";
 
 const data: any = await fetchApi({
-  endpoint: "/businesses/kahete-test/all-employees",
+  endpoint: "/businesses/tas/all-employees",
 });
 
 const incomingData = data.profiles;

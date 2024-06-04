@@ -6,7 +6,7 @@ import fetchApi from "@/lib/strapi";
 
 export async function getStaticPaths() {
   const data: any = await fetchApi({
-    endpoint: "/businesses/kahete-test/all-employees",
+    endpoint: "/businesses/tas/all-employees",
   });
   const incomingData = data.profiles;
   return incomingData.map((entry: any) => ({
@@ -58,7 +58,6 @@ const data: any = entry.basic_user_profile;
       />
     )
   }
-
   {
     entry.social_links.map(
       (socialMedia: { type: any; link: string; optional_name?: string }) => {
