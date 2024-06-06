@@ -65,7 +65,7 @@ const {
           <div class="flex justify-around align-middle">
             <WhatsAppButton whatsappNumber={whatsapp} widthClass="w-[60%]" />
             <RoundedPhoneNumberButton whatsappNumber={whatsapp} />
-            <RoundedEmailButton email={email} />
+            {email !== null && <RoundedEmailButton email={email} />}
           </div>
           <!-- SOCIALMEDIA -->
           <div>
