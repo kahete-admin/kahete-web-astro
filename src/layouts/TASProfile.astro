@@ -63,7 +63,10 @@ const {
           </div>
           <!-- CONTACT BUTTONS -->
           <div class="flex justify-around align-middle">
-            <WhatsAppButton whatsappNumber={whatsapp} widthClass="w-[60%]" />
+            <WhatsAppButton
+              whatsappNumber={whatsapp}
+              widthClass=`${email == null ? "w-[80%]" :"w-[60%]"}`
+            />
             <RoundedPhoneNumberButton whatsappNumber={whatsapp} />
             {email !== null && <RoundedEmailButton email={email} />}
           </div>
