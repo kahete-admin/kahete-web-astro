@@ -53,9 +53,16 @@ const {
           </div>
 
           <div>
-            <div class="content mt-1 text-center text-about text-sm pb-6">
-              {about}
-            </div>
+            {
+              about === "" ? (
+                <div />
+              ) : (
+                <div class="content mt-1 text-center text-about text-sm pb-6">
+                  {about}
+                </div>
+              )
+            }
+
             <div class="flex gap-3">
               <ContactButton
                 buttonType="Phone"
