@@ -1501,5 +1501,42 @@
     "email": "siliezal@yahoo.com",
     "whatsapp": "50378550970",
     "social_links": []
+  },
+  {
+    "slug": "kevin-rhys",
+    "username": "Kevin Rhys",
+    "title": "DJ & Producer",
+    "about": "",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1718165280/Kevin_Rhys_mmuyak.avif",
+    "phone_number": "50377441810",
+    "email": "kevinrhysofficial@gmail.com",
+    "whatsapp": "50377441810",
+    "social_links": [
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/kevin.rhys"
+      },
+      {
+        "social_media": "Spotify",
+        "url": "https://open.spotify.com/intl-es/artist/3CGSUy1p5nxYqIxqL1uXrV"
+      },
+      {
+        "social_media": "AppleMusic",
+        "optionalName": "Apple Music",
+        "url": "https://music.apple.com/us/artist/kevin-rhys/1202629783"
+      },
+      {
+        "social_media": "Deezer",
+        "url": "https://www.deezer.com/en/artist/11886519"
+      },
+      {
+        "social_media": "TikTok",
+        "url": "https://www.tiktok.com/@kevin.rhys"
+      },
+      {
+        "social_media": "Youtube",
+        "url": "https://www.youtube.com/@kevinrhys"
+      }
+    ]
   }
 ]

@@ -32,5 +32,7 @@ export default interface SocialMediaItem {
     | "WhatsApp"
     | "Pinterest"
     | "X"
-    | "Survey";
+    | "Survey"
+    | "Deezer"
+    | "AppleMusic";
 }
