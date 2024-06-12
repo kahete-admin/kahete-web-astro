@@ -1517,6 +1517,10 @@
         "url": "https://www.instagram.com/kevin.rhys"
       },
       {
+        "social_media": "Youtube",
+        "url": "https://www.youtube.com/@kevinrhys"
+      },
+      {
         "social_media": "Spotify",
         "url": "https://open.spotify.com/intl-es/artist/3CGSUy1p5nxYqIxqL1uXrV"
       },
@@ -1532,10 +1536,6 @@
       {
         "social_media": "TikTok",
         "url": "https://www.tiktok.com/@kevin.rhys"
-      },
-      {
-        "social_media": "Youtube",
-        "url": "https://www.youtube.com/@kevinrhys"
       }
     ]
   }
