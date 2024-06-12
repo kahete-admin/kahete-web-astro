@@ -21,7 +21,11 @@ const {
 
 <html lang="en">
   <head>
-    <BaseHead title={username} description={about} image={profile_picture} />
+    <BaseHead
+      title={username}
+      description={about === "" ? title : about}
+      image={profile_picture}
+    />
   </head>
   <body>
     <NavBarProfile
