@@ -24,6 +24,8 @@ import Paypal from "@public/social_media_logos/paypal.svg";
 import Survey from "@public/social_media_logos/assignment.svg";
 import AppleMusic from "@public/social_media_logos/apple-music.svg";
 import Deezer from "@public/social_media_logos/deezer.svg";
+import Issuu from "@public/social_media_logos/issuu.svg";
+
 export {
     Youtube,
     Facebook,
@@ -50,5 +52,6 @@ export {
     Paypal,
     Survey,
     AppleMusic,
-    Deezer
+    Deezer,
+    Issuu
 }

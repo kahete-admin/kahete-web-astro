@@ -34,5 +34,6 @@ export default interface SocialMediaItem {
     | "X"
     | "Survey"
     | "Deezer"
-    | "AppleMusic";
+    | "AppleMusic"
+    | "Issuu";
 }
