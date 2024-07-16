@@ -1542,5 +1542,21 @@
         "url": "https://www.deezer.com/en/artist/11886519"
       }
     ]
+  },
+  {
+    "slug": "adriana-valeria-bonilla",
+    "username": "Adriana Valeria Bonilla",
+    "title": "Estudiante de 5to de economía y negocios",
+    "about": "",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1721140558/Adriana_Valeria_Bonilla_tk8fo1.avif",
+    "phone_number": "50379212000",
+    "email": "avaleriabh@hotmail.com",
+    "whatsapp": "50379212000",
+    "social_links": [
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/in/adrianabonillaherrera/"
+      }
+    ]
   }
 ]
