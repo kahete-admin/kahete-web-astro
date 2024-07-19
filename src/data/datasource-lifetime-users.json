@@ -1544,18 +1544,226 @@
     ]
   },
   {
-    "slug": "adriana-valeria-bonilla",
-    "username": "Adriana Valeria Bonilla",
-    "title": "Estudiante de 5to de economía y negocios (ESEN)",
+    "slug": "/softland-erp/patricia-arango",
+    "username": "Patricia Arango",
+    "title": "Área comercial - Softland",
     "about": "",
-    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1721140558/Adriana_Valeria_Bonilla_tk8fo1.avif",
-    "phone_number": "50379212000",
-    "email": "avaleriabh@hotmail.com",
-    "whatsapp": "50379212000",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_crop,w_500,h_500/v1721405715/softland-official_lhegs1.avif",
+    "phone_number": "50377007593",
+    "email": "",
+    "whatsapp": "50377007593",
     "social_links": [
       {
+        "social_media": "Other",
+        "optionalName": "softland.com.sv",
+        "url": "https://softland.com.sv/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland suite financiera",
+        "url": "https://softland.com.sv/suite-financiera/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland suite empresarial",
+        "url": "https://softland.com.sv/suite-empresarial/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland suite industrial",
+        "url": "https://softland.com.sv/software-produccion-y-mrp/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland suite proyectos",
+        "url": "https://softland.com.sv/suite-proyectos/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland HCM",
+        "url": "https://softland.com.sv/softlandhcm/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland CRM",
+        "url": "https://softland.com.sv/softland-crm/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland ERP",
+        "url": "https://softland.com.sv/soluciones-por-area-erp/"
+      },
+      {
         "social_media": "LinkedIn",
-        "url": "https://www.linkedin.com/in/adrianabonillaherrera/"
+        "url": "https://www.linkedin.com/company/softland-sitio-oficial"
+      }
+    ]
+  },
+  {
+    "slug": "/softland-erp/katherine-machuca",
+    "username": "Katherine Machuca",
+    "title": "Área comercial - Softland",
+    "about": "",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_crop,w_500,h_500/v1721405715/softland-official_lhegs1.avif",
+    "phone_number": "50377007593",
+    "email": "",
+    "whatsapp": "50377007593",
+    "social_links": [
+      {
+        "social_media": "Other",
+        "optionalName": "softland.com.sv",
+        "url": "https://softland.com.sv/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland suite financiera",
+        "url": "https://softland.com.sv/suite-financiera/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland suite empresarial",
+        "url": "https://softland.com.sv/suite-empresarial/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland suite industrial",
+        "url": "https://softland.com.sv/software-produccion-y-mrp/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland suite proyectos",
+        "url": "https://softland.com.sv/suite-proyectos/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland HCM",
+        "url": "https://softland.com.sv/softlandhcm/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland CRM",
+        "url": "https://softland.com.sv/softland-crm/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland ERP",
+        "url": "https://softland.com.sv/soluciones-por-area-erp/"
+      },
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/company/softland-sitio-oficial"
+      }
+    ]
+  },
+  {
+    "slug": "/softland-erp/fernando-calderon",
+    "username": "Fernando Calderón",
+    "title": "Base Instalada - Softland",
+    "about": "",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_crop,w_500,h_500/v1721405715/softland-official_lhegs1.avif",
+    "phone_number": "50377007593",
+    "email": "",
+    "whatsapp": "50377007593",
+    "social_links": [
+      {
+        "social_media": "Other",
+        "optionalName": "softland.com.sv",
+        "url": "https://softland.com.sv/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland suite financiera",
+        "url": "https://softland.com.sv/suite-financiera/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland suite empresarial",
+        "url": "https://softland.com.sv/suite-empresarial/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland suite industrial",
+        "url": "https://softland.com.sv/software-produccion-y-mrp/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland suite proyectos",
+        "url": "https://softland.com.sv/suite-proyectos/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland HCM",
+        "url": "https://softland.com.sv/softlandhcm/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland CRM",
+        "url": "https://softland.com.sv/softland-crm/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland ERP",
+        "url": "https://softland.com.sv/soluciones-por-area-erp/"
+      },
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/company/softland-sitio-oficial"
+      }
+    ]
+  },
+  {
+    "slug": "/softland-erp/luis-caballero",
+    "username": "Luis Caballero",
+    "title": "Director General - Softland",
+    "about": "",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_crop,w_500,h_500/v1721405715/softland-official_lhegs1.avif",
+    "phone_number": "50377007593",
+    "email": "",
+    "whatsapp": "50377007593",
+    "social_links": [
+      {
+        "social_media": "Other",
+        "optionalName": "softland.com.sv",
+        "url": "https://softland.com.sv/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland suite financiera",
+        "url": "https://softland.com.sv/suite-financiera/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland suite empresarial",
+        "url": "https://softland.com.sv/suite-empresarial/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland suite industrial",
+        "url": "https://softland.com.sv/software-produccion-y-mrp/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland suite proyectos",
+        "url": "https://softland.com.sv/suite-proyectos/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland HCM",
+        "url": "https://softland.com.sv/softlandhcm/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland CRM",
+        "url": "https://softland.com.sv/softland-crm/"
+      },
+      {
+        "social_media": "Other",
+        "optionalName": "Softland ERP",
+        "url": "https://softland.com.sv/soluciones-por-area-erp/"
+      },
+      {
+        "social_media": "LinkedIn",
+        "url": "https://www.linkedin.com/company/softland-sitio-oficial"
       }
     ]
   }
