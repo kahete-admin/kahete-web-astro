@@ -1766,5 +1766,18 @@
         "url": "https://www.linkedin.com/company/softland-sitio-oficial"
       }
     ]
+  },
+  {
+    "slug": "williamsarriaza",
+    "username": "Williams Arriaza",
+    "title": "Director General",
+    "about": "",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500,g_auto/v1721757031/williams-arriaza_js3edb.avif",
+    "phone_number": "50377408710",
+    "email": "",
+    "whatsapp": "50377408710",
+    "social_links": [
+    
+    ]
   }
 ]
