@@ -1,22 +1,22 @@
 ---
-import LaConfeProfile from "@/layouts/LaConfeProfile.astro";
-import incomingData from "@/data/la_confe/test-datasource.json";
-import SocialMediaItem from "@/components/SocialMediaItem.astro";
-import LaConfeIGSlider from "@/components/LaConfeIGSlider.astro";
-import LaConfeWAButton from "@/components/LaConfeWAButton.astro";
+// import LaConfeProfile from "@/layouts/LaConfeProfile.astro";
+// import incomingData from "@/data/la_confe/test-datasource.json";
+// import SocialMediaItem from "@/components/SocialMediaItem.astro";
+// import LaConfeIGSlider from "@/components/LaConfeIGSlider.astro";
+// import LaConfeWAButton from "@/components/LaConfeWAButton.astro";
 
-export async function getStaticPaths() {
-  return incomingData.map((entry) => ({
-    params: {
-      slug: entry.country.toLowerCase() + "/" + entry.slug,
-    },
-    props: { entry },
-  }));
-}
+// export async function getStaticPaths() {
+//   return incomingData.map((entry) => ({
+//     params: {
+//       slug: entry.country.toLowerCase() + "/" + entry.slug,
+//     },
+//     props: { entry },
+//   }));
+// }
 
-const { entry } = Astro.props;
+// const { entry } = Astro.props;
 ---
-
+<!-- 
 <LaConfeProfile
   slug={entry.slug}
   username={entry.username}
@@ -53,4 +53,4 @@ const { entry } = Astro.props;
     optionalName={"LaConfe"}
   />
   <LaConfeIGSlider />
-</LaConfeProfile>
+</LaConfeProfile> -->

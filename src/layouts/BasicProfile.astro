@@ -21,7 +21,11 @@ const {
 
 <html lang="en">
   <head>
-    <BaseHead title={username} description={about} image={profile_picture} />
+    <BaseHead
+      title={username}
+      description={about === "" ? title : about}
+      image={profile_picture}
+    />
   </head>
   <body>
     <NavBarProfile
@@ -53,9 +57,16 @@ const {
           </div>
 
           <div>
-            <div class="content mt-1 text-center text-about text-sm pb-6">
-              {about}
-            </div>
+            {
+              about === "" ? (
+                <div />
+              ) : (
+                <div class="content mt-1 text-center text-about text-sm pb-6">
+                  {about}
+                </div>
+              )
+            }
+
             <div class="flex gap-3">
               <ContactButton
                 buttonType="Phone"

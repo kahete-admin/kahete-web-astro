@@ -1,44 +1,84 @@
 ---
-import incomingData from "@/data/temp_users/testing-tas-datasource.json";
 import SocialMediaItem from "@/components/SocialMediaItem.astro";
 import TASProfile from "@/layouts/TASProfile.astro";
+// import fetchApi from "@/lib/strapi";
+import incomingData from "@/data/temp_users/datasource-business-tas.json";
 
 export async function getStaticPaths() {
-  return incomingData.map((entry) => ({
+  // const data: any = await fetchApi({
+  //   endpoint: "/businesses/tas/all-employees",
+  // });
+  // const incomingData = data.profiles;
+  return incomingData.map((entry: any) => ({
     params: {
-      slug:  entry.slug,
+      slug: entry.slug,
     },
     props: { entry },
   }));
 }
 
-const { entry } = Astro.props;
+const { entry } = Astro.props as any;
+// DATA FOR STRAPI
+// const data: any = entry.basic_user_profile;
+const data: any = entry;
 ---
 
 <TASProfile
-  username={entry.username}
-  title={entry.title}
-  about={entry.about}
-  email={entry.email}
-  profile_picture={entry.profile_picture}
-  phone_number={entry.phone_number}
-  whatsapp={entry.whatsapp}
+  username={data.full_name}
+  title={data.title}
+  about={data.about}
+  email={data.email}
+  profile_picture={data.profile_picture}
+  phone_number={data.phone_number.toString()}
+  whatsapp={data.phone_number.toString()}
 >
   {
+    data.title === "Ventas" && (
+      <SocialMediaItem
+        socialMediaType={"Survey"}
+        url={"https://forms.gle/TLgmrh9p6dzaLGtd7"}
+        optionalName={"Encuesta NPS"}
+      />
+    )
+  }
+  {
+    data.title === "Soporte" && (
+      <SocialMediaItem
+        socialMediaType={"Survey"}
+        url={"https://forms.gle/epXbX6zVqE7DdrnF7"}
+        optionalName={"Encuesta NPS"}
+      />
+    )
+  }
+  {
+    data.title === "Mantenimiento" && (
+      <SocialMediaItem
+        socialMediaType={"Survey"}
+        url={"https://forms.gle/epXbX6zVqE7DdrnF7"}
+        optionalName={"Encuesta NPS"}
+      />
+    )
+  }
+  {
+    data.title === "Proyectos" && (
+      <SocialMediaItem
+        socialMediaType={"Survey"}
+        url={"https://forms.gle/epXbX6zVqE7DdrnF7"}
+        optionalName={"Encuesta NPS"}
+      />
+    )
+  }
+  {
     entry.social_links.map(
-      (socialMedia: {
-        social_media: any;
-        url: string;
-        optionalName?: string;
-      }) => {
-        return (
-          <SocialMediaItem
-            socialMediaType={socialMedia.social_media}
-            url={socialMedia.url}
-            optionalName={socialMedia.optionalName!}
-          />
-        );
-      }
+      (socialMedia: { social_media: string; url: string; optional_name?: string }) => {
+          return (
+            <SocialMediaItem
+              socialMediaType={socialMedia.social_media}
+              url={socialMedia.url}
+              optionalName={socialMedia.optional_name}
+            />
+          );
+        }
     )
   }
 </TASProfile>
