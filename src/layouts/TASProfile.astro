@@ -11,6 +11,7 @@ import DownloadContactButtonWhiteBGFull from "@/components/DownloadContactButton
 import RoundedEmailButton from "@/components/RoundedEmailButton.astro";
 import TASLogoSlogan from "@public/companies/tas/tas-slogan.png";
 import TASSquare from "@public/companies/tas/tas-square.jpg";
+import { Icon } from "astro-icon/components";
 
 const {
   slug,
@@ -63,10 +64,7 @@ const {
           </div>
           <!-- CONTACT BUTTONS -->
           <div class="flex justify-around align-middle">
-            <WhatsAppButton
-              whatsappNumber={whatsapp}
-              widthClass=`${email == null ? "w-[80%]" :"w-[60%]"}`
-            />
+            <WhatsAppButton whatsappNumber={whatsapp} email={email} />
             <RoundedPhoneNumberButton whatsappNumber={whatsapp} />
             {email !== null && <RoundedEmailButton email={email} />}
           </div>

@@ -1,3 +1,3 @@
 export default interface SocialMediaIcons {
-    [key: string]: ImageMetadata;
+    [key: string]: string;
 }
