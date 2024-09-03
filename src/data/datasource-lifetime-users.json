@@ -1608,10 +1608,6 @@
     "phone_number": "50377408710",
     "email": "",
     "whatsapp": "50377408710",
-<<<<<<< HEAD
-    "social_links": [
-    
-=======
     "social_links": []
   },
   {
@@ -1636,8 +1632,7 @@
       {
         "social_media": "Facebook",
         "url": "https://www.facebook.com/cea.arquitectura.sv/"
-      } 
->>>>>>> develop
+      }
     ]
   }
 ]
