@@ -1,109 +1,62 @@
 ---
-import { Image } from "astro:assets";
-import arrow_outward from "@public/svg/arrow_outward.svg";
-import Phone from "@public/svg/call.svg";
-import WhatsApp from "@public/svg/whatsapp.svg";
-import Mail from "@public/svg/mail.svg";
-import {
-  Youtube,
-  Facebook,
-  LinkedIn,
-  Dribble,
-  Behance,
-  Instagram,
-  Snapchat,
-  Github,
-  XUrl,
-  Spotify,
-  Binance,
-  FBmessenger,
-  Twitch,
-  Soundcloud,
-  Slack,
-  Tinder,
-  Airbnb,
-  TikTok,
-  Telegram,
-  GoogleMaps,
-  Pinterest,
-  Other,
-  Paypal,
-  Survey,
-  AppleMusic,
-  Deezer,
-Issuu,
-} from "@public/social_media_logos/index";
+import { Icon } from "astro-icon/components";
 
 import type { SocialMediaIconsProps, SocialMediaItemProps } from "@/interfaces";
 
 const { url, socialMediaType, optionalName } =
   Astro.props as SocialMediaItemProps;
 
+// Using as svg name
 const socialMediaIcons: SocialMediaIconsProps = {
-  Youtube: Youtube,
-  Facebook: Facebook,
-  Github: Github,
-  Bēhance: Behance,
-  Instagram: Instagram,
-  Snapchat: Snapchat,
-  LinkedIn: LinkedIn,
-  X: XUrl,
-  Dribbble: Dribble,
-  Spotify: Spotify,
-  FacebookMessenger: FBmessenger,
-  Binance: Binance,
-  Twitch: Twitch,
-  Soundcloud: Soundcloud,
-  Tinder: Tinder,
-  Slack: Slack,
-  Airbnb: Airbnb,
-  Telegram: Telegram,
-  GoogleMaps: GoogleMaps,
-  Other: Other,
-  Phone: Phone,
-  Mail: Mail,
-  TikTok: TikTok,
-  WhatsApp: WhatsApp,
-  Paypal: Paypal,
-  Pinterest: Pinterest,
-  Survey: Survey,
-  AppleMusic: AppleMusic,
-  Deezer: Deezer,
-  Issuu: Issuu,
+  Facebook: "facebook",
+  Instagram: "instagram",
+  LinkedIn: "linkedin",
+  Youtube: "youtube",
+  Github: "github",
+  Bēhance: "behance",
+  Snapchat: "snapchat",
+  X: "x-twitter",
+  Dribbble: "dribble",
+  Spotify: "spotify",
+  FacebookMessenger: "fb-messenger",
+  Binance: "binance",
+  Twitch: "twitch",
+  Soundcloud: "soundcloud",
+  Tinder: "tinder",
+  Slack: "slack",
+  Airbnb: "airbnb",
+  Telegram: "telegram",
+  GoogleMaps: "google-maps",
+  Other: "world-web",
+  Phone: "phone",
+  Mail: "mail",
+  TikTok: "tiktok",
+  WhatsApp: "whatsapp",
+  Paypal: "paypal",
+  Pinterest: "pinterest",
+  Survey: "survey",
+  AppleMusic: "apple-music",
+  Deezer: "deezer",
+  Issuu: "issuu",
 };
 
 let IconUrl = socialMediaIcons[socialMediaType];
 ---
 
 <a href={url} target="_blank">
-  <div
-    class="flex justify-between items-center rounded-lg text-white cursor-pointer mb-4 item-border p-4"
-  >
+  <div class="social-item-container">
     <div class="flex items-center gap-3 max-w-[80%]">
-      <Image
-        format={"avif"}
-        alt="arrow_outward"
-        src={IconUrl!}
-        quality={"high"}
-        height={24}
-        width={24}
-      />
+      <Icon name={"social_media_logos/" + IconUrl} size={24} />
       <div class="text-base text-start items-center truncate">
         {optionalName ? optionalName : socialMediaType}
       </div>
     </div>
-    <Image
-      format={"arrow_outward"}
-      alt="header-picture"
-      src={arrow_outward}
-      quality={"mid"}
-      height={24}
-      width={24}
-    />
+    <Icon name={"commons/arrow_outward"} size={24} />
   </div>
 </a>
 <style>
-  .item-border {
+  .social-item-container {
+    @apply flex justify-between items-center rounded-lg text-white cursor-pointer mb-4 p-4;
     border-width: 1.3px;
     border-radius: 15px;
     border-color: #939393;

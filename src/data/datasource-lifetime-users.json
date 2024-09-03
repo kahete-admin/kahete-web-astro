@@ -1608,8 +1608,36 @@
     "phone_number": "50377408710",
     "email": "",
     "whatsapp": "50377408710",
+<<<<<<< HEAD
     "social_links": [
     
+=======
+    "social_links": []
+  },
+  {
+    "slug": "hector-cea",
+    "username": "Héctor Cea",
+    "title": "CEA Arquitectura",
+    "about": "Gestión de Proyectos  Comerciales",
+    "profile_picture": "https://res.cloudinary.com/dshqxfget/image/upload/c_fill,w_500,h_500/v1712715305/IMG_3826_-_Raul_Cea_aa9y9r.avif",
+    "phone_number": "50377400034",
+    "email": "raul.cea@gmail.com",
+    "whatsapp": "50377400034",
+    "social_links": [
+      {
+        "social_media": "Other",
+        "optionalName": "CEA Arquitectura",
+        "url": "https://www.ceaarquitectura.com/"
+      },
+      {
+        "social_media": "Instagram",
+        "url": "https://www.instagram.com/cea.arquitectura/"
+      },
+      {
+        "social_media": "Facebook",
+        "url": "https://www.facebook.com/cea.arquitectura.sv/"
+      } 
+>>>>>>> develop
     ]
   }
 ]

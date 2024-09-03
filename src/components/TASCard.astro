@@ -2,7 +2,13 @@
 import { Image } from "astro:assets";
 import TASSquare from "@public/companies/tas/tas-square.jpg";
 
-const { entry } = Astro.props;
+interface Props {
+  entry: any;
+  isStrapi?: boolean;
+}
+const { entry, isStrapi = false } = Astro.props;
+
+const userData = isStrapi ? entry.basic_user_profile : entry;
 ---
 
 <a
@@ -12,9 +18,7 @@ const { entry } = Astro.props;
   <Image
     format={"avif"}
     alt={"Image"}
-    src={entry.basic_user_profile.profile_picture
-      ? entry.basic_user_profile.profile_picture
-      : TASSquare}
+    src={userData.profile_picture ? userData.profile_picture : TASSquare}
     quality={"mid"}
     height={1000}
     width={1000}
@@ -22,10 +26,10 @@ const { entry } = Astro.props;
   />
   <div class="pl-4">
     <label class="text-lg text-white block capitalize"
-      >{entry.basic_user_profile.full_name}</label
+      >{userData.full_name}</label
     >
     <label class="text-sm text-typography-light-secondary capitalize"
-      >{entry.basic_user_profile.title}</label
+      >{userData.title}</label
     >
   </div>
 </a>

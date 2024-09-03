@@ -5,13 +5,14 @@ import Footer from "@/components/Footer.astro";
 import TASNavbar from "@/components/TASNavbar.astro";
 import { sectionTitleFilter } from "@utils/utils";
 import TASCard from "@/components/TASCard.astro";
-import fetchApi from "@/lib/strapi";
+// import fetchApi from "@/lib/strapi";
+import incomingData from "@/data/temp_users/datasource-business-tas.json";
 
-const data: any = await fetchApi({
-  endpoint: "/businesses/tas/all-employees",
-});
+// const data: any = await fetchApi({
+//   endpoint: "/businesses/tas/all-employees",
+// });
 
-const incomingData = data.profiles;
+// const incomingData = data.profiles;
 ---
 
 <!doctype html>
@@ -215,7 +216,7 @@ const incomingData = data.profiles;
           </div>
           <div id="section-a-d" class="panel">
             {
-              sectionTitleFilter(incomingData, "I + D").map((entry: any) => {
+              sectionTitleFilter(incomingData, "I+D").map((entry: any) => {
                 return <TASCard entry={entry} />;
               })
             }

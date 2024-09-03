@@ -1,10 +1,14 @@
 ---
 import type { WhatsAppButtonProps } from "@/interfaces";
 
-const { whatsappNumber, widthClass } = Astro.props as WhatsAppButtonProps;
+const { whatsappNumber, email } = Astro.props as WhatsAppButtonProps;
 ---
 
-<a href={`https://wa.me/${whatsappNumber}`} target="_blank" class={widthClass}>
+<a
+  href={`https://wa.me/${whatsappNumber}`}
+  target="_blank"
+  class:list={[email == null ? "w-[80%]" : "w-[60%]"]}
+>
   <div
     class="flex justify-center items-center text-black cursor-pointer mb-6 item-border h-14 bg-accent"
   >
