@@ -24,11 +24,18 @@ export function orderDataByUsernameLaConfe(incomingData) {
 }
 
 // ADD NULL TO SECOND PARAM IF ALL DEPARTMENTS ARE SELECTED
-export function sectionTitleFilter(incomingData, filterName) {
-    if (filterName === null) {
-        return orderDataByUsername(incomingData);
-    }
+export function sectionTitleFilter(incomingData, filterName, isStrapi) {
+  if (filterName === null && isStrapi) {
+    return orderDataByUsername(incomingData);
+  }
+  // TODO: DELETE THIS ONCE IS SSR
+  if (filterName === null && !isStrapi) {
+    return orderDataByUsernameLocal(incomingData);
+  }
 
-    return orderDataByUsername(incomingData)
-        .filter((entry) => entry.title === filterName);
+  return isStrapi ? orderDataByUsername(incomingData).filter(
+    (entry) => entry.basic_user_profile.title === filterName
+  ) : orderDataByUsernameLocal(incomingData).filter(
+    (entry) => entry.title === filterName
+  );
 }
