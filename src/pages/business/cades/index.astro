@@ -1,0 +1,186 @@
+---
+// import incomingData from "@/data/temp_users/testing-tas-datasource.json";
+import BaseHead from "@/components/BaseHead.astro";
+import Footer from "@/components/Footer.astro";
+import TASNavbar from "@/components/TASNavbar.astro";
+import { sectionTitleFilter } from "@utils/utils";
+import TASCard from "@/components/TASCard.astro";
+// import fetchApi from "@/lib/strapi";
+import incomingData from "@/data/temp_users/datasource-events-cades.json";
+import BasicCard from "@/components/BasicCard.astro";
+
+// const data: any = await fetchApi({
+//   endpoint: "/businesses/tas/all-employees",
+// });
+
+// const incomingData = data.profiles;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={"Directorio CADES"}
+      description={"Conecta con nuestro equipo"}
+    />
+  </head>
+  <body>
+    <section>
+      <div class="mx-auto max-w-screen-xl px-8 pt-6 pb-8">
+        <!-- LABEL -->
+        <label class="text-white text-xl font-semibold">Directorio CADES</label>
+        <!-- <div class="min-h-screen pt-4">
+          <button
+            id="dropdown-button"
+            data-dropdown-toggle="dropdown-content"
+            class="mx-auto w-full bg-neutral-900 border border-neutral-700 text-white text-sm rounded-lg justify-between p-2.5 hover:bg-blue-800 focus:ring-0 focus:outline-none focus:ring-blue-300 font-medium px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            <span id="dropdown-button-label">Selecciona un departamento</span>
+            <svg
+              class="w-2.5 h-2.5 ms-3"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 4 4 4-4"></path>
+            </svg>
+          </button> -->
+
+        <!-- Dropdown menu -->
+        <!-- <div
+            id="dropdown-content"
+            class="z-10 hidden bg-neutral-700 divide-y divide-white rounded-lg shadow w-10/12 mx-auto"
+          >
+            <ul
+              class="py-2 text-sm text-white"
+              aria-labelledby="dropdownDefaultButton"
+            >
+              <li>
+                <a
+                  data-dropdown="Todos"
+                  class="dropdown-data block text-white cursor-pointer px-4 py-2 hover:bg-gray-100 hover:text-accent"
+                >
+                  Todos los departamentos</a
+                >
+              </li>
+            </ul>
+          </div> -->
+        <!-- LOOPED DATA -->
+        <div class="pt-8">
+          <div id="section-todos" class="panel">
+            {
+              incomingData.map((entry: any) => {
+                return <BasicCard entry={entry} urlPath="cades/" />;
+              })
+            }
+          </div>
+          <!-- END FILTERS -->
+        </div>
+      </div>
+    </section>
+    <Footer />
+
+    <script is:inline>
+      // const currentFilterSearchLabel = document.getElementById(
+      //   "currentFilterSearchLabel"
+      // );
+      // const dropdownButtons = document.querySelectorAll(".dropdown-data");
+      // const panels = document.querySelectorAll(".panel");
+
+      // // INITIAL STATE
+      // document.onreadystatechange = function () {
+      //   if (document.readyState === "interactive") {
+      //     const dropdownLabel = document.getElementById(
+      //       "dropdown-button-label"
+      //     );
+      //     const sections = {
+      //       "section-todos": true,
+      //       "section-ventas": false,
+      //       "section-administracion": false,
+      //       "section-finanzas": false,
+      //       "section-mantenimiento": false,
+      //       "section-soporte": false,
+      //       "section-proyectos": false,
+      //       "section-operaciones": false,
+      //       "section-a-d": false,
+      //       "section-compras": false,
+      //       "section-talento-humano": false,
+      //     };
+
+      //     for (const sectionId in sections) {
+      //       const section = document.getElementById(sectionId);
+      //       if (section) {
+      //         if (sectionId === "section-todos") {
+      //           dropdownLabel.innerText = "Todos los departamentos";
+      //           section.classList.remove("hidden");
+      //         } else {
+      //           section.classList.add("hidden");
+      //         }
+      //       }
+      //     }
+      //   }
+      // };
+
+      // function toggleSectionVisibility(sectionId, isVisible) {
+      //   const section = document.getElementById(sectionId);
+      //   if (section) {
+      //     if (isVisible) {
+      //       section.classList.remove("hidden");
+      //     } else {
+      //       section.classList.add("hidden");
+      //     }
+      //   }
+      // }
+
+      // const departmentSections = {
+      //   Todos: "section-todos",
+      //   Ventas: "section-ventas",
+      //   Administración: "section-administracion",
+      //   Finanzas: "section-finanzas",
+      //   Mantenimiento: "section-mantenimiento",
+      //   Soporte: "section-soporte",
+      //   Proyectos: "section-proyectos",
+      //   Operaciones: "section-operaciones",
+      //   "I + D": "section-a-d",
+      //   Compras: "section-compras",
+      //   "Talento humano": "section-talento-humano",
+      // };
+
+      // dropdownButtons.forEach((button) => {
+      //   button.addEventListener("click", () => {
+      //     const targetPanelId = button.dataset.dropdown;
+      //     const dropdownContent = document.getElementById("dropdown-content");
+      //     const dropdownLabel = document.getElementById(
+      //       "dropdown-button-label"
+      //     );
+      //     const sections = document.querySelectorAll("[id^='section-']");
+      //     dropdownContent.classList.add("hidden");
+
+      //     sections.forEach((section) => {
+      //       const sectionId = section.id;
+      //       const isVisible = sectionId === departmentSections[targetPanelId];
+      //       toggleSectionVisibility(sectionId, isVisible);
+      //     });
+
+      //     dropdownLabel.innerText =
+      //       targetPanelId === "Todos"
+      //         ? "Todos los departamentos"
+      //         : targetPanelId;
+      //   });
+      // });
+
+      // Add if searchbox is needed
+      // document
+      //   .getElementById("searchbox")
+      //   .addEventListener("input", function () {
+      //     currentFilterSearchLabel.innerText = "Searchbox: " + this.value;
+      //   });
+    </script>
+  </body>
+</html>

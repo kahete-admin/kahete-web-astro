@@ -1,0 +1,454 @@
+[
+    {
+        "slug": "hector-cea",
+        "username": "Arq. Héctor Cea",
+        "title": "Presidente",
+        "about": "",
+        "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1725392123/cea-arquitectura/arq-raul-cea_olfj4n.avif",
+        "phone_number": "50379898984",
+        "email": "cades.org@gmail.com",
+        "whatsapp": "50379898984",
+        "social_links": [
+            {
+                "social_media": "Mail",
+                "optionalName": "presidentecades@gmail.com",
+                "url": "mailto:presidentecades@gmail.com"
+            },
+            {
+                "social_media": "Phone",
+                "optionalName": "+(503) 7740-0034",
+                "url": "tel:50377400034"
+            },
+            {
+                "social_media": "Other",
+                "optionalName": "baues.cadessv.com",
+                "url": "https://baues.cadessv.com/"
+            },
+            {
+                "social_media": "Instagram",
+                "url": "https://www.instagram.com/colegiodearquitectos/"
+            },
+            {
+                "social_media": "Facebook",
+                "url": "https://www.facebook.com/cades.elsalvador/"
+            },
+            {
+                "social_media": "LinkedIn",
+                "url": "https://www.linkedin.com/company/colegio-de-arquitectos-de-el-salvador-cades/"
+            },
+            {
+                "social_media": "X",
+                "optionalName": "@CadesES",
+                "url": "https://x.com/cadeses"
+            }
+        ]
+    },
+    {
+        "slug": "tania-sanchez",
+        "username": "Arq. Tania Sanchez",
+        "title": "Tesorera",
+        "about": "",
+        "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500,g_auto/v1725392122/cea-arquitectura/arq-tania-sanchez_dtw1sa.avif",
+        "phone_number": "50379898984",
+        "email": "cades.org@gmail.com",
+        "whatsapp": "50379898984",
+        "social_links": [
+            {
+                "social_media": "Other",
+                "optionalName": "baues.cadessv.com",
+                "url": "https://baues.cadessv.com/"
+            },
+            {
+                "social_media": "Instagram",
+                "url": "https://www.instagram.com/colegiodearquitectos/"
+            },
+            {
+                "social_media": "Facebook",
+                "url": "https://www.facebook.com/cades.elsalvador/"
+            },
+            {
+                "social_media": "LinkedIn",
+                "url": "https://www.linkedin.com/company/colegio-de-arquitectos-de-el-salvador-cades/"
+            },
+            {
+                "social_media": "X",
+                "optionalName": "@CadesES",
+                "url": "https://x.com/cadeses"
+            }
+        ]
+    },
+    {
+        "slug": "rafael-tobar",
+        "username": "Arq. Rafael Tobar",
+        "title": "Secretario",
+        "about": "",
+        "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1725392124/cea-arquitectura/rafael-tobar_a6qojn.avif",
+        "phone_number": "50379898984",
+        "email": "cades.org@gmail.com",
+        "whatsapp": "50379898984",
+        "social_links": [
+            {
+                "social_media": "Other",
+                "optionalName": "baues.cadessv.com",
+                "url": "https://baues.cadessv.com/"
+            },
+            {
+                "social_media": "Instagram",
+                "url": "https://www.instagram.com/colegiodearquitectos/"
+            },
+            {
+                "social_media": "Facebook",
+                "url": "https://www.facebook.com/cades.elsalvador/"
+            },
+            {
+                "social_media": "LinkedIn",
+                "url": "https://www.linkedin.com/company/colegio-de-arquitectos-de-el-salvador-cades/"
+            },
+            {
+                "social_media": "X",
+                "optionalName": "@CadesES",
+                "url": "https://x.com/cadeses"
+            }
+        ]
+    },
+    {
+        "slug": "eleonora-sol",
+        "username": "Arq. Eleonora Sol",
+        "title": "Directora",
+        "about": "",
+        "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1725392124/cea-arquitectura/arq-eleonora-sol_gtrdr1.avif",
+        "phone_number": "50379898984",
+        "email": "cades.org@gmail.com",
+        "whatsapp": "50379898984",
+        "social_links": [
+            {
+                "social_media": "Other",
+                "optionalName": "baues.cadessv.com",
+                "url": "https://baues.cadessv.com/"
+            },
+            {
+                "social_media": "Instagram",
+                "url": "https://www.instagram.com/colegiodearquitectos/"
+            },
+            {
+                "social_media": "Facebook",
+                "url": "https://www.facebook.com/cades.elsalvador/"
+            },
+            {
+                "social_media": "LinkedIn",
+                "url": "https://www.linkedin.com/company/colegio-de-arquitectos-de-el-salvador-cades/"
+            },
+            {
+                "social_media": "X",
+                "optionalName": "@CadesES",
+                "url": "https://x.com/cadeses"
+            }
+        ]
+    },
+    {
+        "slug": "leopoldo-samayoa",
+        "username": "Arq. Leopoldo Samayoa",
+        "title": "Director",
+        "about": "",
+        "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1725392123/cea-arquitectura/arq-leopoldo-samayoa_ytfmia.avif",
+        "phone_number": "50379898984",
+        "email": "cades.org@gmail.com",
+        "whatsapp": "50379898984",
+        "social_links": [
+            {
+                "social_media": "Other",
+                "optionalName": "baues.cadessv.com",
+                "url": "https://baues.cadessv.com/"
+            },
+            {
+                "social_media": "Instagram",
+                "url": "https://www.instagram.com/colegiodearquitectos/"
+            },
+            {
+                "social_media": "Facebook",
+                "url": "https://www.facebook.com/cades.elsalvador/"
+            },
+            {
+                "social_media": "LinkedIn",
+                "url": "https://www.linkedin.com/company/colegio-de-arquitectos-de-el-salvador-cades/"
+            },
+            {
+                "social_media": "X",
+                "optionalName": "@CadesES",
+                "url": "https://x.com/cadeses"
+            }
+        ]
+    },
+    {
+        "slug": "enrique-cea",
+        "username": "Arq. Enrique Cea",
+        "title": "Director",
+        "about": "",
+        "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1725392123/cea-arquitectura/arq-enrique-cea_sbr8d1.avif",
+        "phone_number": "50379898984",
+        "email": "cades.org@gmail.com",
+        "whatsapp": "50379898984",
+        "social_links": [
+            {
+                "social_media": "Other",
+                "optionalName": "baues.cadessv.com",
+                "url": "https://baues.cadessv.com/"
+            },
+            {
+                "social_media": "Instagram",
+                "url": "https://www.instagram.com/colegiodearquitectos/"
+            },
+            {
+                "social_media": "Facebook",
+                "url": "https://www.facebook.com/cades.elsalvador/"
+            },
+            {
+                "social_media": "LinkedIn",
+                "url": "https://www.linkedin.com/company/colegio-de-arquitectos-de-el-salvador-cades/"
+            },
+            {
+                "social_media": "X",
+                "optionalName": "@CadesES",
+                "url": "https://x.com/cadeses"
+            }
+        ]
+    },
+    {
+        "slug": "ricardo-cardoza",
+        "username": "Arq. Ricardo Cardoza",
+        "title": "Director",
+        "about": "",
+        "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500,g_auto/v1725392122/cea-arquitectura/arq-ricardo-cardoza_efnjz0.avif",
+        "phone_number": "50379898984",
+        "email": "cades.org@gmail.com",
+        "whatsapp": "50379898984",
+        "social_links": [
+            {
+                "social_media": "Other",
+                "optionalName": "baues.cadessv.com",
+                "url": "https://baues.cadessv.com/"
+            },
+            {
+                "social_media": "Instagram",
+                "url": "https://www.instagram.com/colegiodearquitectos/"
+            },
+            {
+                "social_media": "Facebook",
+                "url": "https://www.facebook.com/cades.elsalvador/"
+            },
+            {
+                "social_media": "LinkedIn",
+                "url": "https://www.linkedin.com/company/colegio-de-arquitectos-de-el-salvador-cades/"
+            },
+            {
+                "social_media": "X",
+                "optionalName": "@CadesES",
+                "url": "https://x.com/cadeses"
+            }
+        ]
+    },
+    {
+        "slug": "afshin-eighani",
+        "username": "Arq. Afshin Eighani",
+        "title": "Director",
+        "about": "",
+        "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1725392125/cea-arquitectura/arq-afshin-eighani_xj7ora.avif",
+        "phone_number": "50379898984",
+        "email": "cades.org@gmail.com",
+        "whatsapp": "50379898984",
+        "social_links": [
+            {
+                "social_media": "Other",
+                "optionalName": "baues.cadessv.com",
+                "url": "https://baues.cadessv.com/"
+            },
+            {
+                "social_media": "Instagram",
+                "url": "https://www.instagram.com/colegiodearquitectos/"
+            },
+            {
+                "social_media": "Facebook",
+                "url": "https://www.facebook.com/cades.elsalvador/"
+            },
+            {
+                "social_media": "LinkedIn",
+                "url": "https://www.linkedin.com/company/colegio-de-arquitectos-de-el-salvador-cades/"
+            },
+            {
+                "social_media": "X",
+                "optionalName": "@CadesES",
+                "url": "https://x.com/cadeses"
+            }
+        ]
+    },
+    {
+        "slug": "pedro-estrada",
+        "username": "Arq. Pedro Estrada",
+        "title": "Director",
+        "about": "",
+        "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1725392123/cea-arquitectura/pedro-estrada_nafiqw.avif",
+        "phone_number": "50379898984",
+        "email": "cades.org@gmail.com",
+        "whatsapp": "50379898984",
+        "social_links": [
+            {
+                "social_media": "Other",
+                "optionalName": "baues.cadessv.com",
+                "url": "https://baues.cadessv.com/"
+            },
+            {
+                "social_media": "Instagram",
+                "url": "https://www.instagram.com/colegiodearquitectos/"
+            },
+            {
+                "social_media": "Facebook",
+                "url": "https://www.facebook.com/cades.elsalvador/"
+            },
+            {
+                "social_media": "LinkedIn",
+                "url": "https://www.linkedin.com/company/colegio-de-arquitectos-de-el-salvador-cades/"
+            },
+            {
+                "social_media": "X",
+                "optionalName": "@CadesES",
+                "url": "https://x.com/cadeses"
+            }
+        ]
+    },
+    {
+        "slug": "diana-guerra",
+        "username": "Arq. Diana Guerra",
+        "title": "Directora",
+        "about": "",
+        "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500,g_auto/v1725392123/cea-arquitectura/arq-diana-guerra_tdl5aw.avif",
+        "phone_number": "50379898984",
+        "email": "cades.org@gmail.com",
+        "whatsapp": "50379898984",
+        "social_links": [
+            {
+                "social_media": "Other",
+                "optionalName": "baues.cadessv.com",
+                "url": "https://baues.cadessv.com/"
+            },
+            {
+                "social_media": "Instagram",
+                "url": "https://www.instagram.com/colegiodearquitectos/"
+            },
+            {
+                "social_media": "Facebook",
+                "url": "https://www.facebook.com/cades.elsalvador/"
+            },
+            {
+                "social_media": "LinkedIn",
+                "url": "https://www.linkedin.com/company/colegio-de-arquitectos-de-el-salvador-cades/"
+            },
+            {
+                "social_media": "X",
+                "optionalName": "@CadesES",
+                "url": "https://x.com/cadeses"
+            }
+        ]
+    },
+    {
+        "slug": "tatiana-espinal",
+        "username": "Arq. Tatiana Espinal",
+        "title": "Directora",
+        "about": "",
+        "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500/v1725392125/cea-arquitectura/tatiana-espinal_fbt1uj.avif",
+        "phone_number": "50379898984",
+        "email": "cades.org@gmail.com",
+        "whatsapp": "50379898984",
+        "social_links": [
+            {
+                "social_media": "Other",
+                "optionalName": "baues.cadessv.com",
+                "url": "https://baues.cadessv.com/"
+            },
+            {
+                "social_media": "Instagram",
+                "url": "https://www.instagram.com/colegiodearquitectos/"
+            },
+            {
+                "social_media": "Facebook",
+                "url": "https://www.facebook.com/cades.elsalvador/"
+            },
+            {
+                "social_media": "LinkedIn",
+                "url": "https://www.linkedin.com/company/colegio-de-arquitectos-de-el-salvador-cades/"
+            },
+            {
+                "social_media": "X",
+                "optionalName": "@CadesES",
+                "url": "https://x.com/cadeses"
+            }
+        ]
+    },
+    {
+        "slug": "leon-sol",
+        "username": "Arq. Leon Sol",
+        "title": "Director",
+        "about": "",
+        "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1725392124/cea-arquitectura/arq-leon-sol_g3kwgx.avif",
+        "phone_number": "50379898984",
+        "email": "cades.org@gmail.com",
+        "whatsapp": "50379898984",
+        "social_links": [
+            {
+                "social_media": "Other",
+                "optionalName": "baues.cadessv.com",
+                "url": "https://baues.cadessv.com/"
+            },
+            {
+                "social_media": "Instagram",
+                "url": "https://www.instagram.com/colegiodearquitectos/"
+            },
+            {
+                "social_media": "Facebook",
+                "url": "https://www.facebook.com/cades.elsalvador/"
+            },
+            {
+                "social_media": "LinkedIn",
+                "url": "https://www.linkedin.com/company/colegio-de-arquitectos-de-el-salvador-cades/"
+            },
+            {
+                "social_media": "X",
+                "optionalName": "@CadesES",
+                "url": "https://x.com/cadeses"
+            }
+        ]
+    },
+    {
+        "slug": "monica-dominguez",
+        "username": "Arq. Monica Dominguez",
+        "title": "Directora",
+        "about": "",
+        "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/c_fill,w_500,h_500,g_auto/v1725392122/cea-arquitectura/arq-monica-dominguez_sbjtgu.avif",
+        "phone_number": "50379898984",
+        "email": "cades.org@gmail.com",
+        "whatsapp": "50379898984",
+        "social_links": [
+            {
+                "social_media": "Other",
+                "optionalName": "baues.cadessv.com",
+                "url": "https://baues.cadessv.com/"
+            },
+            {
+                "social_media": "Instagram",
+                "url": "https://www.instagram.com/colegiodearquitectos/"
+            },
+            {
+                "social_media": "Facebook",
+                "url": "https://www.facebook.com/cades.elsalvador/"
+            },
+            {
+                "social_media": "LinkedIn",
+                "url": "https://www.linkedin.com/company/colegio-de-arquitectos-de-el-salvador-cades/"
+            },
+            {
+                "social_media": "X",
+                "optionalName": "@CadesES",
+                "url": "https://x.com/cadeses"
+            }
+        ]
+    }
+]
