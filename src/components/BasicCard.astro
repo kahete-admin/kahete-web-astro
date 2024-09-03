@@ -1,0 +1,32 @@
+---
+import { Image } from "astro:assets";
+import TASSquare from "@public/companies/tas/tas-square.jpg";
+
+interface Props {
+  entry: any;
+  isStrapi?: boolean;
+  urlPath?: string;
+}
+const { entry, isStrapi = false, urlPath } = Astro.props;
+---
+
+<a
+  href={urlPath + entry.slug}
+  class="flex w-full align-middle items-center mb-6"
+>
+  <Image
+    format={"avif"}
+    alt={"Image"}
+    src={entry.profile_picture}
+    quality={"mid"}
+    height={1000}
+    width={1000}
+    style="border-radius: 20px; height: 120px; width: 120px;"
+  />
+  <div class="pl-4">
+    <label class="text-lg text-white block capitalize">{entry.username}</label>
+    <label class="text-sm text-typography-light-secondary capitalize"
+      >{entry.title}</label
+    >
+  </div>
+</a>
