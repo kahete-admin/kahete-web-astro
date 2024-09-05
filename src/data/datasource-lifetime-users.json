@@ -1619,11 +1619,17 @@
     "slug": "aman-basal",
     "username": "Aman Basal",
     "title": "Steel Trading USA",
-    "about": "",
-    "profile_picture": "",
+    "about": "Dedicated to the recycling since the year 2007 initially specialized in the purchase and sale of ferrous and non-ferrous metals, counting now with a wide range of materials.",
+    "profile_picture": "https://res.cloudinary.com/dmisxmy8o/image/upload/v1725556161/steeltrading-usa/steeltrading-usa_wfll93.avif",
     "phone_number": "50378855546",
     "email": "aman@steeltradingusa.net",
     "whatsapp": "50378855546",
-    "social_links": []
+    "social_links": [
+      {
+        "social_media": "Other",
+        "optionalName": "steeltradingusa.net",
+        "url": "https://steeltradingusa.net/"
+      }
+    ]
   }
 ]
