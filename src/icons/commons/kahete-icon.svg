@@ -1,0 +1,16 @@
+<svg
+    width="33"
+    height="32"
+    viewBox="0 0 33 32"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+>
+    <path
+        d="M26.8473 7.36487H19.499V14.7132H26.8473V7.36487Z"
+        fill="#F1CA48"></path>
+    <path
+        d="M19.4942 14.7084H13.6081V2.55994H6.25977V29.4144H13.6081V22.0614H19.4942V14.7084Z"
+        fill="#70C6EB"></path>
+    <path d="M26.8473 22.066H19.499V29.4143H26.8473V22.066Z" fill="#00CBBB"
+    ></path>
+</svg>
