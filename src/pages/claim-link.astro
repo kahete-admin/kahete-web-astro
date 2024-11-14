@@ -5,8 +5,8 @@ import { Icon } from "astro-icon/components";
 
 <MainLayout>
   <section class="h-screen">
-    <div>
-      <div class="flex justify-center items-center p-12">
+    <div class="min-h-[90dvh]">
+      <div class="flex justify-center items-center py-8">
         <Icon name={"commons/kahete-icon"} size={48} />
       </div>
       <!-- Titles -->
@@ -14,10 +14,36 @@ import { Icon } from "astro-icon/components";
         <h2 class="title">Claim your unique link</h2>
         <h4 class="subtitle">The good ones are still available!</h4>
       </div>
-    </div>
-    <div class="justify-center items-center">
-      <input type="text" placeholder="Enter your link" class="w-full" />
+      <div class="justify-center items-center px-4">
+        <input
+          type="text"
+          placeholder="Enter your link"
+          class="generic-textbox"
+        />
+      </div>
     </div>
     <!-- Select plan  -->
+    <div class="w-full justify-center p-4 flex-1">
+      <div class="generic-button contact-us-button bg-[#65CED8]">Next</div>
+    </div>
   </section>
 </MainLayout>
+
+<style>
+  .generic-textbox {
+    width: 100%;
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    border: 2px solid #5e6264;
+    border-radius: 8px;
+    background: #191e21;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-inline-start: 1rem;
+    color: white;
+  }
+  .generic-textbox:focus {
+    outline: 0;
+    border-color: rbga(white, 0.5);
+  }
+</style>
