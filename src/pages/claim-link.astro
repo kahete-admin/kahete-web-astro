@@ -1,0 +1,77 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<MainLayout>
+  <div class="h-[80vh]">
+    <div class="flex justify-center items-center py-8">
+      <Icon name={"commons/kahete-icon"} size={48} />
+    </div>
+    <!-- Titles -->
+    <div class="flex flex-col items-start justify-center p-4">
+      <h2 class="title">Claim your unique link</h2>
+      <h4 class="subtitle">The good ones are still available!</h4>
+    </div>
+    <form>
+      <div class="justify-center items-center mx-4 input-box">
+        <span class="prefix text-white">kahete.com/</span>
+        <input type="text" placeholder="your link" class="generic-textbox" />
+      </div>
+      <!-- Select plan  -->
+      <div class="w-full justify-center p-4 mb-6 absolute bottom-0">
+        <a class="generic-button contact-us-button bg-[#65CED8] text-black"
+        href="/choose-plan"
+          >Next</a
+        >
+      </div>
+    </form>
+  </div>
+</MainLayout>
+
+<style>
+  .generic-textbox {
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 2px solid #5e6264;
+    border-radius: 8px;
+    background: #191e21;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-inline-start: 1rem;
+    color: white;
+  }
+  .generic-textbox:focus {
+    outline: 0;
+    border-color: rbga(white, 0.5);
+  }
+
+  .input-box {
+    display: flex;
+    align-items: center;
+    background: #191e21;
+    border: 2px solid #5e6264;
+    border-radius: 8px;
+    background: #191e21;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-inline-start: 1rem;
+  }
+
+  .input-box .prefix {
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+  }
+
+  .input-box input {
+    border: none;
+    outline: none;
+    padding-inline-start: 5px;
+  }
+
+  .input-box:focus-within {
+    border-color: #4f7df3;
+  }
+</style>
