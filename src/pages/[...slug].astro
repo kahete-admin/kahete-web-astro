@@ -1,7 +1,7 @@
 ---
+import SocialMediaItem from "@/components/legacy/SocialMediaItem.astro";
 import incomingData from "@/data/datasource-lifetime-users.json";
-import SocialMediaItem from "@/components/SocialMediaItem.astro";
-import BasicProfile from "@/layouts/BasicProfile.astro";
+import BasicProfile from "@/layouts/legacy/BasicProfile.astro";
 
 export async function getStaticPaths() {
   return incomingData.map((entry) => ({
