@@ -2,7 +2,7 @@
 const totalSteps = 4;
 ---
 
-<div class="block">
+<div>
   <div class="flex justify-between items-center text-white h-20 px-4">
     <!-- Icon -->
     <a onclick="history.back()">
@@ -38,7 +38,7 @@ const totalSteps = 4;
   </div>
   <hr class="border-neutral-700 border-b-[0.5px]" />
   <!-- Steppers -->
-  <div class="flex justify-between items-center text-white px-4 pt-6">
+  <div class="flex items-stretch text-white pt-6 gap-3 px-3">
     <div class="completed-step"></div>
     <div class="dim-step"></div>
     <div class="dim-step"></div>
@@ -50,16 +50,14 @@ const totalSteps = 4;
   .dim-step {
     background-color: #5b5e60;
     height: 4px;
-    width: 25%;
-    margin-right: 12px;
-    border-radius: 20%;
+    width: 100%;
+    border-radius: 10px;
   }
 
   .completed-step {
     background-color: white;
     height: 4px;
-    width: 25%;
-    margin-right: 12px;
-    border-radius: 20%;
+    width: 100%;
+    border-radius: 10px;
   }
 </style>
