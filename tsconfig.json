@@ -11,7 +11,7 @@
       "@layouts/*":["src/layouts/*"],
       "@styles/*":["src/styles/*"],
       "@utils/*":["src/utils/*"],
-      "@interfaces/*":["src/interfaces/*"]
+      "@interfaces/*":["src/infrastructure/interfaces/*"]
     }
   }
 }
