@@ -1,10 +1,12 @@
 ---
 import HeaderNavBar from "@/components/shared/StepperNavBar.astro";
 import MainLayout from "@/layouts/MainLayout.astro";
+import { GlobalToasters } from "@/components/shared/GlobalToaster";
+import { GlobalSonner } from "@/components/shared/GlobalSonner";
+import { ButtonVariants } from "./ButtonVariants";
 ---
 
 <MainLayout>
-  <section class="h-[80vh]">
-    <HeaderNavBar />
-  </section>
+  <HeaderNavBar />
+  <ButtonVariants client:load />
 </MainLayout>

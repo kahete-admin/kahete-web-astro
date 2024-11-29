@@ -1,6 +1,7 @@
 ---
 import BaseHead from "@/components/legacy/BaseHead.astro";
-
+import { GlobalSonner } from "@/components/shared/GlobalSonner";
+import { GlobalToasters } from "@/components/shared/GlobalToaster";
 ---
 
 <html lang="en">
@@ -8,6 +9,8 @@ import BaseHead from "@/components/legacy/BaseHead.astro";
     <BaseHead title={""} description={""} image={""} />
   </head>
   <body>
+    <GlobalToasters client:load />
+    <GlobalSonner client:load />
     <section>
       <slot />
     </section>
