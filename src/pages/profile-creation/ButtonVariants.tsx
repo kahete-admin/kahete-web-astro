@@ -8,7 +8,7 @@ import { AtSign, Mail, MessageCircleMore, MessagesSquare, Phone } from "lucide-r
 
 import { Button } from "@/components/ui/button"
 import { ToastAction } from "@radix-ui/react-toast";
-
+import { RiWhatsappFill, RiWhatsappLine } from "@remixicon/react";
 export const ButtonVariants = () => {
     const { toast } = useToast()
 
@@ -47,7 +47,7 @@ export const ButtonVariants = () => {
                 <Phone size={16} strokeWidth={2} aria-hidden="true" />
                 <span className="">Add new</span>
             </Button>
-            <div className="flex gap-4 mx-auto">
+            <div className="flex gap-4 mx-auto pb-12">
                 <Button size='icon' variant='action'>
                     <Phone size={16} strokeWidth={2} aria-hidden="true" />
                 </Button>
@@ -59,6 +59,12 @@ export const ButtonVariants = () => {
                 </Button>
                 <Button size='icon' variant='action'>
                     <MessageCircleMore size={16} strokeWidth={2} aria-hidden="true" />
+                </Button>
+                <Button size='icon' variant='action'>
+                    <RiWhatsappLine size={16} strokeWidth={2} aria-hidden="true" />
+                </Button>
+                <Button size='icon' variant='action'>
+                    <RiWhatsappFill size={16} strokeWidth={2} aria-hidden="true" />
                 </Button>
                 <Button size='icon' variant='action'>
                     <MessagesSquare size={16} strokeWidth={2} aria-hidden="true" />
