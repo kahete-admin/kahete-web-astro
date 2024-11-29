@@ -4,14 +4,32 @@
     "strictNullChecks": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@public/*": ["public/*"],
-      "@data/*":["src/data/*"],
-      "@components/*": ["src/components/*"],
-      "@layouts/*":["src/layouts/*"],
-      "@styles/*":["src/styles/*"],
-      "@utils/*":["src/utils/*"],
-      "@interfaces/*":["src/infrastructure/interfaces/*"]
-    }
+      "@/*": [
+        "./src/*"
+      ],
+      "@public/*": [
+        "public/*"
+      ],
+      "@data/*": [
+        "src/data/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@layouts/*": [
+        "src/layouts/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@interfaces/*": [
+        "src/infrastructure/interfaces/*"
+      ]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   }
 }
