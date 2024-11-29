@@ -13,7 +13,7 @@ export const ButtonVariants = () => {
     const { toast } = useToast()
 
     return (
-        <div className="flex flex-col gap-4 px-4 lg:max-w-screen-sm mx-auto pt-12">
+        <div className="flex flex-col gap-4 px-4 lg:max-w-screen-sm mx-auto pt-12 pb-25">
             <Button>Default</Button>
             <Button variant="disabled">Disabled</Button>
             <Button variant="secondary">Secondary</Button>
