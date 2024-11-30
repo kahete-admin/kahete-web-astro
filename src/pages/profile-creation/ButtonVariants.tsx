@@ -1,88 +1,78 @@
 // TODO: !IMPORTANT DELETE THIS FILE
 
-import { toast as sonner } from "sonner"
-import { Toaster as ToasterSonner } from "@/components/ui/sonner"
-import { Toaster } from '@/components/ui/toaster';
-import { useToast } from "@/hooks/use-toast"
-import { AtSign, LoaderCircle, Mail, MessageCircleMore, MessagesSquare, Phone } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { ToastAction } from "@radix-ui/react-toast";
-import { RiFacebookFill, RiGithubFill, RiGoogleFill, RiTwitterXFill, RiWhatsappFill, RiWhatsappLine } from "@remixicon/react";
+import { Input } from "@/components/ui/input";
+import { AtSign, CircleCheck, Mail } from "lucide-react";
+import { PhoneInput } from "@/components/ui/phone-input";
+import { useState } from "react";
+import { FlagComponent, CountrySelect } from "@/components/ui/country-select";
+import * as RPNInput from "react-phone-number-input";
+
 export const ButtonVariants = () => {
-    const { toast } = useToast()
-
+    const [value, setValue] = useState("");
     return (
-        <div className="flex flex-col gap-4 px-4 lg:max-w-screen-sm mx-auto pt-12 pb-25">
-            <div className="flex flex-col gap-2">
-
-                <Button disabled>
-                    <LoaderCircle
-                        className="-ms-1 me-2 animate-spin"
-                        size={16}
-                        strokeWidth={2}
-                        aria-hidden="true"
-                    />
-                    Button
-                </Button></div>
-
-            <Button>Default</Button>
-            <Button variant="disabled">Disabled</Button>
-            <Button variant="secondary">
-                <RiWhatsappLine size={16} strokeWidth={2} aria-hidden="true" />
-                <span className="">Secondary</span>
-            </Button>
-            <Button variant="secondary">Secondary</Button>
-            <Button variant="outline">Outline</Button>
-            <Button variant="action">Action</Button>
-            <Button variant="destructive">Destructive</Button>
-            <Button
-                variant="link"
-                onClick={() => {
-                    toast({
-                        title: "Scheduled: Catch up ",
-                        description: "Friday, February 10, 2023 at 5:57 PM",
-                        action: (
-                            <ToastAction altText="Goto schedule to undo">Undo</ToastAction>
-                        ),
-                    })
-                }}
-            >
-                Link
-            </Button>
-            <Button variant="ghost" onClick={() =>
-                sonner("Event has been created", {
-                    description: "Sunday, December 03, 2023 at 9:00 AM",
-                    action: {
-                        label: "Undo",
-                        onClick: () => console.log("Undo"),
-                    },
-                })}> Open sonner</Button>
-            {/* ADD */}
-            <Button>
-                <Phone strokeWidth={2} aria-hidden="true" />
-                <span className="">Add new</span>
-            </Button>
-            <div className="flex gap-4 mx-auto pb-12">
-                <Button size='icon' variant='action'>
-                    <Phone strokeWidth={2} aria-hidden="true" />
-                </Button>
-                <Button size='icon' variant='action'>
-                    <AtSign strokeWidth={2} aria-hidden="true" />
-                </Button>
-                <Button size='icon' variant='action'>
-                    <Mail strokeWidth={2} aria-hidden="true" />
-                </Button>
-                <Button size='icon' variant='action'>
-                    <MessageCircleMore strokeWidth={2} aria-hidden="true" />
-                </Button>
-                <Button size='icon' variant='action'>
-                    <RiWhatsappLine strokeWidth={2} aria-hidden="true" />
-                </Button>
-                <Button size='icon' variant='action'>
-                    <MessagesSquare strokeWidth={2} aria-hidden="true" />
-                </Button>
+        <div className="items-center justify-center w-full pt-12 px-4">
+            {/* Regular */}
+            <Input placeholder="Email" type="email" />
+            {/* With icon */}
+            <div className="pt-4">
+                <div className="relative">
+                    <Input id="input-09" className="peer ps-9" placeholder="Email" type="email" />
+                    <div className="pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 text-muted-foreground/80 peer-disabled:opacity-50">
+                        <AtSign size={16} strokeWidth={2} aria-hidden="true" />
+                    </div>
+                </div>
             </div>
+
+            {/* With label */}
+            <div className="pt-4">
+                <div className="relative">
+                    <Input className="peer ps-24" placeholder="your-name" type="text" />
+                    <span className="pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 text-sm text-white peer-disabled:opacity-50">
+                        kahete.com/
+                    </span>
+                </div>
+            </div>
+
+            {/* With Icon at the end  */}
+            <div className="pt-4">
+                <div className="relative">
+                    <Input id="input-10" className="peer pe-9" placeholder="Email" type="email" maxLength={2} />
+                    <div className="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-muted-foreground/80 peer-disabled:opacity-50">
+                        <Mail size={16} strokeWidth={2} aria-hidden="true" />
+                    </div>
+                </div>
+            </div>
+
+            {/* With Icon and label */}
+            <div className="pt-4">
+                <div className="relative">
+                    <span className="pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 text-sm text-white peer-disabled:opacity-50">
+                        kahete.com/
+                    </span>
+                    <Input className="peer ps-24" placeholder="your-name" type="text" />
+                    {/* Check icon */}
+                    <div className="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-muted-foreground/80 peer-disabled:opacity-50">
+                        <CircleCheck color="green" size={16} strokeWidth={2} aria-hidden="true" />
+                    </div>
+                </div>
+            </div>
+
+            {/* PHONE */}
+            <div className="pt-4" dir="ltr">
+                <RPNInput.default
+                    className="flex rounded-lg shadow-sm shadow-black/5 bg-[#191E21]"
+                    international
+                    flagComponent={FlagComponent}
+                    countrySelectComponent={CountrySelect}
+                    inputComponent={PhoneInput}
+                    id="input-46"
+                    placeholder="Enter phone number"
+                    value={value}
+                    onChange={(newValue) => setValue(newValue ?? "")}
+                />
+            </div>
+
         </div >
     );
 };
