@@ -27,7 +27,7 @@ export const ButtonVariants = () => {
             {/* With label */}
             <div className="pt-4">
                 <div className="relative">
-                    <Input className="peer ps-24" placeholder="your-name" type="text" />
+                    <Input className="peer ps-24" placeholder="your-name" type="text" maxLength={12} />
                     <span className="pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 text-sm text-white peer-disabled:opacity-50">
                         kahete.com/
                     </span>
@@ -37,7 +37,7 @@ export const ButtonVariants = () => {
             {/* With Icon at the end  */}
             <div className="pt-4">
                 <div className="relative">
-                    <Input id="input-10" className="peer pe-9" placeholder="Email" type="email" maxLength={2} />
+                    <Input id="input-10" className="peer pe-9" placeholder="Email" type="email" />
                     <div className="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-muted-foreground/80 peer-disabled:opacity-50">
                         <Mail size={16} strokeWidth={2} aria-hidden="true" />
                     </div>
@@ -50,7 +50,7 @@ export const ButtonVariants = () => {
                     <span className="pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 text-sm text-white peer-disabled:opacity-50">
                         kahete.com/
                     </span>
-                    <Input className="peer ps-24" placeholder="your-name" type="text" />
+                    <Input className="peer ps-24" placeholder="your-name" type="text" maxLength={12} />
                     {/* Check icon */}
                     <div className="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-muted-foreground/80 peer-disabled:opacity-50">
                         <CircleCheck color="green" size={16} strokeWidth={2} aria-hidden="true" />
