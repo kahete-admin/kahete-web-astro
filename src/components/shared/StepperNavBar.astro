@@ -1,4 +1,7 @@
 ---
+import { RiArrowLeftLine } from "@remixicon/react";
+import { ArrowLeft } from "lucide-react";
+
 const totalSteps = 4;
 ---
 
@@ -6,30 +9,13 @@ const totalSteps = 4;
   <div class="flex justify-between items-center text-white h-20 px-4">
     <!-- Icon -->
     <a onclick="history.back()">
-      <svg
-        width="32"
-        height="32"
-        viewBox="0 0 32 32"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <mask
-          id="mask0_81_1975"
-          style="mask-type:alpha"
-          maskUnits="userSpaceOnUse"
-          x="0"
-          y="0"
-          width="32"
-          height="32"
-        >
-          <rect width="32" height="32" fill="#D9D9D9"></rect>
-        </mask>
-        <g mask="url(#mask0_81_1975)">
-          <path
-            d="M10.4672 17.3333L14.2672 21.1333C14.5339 21.4 14.6616 21.7111 14.6505 22.0666C14.6394 22.4222 14.5116 22.7333 14.2672 23C14.0005 23.2666 13.6839 23.4055 13.3172 23.4166C12.9505 23.4278 12.6339 23.3 12.3672 23.0333L6.26719 16.9333C6.00052 16.6666 5.86719 16.3555 5.86719 16C5.86719 15.6444 6.00052 15.3333 6.26719 15.0666L12.3672 8.96664C12.6339 8.69997 12.9505 8.5722 13.3172 8.58331C13.6839 8.59442 14.0005 8.73331 14.2672 8.99997C14.5116 9.26664 14.6394 9.57775 14.6505 9.93331C14.6616 10.2889 14.5339 10.6 14.2672 10.8666L10.4672 14.6666H25.3339C25.7116 14.6666 26.0283 14.7944 26.2839 15.05C26.5394 15.3055 26.6672 15.6222 26.6672 16C26.6672 16.3778 26.5394 16.6944 26.2839 16.95C26.0283 17.2055 25.7116 17.3333 25.3339 17.3333H10.4672Z"
-            fill="white"></path>
-        </g>
-      </svg>
+      <ArrowLeft
+        size={25}
+        strokeWidth={2}
+        color="white"
+        className="cursor-pointer"
+        aria-hidden="true"
+      />
     </a>
     <!-- Title -->
     <div>Step 1 of 4</div>

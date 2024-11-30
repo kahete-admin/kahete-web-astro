@@ -4,18 +4,34 @@ import { toast as sonner } from "sonner"
 import { Toaster as ToasterSonner } from "@/components/ui/sonner"
 import { Toaster } from '@/components/ui/toaster';
 import { useToast } from "@/hooks/use-toast"
-import { AtSign, Mail, MessageCircleMore, MessagesSquare, Phone } from "lucide-react";
+import { AtSign, LoaderCircle, Mail, MessageCircleMore, MessagesSquare, Phone } from "lucide-react";
 
 import { Button } from "@/components/ui/button"
 import { ToastAction } from "@radix-ui/react-toast";
-import { RiWhatsappFill, RiWhatsappLine } from "@remixicon/react";
+import { RiFacebookFill, RiGithubFill, RiGoogleFill, RiTwitterXFill, RiWhatsappFill, RiWhatsappLine } from "@remixicon/react";
 export const ButtonVariants = () => {
     const { toast } = useToast()
 
     return (
         <div className="flex flex-col gap-4 px-4 lg:max-w-screen-sm mx-auto pt-12 pb-25">
+            <div className="flex flex-col gap-2">
+
+                <Button disabled>
+                    <LoaderCircle
+                        className="-ms-1 me-2 animate-spin"
+                        size={16}
+                        strokeWidth={2}
+                        aria-hidden="true"
+                    />
+                    Button
+                </Button></div>
+
             <Button>Default</Button>
             <Button variant="disabled">Disabled</Button>
+            <Button variant="secondary">
+                <RiWhatsappLine size={16} strokeWidth={2} aria-hidden="true" />
+                <span className="">Secondary</span>
+            </Button>
             <Button variant="secondary">Secondary</Button>
             <Button variant="outline">Outline</Button>
             <Button variant="action">Action</Button>
@@ -44,30 +60,27 @@ export const ButtonVariants = () => {
                 })}> Open sonner</Button>
             {/* ADD */}
             <Button>
-                <Phone size={16} strokeWidth={2} aria-hidden="true" />
+                <Phone strokeWidth={2} aria-hidden="true" />
                 <span className="">Add new</span>
             </Button>
             <div className="flex gap-4 mx-auto pb-12">
                 <Button size='icon' variant='action'>
-                    <Phone size={16} strokeWidth={2} aria-hidden="true" />
+                    <Phone strokeWidth={2} aria-hidden="true" />
                 </Button>
                 <Button size='icon' variant='action'>
-                    <AtSign size={16} strokeWidth={2} aria-hidden="true" />
+                    <AtSign strokeWidth={2} aria-hidden="true" />
                 </Button>
                 <Button size='icon' variant='action'>
-                    <Mail size={16} strokeWidth={2} aria-hidden="true" />
+                    <Mail strokeWidth={2} aria-hidden="true" />
                 </Button>
                 <Button size='icon' variant='action'>
-                    <MessageCircleMore size={16} strokeWidth={2} aria-hidden="true" />
+                    <MessageCircleMore strokeWidth={2} aria-hidden="true" />
                 </Button>
                 <Button size='icon' variant='action'>
-                    <RiWhatsappLine size={16} strokeWidth={2} aria-hidden="true" />
+                    <RiWhatsappLine strokeWidth={2} aria-hidden="true" />
                 </Button>
                 <Button size='icon' variant='action'>
-                    <RiWhatsappFill size={16} strokeWidth={2} aria-hidden="true" />
-                </Button>
-                <Button size='icon' variant='action'>
-                    <MessagesSquare size={16} strokeWidth={2} aria-hidden="true" />
+                    <MessagesSquare strokeWidth={2} aria-hidden="true" />
                 </Button>
             </div>
         </div >
