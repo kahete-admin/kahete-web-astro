@@ -50,10 +50,10 @@ export const ClaimLinkForm = () => {
                             <FormControl>
                                 <div className="pt-4">
                                     <div className="relative">
-                                        <span className="pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 text-sm text-white peer-disabled:opacity-50">
+                                        <span className="pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 text-md text-white peer-disabled:opacity-50">
                                             kahete.com/
                                         </span>
-                                        <Input className="peer ps-24 text-sm" placeholder="your-name" type="text" maxLength={12} {...field} />
+                                        <Input className="peer ps-24 text-md" placeholder="your-name" type="text" maxLength={12} {...field} />
                                         {/* Check icon */}
                                         {/* <div className="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-muted-foreground/80 peer-disabled:opacity-50">
                                             <CircleCheck color="green" size={16} strokeWidth={2} aria-hidden="true" />
