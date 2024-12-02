@@ -13,12 +13,10 @@ import connection_sm from "@public/home_page_assets/connections-sm.svg";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import BaseHead from "@/components/legacy/BaseHead.astro";
 import Footer from "@/components/legacy/Footer.astro";
-import { GlobalToasters } from "@/components/shared/GlobalToaster";
-import { GlobalSonner } from "@/components/shared/GlobalSonner";
 
 const envURL = import.meta.env.MAILER_SERVICE_URL;
 ---
-
+<!-- TODO: Delete all bg-[#65CED8] and change to button from react -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -61,7 +59,7 @@ const envURL = import.meta.env.MAILER_SERVICE_URL;
             </a>
             <a
               href="#pre-order"
-              class="text-black hover:text-black font-medium text-sm inline-flex items-center justify-center rounded-full bg-accent py-2 px-4 cursor-pointer hover:bg-neutral-800 focus:ring-4 focus:outline-none"
+              class="text-black hover:text-black font-medium text-sm inline-flex items-center justify-center rounded-full bg-[#65CED8] py-2 px-4 cursor-pointer hover:bg-neutral-800 focus:ring-4 focus:outline-none"
             >
               Pre registrate aquí
               <Image
@@ -100,7 +98,7 @@ const envURL = import.meta.env.MAILER_SERVICE_URL;
               <!-- BUTTON -->
               <a
                 href="#pre-order"
-                class="text-black hover:text-black font-medium text-sm inline-flex items-center justify-center rounded-full bg-accent py-2 px-4 cursor-pointer hover:bg-neutral-800 focus:ring-4 focus:outline-none"
+                class="text-black hover:text-black font-medium text-sm inline-flex items-center justify-center rounded-full bg-[#65CED8] py-2 px-4 cursor-pointer hover:bg-neutral-800 focus:ring-4 focus:outline-none"
               >
                 Obtener perfil
                 <Image
@@ -480,7 +478,7 @@ const envURL = import.meta.env.MAILER_SERVICE_URL;
 
                 <button
                   type="submit"
-                  class="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-accent hover:bg-neutral-800 focus:outline-none"
+                  class="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-[#65CED8] hover:bg-neutral-800 focus:outline-none"
                   >Enviar</button
                 >
               </form>
