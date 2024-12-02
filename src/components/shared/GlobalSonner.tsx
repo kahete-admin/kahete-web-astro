@@ -1,12 +1,8 @@
 'use client'
-
-import { ToastAction } from "@/components/ui/toast"
-import { toast as toaster } from "sonner"
-import { Toaster as ToasterSonner } from "@/components/ui/sonner"
-import { Toaster } from '@/components/ui/toaster';
+import { SonnerToaster } from "@/components/ui/sonner"
 
 export const GlobalSonner = () => {
     return (
-        <ToasterSonner />
+        <SonnerToaster />
     );
 };

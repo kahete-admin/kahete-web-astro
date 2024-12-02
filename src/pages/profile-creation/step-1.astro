@@ -1,10 +1,10 @@
 ---
 import HeaderNavBar from "@/components/shared/StepperNavBar.astro";
 import MainLayout from "@/layouts/MainLayout.astro";
-import { ButtonVariants } from "./ButtonVariants";
+import { Step1Form } from "@/components/forms/step-1.form";
 ---
 
 <MainLayout>
   <HeaderNavBar />
-  <ButtonVariants client:load />
+  <Step1Form client:load />
 </MainLayout>
