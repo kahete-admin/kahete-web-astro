@@ -11,19 +11,24 @@ import {
     FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { useEffect, useState } from "react";
+import { CircleCheck } from "lucide-react";
 
 const formSchema = z.object({
     username:
         z.string()
-            .min(2, {
-                message: "Username must be at least 2 characters.",
+            .min(4, {
+                message: "Username must be at least 4 characters.",
             })
-            .refine((value) => /^[a-zA-Z]+[-'s]?[a-zA-Z ]+$/.test(value ?? ""), 'Name should contain only letters'),
+            .refine((value) => /^[a-zA-Z]+[-'s]?[a-zA-Z ]+$/.test(value ?? ""), 'Name should contain only letters')
+            .transform(username => username.trim().toLowerCase()),
 });
 
 
 
 export const ClaimLinkForm = () => {
+    const [isValid, setIsValid] = useState(false);
+
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -31,12 +36,15 @@ export const ClaimLinkForm = () => {
         },
     })
 
-    // 2. Define a submit handler.
     function onSubmit(values: z.infer<typeof formSchema>) {
-        // Do something with the form values.
-        // ✅ This will be type-safe and validated.
-        console.log(values)
+        window.alert(JSON.stringify(values));
+        window.location.href = "/profile-creation/step-1";
     }
+
+    useEffect(() => {
+        const data = formSchema.safeParse(form.getValues());
+        setIsValid(data.success);
+    }, [form.getValues()]);
 
     return (
         <div>
@@ -59,11 +67,11 @@ export const ClaimLinkForm = () => {
                                             <span className="pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-4 text-base text-white peer-disabled:opacity-50">
                                                 kahete.com/
                                             </span>
-                                            <Input className="peer ps-28 text-base" placeholder="johndoe" type="text" maxLength={12} required {...field} />
+                                            <Input className="peer ps-28 text-base lowercase" autoCapitalize="off" placeholder="johndoe" type="text" maxLength={12} required {...field} />
                                             {/* Check icon */}
-                                            {/* <div className="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-muted-foreground/80 peer-disabled:opacity-50">
-                                            <CircleCheck color="green" size={16} strokeWidth={2} aria-hidden="true" />
-                                        </div> */}
+                                            {isValid && <div className="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-muted-foreground/80 peer-disabled:opacity-50">
+                                                <CircleCheck color="green" size={16} strokeWidth={2} aria-hidden="true" />
+                                            </div>}
                                         </div>
                                     </div>
                                 </FormControl>
@@ -71,6 +79,7 @@ export const ClaimLinkForm = () => {
                             </FormItem>
                         )}
                     />
+                    {/* TODO: Check the button position when error is shown */}
                     <div className="pt-[60svh]">
                         <Button type="submit" size={'full'}>Submit</Button>
                     </div>
