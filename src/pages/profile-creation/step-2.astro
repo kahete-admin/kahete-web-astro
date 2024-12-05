@@ -1,10 +1,10 @@
 ---
+import { Step2Form } from "@/components/forms/step-2.form";
 import HeaderNavBar from "@/components/shared/StepperNavBar.astro";
 import MainLayout from "@/layouts/MainLayout.astro";
-import { Step1Form } from "@/components/forms/step-1.form";
 ---
 
 <MainLayout>
-  <HeaderNavBar step={1} />
-  <Step1Form client:load />
+  <HeaderNavBar step={2} />
+  <Step2Form client:load />
 </MainLayout>
