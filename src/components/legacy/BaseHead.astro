@@ -11,17 +11,22 @@ const { title, description, image, headerColor } = Astro.props as BaseHeadProps;
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=0" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
 <link rel="stylesheet" href="/src/styles/breadcrumbs.css" />
-<meta name="msapplication-TileColor" content="#da532c" />
-<meta name="theme-color" content={headerColor ? headerColor : "#0b0d14"} />
+<meta name="msapplication-TileColor" content="#14191c" />
+<meta name="theme-color" content={headerColor ? headerColor : "#14191c"} />
 <meta name="generator" content={Astro.generator} />
-
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Kahete" />
+<meta
+  name="apple-mobile-web-app-status-bar-style"
+  content="black-translucent"
+/>
 <!-- Font preloads -->
 <link rel="preload" href="/fonts/InterVariable.ttf" as="font" crossorigin />
 <link rel="preload" href="/fonts/Inter-SemiBold.ttf" as="font" crossorigin />
@@ -49,4 +54,6 @@ const { title, description, image, headerColor } = Astro.props as BaseHeadProps;
 <meta property="twitter:image" content={image!} />
 
 <!-- SCRIPTS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
+></script>
