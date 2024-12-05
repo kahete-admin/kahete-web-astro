@@ -39,14 +39,13 @@ body {
   font-family: "Inter";
   padding: 0;
   text-align: left;
-  background: #0b0d14;
+  background: #14191c;
   background-size: 100% 600px;
   word-wrap: break-word;
   overflow-wrap: break-word;
   color: rgb(var(--gray-dark));
   font-size: 16px;
   line-height: 1.7;
-  background-color: #0a0d14 !important;
 }
 
 main {
@@ -138,7 +137,7 @@ pre {
   border-radius: 8px;
 }
 
-pre>code {
+pre > code {
   all: unset;
 }
 

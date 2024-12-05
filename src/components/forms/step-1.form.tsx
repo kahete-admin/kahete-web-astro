@@ -60,11 +60,8 @@ export const Step1Form = () => {
 
     function onSubmit(values: z.infer<typeof formSchema>) {
         window.alert(JSON.stringify(values));
-        if (image) {
-            window.alert('HAS IMAGE');
-        } else {
-            window.alert('NO IMAGE');
-        }
+        image ? window.alert('HAS IMAGE') : window.alert('No IMAGE');
+        window.location.href = '/profile-creation/step-2';
     }
 
     const [image, setImage] = useState<string | null>(null);
@@ -122,7 +119,7 @@ export const Step1Form = () => {
                             )}
                         </div>
                         <div>
-                            <p className="text-sm text-[#9CA3AF] pb-4">
+                            <p className="text-sm text-[#9CA3AF] pb-2">
                                 For the best results on all devices, use an image that's at least 800 x 800 pixels and 6MB or less.
                             </p>
                             <label
@@ -135,6 +132,7 @@ export const Step1Form = () => {
                                     cursor: 'pointer',
                                     marginTop: '20px',
                                     borderRadius: '20px',
+                                    fontSize: '16px',
                                 }}
                             >
                                 Upload photo
