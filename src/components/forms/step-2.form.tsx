@@ -1,21 +1,16 @@
 "use client"
+import * as RPNInput from "react-phone-number-input";
 import { Button } from "../ui/button";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import {
-    Form,
-    FormControl,
-    FormField,
-    FormItem,
-    FormMessage,
-} from "@/components/ui/form";
+import { FlagComponent, CountrySelect } from "@/components/ui/country-select";
+import { Form } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Label } from "../ui/label";
-import { FlagComponent, CountrySelect } from "@/components/ui/country-select";
-import * as RPNInput from "react-phone-number-input";
 import { PhoneInput } from "@/components/ui/phone-input";
+import { ProfilePreview } from "../shared/profile/ProfilePreview";
+import { useForm } from "react-hook-form";
 import { useState, type ChangeEvent } from "react";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
 import {
     Select,
     SelectContent,
@@ -23,7 +18,6 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
-import { ProfilePreview } from "../shared/profile/ProfilePreview";
 
 const formSchema = z.object({
     username:

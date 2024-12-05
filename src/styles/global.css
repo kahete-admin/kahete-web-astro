@@ -3,10 +3,10 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
- @tailwind base;
- @tailwind components;
- @tailwind utilities;
- 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --accent: #65ced8;
   --accent-dark: #65ced8;
@@ -137,7 +137,7 @@ pre {
   border-radius: 8px;
 }
 
-pre > code {
+pre>code {
   all: unset;
 }
 
@@ -249,6 +249,7 @@ hr {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -281,6 +282,7 @@ hr {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
