@@ -2,55 +2,60 @@
 import { RiArrowLeftLine } from "@remixicon/react";
 import { ArrowLeft } from "lucide-react";
 
-const totalSteps = 4;
+const totalSteps = 5;
 interface Props {
   step: number;
+  isSkippable?: boolean;
 }
 
-const { step } = Astro.props;
+const { step, isSkippable = false } = Astro.props;
 ---
 
+<!-- TODO: Check if is centered -->
 <div>
-  <div class="flex justify-between items-center text-white h-20 px-4">
-    <!-- Icon -->
-    <a onclick="history.back()">
-      <ArrowLeft
-        size={25}
-        strokeWidth={2}
-        color="white"
-        className="cursor-pointer"
-        aria-hidden="true"
-      />
-    </a>
+  <div
+    class="flex items-center justify-center text-center text-white h-20 px-4 w-full"
+  >
+    <div>
+      <a onclick="history.back()">
+        <ArrowLeft
+          size={25}
+          strokeWidth={2}
+          color="white"
+          className="cursor-pointer"
+          aria-hidden="true"
+        />
+      </a>
+    </div>
     <!-- Title -->
-    <div>Step {step} of 4</div>
+    <div class="flex-1">
+      Step {step} of {totalSteps}
+    </div>
     <!-- Icon -->
-    <div>Skip</div>
+    {isSkippable ? <div>Skip</div> : <div class="w-8" />}
   </div>
-  <hr class="border-neutral-700 border-b-[0.5px]" />
-  <!-- Steppers -->
-  <div class="flex items-stretch text-white pt-6 gap-3">
-    {
-      Array.from({ length: totalSteps }, (_, i) => {
-        return (
-          <div class:list={["step", i + 1 <= step ? "completed" : "dim"]} />
-        );
-      })
-    }
-  </div>
-
-  <style>
-    .step {
-      height: 4px;
-      width: 100%;
-      border-radius: 10px;
-    }
-    .dim {
-      background-color: #5b5e60;
-    }
-
-    .completed {
-      background-color: white;
-    }
-  </style>
 </div>
+<hr class="border-neutral-700 border-b-[0.5px]" />
+<!-- Steppers -->
+<div class="flex items-stretch text-white pt-6 gap-3 px-4">
+  {
+    Array.from({ length: totalSteps }, (_, i) => {
+      return <div class:list={["step", i + 1 <= step ? "completed" : "dim"]} />;
+    })
+  }
+</div>
+
+<style>
+  .step {
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .dim {
+    background-color: #5b5e60;
+  }
+
+  .completed {
+    background-color: white;
+  }
+</style>

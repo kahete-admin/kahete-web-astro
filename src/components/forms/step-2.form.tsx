@@ -18,6 +18,13 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion"
+
 
 const formSchema = z.object({
     username:
@@ -60,119 +67,261 @@ export const Step2Form = () => {
         window.alert(JSON.stringify(values));
     }
 
-    const [text, setText] = useState('');
-    const [buttonType, setButtonType] = useState<string | null>(null);
+    const [primaryButtonText, setPrimaryButtonText] = useState('');
+    const [primaryButtonType, setPrimaryButtonType] = useState<string | null>(null);
+    const [secondaryButtonType, setSecondaryButtonType] = useState<string | null>(null);
+    const [tertiaryButtonType, setTertiaryButtonType] = useState<string | null>(null);
+
+    const handlePrimaryButtonType = (value: string) => {
+        setPrimaryButtonType(value);
+    };
+
+    const handleSecondaryButtonType = (value: string) => {
+        setSecondaryButtonType(value);
+    };
+
+    const handleTertiaryButtonType = (value: string) => {
+        setTertiaryButtonType(value);
+    };
+
 
     const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setText(event.target.value);
-    };
-    const handleButtonType = (value: string) => {
-        setButtonType(value);
+        setPrimaryButtonText(event.target.value);
     };
 
     const placeholderValue = (): string => {
-        if (buttonType === "Link") return "Enter link";
-        if (buttonType === "Email") return "Enter email";
+        if (primaryButtonType === "Link") return "Enter link";
+        if (primaryButtonType === "Email") return "Enter email";
         return "Enter data";
 
     }
+
+    const [openIndex, setOpenIndex] = useState('1'); // Track the open accordion item by index
+
+    const handleAccordionChange = (value: string) => {
+        if (value === '0') setOpenIndex('1');
+        setOpenIndex(value);
+    };
 
     // TODO: Refactor the code below
     return (
         <div className="pb-12">
             <div className="flex flex-col items-start justify-center pt-8 pb-4">
-                <h2 className="title">Add primary action</h2>
+                <h2 className="title">Add actions</h2>
                 <h4 className="subtitle">Enter essential information</h4>
             </div>
 
             {/* PREVIEW PROFILE */}
             <div className="border-2 border-white rounded-2xl mt-4 mb-6 py-4 px-2">
-                <ProfilePreview image={"https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"}
-                    username={"aaaaaa aaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaad iausiodpaspodioapsidoa psdaisd jioasjd ioasjdoiasj diopasj dopasjdpoasjdasoipdjaiosdjasoijdasoidjasoid asoidjoaisjdioasj dioasjdoiasj doipasjd aipsojdaiospdjasiodjasoid has dhasijdhaskldhaskjldhask ljdhas jkdhasjk dhasd jakshd aklsdhaskjldhasl kdhaskjdhas ljdkhas dlakhsjdhas aaa"}
-                    title={"bbbbbbbbbbbb bbbbbb dsadasdasdsadhasdhjassadsak jdklasjd klasjdkl asjdklasjdaklsjdlkas dj aksljdaskljdalsk djaskldjaslkjd askljdaskldjas kldjaslkdjaslkdjasljdaskldjalskjdlaksjdasdbbbbbbbbbbb bbbbbbbbbbbbb bbbbbbbbb bbbbbb bbbbbbb bbbbbb bbbbbbb bbbbbb bbbbbbb bbbbbb bbbbbbb bbbbbb bbbbb bbbb bbb bbb bbb bbb bbb bbb bbb bbb bbbb bbbb bbbb bbbb bbbb bbbbb bbbbbb"}
-                    bio={"ccccccccccccccccccc ccccccccccccccccccc ccccccccccccccccc cccccccccc cccccc cccccc ccccccc cccccccc ccccccc dausdjasijdiasohjdio sajdoi asj iodjasoidjas oidj apsodjopasjdoi asjd poiasjdpioasjdoipasjd oasijdaopi sdj asopdascccccc ccccccc cccc cccc cccc cccc cccc cccc cccc cccc cccc cccc cccc ccccc ccccc ccccc ccccc ccccc ccccc cccccc"}
-                    buttonType={buttonType}
-                    buttonTitle={text} />
+                <ProfilePreview
+                    primaryButtonText={primaryButtonText}
+                    primaryButtonType={primaryButtonType}
+                    secondaryButtonType={secondaryButtonType}
+                    tertiaryButtonType={tertiaryButtonType}
+                    isPrimaryActionSelected={openIndex === '1' ? true : false}
+                    isSecondaryActionSelected={openIndex === '2' ? true : false}
+                    isTertiaryActionSelected={openIndex === '3' ? true : false}
+                />
             </div>
 
             {/* FORM INFO */}
             <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-                    {/* TITLE */}
-                    <div className="space-y-2">
-                        <Label htmlFor="input-02">
-                            Title <span className="text-destructive">*</span>
-                        </Label>
-                        <div className="relative">
-                            <Input
-                                id="input-34"
-                                className="peer pe-14"
-                                type="text"
-                                placeholder="Enter title"
-                                value={text}
-                                maxLength={15}
-                                onChange={handleChange}
-                                aria-describedby="character-count"
-                            />
-                            <div
-                                id="character-count"
-                                className="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-xs tabular-nums text-muted-foreground peer-disabled:opacity-50"
-                                aria-live="polite"
-                                role="status"
-                            >
-                                {text.length}/{15}
-                            </div>
-                        </div>
-                    </div>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="">
+                    <Accordion type="single" className="w-full" value={openIndex} onValueChange={handleAccordionChange} >
+                        <AccordionItem value="1">
+                            <AccordionTrigger><span>Primary action <span className="text-destructive">*</span></span></AccordionTrigger>
+                            <AccordionContent>
+                                <div className="space-y-6 pb-4">
+                                    <div className="space-y-2">
+                                        <Label htmlFor="input-02">
+                                            Title <span className="text-destructive">*</span>
+                                        </Label>
+                                        <div className="relative">
+                                            <Input
+                                                id="input-34"
+                                                className="peer pe-14"
+                                                type="text"
+                                                placeholder="Enter title"
+                                                value={primaryButtonText}
+                                                maxLength={15}
+                                                onChange={handleChange}
+                                                aria-describedby="character-count"
+                                            />
+                                            <div
+                                                id="character-count"
+                                                className="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-xs tabular-nums text-muted-foreground peer-disabled:opacity-50"
+                                                aria-live="polite"
+                                                role="status"
+                                            >
+                                                {primaryButtonText.length}/{15}
+                                            </div>
+                                        </div>
+                                    </div>
 
-                    {/* Button type */}
-                    <div className="space-y-2">
-                        <Label htmlFor="input-02">
-                            Button type <span className="text-destructive">*</span>
-                        </Label>
-                        <Select onValueChange={handleButtonType}>
-                            <SelectTrigger id="select-15">
-                                <SelectValue placeholder="Select action type" />
-                            </SelectTrigger>
-                            <SelectContent>
-                                <SelectItem value="Whatsapp">Whatsapp</SelectItem>
-                                <SelectItem value="Call">Call</SelectItem>
-                                <SelectItem value="Email">Email</SelectItem>
-                                <SelectItem value="Link">Link</SelectItem>
-                            </SelectContent>
-                        </Select>
-                    </div>
+                                    {/* Button type */}
+                                    <div className="space-y-2">
+                                        <Label htmlFor="input-02">
+                                            Button type <span className="text-destructive">*</span>
+                                        </Label>
+                                        <Select onValueChange={handlePrimaryButtonType}>
+                                            <SelectTrigger id="select-15">
+                                                <SelectValue placeholder="Select action type" />
+                                            </SelectTrigger>
+                                            <SelectContent>
+                                                <SelectItem value="Whatsapp">Whatsapp</SelectItem>
+                                                <SelectItem value="Call">Call</SelectItem>
+                                                <SelectItem value="Email">Email</SelectItem>
+                                                <SelectItem value="Link">Link</SelectItem>
+                                            </SelectContent>
+                                        </Select>
+                                    </div>
 
-                    <div className={`space-y-2 ${buttonType === "Call" || buttonType === "Whatsapp" ? "shown" : "hidden"}`}>
-                        <div className={"space-y-2"}>
-                            <Label htmlFor="input-02">
-                                Phone number <span className="text-destructive">*</span>
-                            </Label>
-                            <RPNInput.default
-                                className="flex rounded-lg shadow-sm shadow-black/5 bg-[#191E21]"
-                                international
-                                flagComponent={FlagComponent}
-                                countrySelectComponent={CountrySelect}
-                                inputComponent={PhoneInput}
-                                placeholder="Enter phone number"
-                                value={''}
-                                onChange={(newValue) => setValue(newValue ?? "")}
-                            />
-                        </div>
-                    </div>
+                                    <div className={`space-y-2 ${primaryButtonType === "Call" || primaryButtonType === "Whatsapp" ? "shown" : "hidden"}`}>
+                                        <div className={"space-y-2"}>
+                                            <Label htmlFor="input-02">
+                                                Phone number <span className="text-destructive">*</span>
+                                            </Label>
+                                            <RPNInput.default
+                                                className="flex rounded-lg shadow-sm shadow-black/5 bg-[#191E21]"
+                                                international
+                                                flagComponent={FlagComponent}
+                                                countrySelectComponent={CountrySelect}
+                                                inputComponent={PhoneInput}
+                                                placeholder="Enter phone number"
+                                                value={''}
+                                                onChange={(newValue) => setValue(newValue ?? "")}
+                                            />
+                                        </div>
+                                    </div>
 
-                    <div className={`space-y-2 ${buttonType === "Email" || buttonType === "Link" ? "shown" : "hidden"}`}>
-                        <div className={"space-y-2"}>
-                            <Label htmlFor="input-02">
-                                Button value
-                                <span className="text-destructive">*</span>
-                            </Label>
-                            <Input placeholder={placeholderValue()} type="text" maxLength={12} />
-                        </div>
-                    </div>
+                                    <div className={`space-y-2 ${primaryButtonType === "Email" || primaryButtonType === "Link" ? "shown" : "hidden"}`}>
+                                        <div className={"space-y-2"}>
+                                            <Label htmlFor="input-02">
+                                                Button value
+                                                <span className="text-destructive">*</span>
+                                            </Label>
+                                            <Input placeholder={placeholderValue()} type="text" maxLength={12} />
+                                        </div>
+                                    </div>
+                                </div>
+                            </AccordionContent>
+                        </AccordionItem>
+
+                        {primaryButtonText && primaryButtonType && (
+                            <AccordionItem value="2">
+                                <AccordionTrigger>Secondary action</AccordionTrigger>
+                                <AccordionContent>
+                                    <div className="space-y-6 pb-4">
+                                        {/* Button type */}
+                                        <div className="space-y-2">
+                                            <Label htmlFor="input-02">
+                                                Button type
+                                            </Label>
+                                            <Select onValueChange={handleSecondaryButtonType}>
+                                                <SelectTrigger id="select-15">
+                                                    <SelectValue placeholder="Select action type" />
+                                                </SelectTrigger>
+                                                <SelectContent>
+                                                    <SelectItem value="Whatsapp">Whatsapp</SelectItem>
+                                                    <SelectItem value="Call">Call</SelectItem>
+                                                    <SelectItem value="Email">Email</SelectItem>
+                                                    <SelectItem value="Link">Link</SelectItem>
+                                                </SelectContent>
+                                            </Select>
+                                        </div>
+
+                                        <div className={`space-y-2 ${secondaryButtonType === "Call" || secondaryButtonType === "Whatsapp" ? "shown" : "hidden"}`}>
+                                            <div className={"space-y-2"}>
+                                                <Label htmlFor="input-02">
+                                                    Phone number
+                                                </Label>
+                                                <RPNInput.default
+                                                    className="flex rounded-lg shadow-sm shadow-black/5 bg-[#191E21]"
+                                                    international
+                                                    flagComponent={FlagComponent}
+                                                    countrySelectComponent={CountrySelect}
+                                                    inputComponent={PhoneInput}
+                                                    placeholder="Enter phone number"
+                                                    value={''}
+                                                    onChange={(newValue) => setValue(newValue ?? "")}
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div className={`space-y-2 ${secondaryButtonType === "Email" || secondaryButtonType === "Link" ? "shown" : "hidden"}`}>
+                                            <div className={"space-y-2"}>
+                                                <Label htmlFor="input-02">
+                                                    Button value
+                                                </Label>
+                                                <Input placeholder={placeholderValue()} type="text" maxLength={12} />
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </AccordionContent>
+                            </AccordionItem>
+                        )}
+
+                        {secondaryButtonType && (
+                            <AccordionItem value="3">
+                                <AccordionTrigger>Tertiary action</AccordionTrigger>
+                                <AccordionContent>
+                                    <div className="space-y-6 pb-4">
+                                        {/* Button type */}
+                                        <div className="space-y-2">
+                                            <Label htmlFor="input-02">
+                                                Button type
+                                            </Label>
+                                            <Select onValueChange={handleTertiaryButtonType}>
+                                                <SelectTrigger id="select-15">
+                                                    <SelectValue placeholder="Select action type" />
+                                                </SelectTrigger>
+                                                <SelectContent>
+                                                    <SelectItem value="Whatsapp">Whatsapp</SelectItem>
+                                                    <SelectItem value="Call">Call</SelectItem>
+                                                    <SelectItem value="Email">Email</SelectItem>
+                                                    <SelectItem value="Link">Link</SelectItem>
+                                                </SelectContent>
+                                            </Select>
+                                        </div>
+
+                                        <div className={`space-y-2 ${tertiaryButtonType === "Call" || tertiaryButtonType === "Whatsapp" ? "shown" : "hidden"}`}>
+                                            <div className={"space-y-2"}>
+                                                <Label htmlFor="input-02">
+                                                    Phone number
+                                                </Label>
+                                                <RPNInput.default
+                                                    className="flex rounded-lg shadow-sm shadow-black/5 bg-[#191E21]"
+                                                    international
+                                                    flagComponent={FlagComponent}
+                                                    countrySelectComponent={CountrySelect}
+                                                    inputComponent={PhoneInput}
+                                                    placeholder="Enter phone number"
+                                                    value={''}
+                                                    onChange={(newValue) => setValue(newValue ?? "")}
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div className={`space-y-2 ${tertiaryButtonType === "Email" || tertiaryButtonType === "Link" ? "shown" : "hidden"}`}>
+                                            <div className={"space-y-2"}>
+                                                <Label htmlFor="input-02">
+                                                    Button value
+                                                </Label>
+                                                <Input placeholder={placeholderValue()} type="text" maxLength={12} />
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </AccordionContent>
+                            </AccordionItem>
+                        )}
+
+
+                    </Accordion>
 
                     {/* TODO: Check the button position when error is shown */}
-                    <Button type="submit" size={'full'} >Next</Button>
+                    <Button type="submit" size={'full'} disabled={!primaryButtonType || !primaryButtonText}>Next</Button>
                 </form>
             </Form>
         </div >
