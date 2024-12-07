@@ -22,6 +22,7 @@ const buttonVariants = cva(
         link: "text-white underline-offset-4 hover:underline",
         disabled: "bg-[#232323] text-white/50 cursor-not-allowed",
         action: "bg-[#3D3D3F] text-white hover:bg-[#3D3D3F]/50",
+        actionSelected: "bg-[#3D3D3F] text-white hover:bg-[#3D3D3F]/50 outline outline-offset-4 outline-[#70C6EB]",
       },
       size: {
         default: "h-12 px-4 py-2",
