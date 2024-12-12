@@ -1,8 +1,10 @@
 ---
+import { Step3Form } from "@/components/forms/step-3.form";
 import HeaderNavBar from "@/components/shared/StepperNavBar.astro";
 import MainLayout from "@/layouts/MainLayout.astro";
 ---
 
 <MainLayout>
   <HeaderNavBar step={3} isSkippable />
+  <Step3Form client:load />
 </MainLayout>
