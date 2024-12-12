@@ -39,7 +39,7 @@ export const ProfilePreview = ({ primaryButtonType, secondaryButtonType, tertiar
     }
 
     const buttonIconType = (buttonType: string | undefined): JSX.Element | undefined => {
-        if (buttonType === null) return;
+        if (buttonType === undefined) return;
         return iconMapLarge[buttonType!];
     };
 
@@ -61,7 +61,7 @@ export const ProfilePreview = ({ primaryButtonType, secondaryButtonType, tertiar
                     variant={isPrimaryActionSelected ? "secondarySelected" : "secondary"}
                     size="full"
                 >
-                    {buttonIconType(primaryButtonType!)}
+                    {buttonIconType(primaryButtonType ?? undefined)}
                     {primaryButtonText ? primaryButtonText : <div className="bg-[#999999] h-4 w-32 rounded-full" />}
                 </Button>
 
@@ -71,7 +71,7 @@ export const ProfilePreview = ({ primaryButtonType, secondaryButtonType, tertiar
                         variant={isSecondaryActionSelected ? "actionSelected" : "action"}
                         size="icon"
                     >
-                        {secondaryButtonType ? iconTypeSecondary(secondaryButtonType!) : <div className="bg-[#999999] h-4 w-4 rounded-full" />}
+                        {secondaryButtonType ? iconTypeSecondary(secondaryButtonType) : <div className="bg-[#999999] h-4 w-4 rounded-full" />}
                     </Button>
                 )}
 
@@ -81,7 +81,7 @@ export const ProfilePreview = ({ primaryButtonType, secondaryButtonType, tertiar
                         variant={isTertiaryActionSelected ? "actionSelected" : "action"}
                         size="icon"
                     >
-                        {tertiaryButtonType ? iconTypeTertiary(tertiaryButtonType!) : <div className="bg-[#999999] h-4 w-4 rounded-full" />}
+                        {tertiaryButtonType ? iconTypeTertiary(tertiaryButtonType) : <div className="bg-[#999999] h-4 w-4 rounded-full" />}
                     </Button>
                 )}
             </div>
