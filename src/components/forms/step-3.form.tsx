@@ -14,9 +14,9 @@ import { Input } from "@/components/ui/input";
 import { Label } from "../ui/label";
 import { useState, type ChangeEvent } from "react";
 import { RiAddLine, RiDiscordFill, RiFacebookCircleFill, RiImage2Line, RiInstagramLine, RiLinkedinBoxFill, RiSpotifyFill, RiTwitterXFill, RiYoutubeFill } from "@remixicon/react";
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "../ui/dialog";
 import { Textarea } from "../ui/textarea";
-import { CircleUserRound } from "lucide-react";
+import { BottomSheetContainer } from "../shared/BottomSheetContainer";
+import { X } from "lucide-react";
 
 const formSchema = z.object({
     username:
@@ -89,6 +89,8 @@ export const Step3Form = () => {
         }
     };
 
+    const [openDropdown, setOpenDropdown] = useState<boolean>(false);
+
     return (
         <div className="pb-24">
             <div className="flex flex-col items-start justify-center pt-8 pb-4">
@@ -126,146 +128,103 @@ export const Step3Form = () => {
                         <RiTwitterXFill className="h-10 w-10 p-1 text-white/70"></RiTwitterXFill>
                         <Input className="text-base" placeholder="https://www.facebook.com/" type="text" />
                     </div>
+                    {/*  */}
+                    <div className="pt-4 space-y-4">
+                        <Label className="block">Add your own links</Label>
+                        <Button variant="action" size={'sm'} className="pr-4" onClick={() => setOpenDropdown(true)}>
+                            <RiAddLine className="-ms-1 me-2 opacity-60" size={16} strokeWidth={2} aria-hidden="true" />
+                            Add Link
+                        </Button>
+                    </div>
 
-
-
-
-                    {/* DIALOG */}
-                    <Dialog>
-                        <DialogTrigger asChild>
-                            <div className="pt-4 space-y-4">
-                                <Label className="block">Add your own links</Label>
-                                <Button variant="action" size={'sm'} className="pr-4">
-                                    <RiAddLine className="-ms-1 me-2 opacity-60" size={16} strokeWidth={2} aria-hidden="true" />
-                                    Add Link
-                                </Button>
+                    {/* BOTTOM SHEET */}
+                    <BottomSheetContainer open={openDropdown}>
+                        <X className="text-white/50 absolute right-4" onClick={() => setOpenDropdown(false)}></X>
+                        <div className="space-y-4 px-8">
+                            <div className="flex flex-col items-start justify-center pt-8">
+                                <h2 className="title">Add Links</h2>
+                                <h4 className="subtitle">Enter essential information</h4>
                             </div>
-
-                        </DialogTrigger>
-                        <DialogContent className="sm:max-w-md">
-                            <DialogHeader>
-                                <DialogTitle><Label className="text-base">Add link</Label></DialogTitle>
-                                <DialogDescription>
-                                    Anyone who has this link will be able to view this.
-                                </DialogDescription>
-                            </DialogHeader>
-                            <div className="space-y-4">
-                                <FormItem>
-                                    <FormControl>
-                                        <div className="space-y-2">
-                                            <Label htmlFor="input-02">
-                                                Title
-                                            </Label>
-                                            <div className="relative">
-                                                <Input
-                                                    id="input-34"
-                                                    className="peer pe-14"
-                                                    type="text"
-                                                    placeholder="Enter title"
-                                                    value={websiteTitle}
-                                                    maxLength={15}
-                                                    onChange={handleChange}
-                                                    aria-describedby="character-count"
-                                                />
-                                                <div
-                                                    id="character-count"
-                                                    className="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-xs tabular-nums text-muted-foreground peer-disabled:opacity-50"
-                                                    aria-live="polite"
-                                                    role="status"
-                                                >
-                                                    {websiteTitle.length}/{15}
-                                                </div>
+                            <FormItem>
+                                <FormControl>
+                                    <div className="space-y-2">
+                                        <Label htmlFor="input-02">
+                                            Title
+                                        </Label>
+                                        <div className="relative">
+                                            <Input
+                                                id="input-34"
+                                                className="peer pe-14"
+                                                type="text"
+                                                placeholder="Enter title"
+                                                value={websiteTitle}
+                                                maxLength={15}
+                                                onChange={handleChange}
+                                                aria-describedby="character-count"
+                                            />
+                                            <div
+                                                id="character-count"
+                                                className="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-xs tabular-nums text-muted-foreground peer-disabled:opacity-50"
+                                                aria-live="polite"
+                                                role="status"
+                                            >
+                                                {websiteTitle.length}/{15}
                                             </div>
                                         </div>
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                                <FormItem>
-                                    <FormControl>
-                                        <div className="space-y-2">
-                                            <Label htmlFor="input-02">
-                                                Link
-                                            </Label>
-                                            <Input placeholder="Enter website URL" type="text" />
-                                        </div>
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                                <FormItem>
-                                    <FormControl>
-                                        <div className="space-y-2">
-                                            <Label htmlFor="input-02">
-                                                Description
-                                            </Label>
-                                            <Textarea placeholder="Tell us about yourself" />
-                                        </div>
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                                {/* THUMBNAIL */}
-                                <div>
-                                    <Label>Thumbnail</Label>
-                                    <p className="text-sm text-white/50">For the best results on all devices, use an image that’s at least 1920 x 1080 pixels and 6MB or less. </p>
-                                </div>
-                                <div className="space-y-2 flex gap-6">
-                                    <div
-                                        className="image-container flex-shrink-0 relative"
-                                        style={{
-                                            width: '100%',
-                                            height: '200px',
-                                            display: 'flex',
-                                            justifyContent: 'center',
-                                            alignItems: 'center',
-                                            backgroundColor: image ? 'transparent' : 'transparent',
-                                            border: '1px dashed #FFFFFF',
-                                            borderRadius: '20px',
-                                            overflow: 'hidden',
-                                        }}
-                                    >
-                                        {image ? (
-                                            <div>
-                                                <img src={image} alt="Uploaded" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                                            </div>
-                                        ) : (
-                                            <div>
-                                                <Label
-                                                    htmlFor="image-upload"
-                                                    style={{
-                                                        padding: '10px 20px',
-                                                        backgroundColor: '#3D3D3F',
-                                                        justifyContent: 'center',
-                                                        alignItems: 'center',
-                                                        color: 'white',
-                                                        border: 'none',
-                                                        cursor: 'pointer',
-                                                        marginTop: '20px',
-                                                        borderRadius: '20px',
-                                                        fontSize: '16px',
-                                                        width: '100%',
-                                                        display: 'flex',
-                                                        gap: '10px',
-                                                    }}
-                                                >
-                                                    <RiImage2Line />
-                                                    Add Image
-                                                </Label>
-                                                <input
-                                                    type="file"
-                                                    id="image-upload"
-                                                    accept="image/*"
-                                                    onChange={handleImageChange}
-                                                    style={{ display: 'none' }}
-                                                />
-                                            </div>
-                                        )}
                                     </div>
-                                </div>
-                                {
-                                    image ?
+                                </FormControl>
+                                <FormMessage />
+                            </FormItem>
+                            <FormItem>
+                                <FormControl>
+                                    <div className="space-y-2">
+                                        <Label htmlFor="input-02">
+                                            Link
+                                        </Label>
+                                        <Input placeholder="Enter website URL" type="text" />
+                                    </div>
+                                </FormControl>
+                                <FormMessage />
+                            </FormItem>
+                            <FormItem>
+                                <FormControl>
+                                    <div className="space-y-2">
+                                        <Label htmlFor="input-02">
+                                            Description
+                                        </Label>
+                                        <Textarea placeholder="Tell us about yourself" />
+                                    </div>
+                                </FormControl>
+                                <FormMessage />
+                            </FormItem>
+                            {/* THUMBNAIL */}
+                            <div>
+                                <Label>Thumbnail</Label>
+                                <p className="text-sm text-white/50">For the best results on all devices, use an image that’s at least 1920 x 1080 pixels and 6MB or less. </p>
+                            </div>
+                            <div className="space-y-2 flex gap-6">
+                                <div
+                                    className="image-container flex-shrink-0 relative"
+                                    style={{
+                                        width: '100%',
+                                        height: '200px',
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        alignItems: 'center',
+                                        backgroundColor: image ? 'transparent' : 'transparent',
+                                        border: '1px dashed #FFFFFF',
+                                        borderRadius: '20px',
+                                        overflow: 'hidden',
+                                    }}
+                                >
+                                    {image ? (
+                                        <div>
+                                            <img src={image} alt="Uploaded" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                        </div>
+                                    ) : (
                                         <div>
                                             <Label
                                                 htmlFor="image-upload"
-                                                className="w-4/6"
                                                 style={{
                                                     padding: '10px 20px',
                                                     backgroundColor: '#3D3D3F',
@@ -277,12 +236,13 @@ export const Step3Form = () => {
                                                     marginTop: '20px',
                                                     borderRadius: '20px',
                                                     fontSize: '16px',
+                                                    width: '100%',
                                                     display: 'flex',
                                                     gap: '10px',
                                                 }}
                                             >
                                                 <RiImage2Line />
-                                                Change Image
+                                                Add Image
                                             </Label>
                                             <input
                                                 type="file"
@@ -291,13 +251,46 @@ export const Step3Form = () => {
                                                 onChange={handleImageChange}
                                                 style={{ display: 'none' }}
                                             />
-                                        </div> : <div />}
-                                {/* SAVE BUTTON */}
-                                <Button type="submit" size={'full'} style={{ marginTop: 30 }}>Save</Button>
-
+                                        </div>
+                                    )}
+                                </div>
                             </div>
-                        </DialogContent>
-                    </Dialog>
+                            {
+                                image ?
+                                    <div>
+                                        <Label
+                                            htmlFor="image-upload"
+                                            className="w-4/6"
+                                            style={{
+                                                padding: '10px 20px',
+                                                backgroundColor: '#3D3D3F',
+                                                justifyContent: 'center',
+                                                alignItems: 'center',
+                                                color: 'white',
+                                                border: 'none',
+                                                cursor: 'pointer',
+                                                marginTop: '20px',
+                                                borderRadius: '20px',
+                                                fontSize: '16px',
+                                                display: 'flex',
+                                                gap: '10px',
+                                            }}
+                                        >
+                                            <RiImage2Line />
+                                            Change Image
+                                        </Label>
+                                        <input
+                                            type="file"
+                                            id="image-upload"
+                                            accept="image/*"
+                                            onChange={handleImageChange}
+                                            style={{ display: 'none' }}
+                                        />
+                                    </div> : <div />}
+                            {/* SAVE BUTTON */}
+                            <Button type="submit" size={'full'} style={{ marginTop: 30, marginBottom: 50 }} onClick={() => setOpenDropdown(false)}>Save</Button>
+                        </div>
+                    </BottomSheetContainer>
 
                     {/* TODO: Check the button position when error is shown */}
                     <Button type="submit" size={'full'} style={{ marginTop: 50 }}>Next</Button>
