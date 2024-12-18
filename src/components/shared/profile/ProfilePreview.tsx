@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { RiWhatsappLine } from "@remixicon/react";
 import { CircleUserRound, Link, Mail, Phone } from "lucide-react";
 import type { ReactNode } from "react";
-
+import { LinkContainer, type Link as LinkType } from "@/components/shared/LinkContainer";
 interface Props {
     primaryButtonType: string | null;
     primaryButtonText?: string;
@@ -11,10 +11,10 @@ interface Props {
     isPrimaryActionSelected?: boolean;
     isSecondaryActionSelected?: boolean;
     isTertiaryActionSelected?: boolean;
-
+    links?: LinkType[];
 }
 
-export const ProfilePreview = ({ primaryButtonType, secondaryButtonType, tertiaryButtonType, primaryButtonText, isPrimaryActionSelected, isSecondaryActionSelected, isTertiaryActionSelected }: Props) => {
+export const ProfilePreview = ({ primaryButtonType, secondaryButtonType, tertiaryButtonType, primaryButtonText, isPrimaryActionSelected, isSecondaryActionSelected, isTertiaryActionSelected, links }: Props) => {
     const iconMapLarge: Record<string, JSX.Element> = {
         "Whatsapp": <RiWhatsappLine aria-hidden="true" className="-ms-1 me-2" />,
         "Call": <Phone aria-hidden="true" className="-ms-1 me-2" />,
@@ -125,6 +125,12 @@ export const ProfilePreview = ({ primaryButtonType, secondaryButtonType, tertiar
 
             {/* Buttons */}
             {renderButtons()}
+            {/* links*/}
+            <div className="pt-4">
+                {links?.map((link, index) => (
+                    <LinkContainer key={index} thumbnail={link.thumbnail} link={link.link} title={link.title} description={link.description} />
+                ))}
+            </div>
         </div >
     )
 }
