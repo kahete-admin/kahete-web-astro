@@ -1,0 +1,94 @@
+---
+import { ProfilePreview } from "@/components/shared/profile/ProfilePreview";
+import AlertBanner from "@/components/shared/AlertBanner";
+import logo from "@public/logo.svg";
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import type { late } from "astro:schema";
+import { Button } from "@/components/ui/button";
+
+// TODO: delete this
+const primaryButtonText = "Primary";
+const primaryButtonType = "Call";
+const secondaryButtonType = "Email";
+const tertiaryButtonType = "Link";
+
+const links = [
+  {
+    thumbnail:
+      "https://images.pexels.com/photos/29822694/pexels-photo-29822694/free-photo-of-hombre-elegante-posando-al-aire-libre-en-kaduna.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    link: "https://www.facebook.com/",
+    title: "Facebook",
+    description:
+      "Facebook is a social networking service owned by Facebook Inc. It was launched in 2004 and is headquartered in Menlo Park, California.",
+  },
+  {
+    link: "https://www.facebook.com/",
+    title: "Facebook",
+    description:
+      "Facebook is a social networking service owned by Facebook Inc. It was launched in 2004 and is headquartered in Menlo Park, California.",
+  },
+  {
+    link: "https://www.facebook.com/",
+    title: "Facebook",
+  },
+  {
+    title: "Facebook",
+    thumbnail:
+      "https://images.pexels.com/photos/23731974/pexels-photo-23731974/free-photo-of-mar-playa-saludar-despedirse.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    link: "https://www.facebook.com/",
+    description:
+      "Facebook is a social networking service owned by Facebook Inc. It was launched in 2004 and is headquartered in Menlo Park, California.",
+  },
+  {
+    title: "Facebook",
+    link: "https://www.facebook.com/",
+    description:
+      "Facebook is a social networking service owned by Facebook Inc. It was launched in 2004 and is headquartered in Menlo Park, California.",
+  },
+  {
+    title: "Facebook",
+    link: "https://www.facebook.com/",
+  },
+];
+---
+
+<MainLayout>
+  <div class="items-start justify-center pt-8 pb-2">
+    <h1 class="title">Your profile is ready!</h1>
+    <AlertBanner
+      client:load
+      type="warning"
+      message="Your profile is reamdalks dj jkasldjaskldjaskl djaskldjaskldjaskldj asdlkjaskldjasd klasjklashjdkla sjdhklasjdak lsjdy!"
+    />
+  </div>
+  <div
+    class="border-2 border-white rounded-2xl mt-2 mb-6 py-4 px-2 max-h-[72dvh] overflow-y-auto"
+  >
+    <!-- KAHETE HEAD BAR -->
+    <div
+      class="flex items-start justify-between pb-2 mb-4 px-4 border-b-2 border-white/10"
+    >
+      <Image
+        src={logo}
+        height={32}
+        width={32}
+        alt="Kahete Logo"
+        format="avif"
+        quality="high"
+      />
+      <div></div>
+    </div>
+    <ProfilePreview
+      client:load
+      primaryButtonText={primaryButtonText}
+      primaryButtonType={primaryButtonType}
+      secondaryButtonType={secondaryButtonType}
+      tertiaryButtonType={tertiaryButtonType}
+      links={links}
+    />
+  </div>
+  <div>
+    <Button type="submit" size={"full"}>Go to checkout</Button>
+  </div>
+</MainLayout>
