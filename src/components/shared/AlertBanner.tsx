@@ -1,6 +1,6 @@
 // Dependencies: pnpm install lucide-react
 
-import { CheckCircle, CheckIcon, CircleAlertIcon, FileWarningIcon, InfoIcon, ShieldAlert, TriangleAlert } from "lucide-react";
+import { CheckCircle, CheckIcon, CircleAlertIcon, InfoIcon, ShieldAlert, TriangleAlert } from "lucide-react";
 
 interface Props {
     type: "success" | "error" | "warning" | "info" | "default";
