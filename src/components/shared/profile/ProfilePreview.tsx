@@ -88,10 +88,6 @@ export const ProfilePreview = ({ primaryButtonType, secondaryButtonType, tertiar
         );
     };
 
-
-
-
-
     return (
         <div className="flex flex-col items-center justify-center">
 
