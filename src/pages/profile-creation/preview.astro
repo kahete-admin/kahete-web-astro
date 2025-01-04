@@ -1,12 +1,10 @@
 ---
 import { ProfilePreview } from "@/components/shared/profile/ProfilePreview";
 import AlertBanner from "@/components/shared/AlertBanner";
-import logo from "@public/logo.svg";
 import MainLayout from "@/layouts/MainLayout.astro";
-import { Image } from "astro:assets";
 import { Button } from "@/components/ui/button";
-import { ShareProfile } from "@/components/shared/profile/ShareProfile";
 import { Ellipsis } from "lucide-react";
+import { Icon } from "astro-icon/components";
 
 // TODO: delete this
 const primaryButtonText = "Primary";
@@ -70,20 +68,10 @@ const links = [
     <div
       class="flex items-start justify-between pb-2 mb-4 px-4 border-b-[0.5px] border-white/10"
     >
-      <Image
-        src={logo}
-        height={32}
-        width={32}
-        alt="Kahete Logo"
-        format="avif"
-        quality="high"
-      />
-      <div>
-        <Button variant="secondary" size="icon">
-          <Ellipsis className="h-4 w-4" />
-      </Button> 
-      </div>
-    </div>
+      <Icon name={"commons/logo"} size={40} />
+      <Button variant="secondary" size="icon">
+        <Ellipsis className="h-4 w-4" />
+      </Button>
     </div>
     <ProfilePreview
       client:load
