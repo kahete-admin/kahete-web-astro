@@ -4,7 +4,6 @@ import AlertBanner from "@/components/shared/AlertBanner";
 import logo from "@public/logo.svg";
 import MainLayout from "@/layouts/MainLayout.astro";
 import { Image } from "astro:assets";
-import type { late } from "astro:schema";
 import { Button } from "@/components/ui/button";
 import { ShareProfile } from "@/components/shared/profile/ShareProfile";
 import { Ellipsis } from "lucide-react";
@@ -84,6 +83,7 @@ const links = [
           <Ellipsis className="h-4 w-4" />
       </Button> 
       </div>
+    </div>
     </div>
     <ProfilePreview
       client:load
