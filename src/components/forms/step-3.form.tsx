@@ -140,7 +140,7 @@ export const Step3Form = () => {
                     {/* BOTTOM SHEET */}
                     <BottomSheetContainer open={openDropdown}>
                         <X className="text-white/50 absolute right-4" onClick={() => setOpenDropdown(false)}></X>
-                        <div className="space-y-4 px-8">
+                        <div className="space-y-4 px-8 max-w-lg mx-auto cursor-pointer">
                             <div className="flex flex-col items-start justify-center pt-8">
                                 <h2 className="title">Add Links</h2>
                                 <h4 className="subtitle">Enter essential information</h4>

@@ -1,10 +1,12 @@
 ---
 import { ProfilePreview } from "@/components/shared/profile/ProfilePreview";
 import AlertBanner from "@/components/shared/AlertBanner";
-// import logo from "@public/logo.svg";
+import logo from "@public/logo.svg";
 import MainLayout from "@/layouts/MainLayout.astro";
 import { Image } from "astro:assets";
 import { Button } from "@/components/ui/button";
+import { ShareProfile } from "@/components/shared/profile/ShareProfile";
+import { Ellipsis } from "lucide-react";
 
 // TODO: delete this
 const primaryButtonText = "Primary";
@@ -66,17 +68,22 @@ const links = [
   >
     <!-- KAHETE HEAD BAR -->
     <div
-      class="flex items-start justify-between pb-2 mb-4 px-4 border-b-2 border-white/10"
+      class="flex items-start justify-between pb-2 mb-4 px-4 border-b-[0.5px] border-white/10"
     >
-      <!-- <Image
+      <Image
         src={logo}
         height={32}
         width={32}
         alt="Kahete Logo"
         format="avif"
         quality="high"
-      /> -->
-      <div></div>
+      />
+      <div>
+        <Button variant="secondary" size="icon">
+          <Ellipsis className="h-4 w-4" />
+      </Button> 
+      </div>
+    </div>
     </div>
     <ProfilePreview
       client:load
